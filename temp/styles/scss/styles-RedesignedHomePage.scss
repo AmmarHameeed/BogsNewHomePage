@@ -1039,6 +1039,14 @@
             font-size: 1.2rem;
           }
         }
+        .mobile__viewport{
+          .footer3__link{
+            .footer3__right-row-icon {
+              position: unset;
+              margin-right: 20px;
+            }
+          }
+        }
       }
 
       .bottom__link-wrapper {
@@ -1046,10 +1054,16 @@
         border-bottom: 1px solid #707070;
         max-width: 1750px;
         margin: 6em auto 2em;
+        @media screen and (max-width: 768px) {
+          flex-flow: column-reverse !important;
+        }
 
         .footer2__bottom-links {
           margin: 0;
           border: 0;
+          @media screen and (max-width: 768px) {
+            flex-flow: column !important;
+          }
         }
       }
     }
