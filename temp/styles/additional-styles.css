@@ -1,0 +1,107 @@
+/* Additional Styles if Needed */
+
+
+  /* Power reviews*/
+  .p-w-r .pr-review-display.pr-rd-display-tablet .pr-review, 
+  .p-w-r .pr-review-display.pr-rd-display-desktop .pr-review {
+      border-bottom:1px solid #eeeeee !important; 
+  }
+  .p-w-r article, .p-w-r aside, .p-w-r details, 
+  .p-w-r figcaption, .p-w-r figure, .p-w-r footer, 
+  .p-w-r header, .p-w-r hgroup, .p-w-r menu, 
+  .p-w-r nav, .p-w-r section {
+      padding:1px !important;
+  }
+  .p-w-r .pr-category-snippet__item {
+      display: inline-block !important;
+  }
+  .pr-snippet-rating-decimal {
+      display: none !important;
+  }
+  .p-w-r .pr-review-display .pr-rd-main-header-with-filters .pr-rd-sort{
+      height:30px !important;
+  }
+  .p-w-r .pr-snippet div{
+    vertical-align: baseline !important;
+  }
+  .pr-star-v4 {
+      height: 12px !important;
+      width: 12px !important;
+  }
+  .p-w-r .pr-star-v4-0-filled {
+      background-image: url("https://www.bogsfootwear.com/shop/style/resources/css/resources/images/pr-zero-star.png") !important;
+  }
+  .p-w-r .pr-star-v4-100-filled {
+      background-image: url("https://www.bogsfootwear.com/shop/style/resources/css/resources/images/pr-star.png") !important;
+  }
+  .p-w-r .pr-star-v4-50-filled {
+      background-image: url("https://www.bogsfootwear.com/shop/style/resources/css/resources/images/pr-half-star.png") !important;
+  }
+  .p-w-r .pr-star-v4-75-filled {
+      background-image: url("https://www.bogsfootwear.com/shop/style/resources/css/resources/images/pr-75-star.png") !important;
+  }
+  .p-w-r .pr-star-v4-25-filled {
+      background-image: url("https://www.bogsfootwear.com/shop/style/resources/css/resources/images/pr-25-star.png") !important;
+  }
+  .p-w-r .pr-srw-header.pr-pulse {
+      background: #000 !important;
+      color: #fff;
+  }
+  .pr-rd-sort-group #pr-rd-filter-variant-by{
+      display:none;
+  }
+  .pr-snippet-stars-reco-reco {
+      display: none;
+  }
+  .pr-snippet-stars {
+      width: 100%;
+  }
+  .pr-stars {
+      float: none;
+      display: block;
+  }
+  .pr-snippet{
+      display: flex !important;
+  }
+  .pr-snippet-read-and-write {
+    margin-top: 0 !important;
+    margin-left: 20px !important;
+  }
+  a.pr-snippet-review-count,
+  a.pr-snippet-write-review-link {
+    color: #1d1c1d !important;
+    margin-top: 0 !important;
+    font-family: trade-gothic-next,Arial,sans-serif !important;
+    font-size: 1rem !important;
+  }
+  a.pr-snippet-write-review-link:hover {
+    color: #1d1c1d;
+    opacity: .5;
+  }
+  .p-w-r a,
+  .p-w-r .pr-accordion .pr-accordion-btn span,
+  .p-w-r .pr-review-snapshot .pr-ratings-histogram .pr-histogram-label{
+    color: #f58026 !important; 
+  }
+  .p-w-r .pr-snippet-stars{
+    background: transparent !important;
+  }
+  .detail-view__review .reviews-star{
+    width: 100%;
+    margin: 0;
+  }
+  .pr-snippet-read-and-write,
+  .pr-snippet-stars-container{
+    width: 50%;
+  }
+  .pr-snippet-read-and-write{
+    text-align: right;
+  }
+  .detail-view__review .p-w-r{
+    margin: 0 !important;
+  }
+  /*END POWER REVIEWS*/
+  
+  
+
+

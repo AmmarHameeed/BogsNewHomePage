@@ -1,0 +1,15 @@
+/* Video Mock on HomePage */
+@media (min-width: 768px) {
+    #page_header--videobg{
+        height: 50vh;
+    }
+    #page_header--videobg .page_header--videobg-wrapper{
+        height: 100%;
+    }
+    #page_header--videobg .page_header--videobg-wrapper video{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Video Mock on HomePage END */
