@@ -951,7 +951,7 @@ var reviewSlider = new Swiper('.review-slider', {
   // hashNavigation: {
   //     watchState: true,
   // },
-  initialSlide: 1,
+  initialSlide: 0,
 });
 
 
@@ -959,18 +959,40 @@ var reviewSlider = new Swiper('.review-slider', {
 $('#slide1').click(swiper, function () {
   reviewSlider.slideTo(0);
   $('#slide1').addClass('active');
+  $('#slide5').removeClass('active');
+  $('#slide4').removeClass('active');
   $('#slide2').removeClass('active');
   $('#slide3').removeClass('active');
 })
 $('#slide2').click(swiper, function () {
   reviewSlider.slideTo(1);
   $('#slide2').addClass('active');
+  $('#slide5').removeClass('active');
+  $('#slide4').removeClass('active');
   $('#slide1').removeClass('active');
   $('#slide3').removeClass('active');
 })
 $('#slide3').click(swiper, function () {
   reviewSlider.slideTo(2);
   $('#slide3').addClass('active');
+  $('#slide5').removeClass('active');
+  $('#slide4').removeClass('active');
+  $('#slide2').removeClass('active');
+  $('#slide1').removeClass('active');
+})
+$('#slide4').click(swiper, function () {
+  reviewSlider.slideTo(3);
+  $('#slide4').addClass('active');
+  $('#slide5').removeClass('active');
+  $('#slide3').removeClass('active');
+  $('#slide2').removeClass('active');
+  $('#slide1').removeClass('active');
+})
+$('#slide5').click(swiper, function () {
+  reviewSlider.slideTo(4);
+  $('#slide5').addClass('active');
+  $('#slide4').removeClass('active');
+  $('#slide3').removeClass('active');
   $('#slide2').removeClass('active');
   $('#slide1').removeClass('active');
 })

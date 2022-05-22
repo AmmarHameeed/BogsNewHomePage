@@ -645,6 +645,93 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.redesigned__update #mainContainer #featured__reviews {
+  margin-bottom: 160px;
+}
+.redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper {
+  padding: 10px 30px;
+}
+.redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container {
+  max-width: 1750px;
+  padding: 0;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .newHomePage__review-tabs {
+  padding: 25px 0px;
+  background: #000000;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .newHomePage__review-tabs .newHomePage__review-tab {
+  position: relative;
+  margin: 0 5%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.3vw;
+  font-weight: 700;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .newHomePage__review-tabs .newHomePage__review-tab.active::after {
+  top: calc(100% + 3px);
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  z-index: 9;
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top-color: #000;
+  border-width: 30px;
+  margin-left: -30px;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide {
+  background-color: #bbbcc3;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 7.5vw 9vw;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--left {
+  width: 45%;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--left .newHomePage__slide--left-description {
+  font-size: 1.3vw;
+  font-weight: 700;
+  display: block;
+  margin-top: 5px;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--right .newHomePage__quote {
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .review-pagination {
+    display: none;
+  }
+}
 .redesigned__update #mainContainer #featured_styles {
   margin-bottom: 130px;
 }
