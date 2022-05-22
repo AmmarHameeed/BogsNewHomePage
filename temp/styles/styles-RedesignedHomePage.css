@@ -1,3 +1,34 @@
+@media screen and (min-width: 992px) {
+  .redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col {
+    border-right: 0;
+    position: relative;
+  }
+}
+.redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col .navbar__subnav__link--bold {
+  border-bottom: 2px solid #707070;
+}
+.redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col.navbar__subnav__col--middle .omega {
+  margin-right: 15px;
+}
+.redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col .shipping__subnav-btn {
+  position: absolute;
+  bottom: 50px;
+  width: 40vw;
+}
+.redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col .shipping__subnav-btn .shipping__subnav-btn--wrapper .shipping_icon {
+  display: inline-block;
+  width: 31px;
+  height: 16px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='30.417' height='15.709' viewBox='0 0 30.417 15.709'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1445' data-name='Rectangle 1445' width='30.416' height='15.709' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_2031' data-name='Group 2031' transform='translate(-5940.5 -412.369)'%3E%3Cg id='Group_2009' data-name='Group 2009' transform='translate(5940.5 412.369)'%3E%3Cg id='Group_1860' data-name='Group 1860' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1077' data-name='Path 1077' d='M6.217,11.485v1.064a1.1,1.1,0,0,0,1.1,1.1H8.834a.022.022,0,0,1,.021.016,2.875,2.875,0,0,0,5.537,0,.022.022,0,0,1,.021-.016h8.052a.022.022,0,0,1,.021.016,2.875,2.875,0,0,0,5.537,0,.022.022,0,0,1,.021-.016h1.3a1.106,1.106,0,0,0,1.131-1.082V11.247a1.036,1.036,0,0,0-.919-1.08.022.022,0,0,1-.02-.022V7.392a1.887,1.887,0,0,0-1.88-1.881L25.13,5.278a.024.024,0,0,1-.017-.01S22.815,1.8,22.769,1.8A1.889,1.889,0,0,0,21.217,1H8.116A1.918,1.918,0,0,0,6.239,2.627a.022.022,0,0,1-.022.019M5.042,9.7H8.3M2.879,7.163h7.454M1,4.621H8' transform='translate(-0.53 -0.53)' fill='none' stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3Cpath id='Path_1078' data-name='Path 1078' d='M51.557,25.878a1.028,1.028,0,1,1,1.029-1.029,1.033,1.033,0,0,1-1.029,1.029' transform='translate(-26.774 -12.622)' fill='none' stroke='%23000' stroke-width='1'/%3E%3Cpath id='Path_1079' data-name='Path 1079' d='M22.557,25.878a1.028,1.028,0,1,1,1.029-1.029,1.033,1.033,0,0,1-1.029,1.029' transform='translate(-11.407 -12.622)' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col .shipping__subnav-btn .shipping__subnav-btn--wrapper .shipping__subnav-btn--text {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
 .redesigned__update #mainContainer {
   max-width: 1750px;
   margin: auto;
