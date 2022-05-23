@@ -398,11 +398,14 @@
       margin-bottom: 100px;
 
       @media screen and (max-width: 992px) {
-        margin-bottom: 45px;
+        margin-bottom: 0px;
       }
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -413,13 +416,21 @@
       .featured__categories-wrapper {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width: 768px) {
+          flex-flow: column;
+        }
 
         .featured__categories-slider {
           position: relative;
           width: 49.5%;
           overflow: hidden;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 45px;
+          }
 
           .featured__categories-image {
+            width: 100%;
             transition: transform 0.5s;
           }
 
@@ -441,6 +452,10 @@
               background: #000000;
               color: #ffffff;
             }
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+              max-width: 85px;
+            }
           }
 
           &:hover {
@@ -461,6 +476,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -524,14 +542,18 @@
           align-items: end;
 
           .overlay__text {
-            font-size: 60px;
-            font-weight: 400;
+            font-size: 3.2vw;
+            font-weight: 700;
             color: #ffffff;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
 
             .overlay__icon {
               display: inline-block;
               height: 49px;
               width: 49px;
+              margin-left: 10px;
               background-repeat: no-repeat;
               background-size: contain;
 
@@ -581,6 +603,48 @@
       }
     }
 
+    #give_back__section-mobile{
+      margin-bottom: 25px;
+      @media screen and (min-width:768px) {
+        display: none;
+      }
+      .feature_slider__headline-wrapper {
+        padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+          min-height: unset;
+        }
+
+        .feature_slider__headline {
+          font-size: 1.9rem;
+          font-weight: 700;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+      .dual__swiper__slide{
+        position: relative;
+        .dual__swiper__image{
+          width: 100%;
+        }
+        .dual__swiper--text-wrapper{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 45px;
+          left: 35px;
+          .dual__swiper--text{
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 40px;
+            text-transform: uppercase;
+          }
+        }
+      }
+      
+    }
+
     #featured__video {
       margin-bottom: 100px;
 
@@ -590,6 +654,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -605,6 +672,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -775,6 +845,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -789,6 +862,9 @@
         .newHomePage__review-tabs {
           padding: 25px 0px;
           background: #000000;
+          @media screen and (max-width: 768px) {
+            display: none !important;
+          }
 
           .newHomePage__review-tab {
             position: relative;
@@ -871,6 +947,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
@@ -977,6 +1056,9 @@
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
+        @media screen and (max-width: 768px) {
+          padding-left: 0px;
+        }
 
         .feature_slider__headline {
           font-size: 1.9rem;
