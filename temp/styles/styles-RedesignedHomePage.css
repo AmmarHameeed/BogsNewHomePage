@@ -97,6 +97,39 @@
   background: #ffffff;
   color: #000000 !important;
 }
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer .content__section.mobile__section-unique .newLanding__textWrapper--middle {
+    right: unset;
+    left: 0;
+    width: 100%;
+    -webkit-transform: unset;
+            transform: unset;
+    height: 100%;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10%;
+  }
+  .redesigned__update #mainContainer .content__section.mobile__section-unique .newLanding__textWrapper--middle .newLanding__title {
+    width: 100%;
+    display: inline-block;
+    -webkit-box-flex: unset;
+        -ms-flex: unset;
+            flex: unset;
+  }
+  .redesigned__update #mainContainer .content__section.mobile__section-unique .newLanding__textWrapper--middle .shop__btn {
+    font-size: 20px;
+    max-width: 85px;
+  }
+}
 .redesigned__update #mainContainer #rollover__section--refined-toughness {
   margin-bottom: 100px;
 }
@@ -148,12 +181,22 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper {
+    padding: 35px 0 25px 10%;
+  }
+}
 .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .refined__toughness--text {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 7vw;
   font-weight: 700;
   line-height: 118px;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .refined__toughness--text {
+    line-height: 36px;
+  }
 }
 .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn {
   display: inline;
@@ -164,6 +207,12 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8rem;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn {
+    font-size: 20px;
+    max-width: 85px;
+  }
 }
 .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn:hover {
   background: #000000;

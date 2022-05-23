@@ -58,6 +58,7 @@
 
     .newLanding__header {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 0px;
       }
@@ -80,13 +81,15 @@
       }
     }
 
-    #mobile_category{
-      &.white{
+    #mobile_category {
+      &.white {
         background-color: #ffffff;
-        .mobile-category__link{
+
+        .mobile-category__link {
           color: #000000;
           font-size: 5.7vw;
-          .btn__icon{
+
+          .btn__icon {
             font-size: 4vw;
           }
         }
@@ -95,6 +98,7 @@
 
     .content__section {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -102,6 +106,7 @@
       .newLanding__textWrapper--middle {
         right: 0;
         width: 45%;
+
         @media screen and (max-width: 992px) {
           right: 10%;
         }
@@ -117,11 +122,41 @@
           }
         }
       }
+
+      &.mobile__section-unique {
+        @media screen and (max-width: 768px) {
+          .newLanding__textWrapper--middle {
+            right: unset;
+            left: 0;
+            width: 100%;
+            transform: unset;
+            height: 100%;
+            top: 0;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            padding: 10%;
+  
+            .newLanding__title {
+              width: 100%;
+              display: inline-block;
+              flex: unset;
+            }
+  
+            .shop__btn {
+              font-size: 20px;
+              max-width: 85px;
+            }
+          }
+        }
+        
+      }
     }
 
     // Refined Toughness Section
     #rollover__section--refined-toughness {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 45px;
       }
@@ -158,6 +193,9 @@
               flex-flow: column;
               padding-left: 5%;
               justify-content: space-between;
+              @media screen and (max-width: 768px) {
+                padding: 35px 0 25px 10%;
+              }
 
               .refined__toughness--text {
                 color: #ffffff;
@@ -165,6 +203,9 @@
                 font-size: 7vw;
                 font-weight: 700;
                 line-height: 118px;
+                @media screen and (max-width: 768px) {
+                  line-height: 36px;
+                }
               }
 
               .shop-btn {
@@ -176,6 +217,10 @@
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 1.8rem;
+                @media screen and (max-width: 768px) {
+                  font-size: 20px;
+                  max-width: 85px;
+                }
 
                 &:hover {
                   background: #000000;
@@ -195,6 +240,7 @@
     // Men's Arcata Section
     #rollover__section--mens-arcata {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 45px;
       }
@@ -275,6 +321,7 @@
     // Practical Cuteness Section
     #practical__cuteness {
       margin-bottom: 75px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 45px;
       }
@@ -349,6 +396,7 @@
     // Featured Categories
     #featured__categories {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 45px;
       }
@@ -406,6 +454,7 @@
 
     #give_back__section {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -534,6 +583,7 @@
 
     #featured__video {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -552,6 +602,7 @@
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
+
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -658,6 +709,7 @@
 
     #rollover__section-bottom {
       margin-bottom: 130px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -716,9 +768,11 @@
 
     #featured__reviews {
       margin-bottom: 160px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
+
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -810,6 +864,7 @@
 
     #featured_styles {
       margin-bottom: 130px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -880,6 +935,7 @@
 
     #featured_story {
       margin-bottom: 100px;
+
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
@@ -918,6 +974,7 @@
       @media screen and (max-width: 992px) {
         margin-bottom: 80px;
       }
+
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -1019,6 +1076,7 @@
     .footer3__container {
       padding: 50px 10vw;
       padding-bottom: 7em;
+
       @media screen and (max-width: 768px) {
         padding-bottom: 3.5em;
       }
@@ -1271,8 +1329,8 @@
           flex-flow: column-reverse !important;
           margin-top: 1em;
         }
-        
-        .footer2__social-icons{
+
+        .footer2__social-icons {
           @media screen and (max-width: 768px) {
             margin-bottom: 10px;
           }
