@@ -58,6 +58,9 @@
 
     .newLanding__header {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 0px;
+      }
 
       .newLanding__textWrapper--middle {
         padding-left: 5%;
@@ -77,12 +80,31 @@
       }
     }
 
+    #mobile_category{
+      &.white{
+        background-color: #ffffff;
+        .mobile-category__link{
+          color: #000000;
+          font-size: 5.7vw;
+          .btn__icon{
+            font-size: 4vw;
+          }
+        }
+      }
+    }
+
     .content__section {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .newLanding__textWrapper--middle {
         right: 0;
         width: 45%;
+        @media screen and (max-width: 992px) {
+          right: 10%;
+        }
 
         .shop__btn {
           background: #000000;
@@ -100,6 +122,9 @@
     // Refined Toughness Section
     #rollover__section--refined-toughness {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 45px;
+      }
 
       .rollover__section--refined-toughness {
         .swiper-wrapper {
@@ -170,6 +195,9 @@
     // Men's Arcata Section
     #rollover__section--mens-arcata {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 45px;
+      }
 
       .rollover__section--mens-arcata {
         .swiper-wrapper {
@@ -247,6 +275,9 @@
     // Practical Cuteness Section
     #practical__cuteness {
       margin-bottom: 75px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 45px;
+      }
 
       .dual__swiper-container {
         .swiper-wrapper {
@@ -318,6 +349,9 @@
     // Featured Categories
     #featured__categories {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 45px;
+      }
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
@@ -372,6 +406,9 @@
 
     #give_back__section {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
@@ -497,6 +534,9 @@
 
     #featured__video {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
@@ -509,6 +549,9 @@
     }
 
     #featured__prints {
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -615,6 +658,9 @@
 
     #rollover__section-bottom {
       margin-bottom: 130px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .rollover__section-bottom-wrapper {
         display: flex;
@@ -670,6 +716,9 @@
 
     #featured__reviews {
       margin-bottom: 160px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -761,6 +810,9 @@
 
     #featured_styles {
       margin-bottom: 130px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
@@ -828,6 +880,9 @@
 
     #featured_story {
       margin-bottom: 100px;
+      @media screen and (max-width: 992px) {
+        margin-bottom: 25px;
+      }
 
       .featured_story--heading {
         margin-bottom: 20px;
@@ -860,6 +915,9 @@
     }
 
     #feature_slider {
+      @media screen and (max-width: 992px) {
+        margin-bottom: 80px;
+      }
       .feature_slider__headline-wrapper {
         padding: 10px 30px;
 
@@ -961,6 +1019,9 @@
     .footer3__container {
       padding: 50px 10vw;
       padding-bottom: 7em;
+      @media screen and (max-width: 768px) {
+        padding-bottom: 3.5em;
+      }
 
       @media screen and (min-width: 768px) {
         padding: 50px 3.5vw;
@@ -1208,6 +1269,13 @@
 
         @media screen and (max-width: 768px) {
           flex-flow: column-reverse !important;
+          margin-top: 1em;
+        }
+        
+        .footer2__social-icons{
+          @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+          }
         }
 
         .footer2__bottom-links {
