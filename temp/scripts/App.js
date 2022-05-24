@@ -1096,7 +1096,7 @@ if ($("#rollover__section--mens-arcata .swiper-slide").length <= 2) {
 var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 0,
+  spaceBetween: 15,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {

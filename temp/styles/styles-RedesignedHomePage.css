@@ -1,3 +1,9 @@
+@media screen and (min-width: 1750px) {
+  .redesigned__update .newHomePage__subnav {
+    max-width: 1750px;
+    margin: auto;
+  }
+}
 @media screen and (min-width: 992px) {
   .redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col {
     border-right: 0;
@@ -33,6 +39,16 @@
   max-width: 1750px;
   margin: auto;
 }
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer {
+    margin: auto 48px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .redesigned__update #mainContainer {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer {
     margin: 0 15px;
@@ -55,7 +71,7 @@
 .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle .shop__btn {
   background: #000000;
   padding: 0px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle .shop__btn:hover {
   background: #ffffff;
@@ -91,7 +107,7 @@
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn {
   background: #000000;
   padding: 0px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn:hover {
   background: #ffffff;
@@ -202,7 +218,7 @@
   display: inline;
   background: #ffffff;
   width: 110px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -289,7 +305,7 @@
   background: #000000;
   color: #ffffff;
   width: 110px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -361,7 +377,7 @@
   padding: 10px 0px;
   text-align: center;
   font-weight: 700;
-  border-radius: 20px;
+  border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
   width: 105px;
@@ -388,7 +404,7 @@
   }
 }
 .redesigned__update #mainContainer #featured__categories .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__categories .feature_slider__headline-wrapper {
@@ -441,7 +457,7 @@
   background: #ffffff;
   color: #000000;
   width: 110px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -461,6 +477,60 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+.redesigned__update #mainContainer #newest__collection {
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #newest__collection {
+    display: none;
+  }
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container {
+  padding-bottom: 80px;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
+  width: 29%;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
+  width: 69%;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .dual__swiper__slide--left-inner {
+  height: 49%;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.two__images .dual__swiper__slide--left .dual__swiper__slide--left-inner {
+  height: 100%;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 470px;
+}
 .redesigned__update #mainContainer #give_back__section {
   margin-bottom: 100px;
 }
@@ -470,7 +540,7 @@
   }
 }
 .redesigned__update #mainContainer #give_back__section .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #give_back__section .feature_slider__headline-wrapper {
@@ -587,7 +657,7 @@
 .redesigned__update #mainContainer #give_back__section .give_back--wrapper .overlay__wrapper .learn__more-btn {
   background: #ffffff;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -622,7 +692,7 @@
   }
 }
 .redesigned__update #mainContainer #give_back__section-mobile .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #give_back__section-mobile .feature_slider__headline-wrapper {
@@ -667,7 +737,7 @@
   }
 }
 .redesigned__update #mainContainer #featured__video .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__video .feature_slider__headline-wrapper {
@@ -684,7 +754,7 @@
   }
 }
 .redesigned__update #mainContainer #featured__prints .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__prints .feature_slider__headline-wrapper {
@@ -738,7 +808,7 @@
 .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide .overlay__wrapper .shop__btn {
   background: #ffffff;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -834,7 +904,7 @@
   background: #ffffff;
   color: #000000;
   width: 110px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -862,7 +932,7 @@
   }
 }
 .redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper {
@@ -964,7 +1034,7 @@
   }
 }
 .redesigned__update #mainContainer #featured_styles .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured_styles .feature_slider__headline-wrapper {
@@ -1010,7 +1080,7 @@
 .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper .overlay__wrapper .shop__btn {
   background: #ffffff;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1075,7 +1145,7 @@
   }
 }
 .redesigned__update #mainContainer #feature_slider .feature_slider__headline-wrapper {
-  padding: 10px 30px;
+  padding: 10px 0px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #feature_slider .feature_slider__headline-wrapper {
@@ -1138,7 +1208,7 @@
 .redesigned__update #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide .overlay__wrapper .shop__btn {
   background: #ffffff;
   padding: 10px 25px;
-  border-radius: 20px;
+  border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1186,6 +1256,12 @@
   .redesigned__update #footer .footer3__container {
     padding: 50px 3.5vw;
     padding-bottom: 7em;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .redesigned__update #footer .footer3__container {
+    max-width: 1750px;
+    margin: auto;
   }
 }
 .redesigned__update #footer .footer3__container .footer3__links {

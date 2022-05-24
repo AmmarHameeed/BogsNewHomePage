@@ -2,6 +2,11 @@
 
   // Updated style of Sub navigation
   .newHomePage__subnav {
+    @media screen and (min-width: 1750px) {
+      max-width: 1750px;
+      margin: auto;
+    }
+
     .navbar__subnav {
       .navbar__subnav__col-wrapper {
         .navbar__subnav__col {
@@ -52,6 +57,14 @@
     max-width: 1750px;
     margin: auto;
 
+    @media screen and (min-width: 768px) {
+      margin: auto 48px;
+    }
+
+    @media screen and (min-width: 1750px) {
+      margin: auto;
+    }
+
     @media screen and (max-width: 768px) {
       margin: 0 15px;
     }
@@ -71,7 +84,7 @@
         .shop__btn {
           background: #000000;
           padding: 0px 25px;
-          border-radius: 20px;
+          border-radius: 30px;
 
           &:hover {
             background: #ffffff;
@@ -114,7 +127,7 @@
         .shop__btn {
           background: #000000;
           padding: 0px 25px;
-          border-radius: 20px;
+          border-radius: 30px;
 
           &:hover {
             background: #ffffff;
@@ -136,20 +149,20 @@
             flex-flow: column;
             justify-content: space-between;
             padding: 10%;
-  
+
             .newLanding__title {
               width: 100%;
               display: inline-block;
               flex: unset;
             }
-  
+
             .shop__btn {
               font-size: 20px;
               max-width: 85px;
             }
           }
         }
-        
+
       }
     }
 
@@ -193,6 +206,7 @@
               flex-flow: column;
               padding-left: 5%;
               justify-content: space-between;
+
               @media screen and (max-width: 768px) {
                 padding: 35px 0 25px 10%;
               }
@@ -203,6 +217,7 @@
                 font-size: 7vw;
                 font-weight: 700;
                 line-height: 118px;
+
                 @media screen and (max-width: 768px) {
                   line-height: 36px;
                 }
@@ -212,11 +227,12 @@
                 display: inline;
                 background: #ffffff;
                 width: 110px;
-                border-radius: 20px;
+                border-radius: 30px;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 1.8rem;
+
                 @media screen and (max-width: 768px) {
                   font-size: 20px;
                   max-width: 85px;
@@ -297,7 +313,7 @@
                 background: #000000;
                 color: #ffffff;
                 width: 110px;
-                border-radius: 20px;
+                border-radius: 30px;
                 text-align: center;
                 text-transform: uppercase;
                 font-weight: 700;
@@ -367,7 +383,7 @@
                 padding: 10px 0px;
                 text-align: center;
                 font-weight: 700;
-                border-radius: 20px;
+                border-radius: 30px;
                 text-transform: uppercase;
                 cursor: pointer;
                 width: 105px;
@@ -402,7 +418,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -416,6 +433,7 @@
       .featured__categories-wrapper {
         display: flex;
         justify-content: space-between;
+
         @media screen and (max-width: 768px) {
           flex-flow: column;
         }
@@ -424,6 +442,7 @@
           position: relative;
           width: 49.5%;
           overflow: hidden;
+
           @media screen and (max-width: 768px) {
             width: 100%;
             margin-bottom: 45px;
@@ -442,7 +461,7 @@
             background: #ffffff;
             color: #000000;
             width: 110px;
-            border-radius: 20px;
+            border-radius: 30px;
             text-align: center;
             text-transform: uppercase;
             font-weight: 700;
@@ -452,6 +471,7 @@
               background: #000000;
               color: #ffffff;
             }
+
             @media screen and (max-width: 768px) {
               font-size: 20px;
               max-width: 85px;
@@ -467,6 +487,72 @@
       }
     }
 
+    // Newest collection
+
+    #newest__collection {
+      margin-bottom: 70px;
+
+      @media screen and (max-width:768px) {
+        display: none;
+      }
+
+      .dual__swiper-container {
+        padding-bottom: 80px;
+
+        .swiper-wrapper {
+          justify-content: space-between;
+
+          .dual__swiper__slide {
+            display: flex;
+            // margin-right: 15px;
+            // width: 49.5% !important;
+            justify-content: space-between;
+
+            .dual__swiper__slide--left {
+              width: 29%;
+            }
+
+            .dual__swiper__slide--right {
+              width: 69%;
+            }
+
+            &.three__images {
+              .dual__swiper__slide--left {
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+
+                .dual__swiper__slide--left-inner {
+                  height: 49%;
+
+                  // .dual__swiper__image {
+                  //   height: 100%;
+                  //   object-fit: cover;
+                  // }
+                }
+              }
+            }
+
+            &.two__images {
+              .dual__swiper__slide--left {
+                .dual__swiper__slide--left-inner {
+                  height: 100%;
+                }
+              }
+            }
+
+            .dual__swiper__image {
+              height: 100%;
+              object-fit: cover;
+              max-height: 470px;
+            }
+          }
+        }
+
+        .dual__swiper--pagination {}
+      }
+    }
+
     #give_back__section {
       margin-bottom: 100px;
 
@@ -475,7 +561,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -574,7 +661,7 @@
           .learn__more-btn {
             background: #ffffff;
             padding: 10px 25px;
-            border-radius: 20px;
+            border-radius: 30px;
             text-transform: uppercase;
             cursor: pointer;
             // margin-left: 50px;
@@ -603,13 +690,16 @@
       }
     }
 
-    #give_back__section-mobile{
+    #give_back__section-mobile {
       margin-bottom: 25px;
+
       @media screen and (min-width:768px) {
         display: none;
       }
+
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
           min-height: unset;
@@ -618,23 +708,28 @@
         .feature_slider__headline {
           font-size: 1.9rem;
           font-weight: 700;
+
           @media screen and (max-width: 768px) {
             font-size: 20px;
           }
         }
       }
-      .dual__swiper__slide{
+
+      .dual__swiper__slide {
         position: relative;
-        .dual__swiper__image{
+
+        .dual__swiper__image {
           width: 100%;
         }
-        .dual__swiper--text-wrapper{
+
+        .dual__swiper--text-wrapper {
           position: absolute;
           width: 100%;
           height: 100%;
           top: 45px;
           left: 35px;
-          .dual__swiper--text{
+
+          .dual__swiper--text {
             color: #ffffff;
             font-weight: 700;
             font-size: 40px;
@@ -642,7 +737,7 @@
           }
         }
       }
-      
+
     }
 
     #featured__video {
@@ -653,7 +748,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -671,7 +767,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -717,7 +814,7 @@
               .shop__btn {
                 background: #ffffff;
                 padding: 10px 25px;
-                border-radius: 20px;
+                border-radius: 30px;
                 text-transform: uppercase;
                 cursor: pointer;
 
@@ -809,7 +906,7 @@
             background: #ffffff;
             color: #000000;
             width: 110px;
-            border-radius: 20px;
+            border-radius: 30px;
             text-align: center;
             text-transform: uppercase;
             font-weight: 700;
@@ -844,7 +941,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -862,6 +960,7 @@
         .newHomePage__review-tabs {
           padding: 25px 0px;
           background: #000000;
+
           @media screen and (max-width: 768px) {
             display: none !important;
           }
@@ -946,7 +1045,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -983,7 +1083,7 @@
             .shop__btn {
               background: #ffffff;
               padding: 10px 25px;
-              border-radius: 20px;
+              border-radius: 30px;
               text-transform: uppercase;
               cursor: pointer;
 
@@ -1055,7 +1155,8 @@
       }
 
       .feature_slider__headline-wrapper {
-        padding: 10px 30px;
+        padding: 10px 0px;
+
         @media screen and (max-width: 768px) {
           padding-left: 0px;
         }
@@ -1109,7 +1210,7 @@
               .shop__btn {
                 background: #ffffff;
                 padding: 10px 25px;
-                border-radius: 20px;
+                border-radius: 30px;
                 text-transform: uppercase;
                 cursor: pointer;
 
@@ -1166,6 +1267,11 @@
       @media screen and (min-width: 768px) {
         padding: 50px 3.5vw;
         padding-bottom: 7em;
+      }
+
+      @media screen and (min-width: 1750px) {
+        max-width: 1750px;
+        margin: auto;
       }
 
       .footer3__links {
