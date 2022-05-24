@@ -1111,7 +1111,8 @@ var DualSlideSwiper = new Swiper(".dual__swiper-container", {
     768: {
       noSwiping: false,
       slidesPerView: 1,
-      slidesPerGroup: 1
+      slidesPerGroup: 1,
+      spaceBetween: 0,
     }
   },
   autoplay: {
