@@ -54,6 +54,15 @@
     margin: 0 15px;
   }
 }
+.redesigned__update #mainContainer .newLanding__title.black {
+  color: #171717;
+}
+@media screen and (min-width: 992px) {
+  .redesigned__update #mainContainer .newLanding__title.middle__sized__heading {
+    font-size: 4.2vw;
+    line-height: 5vw;
+  }
+}
 .redesigned__update #mainContainer .newLanding__header {
   margin-bottom: 100px;
 }
@@ -72,6 +81,8 @@
   background: #000000;
   padding: 0px 25px;
   border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle .shop__btn:hover {
   background: #ffffff;
@@ -108,6 +119,8 @@
   background: #000000;
   padding: 0px 25px;
   border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn:hover {
   background: #ffffff;
@@ -187,7 +200,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 95px 0 75px 75px;
+  padding: 10% 0 75px 75px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -205,7 +218,7 @@
 .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .refined__toughness--text {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 7vw;
+  font-size: 6vw;
   font-weight: 700;
   line-height: 118px;
 }
@@ -214,7 +227,7 @@
     line-height: 36px;
   }
 }
-.redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn {
+.redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop__btn {
   display: inline;
   background: #ffffff;
   width: 110px;
@@ -222,15 +235,15 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
 }
 @media screen and (max-width: 768px) {
-  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn {
+  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop__btn {
     font-size: 20px;
     max-width: 85px;
   }
 }
-.redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop-btn:hover {
+.redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop__btn:hover {
   background: #000000;
   color: #ffffff;
 }
@@ -289,18 +302,11 @@
           justify-content: center;
 }
 .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .mens__arcata--subtext {
-  color: #000000;
+  color: #020202;
   font-size: 3.5vw;
   font-weight: 700;
 }
-.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .mens__arcata--text {
-  color: #000000;
-  text-transform: uppercase;
-  font-size: 7vw;
-  font-weight: 700;
-  line-height: 118px;
-}
-.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop-btn {
+.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop__btn {
   display: inline;
   background: #000000;
   color: #ffffff;
@@ -311,7 +317,7 @@
   font-weight: 700;
   font-size: 1.8rem;
 }
-.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop-btn:hover {
+.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop__btn:hover {
   background: #ffffff;
   color: #000000;
 }
@@ -377,6 +383,7 @@
   padding: 10px 0px;
   text-align: center;
   font-weight: 700;
+  font-size: 1.5vw;
   border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
@@ -409,6 +416,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__categories .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #featured__categories .feature_slider__headline-wrapper .feature_slider__headline {
@@ -461,7 +469,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn:hover {
   background: #000000;
@@ -491,6 +499,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #newest__collection .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #newest__collection .feature_slider__headline-wrapper .feature_slider__headline {
@@ -548,7 +557,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper .shop__btn:hover {
   background: #000000;
@@ -615,6 +624,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #give_back__section .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #give_back__section .feature_slider__headline-wrapper .feature_slider__headline {
@@ -774,11 +784,6 @@
   font-size: 1.9rem;
   font-weight: 700;
 }
-@media screen and (max-width: 768px) {
-  .redesigned__update #mainContainer #give_back__section-mobile .feature_slider__headline-wrapper .feature_slider__headline {
-    font-size: 20px;
-  }
-}
 .redesigned__update #mainContainer #give_back__section-mobile .dual__swiper__slide {
   position: relative;
 }
@@ -812,6 +817,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__video .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #featured__video .feature_slider__headline-wrapper .feature_slider__headline {
@@ -829,6 +835,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__prints .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #featured__prints .feature_slider__headline-wrapper .feature_slider__headline {
@@ -881,6 +888,8 @@
   border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide .overlay__wrapper .shop__btn:hover {
   background: #000000;
@@ -978,7 +987,7 @@
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider .shop__btn:hover {
   background: #000000;
@@ -1007,6 +1016,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #featured__reviews .feature_slider__headline-wrapper .feature_slider__headline {
@@ -1109,6 +1119,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured_styles .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #featured_styles .feature_slider__headline-wrapper .feature_slider__headline {
@@ -1153,6 +1164,8 @@
   border-radius: 30px;
   text-transform: uppercase;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5vw;
 }
 .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper .overlay__wrapper .shop__btn:hover {
   background: #000000;
@@ -1182,10 +1195,17 @@
     margin-bottom: 25px;
   }
 }
-.redesigned__update #mainContainer #featured_story .featured_story--heading {
-  margin-bottom: 20px;
-  padding: 10px 30px;
-  font-size: 30px;
+.redesigned__update #mainContainer #featured_story .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #featured_story .feature_slider__headline-wrapper {
+    padding-left: 0px;
+    min-height: unset;
+  }
+}
+.redesigned__update #mainContainer #featured_story .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.9rem;
   font-weight: 700;
 }
 .redesigned__update #mainContainer #featured_story .featured_story-wrapper {
@@ -1220,6 +1240,7 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #feature_slider .feature_slider__headline-wrapper {
     padding-left: 0px;
+    min-height: unset;
   }
 }
 .redesigned__update #mainContainer #feature_slider .feature_slider__headline-wrapper .feature_slider__headline {
@@ -1280,6 +1301,8 @@
   padding: 10px 25px;
   border-radius: 30px;
   text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5vw;
   cursor: pointer;
 }
 .redesigned__update #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide .overlay__wrapper .shop__btn:hover {
