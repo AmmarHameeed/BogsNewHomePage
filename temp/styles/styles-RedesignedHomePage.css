@@ -465,8 +465,11 @@
 }
 .redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider {
   position: relative;
-  width: 49.5%;
+  width: 50%;
   overflow: hidden;
+}
+.redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider:nth-of-type(1) {
+  margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider {
@@ -547,12 +550,13 @@
           justify-content: space-between;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
-  width: 29%;
+  width: 30%;
   position: relative;
+  margin-right: 20px;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
   position: relative;
-  width: 69%;
+  width: 70%;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .inner__slide {
   overflow: hidden;
@@ -615,7 +619,10 @@
           justify-content: space-between;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .dual__swiper__slide--left-inner {
-  height: 49%;
+  height: 50%;
+}
+.redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-of-type(1) {
+  margin-bottom: 20px;
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide.two__images .dual__swiper__slide--left .dual__swiper__slide--left-inner {
   height: 100%;
@@ -664,10 +671,11 @@
           justify-content: space-between;
 }
 .redesigned__update #mainContainer #give_back__section .give_back--wrapper .gb__left {
-  width: 49.5%;
+  width: 50%;
+  margin-right: 20px;
 }
 .redesigned__update #mainContainer #give_back__section .give_back--wrapper .gb__right {
-  width: 49.5%;
+  width: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
@@ -678,6 +686,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.redesigned__update #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper {
+  height: 50%;
+}
+.redesigned__update #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper:nth-of-type(1) {
+  margin-bottom: 20px;
 }
 .redesigned__update #mainContainer #give_back__section .give_back--wrapper .gb__img__wrapper {
   position: relative;
@@ -879,7 +893,7 @@
 }
 @media screen and (min-width: 769px) {
   .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -985,8 +999,11 @@
 }
 .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider {
   position: relative;
-  width: 49.5%;
+  width: 50%;
   overflow: hidden;
+}
+.redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider:nth-of-type(1) {
+  margin-right: 20px;
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider {
@@ -1160,8 +1177,11 @@
 }
 .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper {
   position: relative;
-  width: 49%;
+  width: 50%;
   overflow: hidden;
+}
+.redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper:nth-of-type(1) {
+  margin-right: 20px;
 }
 .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper .overlay__wrapper {
   display: none;

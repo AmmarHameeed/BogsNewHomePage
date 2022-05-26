@@ -1013,7 +1013,7 @@ var sweetpeaSlider = new Swiper('.sweetpea-slider', {
 var refinedToughnessSwiper = new Swiper(".rollover__section--refined-toughness", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 0,
+  spaceBetween: 20,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
@@ -1055,7 +1055,7 @@ if ($("#rollover__section--refined-toughness .swiper-slide").length <= 3) {
 var mensArcataSwiper = new Swiper(".rollover__section--mens-arcata", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 0,
+  spaceBetween: 20,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
@@ -1096,7 +1096,7 @@ if ($("#rollover__section--mens-arcata .swiper-slide").length <= 2) {
 var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 15,
+  spaceBetween: 20,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
