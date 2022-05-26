@@ -5,6 +5,7 @@
     padding-left: 0px;
     min-height: unset;
   }
+
   .feature_slider__headline {
     font-size: 1.9rem;
     font-weight: 700;
@@ -13,6 +14,8 @@
 
 
 .redesigned__update {
+
+  
 
   // Updated style of Sub navigation
   .newHomePage__subnav {
@@ -83,17 +86,37 @@
       margin: 0 15px;
     }
 
-    .newLanding__title{
-      &.black{
+    .shop__btn{
+      @media screen and (min-width: 2200px) {
+        width: unset !important;
+        padding: 5px 25px;
+      }
+    }
+
+    .newLanding__title {
+      &.black {
         color: #171717;
       }
-      &.middle__sized__heading{
+
+      &.middle__sized__heading {
         @media screen and (min-width:992px) {
           font-size: 4.2vw;
-        line-height: 5vw;
+          line-height: 5vw;
         }
       }
     }
+
+    .newLanding__title {
+      @media screen and (min-width:3450px) {
+        font-size: 5vw;
+        line-height: 4vw;
+      }
+      @media screen and (min-width:5050px) {
+        font-size: 3vw;
+        line-height: 2.5vw;
+      }
+    }
+
     .newLanding__header {
       margin-bottom: 100px;
 
@@ -144,11 +167,15 @@
       }
 
       .newLanding__textWrapper--middle {
-        right: 0;
+        right: 2%;
         width: 45%;
 
         @media screen and (max-width: 992px) {
           right: 10%;
+        }
+        @media screen and (min-width:3450px) {
+          right: 5%;
+        width: 55%;
         }
 
         .shop__btn {
@@ -167,7 +194,7 @@
       }
 
       &.mobile__section-unique {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 992px) {
           .newLanding__textWrapper--middle {
             right: unset;
             left: 0;

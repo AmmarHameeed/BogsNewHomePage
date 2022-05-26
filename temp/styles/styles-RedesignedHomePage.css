@@ -54,6 +54,12 @@
     margin: 0 15px;
   }
 }
+@media screen and (min-width: 2200px) {
+  .redesigned__update #mainContainer .shop__btn {
+    width: unset !important;
+    padding: 5px 25px;
+  }
+}
 .redesigned__update #mainContainer .newLanding__title.black {
   color: #171717;
 }
@@ -61,6 +67,18 @@
   .redesigned__update #mainContainer .newLanding__title.middle__sized__heading {
     font-size: 4.2vw;
     line-height: 5vw;
+  }
+}
+@media screen and (min-width: 3450px) {
+  .redesigned__update #mainContainer .newLanding__title {
+    font-size: 5vw;
+    line-height: 4vw;
+  }
+}
+@media screen and (min-width: 5050px) {
+  .redesigned__update #mainContainer .newLanding__title {
+    font-size: 3vw;
+    line-height: 2.5vw;
   }
 }
 .redesigned__update #mainContainer .newLanding__header {
@@ -107,12 +125,18 @@
   }
 }
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle {
-  right: 0;
+  right: 2%;
   width: 45%;
 }
 @media screen and (max-width: 992px) {
   .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle {
     right: 10%;
+  }
+}
+@media screen and (min-width: 3450px) {
+  .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle {
+    right: 5%;
+    width: 55%;
   }
 }
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn {
@@ -126,7 +150,7 @@
   background: #ffffff;
   color: #000000 !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .redesigned__update #mainContainer .content__section.mobile__section-unique .newLanding__textWrapper--middle {
     right: unset;
     left: 0;
