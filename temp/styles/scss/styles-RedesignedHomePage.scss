@@ -15,7 +15,7 @@
 
 .redesigned__update {
 
-  
+
 
   // Updated style of Sub navigation
   .newHomePage__subnav {
@@ -24,7 +24,84 @@
       margin: auto;
     }
 
+    #navbar__subnav--search {
+      @media screen and (max-width:992px) {
+        display: none !important;
+      }
+    }
+
+    .navbar__mobile-nav--dropdown {
+      width: 100%;
+
+      .mobile__subnav__viewport--adjustment {
+        @media screen and (max-width:992px) {
+          background: #171717;
+          color: #ffffff;
+          width: 100vw;
+          margin-left: -15px;
+          padding: 0 20px;
+        }
+
+
+        .subnav__mobile__icon {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-repeat: no-repeat;
+          background-size: contain;
+
+          &.subnav__login-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='23.973' height='23.956' viewBox='0 0 23.973 23.956' style='&%2310;'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1486' data-name='Rectangle 1486' width='23.973' height='23.956' transform='translate(0 0)' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_2014' data-name='Group 2014' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1106' data-name='Path 1106' d='M9.4,12.549H1.385A1.188,1.188,0,0,1,.107,11.311C.1,10.768.094,10.228.116,9.685A1.635,1.635,0,0,1,1.008,8.25c1.825-1,3.658-1.969,5.483-2.96.131-.074.214,0,.313.046a5.364,5.364,0,0,0,4.772.206.44.44,0,0,0,.138-.063c.337-.287.641-.173.991.02,1.637.9,3.286,1.788,4.936,2.667a1.822,1.822,0,0,1,1.05,1.761c-.009.457,0,.91,0,1.367a1.191,1.191,0,0,1-1.26,1.256Z' transform='translate(2.59 8.716)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='1.5'/%3E%3Cpath id='Path_1107' data-name='Path 1107' d='M6.836,11.031A4.556,4.556,0,0,1,3.165,8.915a6,6,0,0,1,.4-7.218,4.426,4.426,0,0,1,6.829.026,5.95,5.95,0,0,1-.287,7.984A4.529,4.529,0,0,1,6.836,11.031Z' transform='translate(5.019 2.59)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+          }
+          &.subnav__location-icon{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='Group_2017' data-name='Group 2017' width='27.862' height='28.248' viewBox='0 0 27.862 28.248'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1487' data-name='Rectangle 1487' width='27.862' height='28.248' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_2016' data-name='Group 2016' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1108' data-name='Path 1108' d='M10.7,8.092a2.664,2.664,0,1,0-.8,1.879A2.65,2.65,0,0,0,10.7,8.092ZM7.884,21.334a1.181,1.181,0,0,1-.512-.461C5.4,18.081,3.412,15.3,1.451,12.5A7.487,7.487,0,0,1,.138,8.867,7.866,7.866,0,0,1,4.759.854a7.681,7.681,0,0,1,8.436,1.185,7.548,7.548,0,0,1,2.748,5.1A7.794,7.794,0,0,1,14.49,12.74q-2.863,4.035-5.733,8.084a1.255,1.255,0,0,1-.541.51Z' transform='translate(5.878 3.407)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+          }
+          &.subnav__phone-icon{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.619' height='18.66' viewBox='0 0 18.619 18.66'%3E%3Cg id='Group_2013' data-name='Group 2013' transform='translate(0.749 0.842)'%3E%3Cg id='Group_2018' data-name='Group 2018' transform='translate(0 0)'%3E%3Cpath id='Path_1105' data-name='Path 1105' d='M15.9,12.244a1.33,1.33,0,0,0-2,0c-.476.476-.951.92-1.4,1.4-.032.032-.063.063-.1.063l-.317.317a.238.238,0,0,1-.285,0c-.285-.159-.634-.285-.92-.476A13.881,13.881,0,0,1,7.4,10.373a8.208,8.208,0,0,1-1.268-2,.24.24,0,0,1,.032-.317l.317-.317.063-.063.412-.412c.317-.317.634-.634.951-.983a1.354,1.354,0,0,0,0-2.061c-.349-.381-.729-.733-1.11-1.11L5.658,1.967a1.335,1.335,0,0,0-2,0c-.476.476-.92.951-1.4,1.4a2.334,2.334,0,0,0-.729,1.554,6.424,6.424,0,0,0,.507,2.791,17.316,17.316,0,0,0,3.012,5.042A18.448,18.448,0,0,0,11.239,17.6a8.69,8.69,0,0,0,3.428.983,2.533,2.533,0,0,0,2.156-.824c.412-.444.856-.856,1.268-1.3a1.32,1.32,0,0,0,0-2.029C17.422,13.735,16.661,12.973,15.9,12.244Z' transform='translate(-1.525 -1.517)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+          }
+          &.subnav__envelope-icon{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='Group_2022' data-name='Group 2022' width='23.412' height='15.417' viewBox='0 0 23.412 15.417' style='&%2310;'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1489' data-name='Rectangle 1489' width='23.412' height='15.417' transform='translate(0 0)' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_2021' data-name='Group 2021' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1110' data-name='Path 1110' d='M.06.235a1.324,1.324,0,0,0-.015.2V9.761a1.4,1.4,0,0,0,1.4,1.4H17.757a1.4,1.4,0,0,0,1.4-1.4V.438a1.324,1.324,0,0,0-.015-.2M.615.045c-.2,0-.555,0-.555.27L8.986,7.766a.868.868,0,0,0,1.22,0L19.156.315c0-.27-.365-.27-.562-.27Z' transform='translate(2.106 2.106)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+          }
+          &.subnav__chat-icon{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='Group_1865' data-name='Group 1865' width='21.192' height='18.798' viewBox='0 0 21.192 18.798'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1448' data-name='Rectangle 1448' width='21.192' height='18.798' fill='none' stroke='%23707070' stroke-width='1.5'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1864' data-name='Group 1864' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1082' data-name='Path 1082' d='M18.31.955H4.091A3.153,3.153,0,0,0,.954,4.091v8.063a3.154,3.154,0,0,0,3.137,3.136H8.064v3.16a.586.586,0,0,0,.348.534.809.809,0,0,0,.233.046.628.628,0,0,0,.394-.139l4.02-3.6h5.228a3.154,3.154,0,0,0,3.136-3.136V4.091A3.117,3.117,0,0,0,18.31.955Z' transform='translate(-0.593 -0.594)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1.5'/%3E%3Cpath id='Path_1083' data-name='Path 1083' d='M38.716,18.007a.823.823,0,1,1-.008,0h.008' transform='translate(-23.559 -11.197)' fill='%23fff'/%3E%3Cpath id='Path_1084' data-name='Path 1084' d='M26.661,18.007a.825.825,0,1,1-.825.825.825.825,0,0,1,.825-.825' transform='translate(-16.065 -11.197)' fill='%23fff'/%3E%3Cpath id='Path_1085' data-name='Path 1085' d='M14.61,18.007a.825.825,0,1,1-.826.825.825.825,0,0,1,.826-.825h0Z' transform='translate(-8.571 -11.197)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+          }
+          &.subnav__shipping-icon{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='25.493' height='13.166' viewBox='0 0 25.493 13.166'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1445' data-name='Rectangle 1445' width='25.493' height='13.166' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1860' data-name='Group 1860' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1077' data-name='Path 1077' d='M5.373,9.788v.892a.926.926,0,0,0,.926.926H7.566a.018.018,0,0,1,.018.014,2.41,2.41,0,0,0,4.641,0,.018.018,0,0,1,.018-.014h6.749a.018.018,0,0,1,.018.014,2.41,2.41,0,0,0,4.641,0,.018.018,0,0,1,.018-.014h1.089a.927.927,0,0,0,.948-.907V9.589a.869.869,0,0,0-.77-.905.018.018,0,0,1-.017-.018V6.358a1.581,1.581,0,0,0-1.576-1.576l-2.118-.2a.02.02,0,0,1-.014-.009s-1.927-2.908-1.965-2.908A1.583,1.583,0,0,0,17.945,1H6.964A1.607,1.607,0,0,0,5.391,2.363a.019.019,0,0,1-.018.016m-.985,5.91h2.73M2.575,6.165H8.822M1,4.035H6.87' transform='translate(-0.606 -0.606)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='1.5'/%3E%3Cpath id='Path_1078' data-name='Path 1078' d='M51.39,25.545a.862.862,0,1,1,.862-.862.866.866,0,0,1-.862.862' transform='translate(-30.618 -14.435)' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3Cpath id='Path_1079' data-name='Path 1079' d='M22.39,25.545a.862.862,0,1,1,.862-.862.866.866,0,0,1-.862.862' transform='translate(-13.045 -14.435)' fill='none' stroke='%23fff' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+          }
+        }
+      }
+    }
+
+    #navbar__subnav--search-mobile {
+      .navbar__subnav--search-wrapper {
+        // padding-left: 0;
+
+        .navbar__subnav--search-field {
+          background: #e6e6e6;
+          border-radius: 30px;
+          border: 0;
+          padding: 5px 15px;
+          margin-right: 10px;
+        }
+      }
+
+
+
+      .navbar__subnav--search-btn {
+        background: #171717;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 5px 15px;
+        border-radius: 30px;
+      }
+    }
+
     .navbar__subnav {
+      @media screen and (max-width: 992px) {
+        background-color: #ffffff;
+      }
+
       .navbar__subnav__col-wrapper {
         .navbar__subnav__col {
           @media screen and (min-width: 992px) {
@@ -37,6 +114,16 @@
           }
 
           &.navbar__subnav__col--middle {
+            @media screen and (max-width: 992px) {
+              .row {
+                flex-flow: column;
+
+                .alpha {
+                  padding-left: 15px;
+                }
+              }
+            }
+
             .omega {
               margin-right: 15px;
             }
@@ -65,6 +152,12 @@
               }
             }
           }
+
+          &.navbar__subnav__col--first {
+            @media screen and (max-width:992px) {
+              display: unset;
+            }
+          }
         }
       }
     }
@@ -86,7 +179,7 @@
       margin: 0 15px;
     }
 
-    .shop__btn{
+    .shop__btn {
       @media screen and (min-width: 2200px) {
         width: unset !important;
         padding: 5px 25px;
@@ -111,6 +204,7 @@
         font-size: 5vw;
         line-height: 4vw;
       }
+
       @media screen and (min-width:5050px) {
         font-size: 3vw;
         line-height: 2.5vw;
@@ -173,9 +267,10 @@
         @media screen and (max-width: 992px) {
           right: 10%;
         }
+
         @media screen and (min-width:3450px) {
           right: 5%;
-        width: 55%;
+          width: 55%;
         }
 
         .shop__btn {
@@ -401,7 +496,17 @@
             overflow: hidden;
 
             @media screen and (min-width: 768px) {
-              width: 49.5% !important;
+              width: 50% !important;
+            }
+
+            &.tetra__image-container {
+              display: flex;
+              flex-wrap: wrap;
+
+              .dual__swiper__overlay {
+                width: 50%;
+                overflow: hidden;
+              }
             }
 
             .dual__swiper__image {
@@ -451,11 +556,22 @@
               }
             }
 
-            &:hover {
-              .dual__swiper__image {
-                transform: scale(1.1);
+            :not(.tetra__image-container) {
+              &:hover {
+                .dual__swiper__image {
+                  transform: scale(1.1);
+                }
               }
             }
+
+            &:nth-of-type(2) {
+              &:hover {
+                .dual__swiper__image {
+                  transform: scale(1.1);
+                }
+              }
+            }
+
           }
         }
       }
@@ -486,7 +602,7 @@
           width: 50%;
           overflow: hidden;
 
-          &:nth-of-type(1){
+          &:nth-of-type(1) {
             margin-right: 20px;
           }
 
@@ -505,6 +621,7 @@
             left: 10%;
             bottom: 75px;
             display: inline;
+            padding: 10px 0;
             background: #ffffff;
             color: #000000;
             width: 110px;
@@ -629,7 +746,8 @@
 
                 .dual__swiper__slide--left-inner {
                   height: 50%;
-                  &:nth-of-type(1){
+
+                  &:nth-of-type(1) {
                     margin-bottom: 20px;
                   }
 
@@ -703,7 +821,7 @@
           .gb__img__wrapper {
             height: 50%;
 
-            &:nth-of-type(1){
+            &:nth-of-type(1) {
               margin-bottom: 20px;
             }
           }
@@ -980,7 +1098,7 @@
           width: 50%;
           overflow: hidden;
 
-          &:nth-of-type(1){
+          &:nth-of-type(1) {
             margin-right: 20px;
           }
 
@@ -1143,7 +1261,7 @@
           width: 50%;
           overflow: hidden;
 
-          &:nth-of-type(1){
+          &:nth-of-type(1) {
             margin-right: 20px;
           }
 

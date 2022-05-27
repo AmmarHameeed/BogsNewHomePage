@@ -160,6 +160,24 @@
                         <div class="d-block d-lg-flex flex-grow-1 justify-content-between align-items-stretch">
                             <!-- nav items :: left side -->
                             <div class="d-block d-lg-flex flex-grow-1 flex-basis-0">
+                                <!-- Mobile Searchbar -->
+                                <div id="navbar__subnav--search-mobile"
+                                    class="navbar__subnav navbar__subnav--search d-block d-lg-none collapse subnav"
+                                    data-parent="#navParent">
+                                    <div class="d-flex align-items-sm-center justify-content-center">
+                                        <div class="container-fluid">
+                                            <div
+                                                class="row d-flex navbar__subnav__col-wrapper  justify-content-center align-items-end">
+                                                <div class="navbar__subnav--search-wrapper d-flex ">
+                                                    <input class="no-drop navbar__subnav--search-field"
+                                                        placeholder="What are you looking for?">
+                                                    <a class="btn navbar__subnav--search-btn">Search</a>
+                                                </div>
+                                                <!-- Predicitive Search Results Feature Needed -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <!-- button -->
                                 <a class="navbar__top-tier-item navbar__subnav--trigger flex-fill"
                                     data-toggle="collapse" href="#navbar__subnav--women" role="button"
@@ -186,7 +204,7 @@
                                                     <div class="navbar__subnav__link navbar__subnav__link">
                                                         <a href="#">New Arrivals</a>
                                                     </div>
-                                                    <div class="shipping__subnav-btn">
+                                                    <div class="shipping__subnav-btn d-none d-lg-block">
                                                         <a href="#" class="shipping__subnav-btn--wrapper">
                                                             <i class="shipping_icon"></i>
                                                             <span class="shipping__subnav-btn--text">Free shipping &
@@ -289,7 +307,7 @@
                                                         <a href="#">New Arrivals</a>
                                                     </div>
 
-                                                    <div class="shipping__subnav-btn">
+                                                    <div class="shipping__subnav-btn d-none d-lg-block">
                                                         <a href="#" class="shipping__subnav-btn--wrapper">
                                                             <i class="shipping_icon"></i>
                                                             <span class="shipping__subnav-btn--text">Free shipping &
@@ -390,7 +408,7 @@
                                                     <div class="navbar__subnav__link navbar__subnav__link">
                                                         <a href="#">New Arrivals</a>
                                                     </div>
-                                                    <div class="shipping__subnav-btn">
+                                                    <div class="shipping__subnav-btn d-none d-lg-block">
                                                         <a href="#" class="shipping__subnav-btn--wrapper">
                                                             <i class="shipping_icon"></i>
                                                             <span class="shipping__subnav-btn--text">Free shipping &
@@ -480,9 +498,32 @@
                                 <!-- button -->
                                 <a class="navbar__top-tier-item flex-fill" href="#">Sale</a>
                                 <!-- button -->
-                                <a class="navbar__top-tier-item flex-fill" href="#">Login</a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment" href="#">
+                                    Login
+                                    <i class="subnav__mobile__icon subnav__login-icon d-flex d-lg-none"></i>
+                                </a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                    USA
+                                    <i class="subnav__mobile__icon subnav__location-icon"></i>
+                                </a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                    92-3339996151
+                                    <i class="subnav__mobile__icon subnav__phone-icon"></i>
+                                </a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                    Email
+                                    <i class="subnav__mobile__icon subnav__envelope-icon"></i>
+                                </a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                    Live chat
+                                    <i class="subnav__mobile__icon subnav__chat-icon"></i>
+                                </a>
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                    Free shipping & returns
+                                    <i class="subnav__mobile__icon subnav__shipping-icon"></i>
+                                </a>
                                 <!-- button -->
-                                <a class="navbar__top-tier-item navbar__subnav--trigger flex-fill"
+                                <a class="navbar__top-tier-item navbar__subnav--trigger flex-fill d-none d-lg-flex"
                                     data-toggle="collapse" href="#navbar__subnav--region" role="button"
                                     aria-expanded="false" aria-controls="navbar__subnav--region">USA <i
                                         class="icon-link-arrow navbar__top-tier-item--arrow"></i></a>
@@ -734,13 +775,32 @@
                 <section id="practical__cuteness">
                     <div class="swiper-container dual__swiper-container">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide dual__swiper__slide" data-color="#ffffff;"
+                            <div class="swiper-slide dual__swiper__slide tetra__image-container" data-color="#ffffff;"
                                 style="background-color:#ffffff;">
-                                <a href="#">
-                                    <img class="dual__swiper__image"
-                                        src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-PracticalCuteness01-Desktop-Mobile.jpg">
-                                </a>
-
+                                <div class="dual__swiper__overlay">
+                                    <a href="#">
+                                        <img class="dual__swiper__image"
+                                            src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-PracticalCuteness01a-Desktop-Mobile.jpg">
+                                    </a>
+                                </div>
+                                <div class="dual__swiper__overlay">
+                                    <a href="#">
+                                        <img class="dual__swiper__image"
+                                            src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-PracticalCuteness01b-Desktop-Mobile.jpg">
+                                    </a>
+                                </div>
+                                <div class="dual__swiper__overlay">
+                                    <a href="#">
+                                        <img class="dual__swiper__image"
+                                            src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-PracticalCuteness01c-Desktop-Mobile.jpg">
+                                    </a>
+                                </div>
+                                <div class="dual__swiper__overlay">
+                                    <a href="#">
+                                        <img class="dual__swiper__image"
+                                            src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-PracticalCuteness01d-Desktop-Mobile.jpg">
+                                    </a>
+                                </div>
                             </div>
                             <div class="swiper-slide dual__swiper__slide" data-color="#ffffff;"
                                 style="background-color:#ffffff;">
