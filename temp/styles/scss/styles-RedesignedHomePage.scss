@@ -1171,19 +1171,30 @@
 
       .feature_slider__headline-wrapper {
         @include sectionHeading;
+        
       }
 
       .featured_style-wrapper {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:992px) {
+          flex-flow: column;
+        }
 
         .featured__styles-image-wrapper {
           position: relative;
           width: 50%;
           overflow: hidden;
+          @media screen and (max-width:992px) {
+            width: 100%;
+          }
 
           &:nth-of-type(1) {
             margin-right: 20px;
+            @media screen and (max-width:992px) {
+              margin-right: 0;
+              margin-bottom: 20px;
+            }
           }
 
           .overlay__wrapper {
