@@ -195,6 +195,11 @@
   color: #171717;
   background: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle .shop__btn {
+    font-size: 20px;
+  }
+}
 .redesigned__update #mainContainer #mobile_category.white {
   background-color: #ffffff;
 }
@@ -248,6 +253,11 @@
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn:hover {
   color: #171717;
   background: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .shop__btn {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   .redesigned__update #mainContainer .content__section.mobile__section-unique .newLanding__textWrapper--middle {
@@ -371,6 +381,11 @@
   background: #171717;
   color: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .swiper-wrapper .rollover__section--refined-toughness__slide .refined__toughness--text-wrapper .shop__btn {
+    font-size: 20px;
+  }
+}
 .redesigned__update #mainContainer #rollover__section--refined-toughness .rollover__section--refined-toughness .rollover__section--refined-toughness--pagination {
   display: none;
 }
@@ -450,6 +465,11 @@
 .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop__btn:hover {
   color: #171717;
   background: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper .shop__btn {
+    font-size: 20px;
+  }
 }
 .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .rollover__section--mens-arcata--pagination {
   display: none;
@@ -539,6 +559,11 @@
 .redesigned__update #mainContainer #practical__cuteness .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper .shop__btn:hover {
   background: #171717;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #practical__cuteness .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper .shop__btn {
+    font-size: 20px;
+  }
 }
 .redesigned__update #mainContainer #practical__cuteness .dual__swiper-container .swiper-wrapper .dual__swiper__slide :not(.tetra__image-container):hover .dual__swiper__image {
   -webkit-transform: scale(1.1);
@@ -630,6 +655,11 @@
   background: #171717;
   color: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn {
+    font-size: 20px;
+  }
+}
 .redesigned__update #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider:hover .featured__categories-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -720,6 +750,11 @@
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper .shop__btn:hover {
   background: #171717;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper .shop__btn {
+    font-size: 20px;
+  }
 }
 .redesigned__update #mainContainer #newest__collection .dual__swiper-container .swiper-wrapper .dual__swiper__slide .inner__slide:hover .dual__swiper__image {
   -webkit-transform: scale(1.1);
@@ -1065,6 +1100,16 @@
   background: #171717;
   color: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide .overlay__wrapper .shop__btn {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide .overlay__wrapper .shop__btn {
+    margin-left: 10%;
+  }
+}
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__prints .newLanding__best-seller-slider .swiper-wrapper .newLanding__best-seller-slide .overlay__wrapper {
     display: block;
@@ -1166,6 +1211,11 @@
 .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider .shop__btn:hover {
   background: #171717;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider .shop__btn {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #rollover__section-bottom .rollover__section-bottom-wrapper .rollover__section-bottom-slider.first__slide {
@@ -1356,6 +1406,11 @@
   background: #171717;
   color: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper .overlay__wrapper .shop__btn {
+    font-size: 20px;
+  }
+}
 .redesigned__update #mainContainer #featured_styles .featured_style-wrapper .featured__styles-image-wrapper img {
   -webkit-transition: -webkit-transform 250ms ease-out 0s;
   transition: -webkit-transform 250ms ease-out 0s;
@@ -1501,6 +1556,11 @@
 .redesigned__update #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide .overlay__wrapper .shop__btn:hover {
   background: #171717;
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .redesigned__update #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide .overlay__wrapper .shop__btn {
+    font-size: 20px;
+  }
 }
 .redesigned__update #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide img {
   -webkit-transition: -webkit-transform 250ms ease-out 0s;
