@@ -12,6 +12,9 @@
 .redesigned__update .newHomePage__subnav .navbar__mobile-nav--dropdown {
   width: 100%;
 }
+.redesigned__update .newHomePage__subnav .navbar__mobile-nav--dropdown .navbar__top-tier-item {
+  letter-spacing: 0.5px;
+}
 @media screen and (max-width: 992px) {
   .redesigned__update .newHomePage__subnav .navbar__mobile-nav--dropdown .mobile__subnav__viewport--adjustment {
     background: #171717;
@@ -1194,6 +1197,30 @@
 @media screen and (max-width: 768px) {
   .redesigned__update #mainContainer #featured__video .feature_slider__headline-wrapper .feature_slider__headline {
     font-size: 1rem;
+  }
+}
+.redesigned__update #mainContainer #featured__video .page_header--videobg-wrapper {
+  position: relative;
+}
+.redesigned__update #mainContainer #featured__video .page_header--videobg-wrapper .video__play-btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  width: 75px;
+  height: 87px;
+  margin: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='86.603' viewBox='0 0 75 86.603' style='&%2310;'%3E%3Cpath id='Path_199' data-name='Path 199' d='M0,0V86.6L37.5,64.952,75,43.3,37.5,21.65Z' fill='%23fff' opacity='0.733' style='&%2310;'/%3E%3C/svg%3E");
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #featured__video .page_header--videobg-wrapper .video__play-btn {
+    width: 50px;
+    height: 62px;
   }
 }
 @media screen and (max-width: 992px) {
