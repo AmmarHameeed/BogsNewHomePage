@@ -639,6 +639,27 @@
     font-size: 20px;
   }
 }
+.redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper.show-on-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide .mens__arcata--text-wrapper.show-on-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .swiper-wrapper .rollover__section--mens-arcata__slide.hide-on-mobile {
+    display: none;
+  }
+}
 .redesigned__update #mainContainer #rollover__section--mens-arcata .rollover__section--mens-arcata .rollover__section--mens-arcata--pagination {
   display: none;
 }
