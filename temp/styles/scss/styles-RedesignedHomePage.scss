@@ -92,13 +92,16 @@
           }
         }
       }
+
       @media screen and (max-width: 992px) {
-        background: #171717!important;
-        .navbar__mobile-nav{
+        background: #171717 !important;
+
+        .navbar__mobile-nav {
           background: white;
         }
+
         .newHomePage__subnav {
-          .navbar__mobile-nav--dropdown{
+          .navbar__mobile-nav--dropdown {
             padding-bottom: 0;
           }
         }
@@ -258,7 +261,7 @@
               flex: 0 0 25%;
               max-width: 25%;
             }
-            
+
           }
 
           &.navbar__subnav__col--middle {
@@ -846,6 +849,7 @@
       @media screen and (max-width: 768px) {
         display: block;
       }
+
       .dual__swiper__image {
         width: 100%;
       }
@@ -1810,6 +1814,11 @@
             align-items: center;
             background: #f1f1f1;
             padding: 60px 0 100px;
+
+            @media screen and (max-width: 768px) {
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
 
             a {
               text-align: center;
