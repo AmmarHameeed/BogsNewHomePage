@@ -1165,6 +1165,9 @@ var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   pagination: {
     el: ".dual__swiper--pagination",
     clickable: true,
+    dynamicBullets:
+      $(".dual__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".dual__swiper-container .swiper-slide").length > 5 ? 3 : 1,
   },
   // navigation: {
   //   nextEl: ".swiper-button-next",
