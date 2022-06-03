@@ -130,6 +130,14 @@
     border-bottom: 1px solid #707070;
   }
 }
+@media screen and (min-width: 992px) {
+  .redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col.navbar__subnav__col--first {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
 @media screen and (max-width: 992px) {
   .redesigned__update .newHomePage__subnav .navbar__subnav .navbar__subnav__col-wrapper .navbar__subnav__col.navbar__subnav__col--middle .row {
     -webkit-box-orient: vertical;
