@@ -8,6 +8,17 @@
 .redesigned__update #navbar.navbar--open .navbar__mobile-nav .navbar__button.mobile-drop .icon-mobile-menu {
   display: none;
 }
+@media screen and (max-width: 992px) {
+  .redesigned__update #navbar.navbar--open {
+    background: #171717 !important;
+  }
+  .redesigned__update #navbar.navbar--open .navbar__mobile-nav {
+    background: white;
+  }
+  .redesigned__update #navbar.navbar--open .newHomePage__subnav .navbar__mobile-nav--dropdown {
+    padding-bottom: 0;
+  }
+}
 @media screen and (min-width: 1750px) {
   .redesigned__update .newHomePage__subnav {
     max-width: 1750px;

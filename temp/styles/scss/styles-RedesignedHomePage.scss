@@ -92,6 +92,17 @@
           }
         }
       }
+      @media screen and (max-width: 992px) {
+        background: #171717!important;
+        .navbar__mobile-nav{
+          background: white;
+        }
+        .newHomePage__subnav {
+          .navbar__mobile-nav--dropdown{
+            padding-bottom: 0;
+          }
+        }
+      }
     }
   }
 
