@@ -151,7 +151,9 @@
                                         src="../assets/images/global/bogs-logo-dark.png"></a></div>
 
                             <button id="sidebarCollapseMobile" class="navbar__button" href="#navbar__subnav--cart"><i
-                                    class="icon-cart"></i></button>
+                                    class="icon-cart">
+
+                                </i></button>
                         </div>
                     </div>
                 </div>
@@ -499,27 +501,33 @@
                                 <!-- button -->
                                 <a class="navbar__top-tier-item flex-fill" href="#">Sale</a>
                                 <!-- button -->
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment" href="#">
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment"
+                                    href="#">
                                     Login
                                     <i class="subnav__mobile__icon subnav__login-icon d-flex d-lg-none"></i>
                                 </a>
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none text-capitalize"
+                                    href="#">
                                     USA
                                     <i class="subnav__mobile__icon subnav__location-icon"></i>
                                 </a>
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
-                                    92-3339996151
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none"
+                                    href="#">
+                                    1-877-321-BOGS
                                     <i class="subnav__mobile__icon subnav__phone-icon"></i>
                                 </a>
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none text-capitalize"
+                                    href="#">
                                     Email
                                     <i class="subnav__mobile__icon subnav__envelope-icon"></i>
                                 </a>
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none text-capitalize"
+                                    href="#">
                                     Live chat
                                     <i class="subnav__mobile__icon subnav__chat-icon"></i>
                                 </a>
-                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none" href="#">
+                                <a class="navbar__top-tier-item flex-fill mobile__subnav__viewport--adjustment d-flex d-lg-none text-capitalize"
+                                    href="#">
                                     Free shipping & returns
                                     <i class="subnav__mobile__icon subnav__shipping-icon"></i>
                                 </a>
@@ -573,11 +581,6 @@
                                                                 src="../assets/images/nav-flags/korea.jpg"></a>
                                                         <p class="navbar__subnav--region-country-name">Korea</p>
                                                     </div>
-                                                    <div class="navbar__subnav__link  navbar__subnav--region-country">
-                                                        <a href="#"><img class="navbar__subnav--region-flag"
-                                                                src="../assets/images/nav-flags/russia.jpg"></a>
-                                                        <p class="navbar__subnav--region-country-name">Russia</p>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -609,7 +612,8 @@
                                 </div>
                                 <!-- button -->
                                 <a id="sidebarCollapse" class="navbar__top-tier-item navbar--cart flex-fill"><i
-                                        class="icon-cart"></i> </a>
+                                        class="icon-cart">
+                                        <span class="badge">2</span></i> </a>
                             </div>
                         </div>
                     </div>
@@ -617,6 +621,11 @@
             </nav>
 
             <div id="mainContainer">
+                <i class="footer-guideline"></i>
+                <i class="shop__btn-guideline"></i>
+                <i class="third__guideline"></i>
+                <i class="fourth__guideline"></i>
+
                 <section class="newLanding__header swiper mobile__section-unique" id="hero_slider">
                     <div style="position: relative;" class="swiper-container sweetpea-slider">
                         <div class="swiper-wrapper">
@@ -706,7 +715,7 @@
                                     <div>
                                         <a class="shop__btn">shop</a>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                             <div class="swiper-slide rollover__section--refined-toughness__slide" data-color="#ffffff;"
@@ -740,8 +749,15 @@
                             <div class="swiper-slide rollover__section--mens-arcata__slide" data-color="#ffffff;"
                                 style="background-color:#ffffff;">
                                 <a href="#">
-                                    <img class="rollover__section--mens-arcata__image"
-                                        src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-MensArcata01-Desktop-Mobile.jpg">
+                                    <picture>
+                                        <source media="(min-width:992px)"
+                                            srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-MensArcata01-Desktop-Mobile.jpg">
+                                        <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
+                                        <img src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-MensArcata01-Mobile.jpg"
+                                            alt="Flowers" style="width:100%;">
+                                    </picture>
+                                    <!-- <img class="rollover__section--mens-arcata__image"
+                                        src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-MensArcata01-Desktop-Mobile.jpg"> -->
                                 </a>
                                 <div class="mens__arcata--text-wrapper show-on-mobile">
                                     <p class="newLanding__title black">
@@ -750,8 +766,8 @@
                                     <div><a class="shop__btn">shop</a></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide rollover__section--mens-arcata__slide hide-on-mobile" data-color="#ffffff;"
-                                style="background-color:#ffffff;">
+                            <div class="swiper-slide rollover__section--mens-arcata__slide hide-on-mobile"
+                                data-color="#ffffff;" style="background-color:#ffffff;">
                                 <a href="#">
                                     <img class="rollover__section--mens-arcata__image"
                                         src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-MensArcata02-Desktop-Mobile.jpg">
@@ -848,7 +864,7 @@
                                 </a>
                                 <div class="dual__swiper--text-wrapper">
                                     <p class="newLanding__title middle__sized__heading">Practical <br> Cuteness</p>
-                                    <div><a class="shop__btn">shop</a></div>
+                                    <!-- <div><a class="shop__btn">shop</a></div> -->
                                 </div>
 
                             </div>
@@ -894,14 +910,20 @@
                     </div>
                     <div class="featured__categories-wrapper">
                         <div class="featured__categories-slider">
-                            <img class="featured__categories-image"
-                                src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-FeaturedCategories01-Desktop-Mobile.jpg">
-                            <a class="shop__btn">Shop </a>
+                            <a href="#">
+                                <img class="featured__categories-image"
+                                    src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-FeaturedCategories01-Desktop-Mobile.jpg">
+                                </a>
+                                    <p class="mobile__copy">Women's</p>
+                                    <a class="shop__btn">Shop </a>
+                            
                         </div>
                         <div class="featured__categories-slider">
-                            <img class="featured__categories-image"
-                                src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-FeaturedCategories02-Desktop-Mobile.jpg">
-                            <a class="shop__btn">Shop </a>
+                            <a href="#">
+                                <img class="featured__categories-image"
+                                    src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-FeaturedCategories02-Desktop-Mobile.jpg"></a>
+                                    <p class="mobile__copy">Men's</p>
+                                <a class="shop__btn">Shop </a>
                         </div>
                     </div>
                 </section>
@@ -1417,10 +1439,16 @@
                     </div>
                     <div class="featured_story-wrapper">
                         <div class="featured_story--left">
-                            <img src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-RootsStudio01-Desktop-Mobile.jpg">
+                            <a href="#">
+                                <img
+                                    src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-RootsStudio01-Desktop-Mobile.jpg">
+                            </a>
                         </div>
                         <div class="featured_story--right">
-                            <img src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-RootsStudio02-Desktop-Mobile.jpg">
+                            <a href="#">
+                                <img
+                                    src="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-RootsStudio02-Desktop-Mobile.jpg">
+                            </a>
                         </div>
                     </div>
                 </section>
@@ -1467,6 +1495,10 @@
                         </div>
                         <!-- Pagination -->
                         <div class="swiper-pagination feature_slider--pagination"></div>
+                    </div>
+
+                    <div class="feature__slider-description">
+                        Winter Boots, Rain Boots & Farm Boots | BOGS Footwear
                     </div>
                 </section>
             </div>
@@ -1655,11 +1687,7 @@
     <!-- Custom Scripts -->
     <!-- build:js /assets/scripts/App.js -->
     <script src="../temp/scripts/App.js"></script>
-    <script src="../temp/scripts/App-redesigndHomePage.js"></script>
     <!-- endbuild -->
-    <script>
-        var swiper = new Swiper(".headerSlider", {});
-    </script>
 </body>
 
 </html>

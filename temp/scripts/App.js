@@ -415,6 +415,7 @@ var bestSellersSwiper = new Swiper(".best_sellers_slider", {
   },
   breakpoints: {
     768: {
+      loop: true,
       noSwiping: false,
       slidesPerView: 1,
       slidesPerGroup: 1,
@@ -998,6 +999,10 @@ var reviewSlider = new Swiper(".review-slider", {
     //       return '<span class="' + className + '">' + (menu[index]) + '</span>';
     //     },
   },
+  breakpoints: {
+    //change parameter on mobile from 500 to 768 for landscape phone
+    768: { noSwiping: false },
+  },
   // hashNavigation: {
   //     watchState: true,
   // },
@@ -1175,6 +1180,7 @@ var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   // },
   breakpoints: {
     768: {
+      loop: true,
       noSwiping: false,
       slidesPerView: 1,
       slidesPerGroup: 1,
