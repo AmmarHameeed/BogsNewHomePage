@@ -269,6 +269,11 @@
   background: red;
   z-index: 9999;
 }
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer .footer-guideline {
+    display: none;
+  }
+}
 .redesigned__update #mainContainer .shop__btn-guideline {
   position: absolute;
   left: 34px;
@@ -276,6 +281,11 @@
   height: 100%;
   background: red;
   z-index: 9999;
+}
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer .shop__btn-guideline {
+    display: none;
+  }
 }
 .redesigned__update #mainContainer .third__guideline {
   position: fixed;
@@ -286,6 +296,11 @@
   background: red;
   z-index: 9999;
 }
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer .third__guideline {
+    display: none;
+  }
+}
 .redesigned__update #mainContainer .fourth__guideline {
   position: fixed;
   top: 0;
@@ -294,6 +309,11 @@
   height: 100%;
   background: red;
   z-index: 9999;
+}
+@media screen and (min-width: 768px) {
+  .redesigned__update #mainContainer .fourth__guideline {
+    display: none;
+  }
 }
 @media screen and (min-width: 2200px) {
   .redesigned__update #mainContainer .shop__btn {

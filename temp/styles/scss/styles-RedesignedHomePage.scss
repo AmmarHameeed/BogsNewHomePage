@@ -384,6 +384,9 @@
       height: 100%;
       background: red;
       z-index: 9999;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
 
     .shop__btn-guideline {
@@ -393,6 +396,9 @@
       height: 100%;
       background: red;
       z-index: 9999;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
 
     .third__guideline {
@@ -403,6 +409,9 @@
       height: 100%;
       background: red;
       z-index: 9999;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
 
     .fourth__guideline {
@@ -413,6 +422,9 @@
       height: 100%;
       background: red;
       z-index: 9999;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
     }
 
     .shop__btn {
