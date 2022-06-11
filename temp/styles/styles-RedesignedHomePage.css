@@ -2,6 +2,11 @@
   text-transform: capitalize !important;
 }
 
+@media screen and (min-width: 992px) {
+  .redesigned__update #navbar {
+    height: 126px;
+  }
+}
 .redesigned__update #navbar .navbar__mobile-nav .navbar__button.mobile-drop .icon-x {
   font-size: 32px;
   display: none;
@@ -385,6 +390,20 @@
     display: none;
   }
 }
+.redesigned__update #mainContainer .right_third_web__guideline {
+  position: fixed;
+  top: 0;
+  left: 1227px;
+  width: 1px;
+  height: 100%;
+  background: aqua;
+  z-index: 9999;
+}
+@media screen and (max-width: 768px) {
+  .redesigned__update #mainContainer .right_third_web__guideline {
+    display: none;
+  }
+}
 @media screen and (min-width: 2200px) {
   .redesigned__update #mainContainer .shop__btn {
     width: unset !important;
@@ -415,14 +434,19 @@
 .redesigned__update #mainContainer .newLanding__header {
   margin-bottom: 100px;
 }
+@media screen and (min-width: 992px) {
+  .redesigned__update #mainContainer .newLanding__header {
+    margin-top: 126px;
+  }
+}
 @media screen and (max-width: 992px) {
   .redesigned__update #mainContainer .newLanding__header {
     margin-bottom: 0px;
   }
 }
 .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle {
-  padding-left: 5%;
-  top: 10%;
+  padding-left: 4.5%;
+  top: 8.75%;
   -webkit-transform: none;
           transform: none;
 }
@@ -430,6 +454,7 @@
   font-size: 130px;
   line-height: 118px;
   padding: 0;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1750px) {
   .redesigned__update #mainContainer .newLanding__header .newLanding__textWrapper--middle .newLanding__title {
@@ -539,8 +564,9 @@
   }
 }
 .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle {
-  right: 2%;
-  width: 46%;
+  right: 0%;
+  width: 44.5%;
+  top: 53.5%;
 }
 @media screen and (max-width: 992px) {
   .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle {
@@ -551,6 +577,8 @@
   font-size: 130px;
   line-height: 118px;
   padding: 0;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
 }
 @media screen and (max-width: 1750px) {
   .redesigned__update #mainContainer .content__section .newLanding__textWrapper--middle .newLanding__title {

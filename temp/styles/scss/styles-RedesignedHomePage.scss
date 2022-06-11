@@ -87,7 +87,11 @@
 
 .redesigned__update {
 
+  
   #navbar {
+    @media screen and (min-width: 992px) {
+      height: 126px;
+    }
     .navbar__mobile-nav {
       .navbar__button.mobile-drop {
         .icon-x {
@@ -503,6 +507,19 @@
         display: none;
       }
     }
+    .right_third_web__guideline {
+      position: fixed;
+      top: 0;
+      left: 1227px;
+      width: 1px;
+      height: 100%;
+      background: aqua;
+      z-index: 9999;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
 
     .shop__btn {
       @media screen and (min-width: 2200px) {
@@ -539,19 +556,23 @@
     .newLanding__header {
       margin-bottom: 100px;
 
+      @media screen and (min-width: 992px) {
+        margin-top: 126px;
+      }
       @media screen and (max-width: 992px) {
         margin-bottom: 0px;
       }
 
       .newLanding__textWrapper--middle {
-        padding-left: 5%;
-        top: 10%;
+        padding-left: 4.5%;
+        top: 8.75%;
         transform: none;
 
         .newLanding__title {
           font-size: 130px;
           line-height: 118px;
           padding: 0;
+          margin-bottom: 40px;
 
           @media screen and (max-width: 1750px) {
             font-size: 90px;
@@ -633,8 +654,9 @@
       }
 
       .newLanding__textWrapper--middle {
-        right: 2%;
-        width: 46%;
+        right: 0%;
+        width: 44.5%;
+        top: 53.5%;
 
         @media screen and (max-width: 992px) {
           right: 7%;
@@ -649,6 +671,8 @@
           font-size: 130px;
           line-height: 118px;
           padding: 0;
+          margin-bottom: 30px;
+          letter-spacing: 0.5px;
 
           @media screen and (max-width: 1750px) {
             font-size: 90px;
