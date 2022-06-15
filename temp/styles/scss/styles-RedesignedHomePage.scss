@@ -128,16 +128,18 @@
             padding: 23.5px 20px 0;
           }
 
-          .justified__spacing-mobile{
+          .justified__spacing-mobile {
             height: 70px;
             padding-bottom: 35px;
             padding-top: 20px;
           }
-          .justified__spacing-mobile--inverted{
+
+          .justified__spacing-mobile--inverted {
             height: 70px;
             padding-top: 35px;
             padding-bottom: 20px;
           }
+
           .navbar__top-tier-item---mobile-unique {
             font-size: 18px;
             font-weight: 700;
@@ -241,6 +243,16 @@
         margin: auto;
         max-width: 1750px;
 
+        .fixed__width__lg {
+          max-width: 1445px;
+          margin: auto;
+
+          .navbar__subnav__col-wrapper {
+            padding-top: 18px;
+            margin: 0;
+          }
+        }
+
         .navbar__subnav__col-wrapper {
           @media screen and (max-width: 992px) {
             padding-top: 5px;
@@ -342,6 +354,8 @@
             border-bottom: 2px solid #707070;
             font-family: 'trade-gothic-next';
             font-weight: 700;
+            line-height: 24px;
+            margin-bottom: 25px;
 
             @media screen and (max-width: 992px) {
               border-bottom: 1px solid #707070;
@@ -350,10 +364,44 @@
 
           &.navbar__subnav__col--first {
             @media screen and (min-width: 992px) {
-              flex: 0 0 25%;
-              max-width: 25%;
+              flex: 0 0 19.8%;
+              max-width: 19.8%;
+              padding-right: 0;
             }
+          }
 
+          &.navbar__subnav__col--middle {
+            @media screen and (min-width: 992px) {
+              padding-left: 29px;
+              padding-right: 0;
+              flex: 0 0 38.7%;
+              max-width: 38.7%;
+            }
+          }
+
+          &.navbar__subnav__col--last {
+            @media screen and (min-width: 992px) {
+              padding-left: 11px;
+              padding-right: 0;
+
+              .container {
+                padding-right: 0;
+
+                .navbar__subnav__link--bold {
+                  margin-bottom: 50px;
+                }
+                .navbar__subnav__link--imageText {
+                  font-weight: 700;
+                  font-size: 16px;
+                  padding-top: 6px;
+                  padding-left: 10px;
+                }
+              }
+
+              .navbar__subnav__link--image {
+                max-width: 150px;
+              }
+            }
           }
 
           &.navbar__subnav__col--middle {
@@ -368,7 +416,7 @@
             }
 
             .omega {
-              margin-right: 15px;
+              margin-right: 29px;
 
               @media screen and (max-width: 992px) {
                 padding-right: 15px;
@@ -378,7 +426,7 @@
 
           .shipping__subnav-btn {
             position: absolute;
-            bottom: 50px;
+            bottom: 35px;
             width: 40vw;
 
             .shipping__subnav-btn--wrapper {
@@ -668,7 +716,7 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
-            padding: 10% 35px;
+            padding: 10% 35px 26px;
 
             .newLanding__title {
               width: 100%;
@@ -719,7 +767,7 @@
         top: 53.5%;
 
         @media screen and (max-width: 992px) {
-          right: 7%;
+          right: 10%;
         }
 
         @media screen and (min-width: 3450px) {
@@ -768,7 +816,7 @@
             display: flex;
             flex-flow: column;
             justify-content: space-between;
-            padding: 10% 35px;
+            padding: 11.5% 35px 27px;
 
             .newLanding__title {
               width: 100%;
@@ -816,6 +864,14 @@
               }
             }
 
+            .refined__toughness--movile_video {
+              @media screen and (max-width: 768px) {
+                max-height: 105vw;
+                object-fit: cover;
+                object-position: 0 60%;
+              }
+            }
+
             .refined__toughness--text-wrapper {
               position: absolute;
               width: 100%;
@@ -828,8 +884,8 @@
               padding-left: 9%;
               justify-content: space-between;
 
-              @media screen and (max-width: 768px) {
-                padding: 35px 0 35px 35px;
+              @media screen and (max-width: 992px) {
+                padding: 42px 0 29px 35px;
               }
 
               // .refined__toughness--text {
@@ -907,6 +963,13 @@
                 @media screen and (min-width: 768px) {
                   transform: scale(1.1);
                 }
+              }
+
+              @media screen and (max-width: 400px) {
+                padding-bottom: 20px;
+                background: #cfc9b1;
+                object-fit: cover;
+                object-position: 0px 20px;
               }
             }
 
@@ -1065,6 +1128,9 @@
                 height: 100%;
                 left: 0;
                 top: 0;
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
               }
 
               .shop__btn-wrapper {
@@ -1166,7 +1232,7 @@
       .swiper-pagination {
         @media screen and (max-width: 768px) {
           width: 100% !important;
-          bottom: 15px !important;
+          bottom: 13px !important;
 
           .swiper-pagination-bullet {
             left: 0 !important;
@@ -1250,7 +1316,7 @@
             @include shopButtonWhite;
 
             @media screen and (max-width: 768px) {
-              bottom: 35px;
+              bottom: 40px;
               left: 35px;
             }
           }
@@ -1322,6 +1388,9 @@
                   height: 100%;
                   left: 0;
                   top: 0;
+                  @media screen and (max-width: 768px) {
+                    display: none;
+                  }
                 }
 
 
@@ -1485,6 +1554,9 @@
           height: 100%;
           left: 0;
           top: 0;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
 
         .gb__img__wrapper {
@@ -1651,7 +1723,7 @@
           position: absolute;
           width: 100%;
           height: 100%;
-          top: 30px;
+          top: 35px;
           left: 35px;
 
           .overlay__icon {
@@ -1799,6 +1871,9 @@
                 height: 100%;
                 left: 0;
                 top: 0;
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
               }
 
               .shop__btn {
@@ -1811,10 +1886,11 @@
 
               @media screen and (max-width: 768px) {
                 display: flex;
-                height: 100px;
+                height: calc(100% - 28px);
                 top: unset;
-                bottom: 0;
+                bottom: 28px;
                 opacity: 1;
+                align-items: flex-end;
                 justify-content: flex-start;
                 background: none !important;
               }
@@ -2141,6 +2217,9 @@
               height: 100%;
               left: 0;
               top: 0;
+              @media screen and (max-width: 768px) {
+                display: none;
+              }
             }
 
             .shop__btn {
@@ -2154,10 +2233,11 @@
 
             @media screen and (max-width: 768px) {
               display: flex;
-              height: 100px;
+              height: calc(100% - 31px);
               top: unset;
-              bottom: 0;
+              bottom: 31px;
               opacity: 1;
+              align-items: end;
               justify-content: flex-start;
               background: none !important;
             }
@@ -2260,6 +2340,9 @@
               height: 100%;
               left: 0;
               top: 0;
+              @media screen and (max-width: 768px) {
+                display: none;
+              }
             }
 
             .shop__btn {
@@ -2345,6 +2428,9 @@
                 height: 100%;
                 left: 0;
                 top: 0;
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
               }
 
               .shop__btn {
@@ -2408,6 +2494,9 @@
 
         .swiper-pagination {
           bottom: 0px !important;
+          @media screen and (max-width:768px) {
+            bottom: 13px !important;
+          }
 
           .swiper-pagination-bullet {
             width: 21px;
