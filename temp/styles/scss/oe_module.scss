@@ -31,6 +31,14 @@
         margin: auto;
         position: relative;
 
+        @media screen and (min-width: 768px) {
+            margin: auto 48px;
+          }
+      
+          @media screen and (min-width: 1750px) {
+            margin: auto;
+          }
+          
         @media screen and (max-width: 992px) {
             margin: 0 16px;
         }

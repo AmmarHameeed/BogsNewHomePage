@@ -379,6 +379,16 @@
   margin: auto;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .outdoor__education-module #mainContainer {
+    margin: auto 48px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .outdoor__education-module #mainContainer {
+    margin: auto;
+  }
+}
 @media screen and (max-width: 992px) {
   .outdoor__education-module #mainContainer {
     margin: 0 16px;
