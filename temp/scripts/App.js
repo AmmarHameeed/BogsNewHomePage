@@ -39,9 +39,21 @@ if (
     // alert('iOS');
   }
 }
+window.onresize = doALoadOfStuff;
 
+function doALoadOfStuff() {
+    //do a load of stuff
+    var calculatedHeright = $(".rollover__section--mens-arcata__slide").first().height();
+  $(".rollover__section--mens-arcata__slide:nth-child(2)").css("height",calculatedHeright)
+}
+// $(window).on("resize", function(){
+  
+// })
 //Sidebar Method
 $(document).ready(function () {
+
+  var calculatedHeright = $(".rollover__section--mens-arcata__slide").first().height();
+  $(".rollover__section--mens-arcata__slide:nth-child(2)").css("height",calculatedHeright)
 
   $("#sidebar").mCustomScrollbar({
     theme: "minimal",
@@ -319,7 +331,7 @@ var largeHeroSwiper = new Swiper(".text-slider", {
 
 //Swiper: featured section slider  :: FULL WIDTH
 var featuredSectionSwiper = new Swiper(".feature-product", {
-  spaceBetween: 20,
+  spaceBetween: 15,
   slidesPerView: "auto",
   loop: true,
   centeredSlides: true,
@@ -992,8 +1004,10 @@ var menu = ["Slide 1", "Slide 2", "Slide 3"];
 
 var reviewSlider = new Swiper(".review-slider", {
   pagination: {
+    //autoHeight: true, //enable auto height
     el: ".review-pagination",
     clickable: true,
+    
 
     // renderBullet: function (index, className) {
     //       return '<span class="' + className + '">' + (menu[index]) + '</span>';
@@ -1001,7 +1015,7 @@ var reviewSlider = new Swiper(".review-slider", {
   },
   breakpoints: {
     //change parameter on mobile from 500 to 768 for landscape phone
-    768: { noSwiping: false },
+    768: { noSwiping: false, loop: true },
   },
   // hashNavigation: {
   //     watchState: true,
@@ -1068,7 +1082,7 @@ var refinedToughnessSwiper = new Swiper(
   {
     slidesPerView: 2,
     slidesPerGroup: 2,
-    spaceBetween: 20,
+    spaceBetween: 15,
     speed: 600,
     watchSlidesVisibility: true,
     pagination: {
@@ -1117,7 +1131,7 @@ if ($("#rollover__section--refined-toughness .swiper-slide").length <= 3) {
 var mensArcataSwiper = new Swiper(".rollover__section--mens-arcata", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 20,
+  spaceBetween: 15,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
@@ -1164,7 +1178,7 @@ if ($("#rollover__section--mens-arcata .swiper-slide").length <= 2) {
 var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 20,
+  spaceBetween: 15,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
@@ -1197,8 +1211,72 @@ var DualSlideSwiper = new Swiper(".dual__swiper-container", {
   loop: $("#practical__cuteness .swiper-slide").length > 2 ? true : false,
 });
 
-//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+//Swiper: Standalone Mobile Swiper ---- if only 3 slide logic CONTINUED ----
 if ($("#practical__cuteness .swiper-slide").length <= 2) {
   $("#practical__cuteness .dual__swiper--pagination").addClass("invisible");
   $("#practical__cuteness .dual__swiper--navigation").addClass("invisible");
 }
+//Swiper: Practical Cuteness section slider (Updated homepage)
+var DualSlideSwiper = new Swiper(".mobile__swiper", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".mobile__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".mobile__swiper .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".mobile__swiper .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    // delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#belief__section-mobile .swiper-slide").length > 4 ? true : false,
+  loop: $("#belief__section-mobile .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($("#belief__section-mobile .swiper-slide").length <= 2) {
+  $("#belief__section-mobile .mobile__swiper--pagination").addClass("invisible");
+  $("#belief__section-mobile .mobile__swiper--navigation").addClass("invisible");
+}
+
+
+var twoInOneSwiper = new Swiper(".twoInOneSwiper", {
+  slidesPerView: 2,
+  centeredSlides: false,
+  slidesPerGroupSkip: 1,
+  spaceBetween: 20,
+  loop: true,
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+  },
+  breakpoints: {
+    769: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

@@ -1,0 +1,364 @@
+@mixin sectionHeading {
+    padding: 10px 0px;
+    min-height: unset;
+    margin-top: 46px;
+
+    @media screen and (max-width: 992px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        // padding-left: 0px;
+        padding: 0px 0px;
+        min-height: unset;
+    }
+
+    .feature_slider__headline {
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        @media screen and (max-width: 768px) {
+            font-size: 1rem;
+        }
+    }
+}
+
+.outdoor__education-module {
+    @import "navbar-redesigned.scss";
+
+    #mainContainer {
+        max-width: 1750px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (max-width: 992px) {
+            margin: 0 16px;
+        }
+
+        .first_web__guideline {
+            position: fixed;
+            height: 100%;
+            width: 1px;
+            top: 0;
+            left: 1238px;
+            z-index: 999999999999;
+            background: red;
+        }
+
+        .second_web__guideline {
+            position: fixed;
+            height: 100%;
+            width: 1px;
+            top: 0;
+            left: 1257px;
+            z-index: 999999999999;
+            background: red;
+        }
+
+        .outdoorEducation__header {
+            .outdoorEducation__textWrapper--middle {
+                margin: 0;
+                position: absolute;
+                top: 42%;
+                right: 9%;
+                transform: translateY(-50%);
+
+                @media screen and (max-width: 992px) {
+                    display: none;
+                }
+
+                .header__icon-wrapper {
+                    text-align: center;
+
+                    .header__text-icon {
+                        display: inline-block;
+                        width: 172px;
+                        height: 172px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='171.406' height='171.406' viewBox='0 0 171.406 171.406'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1561' data-name='Rectangle 1561' width='171.406' height='171.406' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1924' data-name='Group 1924' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_153' data-name='Path 153' d='M85.61,171.221a85.611,85.611,0,1,1,85.611-85.611A85.707,85.707,0,0,1,85.61,171.221m0-168.847a83.237,83.237,0,1,0,83.237,83.237A83.33,83.33,0,0,0,85.61,2.374' transform='translate(-0.567 0.13)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath id='Path_154' data-name='Path 154' d='M147.423,124.571a26.5,26.5,0,1,1,26.5-26.5,26.527,26.527,0,0,1-26.5,26.5m0-50.619a24.123,24.123,0,1,0,24.123,24.123,24.15,24.15,0,0,0-24.123-24.123' transform='translate(-49.725 -28.968)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath id='Path_155' data-name='Path 155' d='M104.778,124.571a26.5,26.5,0,1,1,26.5-26.5,26.527,26.527,0,0,1-26.5,26.5m0-50.619A24.123,24.123,0,1,0,128.9,98.075a24.15,24.15,0,0,0-24.123-24.123' transform='translate(-32.389 -28.968)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath id='Path_156' data-name='Path 156' d='M127.119,84.786a26.5,26.5,0,1,1,26.5-26.5,26.527,26.527,0,0,1-26.5,26.5m0-50.619A24.123,24.123,0,1,0,151.242,58.29a24.15,24.15,0,0,0-24.123-24.123' transform='translate(-41.471 -12.794)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath id='Path_157' data-name='Path 157' d='M143.436,212.39a1.187,1.187,0,0,1-1.187-1.187V152.337a1.187,1.187,0,1,1,2.374,0V211.2a1.187,1.187,0,0,1-1.187,1.187' transform='translate(-58.393 -61.315)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3Cpath id='Path_158' data-name='Path 158' d='M160.885,244.346a1.169,1.169,0,0,1-.405-.072c-37.011-13.65-73.98-13.651-109.884,0a1.172,1.172,0,1,1-.832-2.191c36.446-13.853,73.969-13.855,111.527,0a1.172,1.172,0,0,1-.406,2.271' transform='translate(-20.489 -94.054)' fill='%23fff' stroke='%23fff' stroke-width='1'/%3E%3C/g%3E%3C/svg%3E");
+
+                        @media screen and (max-width: 1750px) {
+                            width: 150px;
+                            height: 150px;
+                        }
+
+                        @media screen and (max-width: 1400px) {
+                            width: 125px;
+                            height: 125px;
+                        }
+
+                        @media screen and (max-width: 1400px) {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        @media screen and (max-width: 992px) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .newLanding__title {
+                    font-size: 130px;
+                    line-height: 117px;
+                    padding: 0;
+                    margin-top: 45px;
+
+                    @media screen and (max-width: 1750px) {
+                        font-size: 90px;
+                        line-height: 76px;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 70px;
+                        line-height: 60px;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 40px;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+
+        #belief__section-desktop {
+            @media screen and (max-widTh: 992px) {
+                display: none;
+            }
+
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+            }
+
+            .belief__section-wrapper {
+                display: flex;
+
+                .belief__section--left {
+                    display: flex;
+                    width: 66.6%;
+                    margin-right: 20px;
+
+                    .left__image-copy {
+                        position: relative;
+                        margin-right: 20px;
+                        width: 50%;
+
+                        img {
+                            height: 100%;
+                        }
+
+                        .belief__section--textWrapper {
+                            position: absolute;
+                            top: 0;
+                            padding: 14.5% 14.5% 14% 15.5%;
+
+                            .belief__section--heading {
+                                color: #ffffff;
+                                text-transform: uppercase;
+                                font-size: 80px;
+                                font-family: 'bogs_headlineregular', Arial, sans-serif;
+                                line-height: 72px;
+                                margin-bottom: 80px;
+
+                                @media screen and (max-width: 1750px) {
+                                    font-size: 64px;
+                                    line-height: 56px;
+                                    margin-bottom: 60px;
+                                }
+
+                                @media screen and (max-width: 1450px) {
+                                    font-size: 50px;
+                                    line-height: 42px;
+                                    margin-bottom: 50px;
+                                }
+
+                                @media screen and (max-width: 1250px) {
+                                    font-size: 50px;
+                                    line-height: 42px;
+                                    margin-bottom: 50px;
+                                }
+                            }
+
+                            .belief__section-imageText {
+                                font-size: 30px;
+                                line-height: 40px;
+                                color: #ffffff;
+                                margin-bottom: 45px;
+
+                                @media screen and (max-width: 1750px) {
+                                    font-size: 26px;
+                                    line-height: 36px;
+                                }
+
+                                @media screen and (max-width: 1450px) {
+                                    font-size: 23px;
+                                    line-height: 33px;
+                                }
+
+                                @media screen and (max-width: 1250px) {
+                                    font-size: 20px;
+                                    line-height: 25px;
+                                }
+                            }
+                        }
+                    }
+
+                    .belief__section-leftTwo {
+                        width: 50%;
+                    }
+                }
+
+                .belief__section--right {
+                    display: flex;
+                    flex-flow: column;
+                    width: 33.3%;
+                    justify-content: space-between;
+
+                    img {
+                        height: 50%;
+
+                        &:nth-child(1) {
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        #belief__section-mobile {
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+            }
+
+            .mobile__swiper {
+                .mobile__swiper__slide {
+                    .belief__section--textWrapper {
+                        position: absolute;
+                        top: 0;
+                        padding: 37px 34px 27px;
+
+                        .belief__section--heading {
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            font-size: 40px;
+                            font-family: 'bogs_headlineregular', Arial, sans-serif;
+                            line-height: 36px;
+                            margin-bottom: 45px;
+
+                            @media screen and (max-width: 420px) {
+                                font-size: 34px;
+                                line-height: 30px;
+                                margin-bottom: 35px;
+                            }
+                        }
+
+                        .belief__section-imageText {
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #ffffff;
+                            margin-bottom: 30px;
+
+                            @media screen and (max-width: 420px) {
+                                font-size: 14px;
+                                line-height: 16px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+
+                    .mobile__swiper__image {
+                        width: 100%;
+                    }
+                }
+
+                .mobile__swiper--pagination {
+                    bottom: 25px !important;
+
+                    @media screen and (min-width: 769px) {
+                        display: none;
+                    }
+
+                    .swiper-pagination-bullet {
+                        width: 11px;
+                        height: 11px;
+                        border: 2px solid #ffffff;
+                        background: transparent;
+                        opacity: 1;
+
+                        &.swiper-pagination-bullet-active {
+                            background: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Video CSS
+        #featured__video {
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 25px;
+            }
+
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+            }
+
+            .page_header--videobg-wrapper {
+                position: relative;
+
+                .video__play-btn {
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    left: 0;
+                    display: inline-block;
+                    width: 75px;
+                    height: 87px;
+                    margin: auto;
+                    transform: translateY(-50%);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='86.603' viewBox='0 0 75 86.603' style='&%2310;'%3E%3Cpath id='Path_199' data-name='Path 199' d='M0,0V86.6L37.5,64.952,75,43.3,37.5,21.65Z' fill='%23fff' opacity='0.733' style='&%2310;'/%3E%3C/svg%3E");
+
+                    @media screen and (max-width: 768px) {
+                        width: 50px;
+                        height: 62px;
+                    }
+
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        #featured__partners {
+            overflow: hidden;
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+            }
+            .twoInOneSwiper {
+                .swiper-wrapper {}
+
+                .twoInOneSwiper--pagination {
+                    bottom: -50px !important;
+
+                    .swiper-pagination-bullet {
+                        width: 21px;
+                        height: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "footer-redesigned.scss";
