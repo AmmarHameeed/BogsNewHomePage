@@ -33,12 +33,12 @@
 
         @media screen and (min-width: 768px) {
             margin: auto 48px;
-          }
-      
-          @media screen and (min-width: 1750px) {
+        }
+
+        @media screen and (min-width: 1750px) {
             margin: auto;
-          }
-          
+        }
+
         @media screen and (max-width: 992px) {
             margin: 0 16px;
         }
@@ -240,6 +240,7 @@
             @media screen and (min-width: 992px) {
                 display: none;
             }
+
             .feature_slider__headline-wrapper {
                 @include sectionHeading;
             }
@@ -350,18 +351,139 @@
 
         #featured__partners {
             overflow: hidden;
+
             .feature_slider__headline-wrapper {
                 @include sectionHeading;
             }
+
             .twoInOneSwiper {
-                .swiper-wrapper {}
+                .swiper-wrapper {
+                    .twoInOneSwiper__slide {
+                        position: relative;
+
+                        .text__wrapper {
+                            position: absolute;
+                            top: 6.5%;
+                            left: 11.5%;
+                            color: #ffffff;
+                            font-family: 'bogs_headlineregular', Arial, sans-serif;
+                            font-size: 80px;
+                            line-height: 72px;
+                            text-transform: uppercase;
+
+                            @media screen and (max-width: 992px) {
+                                left: 35px;
+                                font-size: 40px;
+                                line-height: 36px;
+                            }
+                        }
+
+                        .overlay__wrapper {
+                            // display: none;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 9;
+                            opacity: 0;
+                            justify-content: flex-start;
+                            align-items: end;
+                            flex-flow: column;
+
+                            &:hover {
+                                display: flex;
+                                justify-content: center !important;
+                                align-items: center !important;
+                                opacity: 1;
+                                background: rgba(0, 0, 0, 33%);
+                                transition: background 250ms ease-out 0s,
+                                    opacity 250ms ease-out 0s;
+                            }
+
+                            .overlay__text {
+                                max-width: 77%;
+                                margin: 0 auto;
+                                color: #ffffff;
+                                font-size: 30px;
+                                line-height: 40px;
+                                text-align: center;
+
+                                @media screen and (max-width: 992px) {
+                                    display: none;
+                                }
+                            }
+
+                            .learn__more-btn {
+                                background: #ffffff;
+                                padding: 10px 25px;
+                                border-radius: 30px;
+                                margin-top: 45px;
+                                text-transform: uppercase;
+                                cursor: pointer;
+                                font-family: "front_page_neueregular";
+                                font-weight: 400;
+                                padding: 5px 15px;
+                                color: #171717;
+                                background: #ffffff;
+                                font-size: 28px;
+                                letter-spacing: 1.5px;
+                                border-radius: 30px;
+                                text-transform: uppercase;
+                                text-align: center;
+                                justify-content: center;
+                                z-index: 999;
+
+                                &:hover {
+                                    background: #000000;
+                                    color: #ffffff !important;
+                                }
+
+                                @media screen and (max-width: 992px) {
+                                    position: absolute;
+                                    left: 34px;
+                                    bottom: 41px;
+                                    height: 34px;
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                }
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                display: flex;
+                                height: 100px;
+                                top: unset;
+                                bottom: 0;
+                                opacity: 1;
+                                justify-content: flex-start;
+                                background: none;
+                            }
+                        }
+                    }
+                }
 
                 .twoInOneSwiper--pagination {
                     bottom: -50px !important;
 
+                    @media screen and (max-width: 992px) {
+                        bottom: 14px !important;
+                    }
+
                     .swiper-pagination-bullet {
                         width: 21px;
                         height: 21px;
+
+                        @media screen and (max-width: 992px) {
+                            width: 11px;
+                            height: 11px;
+                            border-color: white;
+                            background: transparent;
+                        }
+                        &.swiper-pagination-bullet-active{
+                            @media screen and (max-width: 992px) {
+                                background: #ffffff
+                            }
+                        }
                     }
                 }
             }
