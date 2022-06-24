@@ -412,6 +412,14 @@
   z-index: 999999999999;
   background: red;
 }
+.outdoor__education-module #mainContainer .outdoorEducation__header {
+  margin-top: 70px;
+}
+@media screen and (min-width: 992px) {
+  .outdoor__education-module #mainContainer .outdoorEducation__header {
+    margin-top: 126px;
+  }
+}
 .outdoor__education-module #mainContainer .outdoorEducation__header .outdoorEducation__textWrapper--middle {
   margin: 0;
   position: absolute;
@@ -994,6 +1002,9 @@
   .outdoor__education-module #mainContainer #featured__partners .twoInOneSwiper .twoInOneSwiper--pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #ffffff;
   }
+}
+.outdoor__education-module .overlay {
+  height: 100%;
 }
 
 .feature__slider-description {

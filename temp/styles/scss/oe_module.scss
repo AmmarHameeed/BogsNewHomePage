@@ -64,6 +64,10 @@
         }
 
         .outdoorEducation__header {
+            margin-top: 70px;
+            @media screen and (min-width: 992px) {
+                margin-top: 126px;
+              }
             .outdoorEducation__textWrapper--middle {
                 margin: 0;
                 position: absolute;
@@ -557,6 +561,10 @@
                 }
             }
         }
+    }
+
+    .overlay{
+        height: 100%
     }
 }
 
