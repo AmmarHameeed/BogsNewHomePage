@@ -76,7 +76,9 @@
                 transform: translateY(-50%);
 
                 @media screen and (max-width: 992px) {
-                    display: none;
+                    top: 52%;
+                    right: 10%;
+                    // display: none;
                 }
 
                 .header__icon-wrapper {
@@ -106,7 +108,9 @@
                         }
 
                         @media screen and (max-width: 992px) {
-                            display: none;
+                            // display: none;
+                            width: 60px;
+                            height: 60px;
                         }
                     }
                 }
@@ -130,6 +134,7 @@
                     @media screen and (max-width: 992px) {
                         font-size: 40px;
                         line-height: 36px;
+                        margin-top: 17px;
                     }
                 }
             }
