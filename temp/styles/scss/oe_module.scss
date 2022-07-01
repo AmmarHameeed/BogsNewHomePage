@@ -240,9 +240,10 @@
                     justify-content: space-between;
 
                     img {
-                        height: 50%;
+                        height: 55%;
 
                         &:nth-child(1) {
+                            height: 45%;
                             margin-bottom: 20px;
                         }
                     }
@@ -396,6 +397,12 @@
 
                     &:hover {
                         opacity: 0.5;
+                    }
+
+                    &.mobile__btn{
+                        @media screen and (min-width: 992px) {
+                            display: none;
+                        }
                     }
                 }
             }

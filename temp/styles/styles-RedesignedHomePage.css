@@ -3107,6 +3107,21 @@
   font-weight: unset;
   letter-spacing: 1px;
 }
+#footer .footer3__container .footer3__links .footer3__col-3 .footer3__link .footer3__link-subtext {
+  margin-left: 52px;
+  font-family: "trade-gothic-next", Arial, sans-serif;
+  text-transform: none;
+  font-size: 13px;
+  margin-top: -8px;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+@media screen and (min-width: 992px) {
+  #footer .footer3__container .footer3__links .footer3__col-3 .footer3__link .footer3__link-subtext {
+    margin-left: 0;
+  }
+}
 #footer .footer3__container .footer3__links .footer3__header {
   display: block;
   margin-bottom: 8px;
@@ -3143,6 +3158,13 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' id='Group_1861' data-name='Group 1861' width='38.986' height='20.135' viewBox='0 0 38.986 20.135'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Rectangle_1445' data-name='Rectangle 1445' width='38.986' height='20.135' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Group_1860' data-name='Group 1860' transform='translate(0 0)' clip-path='url(%23clip-path)'%3E%3Cpath id='Path_1077' data-name='Path 1077' d='M7.687,14.439V15.8A1.416,1.416,0,0,0,9.1,17.218h1.938a.028.028,0,0,1,.027.021,3.685,3.685,0,0,0,7.1,0,.028.028,0,0,1,.027-.021H28.514a.028.028,0,0,1,.027.021,3.685,3.685,0,0,0,7.1,0,.028.028,0,0,1,.027-.021h1.666a1.418,1.418,0,0,0,1.45-1.387v-1.7A1.328,1.328,0,0,0,37.6,12.751a.028.028,0,0,1-.025-.028V9.193a2.418,2.418,0,0,0-2.41-2.41l-3.239-.3a.031.031,0,0,1-.022-.013S28.961,2.024,28.9,2.024A2.421,2.421,0,0,0,26.913,1H10.121A2.458,2.458,0,0,0,7.715,3.085a.028.028,0,0,1-.028.024M6.181,12.147h4.175M3.408,8.9h9.554M1,5.642H9.977' transform='translate(-0.397 -0.398)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2'/%3E%3Cpath id='Path_1078' data-name='Path 1078' d='M51.846,26.457a1.318,1.318,0,1,1,1.318-1.318,1.325,1.325,0,0,1-1.318,1.318' transform='translate(-20.081 -9.467)' fill='%23fff'/%3E%3Cpath id='Path_1079' data-name='Path 1079' d='M22.846,26.457a1.318,1.318,0,1,1,1.318-1.318,1.325,1.325,0,0,1-1.318,1.318' transform='translate(-8.556 -9.467)' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+}
+@media screen and (max-width: 786px) {
+  #footer .footer3__container .footer3__links .footer3__right-row-icon.footer3_icon-free-shipping-2 {
+    width: 34px;
+    background-position-y: 8px;
+    height: 26px;
+  }
 }
 #footer .footer3__container .footer3__links .footer3__right-row-icon.footer3_icon-gift-cards {
   display: inline-block;
