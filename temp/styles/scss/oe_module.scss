@@ -241,6 +241,7 @@
 
                     img {
                         height: 55%;
+                        object-fit: cover;
 
                         &:nth-child(1) {
                             height: 45%;

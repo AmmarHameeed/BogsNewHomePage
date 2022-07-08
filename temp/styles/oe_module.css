@@ -627,6 +627,8 @@
 }
 .outdoor__education-module #mainContainer #belief__section-desktop .belief__section-wrapper .belief__section--right img {
   height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .outdoor__education-module #mainContainer #belief__section-desktop .belief__section-wrapper .belief__section--right img:nth-child(1) {
   height: 45%;
