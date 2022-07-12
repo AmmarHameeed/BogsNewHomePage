@@ -40,6 +40,10 @@
                 margin-top: 126px;
             }
 
+            @media screen and (max-width: 768px) {
+                margin-bottom: 25px;
+            }
+
             .newLanding__textWrapper--middle {
                 margin: 0;
                 position: absolute;

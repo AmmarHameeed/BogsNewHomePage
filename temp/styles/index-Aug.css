@@ -407,6 +407,11 @@
     margin-top: 126px;
   }
 }
+@media screen and (max-width: 768px) {
+  .index-Aug__module #mainContainer .newLanding__header--aug {
+    margin-bottom: 25px;
+  }
+}
 .index-Aug__module #mainContainer .newLanding__header--aug .newLanding__textWrapper--middle {
   margin: 0;
   position: absolute;
