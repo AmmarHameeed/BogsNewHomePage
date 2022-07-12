@@ -1,13 +1,13 @@
 @import "mixins.scss";
 
-.mobile__guideline{
-    position: fixed;
-    left: 71px;
-    width: 1px;
-    height: 100%;
-    background-color: red;
-    z-index: 9999999;
-}
+// .mobile__guideline{
+//     position: fixed;
+//     left: 71px;
+//     width: 1px;
+//     height: 100%;
+//     background-color: red;
+//     z-index: 9999999;
+// }
 .index-Aug__module {
     .swiper-pagination-bullet {
         transform: scale(1) !important;
@@ -349,6 +349,7 @@
                         background: #E7E7E7;
                         padding: 0;
                         transform: none;
+                        overflow: hidden;
 
                         @media screen and (max-width: 768px) {
                             flex: 0 0 100%;

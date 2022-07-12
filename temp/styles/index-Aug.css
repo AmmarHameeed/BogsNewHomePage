@@ -1,12 +1,3 @@
-.mobile__guideline {
-  position: fixed;
-  left: 71px;
-  width: 1px;
-  height: 100%;
-  background-color: red;
-  z-index: 9999999;
-}
-
 .index-Aug__module .swiper-pagination-bullet {
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
@@ -787,6 +778,7 @@
   padding: 0;
   -webkit-transform: none;
           transform: none;
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .index-Aug__module #mainContainer #feature_slider .feature-product .swiper-wrapper .feature_slider__slide {
