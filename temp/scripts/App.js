@@ -350,13 +350,13 @@ var featuredSectionSwiper = new Swiper(".feature-product", {
       speed: 500,
     },
   },
-  autoplay: {
-    delay: 6000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 6000,
+  //   disableOnInteraction: false,
+  // },
 
   //if only 3 slide logic
-  autoplay: $(".feature-product .swiper-slide").length > 3 ? true : false,
+  // autoplay: $(".feature-product .swiper-slide").length > 3 ? true : false,
   loop: $(".feature-product .swiper-slide").length > 1 ? true : false,
 });
 

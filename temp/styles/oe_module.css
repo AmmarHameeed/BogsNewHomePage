@@ -732,6 +732,7 @@
 }
 .outdoor__education-module #mainContainer #belief__section-mobile .mobile__swiper .mobile__swiper--pagination {
   bottom: 25px !important;
+  line-height: 0;
 }
 @media screen and (min-width: 769px) {
   .outdoor__education-module #mainContainer #belief__section-mobile .mobile__swiper .mobile__swiper--pagination {
