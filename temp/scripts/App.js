@@ -350,13 +350,13 @@ var featuredSectionSwiper = new Swiper(".feature-product", {
       speed: 500,
     },
   },
-  // autoplay: {
-  //   delay: 6000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
 
   //if only 3 slide logic
-  // autoplay: $(".feature-product .swiper-slide").length > 3 ? true : false,
+  autoplay: $(".feature-product .swiper-slide").length > 3 ? true : false,
   loop: $(".feature-product .swiper-slide").length > 1 ? true : false,
 });
 
@@ -1280,3 +1280,68 @@ var twoInOneSwiper = new Swiper(".twoInOneSwiper", {
     clickable: true,
   },
 });
+
+var featuredSliderUnique = new Swiper(".feature-product__aug", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__aug .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUnique.slidePrev();
+    // console.log('Prev Click');
+
+    // var vid = $(this).children('video');
+    // var allVid = $('.feature_slider__slide').children('video');
+
+    // allVid.removeAttr('autoplay');
+    // allVid.removeAttr('loop');
+    // allVid.removeAttr('playinline');
+    // allVid.get(0).pause();
+
+    // vid.attr('autoplay','autoplay');
+    // vid.attr('loop','');
+    // vid.attr('playinline','');
+    // vid.get(0).play();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__aug .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUnique.slideNext();
+    // console.log('Next click');
+
+    // var vid = $(this).children('video');
+    // var allVid = $('.feature_slider__slide').children('video');
+
+    // allVid.removeAttr('autoplay');
+    // allVid.removeAttr('loop');
+    // allVid.removeAttr('playinline');
+    // allVid.get(0).pause();
+
+    // vid.attr('autoplay','autoplay');
+    // vid.attr('loop','');
+    // vid.attr('playinline','');
+    // vid.get(0).play();
+  }
+);
