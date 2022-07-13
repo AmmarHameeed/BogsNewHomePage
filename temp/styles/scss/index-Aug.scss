@@ -9,6 +9,19 @@
 //     z-index: 9999999;
 // }
 .index-Aug__module {
+    .object__position-adjusted{
+        @media screen and (max-width: 768px) {
+            margin-bottom: 5px;
+        }
+    }
+    // i.guideline_w {
+    //     position: absolute;
+    //     top: 485px;
+    //     width: 100%;
+    //     height: 1px;
+    //     background: red;
+    //     z-index: 99;
+    // }
     .swiper-pagination-bullet {
         transform: scale(1) !important;
     }
