@@ -1343,6 +1343,32 @@
   line-height: 28px;
   text-transform: uppercase;
 }
+.index-Aug__module #mainContainer #give_back__section-mobile .dual__swiper__slide .dual__swiper--text-wrapper .learn__more-btn {
+  position: absolute;
+  bottom: 70px;
+  background: #ffffff;
+  width: 154px;
+  height: 34px;
+  cursor: pointer;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  font-weight: 400;
+  color: #171717;
+  background: #ffffff;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 34px;
+  z-index: 999;
+}
+.index-Aug__module #mainContainer #give_back__section-mobile .dual__swiper__slide .dual__swiper--text-wrapper .learn__more-btn:hover {
+  background: #000000;
+  color: #ffffff !important;
+}
 @media screen and (max-width: 768px) {
   .index-Aug__module #mainContainer #give_back__section-mobile .swiper-pagination {
     width: 100% !important;
