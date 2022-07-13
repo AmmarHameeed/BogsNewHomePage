@@ -1,6 +1,6 @@
 @import "mixins.scss";
 
-.backup__module{
+.backup__module {
     .swiper-pagination-bullet {
         transform: scale(1) !important;
     }
@@ -113,6 +113,7 @@
 
             .mobile-category {
                 padding: 0px 9vw;
+
                 .mobile-category__link {
                     color: #000000;
                 }
@@ -223,9 +224,6 @@
                     justify-content: space-between;
 
                     .gb__img__wrapper {
-                        .overlay__text {
-                            top: 12%;
-                        }
                         .gb__image {
                             width: 100%;
                         }

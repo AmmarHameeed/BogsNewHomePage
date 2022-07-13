@@ -668,9 +668,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.backup__module #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper .overlay__text {
-  top: 12%;
-}
 .backup__module #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper .gb__image {
   width: 100%;
 }
