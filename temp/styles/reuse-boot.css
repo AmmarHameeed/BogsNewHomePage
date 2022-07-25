@@ -416,7 +416,7 @@
   margin: 0;
   position: absolute;
   top: 42%;
-  right: 9%;
+  right: 8%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -486,7 +486,7 @@
   line-height: 90px;
   padding: 0;
   margin-top: 45px;
-  color: #000000;
+  color: #171717;
 }
 @media screen and (max-width: 1750px) {
   .reuse_boot__module #mainContainer .reuse_boot__header .reuseBoot__textWrapper--middle .newLanding__title {
@@ -525,6 +525,7 @@
     margin-top: 0;
     height: 34px;
     font-size: 20px;
+    line-height: 34px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section {
