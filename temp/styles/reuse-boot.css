@@ -514,6 +514,8 @@
   border-radius: 20px;
   color: white;
   font-size: 28px;
+  font-family: "front_page_neueregular";
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   display: block;
   background: #171717;
