@@ -1353,3 +1353,45 @@ $(document).on(
     window.featuredSliderUniqueJune.slideNext();
   }
 );
+
+//Swiper: Practical Cuteness section slider (Updated homepage)
+var DualSlideSwiper = new Swiper(".reuse__swiper-container", {
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+  spaceBetween: 20,
+  noSwiping: true,
+  pagination: {
+    el: ".reuse__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".reuse__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".reuse__swiper-container .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#reuse__working-section .swiper-slide").length > 4 ? true : false,
+  loop: $("#reuse__working-section .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: Standalone Mobile Swiper ---- if only 3 slide logic CONTINUED ----
+if ($("#reuse__working-section .swiper-slide").length <= 4) {
+  $("#reuse__working-section .reuse__swiper--pagination").addClass("invisible");
+  $("#reuse__working-section .reuse__swiper--navigation").addClass("invisible");
+}
