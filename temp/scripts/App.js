@@ -1395,3 +1395,44 @@ if ($("#reuse__working-section .swiper-slide").length <= 4) {
   $("#reuse__working-section .reuse__swiper--pagination").addClass("invisible");
   $("#reuse__working-section .reuse__swiper--navigation").addClass("invisible");
 }
+// Care Landing Page Swipers
+var DualSlideSwiper = new Swiper(".landingCare__swiper-container", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".landingCare__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".landingCare__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".landingCare__swiper-container .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    992: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    // delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#belief__section-mobile .swiper-slide").length > 4 ? true : false,
+  loop: $("#belief__section-mobile .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".swiper-slide").length <= 2) {
+  $(".landingCare__swiper--pagination").addClass("invisible");
+  $(".landingCare__swiper--navigation").addClass("invisible");
+}
