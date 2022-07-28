@@ -409,7 +409,7 @@
 }
 @media screen and (max-width: 992px) {
   .landing__care-module #mainContainer .landing-care__header {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle {
@@ -519,7 +519,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 992px) {
   .landing__care-module #mainContainer #reuse_section__one {
@@ -618,11 +618,11 @@
   }
 }
 .landing__care-module #mainContainer #reuse_section__two {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 992px) {
   .landing__care-module #mainContainer #reuse_section__two {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 }
 .landing__care-module #mainContainer #reuse_section__two .dual__swiper-container .swiper-wrapper {
@@ -737,11 +737,6 @@
 }
 .landing__care-module #mainContainer #reuse_section__three {
   margin-bottom: 30px;
-}
-@media screen and (max-width: 992px) {
-  .landing__care-module #mainContainer #reuse_section__three {
-    margin-bottom: 45px;
-  }
 }
 .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container {
   background-color: #975D5D;
@@ -906,7 +901,7 @@
   }
 }
 .landing__care-module .feature__slider-description {
-  margin-top: 60px;
+  margin-top: 68px;
 }
 @media screen and (max-width: 768px) {
   .landing__care-module .feature__slider-description {
