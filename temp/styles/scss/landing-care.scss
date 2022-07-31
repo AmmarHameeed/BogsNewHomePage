@@ -64,17 +64,17 @@
 
           @media screen and (max-width: 1750px) {
             font-size: 32px;
-            line-height: 76px;
+            line-height: 40px;
           }
 
           @media screen and (max-width: 1200px) {
             font-size: 26px;
-            line-height: 60px;
+            line-height: 34px;
           }
 
           @media screen and (max-width: 992px) {
             font-size: 18px;
-            line-height: 36px;
+            line-height: 26px;
           }
         }
 
@@ -82,7 +82,7 @@
           font-size: 130px;
           line-height: 118px;
           padding: 0;
-          margin-top: 10px;
+          margin-top: 0px;
           color: #ffffff;
 
           @media screen and (max-width: 1750px) {
@@ -398,6 +398,12 @@
               object-fit: cover;
 
               // transition: transform 0.5s;
+              @media screen and (max-width: 1450px) {
+                width: 70.5%;
+              }
+              @media screen and (max-width: 1200px) {
+                width: 75.5%;
+              }
               @media screen and (max-width: 768px) {
                 width: 77%;
               }
@@ -413,6 +419,9 @@
               flex-flow: column;
               // justify-content: space-between;
               padding: 9% 9% 9% 5%;
+              @media screen and (min-width: 768px) {
+                padding-top: 0;
+              }
 
               .main__text--heading {
                 color: #ffffff;
@@ -478,6 +487,13 @@
               justify-content: center;
               align-items: center;
 
+              @media screen and (max-width: 1450px) {
+                align-items: flex-start;
+              }
+              @media screen and (max-width: 992px) {
+                align-items: center;
+              }
+
               @media screen and (max-width: 768px) {
                 padding-top: 125px;
                 padding-bottom: 50px;
@@ -503,7 +519,7 @@
             }
 
             &.text__slide {
-              padding-top: 10%;
+              padding-top: 5%;
 
               @media screen and (max-width: 768px) {
                 padding-top: 0;

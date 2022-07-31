@@ -450,26 +450,26 @@
 @media screen and (max-width: 1750px) {
   .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle .super__heading {
     font-size: 32px;
-    line-height: 76px;
+    line-height: 40px;
   }
 }
 @media screen and (max-width: 1200px) {
   .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle .super__heading {
     font-size: 26px;
-    line-height: 60px;
+    line-height: 34px;
   }
 }
 @media screen and (max-width: 992px) {
   .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle .super__heading {
     font-size: 18px;
-    line-height: 36px;
+    line-height: 26px;
   }
 }
 .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle .newLanding__title {
   font-size: 130px;
   line-height: 118px;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 0px;
   color: #ffffff;
 }
 @media screen and (max-width: 1750px) {
@@ -752,6 +752,16 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 1450px) {
+  .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
+    width: 70.5%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
+    width: 75.5%;
+  }
+}
 @media screen and (max-width: 768px) {
   .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
     width: 77%;
@@ -768,6 +778,11 @@
       -ms-flex-flow: column;
           flex-flow: column;
   padding: 9% 9% 9% 5%;
+}
+@media screen and (min-width: 768px) {
+  .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper {
+    padding-top: 0;
+  }
 }
 .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper .main__text--heading {
   color: #ffffff;
@@ -844,6 +859,20 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 1450px) {
+  .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide.image__slide {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+@media screen and (max-width: 992px) {
+  .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide.image__slide {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide.image__slide {
     padding-top: 125px;
@@ -868,7 +897,7 @@
   line-height: 36px;
 }
 .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide.text__slide {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 @media screen and (max-width: 768px) {
   .landing__care-module #mainContainer #reuse_section__three .dual__swiper-container .swiper-wrapper .dual__swiper__slide.text__slide {
