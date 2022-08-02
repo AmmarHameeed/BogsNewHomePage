@@ -415,8 +415,8 @@
 .landing__care-module #mainContainer .landing-care__header .landingCare__textWrapper--middle {
   margin: 0;
   position: absolute;
-  top: 42%;
-  right: 9%;
+  top: 51%;
+  right: 10%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
