@@ -51,15 +51,15 @@
                 }
 
                 .newLanding__title {
-                    font-size: 100px;
-                    line-height: 95px;
+                    font-size: 130px;
+                    line-height: 118px;
                     padding: 0;
                     margin-bottom: 30px;
                     letter-spacing: 0.5px;
 
                     @media screen and (max-width: 1750px) {
-                        font-size: 90px;
-                        line-height: 76px;
+                        font-size: 100px;
+                        line-height: 95px;
                     }
 
                     @media screen and (max-width: 1200px) {
@@ -698,8 +698,8 @@
       
                 .overlay__icon {
                   display: inline-block;
-                  height: 36px;
-                  width: 36px;
+                  height: 28px;
+                  width: 28px;
                   margin-left: 10px;
                   background-repeat: no-repeat;
                   background-size: contain;
@@ -721,8 +721,8 @@
                   font-family: 'bogs_headlineregular', Arial, sans-serif;
                   color: #ffffff;
                   // font-weight: 700;
-                  font-size: 40px;
-                  line-height: 28px;
+                  font-size: 34px;
+                  line-height: 15px;
                   text-transform: uppercase;
                 }
 
@@ -745,11 +745,6 @@
                     justify-content: center;
                     line-height: 34px;
                     z-index: 999;
-
-                    &:hover {
-                        background: #000000;
-                        color: #ffffff !important;
-                    }
                 }
               }
             }
