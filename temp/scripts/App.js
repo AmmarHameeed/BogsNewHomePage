@@ -1436,3 +1436,41 @@ if ($(".swiper-slide").length <= 2) {
   $(".landingCare__swiper--pagination").addClass("invisible");
   $(".landingCare__swiper--navigation").addClass("invisible");
 }
+
+
+var featuredSliderUniqueSep = new Swiper(".feature-product__sep", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__sep .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueSep.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__sep .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueSep.slideNext();
+  }
+);
