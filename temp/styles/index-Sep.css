@@ -529,6 +529,43 @@
 .index-Sep__module #mainContainer #design_boot-section {
   margin-bottom: 15px;
 }
+@media screen and (min-width: 992px) {
+  .index-Sep__module #mainContainer #design_boot-section {
+    height: 550px;
+    background: #aad5df;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .index-Sep__module #mainContainer #design_boot-section {
+    height: 640px;
+    background: #aad5df;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .index-Sep__module #mainContainer #design_boot-section {
+    height: 780px;
+    background: #aad5df;
+  }
+}
+@media screen and (min-width: 992px) {
+  .index-Sep__module #mainContainer #design_boot-section a picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .index-Sep__module #mainContainer #design_boot-section a picture .design__boot-image {
+    width: 80%;
+  }
+}
 .index-Sep__module #mainContainer #featured_styles {
   margin-bottom: 50px;
 }
