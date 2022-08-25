@@ -399,7 +399,7 @@
   }
 }
 .index-Sep__module #mainContainer #hero__section {
-  margin-bottom: 85px;
+  margin-bottom: 35px;
   margin-top: 70px;
 }
 @media screen and (min-width: 992px) {
@@ -526,12 +526,34 @@
 .index-Sep__module #mainContainer #mobile_category .mobile-category .mobile-category__link {
   color: #000000;
 }
+.index-Sep__module #mainContainer #design_boot-section {
+  margin-bottom: 15px;
+}
 .index-Sep__module #mainContainer #featured_styles {
-  margin-bottom: 103px;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 992px) {
   .index-Sep__module #mainContainer #featured_styles {
     margin-bottom: 33px;
+  }
+}
+.index-Sep__module #mainContainer #featured_styles .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+  min-height: unset;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #featured_styles .feature_slider__headline-wrapper {
+    padding: 0px 0px;
+    min-height: unset;
+  }
+}
+.index-Sep__module #mainContainer #featured_styles .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #featured_styles .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 1rem;
   }
 }
 .index-Sep__module #mainContainer #featured_styles .featured_style-wrapper {
@@ -676,11 +698,30 @@
   }
 }
 .index-Sep__module #mainContainer .featured__categories {
-  margin-bottom: 68px;
+  margin-bottom: 53px;
 }
 @media screen and (max-width: 992px) {
   .index-Sep__module #mainContainer .featured__categories {
     margin-bottom: 0px;
+  }
+}
+.index-Sep__module #mainContainer .featured__categories .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+  min-height: unset;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer .featured__categories .feature_slider__headline-wrapper {
+    padding: 0px 0px;
+    min-height: unset;
+  }
+}
+.index-Sep__module #mainContainer .featured__categories .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer .featured__categories .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 1rem;
   }
 }
 .index-Sep__module #mainContainer .featured__categories .featured__categories-wrapper {
@@ -798,6 +839,25 @@
 @media screen and (max-width: 992px) {
   .index-Sep__module #mainContainer #feature_slider {
     margin-bottom: 0px;
+  }
+}
+.index-Sep__module #mainContainer #feature_slider .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+  min-height: unset;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #feature_slider .feature_slider__headline-wrapper {
+    padding: 0px 0px;
+    min-height: unset;
+  }
+}
+.index-Sep__module #mainContainer #feature_slider .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #feature_slider .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 1rem;
   }
 }
 .index-Sep__module #mainContainer #feature_slider .feature-product__sep {
@@ -1009,6 +1069,25 @@
 @media screen and (max-width: 992px) {
   .index-Sep__module #mainContainer #give_back__section {
     margin-bottom: 25px;
+  }
+}
+.index-Sep__module #mainContainer #give_back__section .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+  min-height: unset;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #give_back__section .feature_slider__headline-wrapper {
+    padding: 0px 0px;
+    min-height: unset;
+  }
+}
+.index-Sep__module #mainContainer #give_back__section .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .index-Sep__module #mainContainer #give_back__section .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 1rem;
   }
 }
 .index-Sep__module #mainContainer #give_back__section .give_back--wrapper {
@@ -1322,7 +1401,7 @@
   }
 }
 .index-Sep__module .feature__slider-description {
-  margin-top: 130px;
+  margin-top: 70px;
 }
 @media screen and (max-width: 768px) {
   .index-Sep__module .feature__slider-description {
