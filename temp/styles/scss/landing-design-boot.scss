@@ -1,0 +1,418 @@
+@import "mixins.scss";
+
+.design__boot-module {
+
+    .swiper-pagination-bullet {
+        transform: scale(1) !important;
+    }
+
+    @import "navbar-redesigned.scss";
+
+    #mainContainer {
+        max-width: 1750px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            margin: auto 48px;
+        }
+
+        @media screen and (min-width: 1750px) {
+            margin: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 16px;
+        }
+
+        #hero__section {
+            position: relative;
+            margin-bottom: 35px;
+            margin-top: 70px;
+            max-height: 980px;
+            overflow: hidden;
+            text-align: center;
+            background: #aad5df;
+            
+            @media screen and (min-width: 992px) {
+                margin-top: 126px;
+            }
+            
+            @media screen and (max-width: 1750px) {
+                min-height: 850px;
+            }
+
+            @media screen and (max-width: 1400px) {
+                min-height: 700px;
+            }
+
+            @media screen and (max-width: 992px) {
+                min-height: 490px;
+                margin-bottom: 10px;
+            }
+
+            .hero__section-image {
+                width: 75%;
+                
+                @media screen and (max-width: 540px) {
+                    padding-top: 50px;
+                }
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+            }
+
+            .download__app-button {
+                position: absolute;
+                right: 0;
+                left: 0;
+                margin: auto;
+                bottom: 88px;
+                width: 466px;
+                height: 42px;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 28px;
+                font-family: 'bogs_headlineregular', Arial, sans-serif;
+                text-transform: uppercase;
+                @media screen and (max-width: 992px) {
+                    width: 80%;
+                    bottom: 40px;
+                    font-size: 23px;
+                    line-height: 48px;
+                }
+            }
+        }
+
+        #design__custom_boot-section {
+            margin-bottom: 45px;
+            @media screen and (max-width: 992px) {
+                margin-bottom: 18px;
+            }
+
+            .dcb_heading__wrapper {
+                text-align: center;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+
+                .dcb_heading__text {
+                    font-size: 60px;
+                    font-family: 'bogs_headlineregular', Arial, sans-serif;
+                    line-height: 50px;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 1400px) {
+                        font-size: 45px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 30px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .dcb_sub__heading {
+                    font-size: 24px;
+                    line-height: 23px;
+                    @media screen and (max-width: 1400px) {
+                        font-size: 21px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 18px;
+                        width: 65%;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+                padding-top: 30px;
+                text-transform: capitalize;
+            }
+
+            .design__boot__swiper-container {
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 22px;
+                }
+                .swiper-slide {
+                    position: relative;
+                    padding-bottom: 212px;
+                    text-align: center;
+                    padding-top: 96px;
+                    border: 1px solid #707070;
+
+                    @media screen and (max-width: 768px) {
+                        padding-bottom: 150px;
+                        padding-top: 67px;
+                    }
+
+                    .design__boot__image {
+                        max-width: 348px;
+                        min-height: 382px;
+                        @media screen and (max-width: 768px) {
+                            max-width: 243px;
+                            min-height: unset;
+                        }
+                    }
+
+                    .overlay__text {
+                        position: absolute;
+                        bottom: 44px;
+                        left: 60px;
+                        text-align: left;
+
+                        @media screen and (max-width: 768px) {
+                            bottom: 35px;
+                            left: 40px;
+                        }
+
+                        .step__number {
+                            font-size: 35px;
+                            font-weight: 400;
+                            line-height: 32px;
+                            font-family: 'bogs_headlineregular', Arial, sans-serif;
+                            text-transform: uppercase;
+
+                            &.step__one--text {
+                                color: #AECA66;
+                            }
+
+                            &.step__two--text {
+                                color: #E5C86A;
+                            }
+
+                            &.step__three--text {
+                                color: #AAD6DF;
+                            }
+
+                            @media screen and (max-width: 768px) {
+                                font-size: 23px;
+                                line-height: 21px;
+                            }
+                        }
+
+                        .step__desc {
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 32px;
+                            @media screen and (max-width: 768px) {
+                                font-size: 16px;
+                                margin-bottom: 0;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+
+                .design__boot__swiper--pagination.landing-listview-pagination {
+                    line-height: 0;
+                    bottom: 0px !important;
+
+                    .swiper-pagination-bullet {
+                        width: 11px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
+
+        #download__application-banner {
+            height: 126px;
+            margin-bottom: 40px;
+            background: #AAD6DF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                height: 68px;
+                margin-bottom: 22px;
+            }
+
+            .download__app-icon {
+                width: 64px;
+                height: 73px;
+                margin-right: 27px;
+                display: inline-block;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='66.832' height='75.116' viewBox='0 0 66.832 75.116'%3E%3Cg id='Group_2088' data-name='Group 2088' transform='translate(1.096 1.097)'%3E%3Cg id='Group_2102' data-name='Group 2102' transform='translate(0 0)'%3E%3Cpath id='Path_1170' data-name='Path 1170' d='M9.837,22.054h15.39a1.932,1.932,0,0,0,1.8-2.039v-8.8a1.932,1.932,0,0,0-1.8-2.039H9.837a1.932,1.932,0,0,0-1.8,2.039v8.8A1.932,1.932,0,0,0,9.837,22.054Z' transform='translate(-1.28 -1.462)' fill='none' stroke='%23000' stroke-miterlimit='10' stroke-width='3'/%3E%3Cpath id='Path_1171' data-name='Path 1171' d='M.48,69.23V3.845A3.19,3.19,0,0,1,3.459.48H61.333a3.189,3.189,0,0,1,2.979,3.365V69.23A3.19,3.19,0,0,1,61.333,72.6H3.459A3.191,3.191,0,0,1,.48,69.23Z' transform='translate(-0.076 -0.077)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cline id='Line_5' data-name='Line 5' x2='21.787' transform='translate(28.309 41.477)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cline id='Line_6' data-name='Line 6' x2='21.787' transform='translate(28.309 46.492)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cline id='Line_7' data-name='Line 7' x2='21.787' transform='translate(28.309 51.508)' fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+                @media screen and (max-width: 768px) {
+                    width: 19px;
+                    height: 21px;
+                    margin-right: 15px;
+                }
+            }
+
+            .download__app-text {
+                font-size: 60px;
+                line-height: 87px;
+                font-family: 'bogs_headlineregular', Arial, sans-serif;
+                text-transform: uppercase;
+                @media screen and (max-width: 768px) {
+                    font-size: 24px;
+                    line-height: 35px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        #rules__section {
+            display: flex;
+            margin-bottom: 5px;
+            flex-flow: column;
+            background: #1C60A7;
+            color: #ffffff;
+
+            .upper__rules-section {
+                display: flex;
+                flex-flow: row;
+                width: 100%;
+                padding: 3.75% 4.25% 4% 9%;
+                @media screen and (max-width:992px) {
+                    flex-flow: column;
+                }
+
+                .rules__section-left {
+                    width: 50%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+
+                    .rules__small-text {
+                        display: block;
+                        margin-top: 50px;
+                        margin-bottom: 40px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 50px;
+
+                        @media screen and (max-width:992px) {
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        @media screen and (min-width:992px) {
+                            font-size: 30px;
+                        }
+                    }
+
+                    .rules__heading-date {
+                        font-size: 55px;
+                        font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        text-transform: uppercase;
+                        line-height: 50px;
+
+                        @media screen and (max-width:992px) {
+                            margin-bottom: 30px;
+                        }
+
+
+                        @media screen and (min-width:992px) {
+                            font-size: 70px;
+                            line-height: 50px;
+                        }
+
+                        @media screen and (min-width:1100px) {
+                            font-size: 90px;
+                            line-height: 50px;
+                        }
+
+                        @media screen and (min-width:1500px) {
+                            font-size: 120px;
+                            line-height: 50px;
+                        }
+                    }
+                }
+
+                .rules__section-right {
+                    width: 50%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+
+                    .rules__heading-list {
+                        margin-bottom: 30px;
+                        font-size: 40px;
+                        font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        text-transform: uppercase;
+                        line-height: 50px;
+                        @media screen and (max-width:992px) {
+                            font-size: 20px;
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                    .rule__list-item {
+                        font-size: 30px;
+                        line-height: 45px;
+                        @media screen and (max-width:992px) {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #oficial__rules-section {
+            display: flex;
+            padding: 1.9% 50px 2.35% 50px;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            background: #1C60A7;
+            @media screen and (max-width:992px) {
+                padding: 30px 40px 40px;
+            }
+
+            .official__rules-text {
+                font-size: 30px;
+                line-height: 50px;
+                font-weight: 700;
+                color: #ffffff;
+                text-align: center;
+                @media screen and (max-width:992px) {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+
+            .official__rule-button {
+                display: flex;
+                width: 100%;
+                max-width: 466px;
+                height: 42px;
+                margin-top: 5px;
+                background: white;
+                border-radius: 20px;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                font-family: 'bogs_headlineregular', Arial, sans-serif;
+                font-size: 28px;
+                text-transform: uppercase;
+                @media screen and (max-width:992px) {
+                    max-width: 80%;
+                    width: 80%;
+                    height: 35px;
+                    font-size: 23px;
+                }
+            }
+        }
+    }
+
+    .feature__slider-description {
+        margin-top: 70px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 16px;
+
+        }
+    }
+}
+
+@import "footer-redesigned.scss";

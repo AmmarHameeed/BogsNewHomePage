@@ -1474,3 +1474,47 @@ $(document).on(
     window.featuredSliderUniqueSep.slideNext();
   }
 );
+
+
+//  Design A boot Landing Page Swiper
+
+var DesignBootSlideSwiper = new Swiper(".design__boot__swiper-container", {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 30,
+  noSwiping: true,
+  pagination: {
+    el: ".design__boot__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".design__boot__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".design__boot__swiper-container .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#design__custom_boot-section .swiper-slide").length > 4 ? true : false,
+  loop: $("#design__custom_boot-section .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: Standalone Mobile Swiper ---- if only 3 slide logic CONTINUED ----
+if ($("#design__custom_boot-section .swiper-slide").length <= 4) {
+  $("#design__custom_boot-section .reuse__swiper--pagination").addClass("invisible");
+  $("#design__custom_boot-section .reuse__swiper--navigation").addClass("invisible");
+}
