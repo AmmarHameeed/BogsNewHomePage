@@ -1518,3 +1518,42 @@ if ($("#design__custom_boot-section .swiper-slide").length <= 4) {
   $("#design__custom_boot-section .reuse__swiper--pagination").addClass("invisible");
   $("#design__custom_boot-section .reuse__swiper--navigation").addClass("invisible");
 }
+
+
+// October Update Swiper
+var featuredSliderUniqueSep = new Swiper(".feature-product__oct", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__oct .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueSep.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__oct .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueSep.slideNext();
+  }
+);
