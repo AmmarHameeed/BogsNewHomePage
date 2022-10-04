@@ -24,6 +24,93 @@
       margin: 0 16px;
     }
 
+    #secondary__header {
+      margin-top: 70px;
+      margin-bottom: 75px;
+
+      .newLanding__textWrapper--middle {
+        left: 0%;
+        width: 44.5%;
+        top: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          height: 100%;
+          padding: 43px 35px 43px;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+        }
+
+        @media screen and (min-width: 3450px) {
+          // right: 5%;
+          // width: 55%;
+        }
+
+        .newLanding__title {
+          font-size: 130px;
+          line-height: 118px;
+          padding: 0;
+          margin-bottom: 30px;
+          letter-spacing: 0.5px;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 90px;
+            line-height: 76px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 70px;
+            line-height: 60px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 40px;
+            line-height: 36px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .discount__desc--code {
+          margin-bottom: 10px;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: "trade-gothic-next", Arial, sans-serif;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 24px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 20px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+
+        .shop__btn {
+          @include shopButtonBlack;
+          margin-right: 15px;
+
+          @media screen and (max-width: 768px) {
+            margin-right: 10px;
+            width: unset;
+          }
+        }
+      }
+    }
+
     .featured__categories {
       margin-bottom: 75px;
 

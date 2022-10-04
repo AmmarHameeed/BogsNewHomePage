@@ -399,7 +399,7 @@
   }
 }
 .index-Oct__module #mainContainer #hero__section {
-  margin-bottom: 75px;
+  margin-bottom: 37px;
   margin-top: 70px;
 }
 @media screen and (min-width: 992px) {
@@ -567,29 +567,50 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
+    margin-bottom: 25px;
   }
 }
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider {
-  position: relative;
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow {
   width: 50%;
-  overflow: hidden;
 }
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider:nth-of-type(1) {
+@media screen and (max-width: 768px) {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow {
+    width: 100%;
+  }
+}
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow:nth-of-type(1) {
   margin-right: 15px;
 }
 @media screen and (max-width: 768px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider:nth-of-type(1) {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow:nth-of-type(1) {
     margin-right: 0;
     margin-bottom: 15px;
   }
 }
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .mobile__copy--eyebrow {
+  padding: 0px 0px 5px;
+  margin-bottom: 0;
+  min-height: unset;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
 @media screen and (max-width: 768px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider {
-    width: 100%;
-    margin-bottom: 25px;
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .mobile__copy--eyebrow {
+    font-size: 1rem;
   }
 }
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .featured__categories-image {
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider {
+    width: 100%;
+  }
+}
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider .featured__categories-image {
   width: 100%;
   height: 100%;
   -webkit-transition: -webkit-transform 0.5s;
@@ -597,22 +618,7 @@
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .mobile__copy {
-  position: absolute;
-  top: 35px;
-  left: 36px;
-  color: #ffffff;
-  line-height: 22px;
-  font-weight: 700;
-  font-size: 18px;
-  font-family: "trade-gothic-next", Arial, sans-serif;
-}
-@media screen and (min-width: 768px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .mobile__copy {
-    display: none;
-  }
-}
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn {
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider .shop__btn {
   position: absolute;
   left: 8.5%;
   bottom: 75px;
@@ -635,12 +641,12 @@
           justify-content: center;
   font-size: 30px;
 }
-.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn:hover {
+.index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider .shop__btn:hover {
   background: #171717;
   color: #ffffff;
 }
 @media screen and (max-width: 992px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider .shop__btn {
     font-size: 20px;
     width: 81px;
     height: 34px;
@@ -650,19 +656,19 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider .shop__btn {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider .shop__btn {
     bottom: 35px;
     left: 35px;
   }
 }
 @media screen and (min-width: 768px) {
-  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-slider:hover .featured__categories-image {
+  .index-Oct__module #mainContainer .featured__categories .featured__categories-wrapper .featured__categories-eyebrow .featured__categories-slider:hover .featured__categories-image {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
 }
 .index-Oct__module #mainContainer #feature_slider {
-  margin-bottom: 15px;
+  margin-bottom: 37px;
 }
 @media screen and (max-width: 992px) {
   .index-Oct__module #mainContainer #feature_slider {
@@ -694,7 +700,7 @@
   }
 }
 .index-Oct__module #mainContainer #feature_slider .feature-product__oct {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 @media screen and (max-width: 768px) {
   .index-Oct__module #mainContainer #feature_slider .feature-product__oct {

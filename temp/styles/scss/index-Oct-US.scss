@@ -25,7 +25,7 @@
     }
 
     #hero__section {
-      margin-bottom: 75px;
+      margin-bottom: 37px;
       margin-top: 70px;
 
       @media screen and (min-width: 992px) {
@@ -123,6 +123,91 @@
       }
     }
 
+    #secondary__header {
+      margin-bottom: 75px;
+
+      .newLanding__textWrapper--middle {
+        left: 0%;
+        width: 44.5%;
+        top: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          height: 100%;
+          padding: 43px 35px 43px;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+        }
+
+        @media screen and (min-width: 3450px) {
+          // right: 5%;
+          // width: 55%;
+        }
+
+        .newLanding__title {
+          font-size: 130px;
+          line-height: 118px;
+          padding: 0;
+          margin-bottom: 30px;
+          letter-spacing: 0.5px;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 90px;
+            line-height: 76px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 70px;
+            line-height: 60px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 40px;
+            line-height: 36px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .discount__desc--code {
+          margin-bottom: 10px;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: "trade-gothic-next", Arial, sans-serif;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 24px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 20px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+
+        .shop__btn {
+          @include shopButtonBlack;
+          margin-right: 15px;
+
+          @media screen and (max-width: 768px) {
+            margin-right: 10px;
+            width: unset;
+          }
+        }
+      }
+    }
 
     .featured__categories {
       margin-bottom: 75px;
@@ -133,7 +218,7 @@
 
       .feature_slider__headline-wrapper {
         @include sectionHeading;
-        
+
       }
 
       .featured__categories-wrapper {
@@ -142,12 +227,15 @@
 
         @media screen and (max-width: 768px) {
           flex-flow: column;
+          margin-bottom: 25px;
         }
 
-        .featured__categories-slider {
-          position: relative;
+        .featured__categories-eyebrow {
           width: 50%;
-          overflow: hidden;
+
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
 
           &:nth-of-type(1) {
             margin-right: 15px;
@@ -158,50 +246,56 @@
             }
           }
 
-          @media screen and (max-width: 768px) {
-            width: 100%;
-            margin-bottom: 25px;
-          }
-
-          .featured__categories-image {
-            width: 100%;
-            height: 100%;
-            transition: transform 0.5s;
-          }
-
-          .mobile__copy {
-            // display: none;
-            position: absolute;
-            top: 35px;
-            left: 36px;
-            color: #ffffff;
-            line-height: 22px;
+          .mobile__copy--eyebrow {
+            padding: 0px 0px 5px;
+            margin-bottom: 0;
+            min-height: unset;
+            font-size: 1.2rem;
             font-weight: 700;
-            font-size: 18px;
-            font-family: "trade-gothic-next", Arial, sans-serif;
-
-            @media screen and (min-width: 768px) {
-              display: none;
-            }
-          }
-
-          .shop__btn {
-            position: absolute;
-            left: 8.5%;
-            bottom: 75px;
-            @include shopButtonWhite;
-            font-size: 30px;
 
             @media screen and (max-width: 768px) {
-              bottom: 35px;
-              left: 35px;
+              font-size: 1rem;
             }
           }
 
-          &:hover {
+          .featured__categories-slider {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            // width: 50%;
+            overflow: hidden;
+
+
+
+            @media screen and (max-width: 768px) {
+              width: 100%;
+              // margin-bottom: 25px;
+            }
+
             .featured__categories-image {
-              @media screen and (min-width: 768px) {
-                transform: scale(1.1);
+              width: 100%;
+              height: 100%;
+              transition: transform 0.5s;
+            }
+
+            .shop__btn {
+              position: absolute;
+              left: 8.5%;
+              bottom: 75px;
+              @include shopButtonWhite;
+              font-size: 30px;
+
+              @media screen and (max-width: 768px) {
+                bottom: 35px;
+                left: 35px;
+              }
+            }
+
+            &:hover {
+              .featured__categories-image {
+                @media screen and (min-width: 768px) {
+                  transform: scale(1.1);
+                }
               }
             }
           }
@@ -210,7 +304,7 @@
     }
 
     #feature_slider {
-      margin-bottom: 15px;
+      margin-bottom: 37px;
 
       @media screen and (max-width: 992px) {
         margin-bottom: 0px;
@@ -218,13 +312,14 @@
 
       .feature_slider__headline-wrapper {
         @include sectionHeading;
+
         @media screen and (min-width:768px) {
-            display: none;
+          display: none;
         }
       }
 
       .feature-product__oct {
-        padding-bottom: 60px;
+        padding-bottom: 0px;
 
         @media screen and (max-width: 768px) {
           padding-bottom: 0px;
@@ -371,7 +466,7 @@
         .swiper-pagination {
           bottom: 0px !important;
           line-height: 0;
-        //   display: none;
+          //   display: none;
 
           @media screen and (min-width:768px) {
             display: none;
