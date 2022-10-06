@@ -626,22 +626,26 @@
 
             <div id="mainContainer">
                 <section class="content__section mobile__section-unique" id="hero__section">
-                    <div style="position: relative;" class="swiper-container sweetpea-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <picture>
-                                    <source media="(min-width:992px)"
-                                        srcset="../assets/images/october-updates/US/FW22-BOGSUS-OctUpdate-Header-Primary-Desktop.jpg">
-                                    <!-- <source media="(min-width:465px)" srcset="../assets/images/home-v5/SS22-BOGSUS-WPRefresh1-HeaderBanner-Mobile.jpg"> -->
-                                    <img src="../assets/images/october-updates/US/FW22-BOGSUS-OctUpdate-Header-Primary-Mobile.jpg"
-                                        alt="Flowers" style="width:100%;">
-                                </picture>
-                                <!-- <div class="newLanding__textWrapper--middle container">
-                                    <h1 class="col-12 newLanding__title text-black">Refined <br />Toughness.</h1>
-                                    <a href="#" class="btn d-inline-flex shop__btn">Shop</a>
-                                </div> -->
-                            </div>
-                        </div>
+                    <div class="page_header--videobg-wrapper" style="position: relative;">
+                        <a href="#" class="video-btn" data-toggle="modal"
+                            data-src="https://player.vimeo.com/video/757246724" data-id="bedrock-technology"
+                            data-target="#videoModal">
+                            <video autoplay playsinline muted loop id="desktopHomePage" style="width:100%;"
+                                class="d-none d-lg-block">
+                                <source
+                                    src="https://player.vimeo.com/progressive_redirect/playback/757246724/rendition/720p/file.mp4?loc=external&signature=544446e81f4a643b866910ace43759901cf352cb8be4a51b798ccf83a424e1e0"
+                                    type="video/mp4">
+                            </video>
+
+                            <!-- The moblie video -->
+                            <video autoplay playsinline muted loop id="mobileHomePag" style="width:100%;"
+                                class="d-block d-lg-none">
+                                <source
+                                    src="https://player.vimeo.com/progressive_redirect/playback/682071866/rendition/1080p?loc=external&signature=d70376c9bcdb9d7a62fed6cd4cb852d074b82c5061b6d042c873c5233f9448f2"
+                                    type="video/mp4">
+                            </video>
+                            <i class="video__play-btn"></i>
+                        </a>
                     </div>
                 </section>
                 <!-- Mobile Category Section (mobile only) -->
