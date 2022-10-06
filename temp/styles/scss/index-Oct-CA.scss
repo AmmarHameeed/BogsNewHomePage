@@ -36,77 +36,8 @@
         margin-bottom: 25px;
       }
 
-      .newLanding__textWrapper--middle {
-        right: 8.6%;
-        width: auto;
-        top: 45%;
-
-        @media screen and (max-width: 992px) {
-          right: 10%;
-        }
-
-        @media screen and (min-width: 3450px) {
-          // right: 5%;
-          // width: 55%;
-        }
-
-        .newLanding__title {
-          font-size: 130px;
-          line-height: 118px;
-          padding: 0;
-          margin-bottom: 30px;
-          letter-spacing: 0.5px;
-
-          @media screen and (max-width: 1750px) {
-            font-size: 100px;
-            line-height: 95px;
-          }
-
-          @media screen and (max-width: 1200px) {
-            font-size: 70px;
-            line-height: 60px;
-          }
-
-          @media screen and (max-width: 992px) {
-            font-size: 40px;
-            line-height: 36px;
-            margin-bottom: 25px;
-          }
-        }
-
-        .shop__btn {
-          @include shopButtonBlack;
-          font-size: 30px;
-        }
-      }
-
-      &.mobile__section-unique {
-        @media screen and (max-width: 992px) {
-          .newLanding__textWrapper--middle {
-            right: unset;
-            left: 0;
-            width: 100%;
-            transform: unset;
-            height: 100%;
-            top: 0;
-            display: flex;
-            flex-flow: column;
-            justify-content: space-between;
-            padding: 35px 35px 45px;
-
-            .newLanding__title {
-              width: 100%;
-              display: inline-block;
-              flex: unset;
-              margin-top: 10px;
-            }
-
-            .shop__btn {
-              font-size: 20px;
-              max-width: 85px;
-            }
-          }
-        }
+      .page_header--videobg-wrapper {
+        position: relative;
       }
     }
 
