@@ -1,0 +1,256 @@
+@import "mixins.scss";
+
+.index-Nov__module {
+  .swiper-pagination-bullet {
+    transform: scale(1) !important;
+  }
+
+  @import "navbar-redesigned.scss";
+
+  #mainContainer {
+    max-width: 1750px;
+    margin: auto;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+      margin: auto 48px;
+    }
+
+    @media screen and (min-width: 1750px) {
+      margin: auto;
+    }
+
+    @media screen and (max-width: 992px) {
+      margin: 0 16px;
+    }
+    .hero__section {
+      // margin-top: 70px;
+      margin-bottom: 140px;
+
+      &:nth-of-type(1) {
+        margin-top: 70px;
+    }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 25px;
+      }
+
+      .newLanding__textWrapper--middle {
+        left: 0%;
+        width: 44.5%;
+        top: 50%;
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 992px) {
+          width: 100%;
+          height: 100%;
+          padding: 43px 35px 43px;
+          display: flex;
+          flex-flow: column;
+          justify-content: space-between;
+        }
+
+        @media screen and (min-width: 3450px) {
+          // right: 5%;
+          // width: 55%;
+        }
+
+        .newLanding__title {
+          font-size: 130px;
+          line-height: 118px;
+          padding: 0;
+          margin-bottom: 30px;
+          letter-spacing: 0.5px;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 90px;
+            line-height: 76px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 70px;
+            line-height: 60px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 40px;
+            line-height: 36px;
+            margin-bottom: 5px;
+          }
+        }
+
+        .discount__desc--code {
+          margin-bottom: 10px;
+          font-size: 30px;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-family: "trade-gothic-next", Arial, sans-serif;
+
+          @media screen and (max-width: 1750px) {
+            font-size: 24px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            font-size: 20px;
+          }
+
+          @media screen and (max-width: 992px) {
+            font-size: 16px;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+
+        .shop__btn {
+          @include shopButtonBlack;
+          margin-right: 15px;
+
+          @media screen and (max-width: 768px) {
+            margin-right: 10px;
+            width: unset;
+          }
+        }
+      }
+      &.hero__video{
+        margin-top: 126px;
+        @media screen and (max-width: 768px) {
+          margin-top: 70px;
+        }
+        .page_header--videobg-wrapper{
+          background: #58a1d4;
+          video{
+            @media screen and (min-width: 768px) {
+              height: 100vh;
+            }
+            @media screen and (max-width: 768px) {
+              min-height: 496px;
+            }
+            max-height: 980px;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .multiple__heros {
+        
+        margin-bottom: 60px;
+
+        &:nth-of-type(1) {
+            margin-top: 70px;
+        }
+        @media screen and (max-width: 768px) {
+          margin-bottom: 25px;
+        }
+  
+        .newLanding__textWrapper--middle {
+          left: 0%;
+          width: 44.5%;
+          top: 50%;
+  
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+  
+          @media screen and (max-width: 992px) {
+            width: 100%;
+            height: 100%;
+            padding: 43px 35px 43px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+          }
+  
+          @media screen and (min-width: 3450px) {
+            // right: 5%;
+            // width: 55%;
+          }
+  
+          .newLanding__title {
+            font-size: 130px;
+            line-height: 118px;
+            padding: 0;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+  
+            @media screen and (max-width: 1750px) {
+              font-size: 90px;
+              line-height: 76px;
+            }
+  
+            @media screen and (max-width: 1200px) {
+              font-size: 70px;
+              line-height: 60px;
+            }
+  
+            @media screen and (max-width: 992px) {
+              font-size: 40px;
+              line-height: 36px;
+              margin-bottom: 5px;
+            }
+          }
+  
+          .discount__desc--code {
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: "trade-gothic-next", Arial, sans-serif;
+  
+            @media screen and (max-width: 1750px) {
+              font-size: 24px;
+            }
+  
+            @media screen and (max-width: 1200px) {
+              font-size: 20px;
+            }
+  
+            @media screen and (max-width: 992px) {
+              font-size: 16px;
+            }
+  
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+  
+          .shop__btn {
+            @include shopButtonBlack;
+            margin-right: 15px;
+  
+            @media screen and (max-width: 768px) {
+              margin-right: 10px;
+              width: unset;
+            }
+          }
+        }
+      }
+
+    #mobile_category {
+      background: transparent;
+      margin-bottom: 25px;
+
+      .mobile-category {
+        padding: 0px 9vw;
+
+        .mobile-category__link {
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .feature__slider-description {
+    margin-top: 70px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 65px;
+    }
+  }
+}
+
+@import "footer-redesigned.scss";

@@ -1557,3 +1557,83 @@ $(document).on(
     window.featuredSliderUniqueSep.slideNext();
   }
 );
+// November Update Swiper
+var featuredSliderUniqueNov = new Swiper(".feature-product__nov", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__nov .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueNov.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__nov .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueNov.slideNext();
+  }
+);
+
+//Swiper: Practical Cuteness section slider (Updated homepage)
+var DualSlideSwiperNovember = new Swiper(".dual__swiper-container--nov", {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 30,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".dual__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".dual__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".dual__swiper-container .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#newest__collection .swiper-slide").length > 2 ? true : false,
+  loop: $("#newest__collection .swiper-slide").length > 2 ? true : false,
+});
+
+//Swiper: Standalone Mobile Swiper ---- if only 3 slide logic CONTINUED ----
+if ($("#newest__collection .swiper-slide").length <= 2) {
+  $("#newest__collection .dual__swiper--pagination").addClass("invisible");
+  $("#newest__collection .dual__swiper--navigation").addClass("invisible");
+}
