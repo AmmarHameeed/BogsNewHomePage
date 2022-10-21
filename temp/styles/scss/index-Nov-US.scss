@@ -1,5 +1,10 @@
 @import "mixins.scss";
 
+.mac{
+  .page_header--videobg-wrapper{
+    background: #65ABDC;
+  }
+}
 .index-Nov__module {
   .swiper-pagination-bullet {
     transform: scale(1) !important;
@@ -129,6 +134,10 @@
               }
               @media screen and (max-width: 768px) {
                 min-height: 496px;
+                object-position: 0 75px;
+              }
+              @media screen and (max-width: 400px) {
+                object-position: 0 90px;
               }
               max-height: 980px;
               margin-left: auto;

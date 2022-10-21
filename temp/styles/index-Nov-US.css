@@ -1,3 +1,7 @@
+.mac .page_header--videobg-wrapper {
+  background: #65ABDC;
+}
+
 .index-Nov__module .swiper-pagination-bullet {
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
@@ -552,6 +556,14 @@
 @media screen and (max-width: 768px) {
   .index-Nov__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
     min-height: 496px;
+    -o-object-position: 0 75px;
+       object-position: 0 75px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .index-Nov__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
+    -o-object-position: 0 90px;
+       object-position: 0 90px;
   }
 }
 .index-Nov__module #mainContainer #mobile_category {
