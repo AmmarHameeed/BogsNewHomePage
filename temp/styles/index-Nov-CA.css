@@ -1,3 +1,7 @@
+.mac .page_header--videobg-wrapper {
+  background: #65ABDC !important;
+}
+
 .index-Nov__module .swiper-pagination-bullet {
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;

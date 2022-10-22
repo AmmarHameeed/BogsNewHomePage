@@ -933,6 +933,13 @@
     <!-- build:js /assets/scripts/App.js -->
     <script src="../temp/scripts/App.js"></script>
     <!-- endbuild -->
+    <script>
+        if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+            $("body").addClass("mac");
+        } else {
+            $("body").addClass("pc");
+        }
+    </script>
 </body>
 
 </html>
