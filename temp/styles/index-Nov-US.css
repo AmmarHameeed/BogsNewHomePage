@@ -1,6 +1,11 @@
 .mac .page_header--videobg-wrapper {
   background: #65ABDC !important;
 }
+@media screen and (max-width: 768px) {
+  .mac .page_header--videobg-wrapper {
+    background: #58a1d4;
+  }
+}
 
 .index-Nov__module .swiper-pagination-bullet {
   -webkit-transform: scale(1) !important;
