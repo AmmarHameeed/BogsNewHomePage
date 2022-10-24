@@ -1599,7 +1599,7 @@ $(document).on(
 var DualSlideSwiperNovember = new Swiper(".dual__swiper-container--nov", {
   slidesPerView: 2,
   slidesPerGroup: 2,
-  spaceBetween: 30,
+  spaceBetween: 20,
   speed: 600,
   watchSlidesVisibility: true,
   pagination: {
