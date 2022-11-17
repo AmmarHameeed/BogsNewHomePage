@@ -5,7 +5,8 @@
         background: #a6cbcd !important;
 
         @media screen and (max-width: 768px) {
-            background: #9ac3c4 !important;
+            // background: #9ac3c4 !important;
+            background: #a4cccf !important;
         }
     }
 }
@@ -148,7 +149,7 @@
                     }
 
                     @media screen and (max-width: 992px) {
-                        font-size: 60px;
+                        font-size: 58px;
                         line-height: 54px;
                         margin-bottom: 5px;
                     }
