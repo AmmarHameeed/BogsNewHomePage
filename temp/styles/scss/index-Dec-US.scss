@@ -220,8 +220,8 @@
                 position: relative;
                 justify-content: end;
                 align-items: center;
-                height: 700px;
-                max-height: 700px;
+                height: 570px;
+                max-height: 570px;
                 .newLanding__textWrapper--middle {
                     left: 0%;
                     width: 44.5%;
@@ -246,8 +246,8 @@
                     }
     
                     .newLanding__title {
-                        font-size: 145px;
-                        line-height: 95px;
+                        font-size: 130px;
+                        line-height: 80px;
                         padding: 0;
                         margin-bottom: 0px;
                         letter-spacing: 0.5px;
@@ -268,7 +268,7 @@
                             margin-bottom: 5px;
                         }
                         .smallerText{
-                            font-size: 85px;
+                            font-size: 75px;
                             @media screen and (max-width: 1750px) {
                                 font-size: 50px;
                             }

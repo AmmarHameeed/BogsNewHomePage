@@ -645,8 +645,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 700px;
-  max-height: 700px;
+  height: 570px;
+  max-height: 570px;
 }
 .index-Dec__module #mainContainer #secondary__section .section__wrapper .newLanding__textWrapper--middle {
   left: 0%;
@@ -676,8 +676,8 @@
   }
 }
 .index-Dec__module #mainContainer #secondary__section .section__wrapper .newLanding__textWrapper--middle .newLanding__title {
-  font-size: 145px;
-  line-height: 95px;
+  font-size: 130px;
+  line-height: 80px;
   padding: 0;
   margin-bottom: 0px;
   letter-spacing: 0.5px;
@@ -702,7 +702,7 @@
   }
 }
 .index-Dec__module #mainContainer #secondary__section .section__wrapper .newLanding__textWrapper--middle .newLanding__title .smallerText {
-  font-size: 85px;
+  font-size: 75px;
 }
 @media screen and (max-width: 1750px) {
   .index-Dec__module #mainContainer #secondary__section .section__wrapper .newLanding__textWrapper--middle .newLanding__title .smallerText {
