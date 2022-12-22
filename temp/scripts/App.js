@@ -1640,7 +1640,7 @@ if ($("#newest__collection .swiper-slide").length <= 2) {
 
 // December Updates
 
-var featuredSliderUniqueNov = new Swiper(".feature-product__dec", {
+var featuredSliderUniqueDec = new Swiper(".feature-product__dec", {
   spaceBetween: 15,
   slidesPerView: "auto",
   loop: true,
@@ -1666,14 +1666,14 @@ $(document).on(
   "click",
   ".feature-product__dec .feature_slider__slide.swiper-slide-prev",
   function () {
-    window.featuredSliderUniqueNov.slidePrev();
+    window.featuredSliderUniqueDec.slidePrev();
   }
 );
 $(document).on(
   "click",
   ".feature-product__dec .feature_slider__slide.swiper-slide-next",
   function () {
-    window.featuredSliderUniqueNov.slideNext();
+    window.featuredSliderUniqueDec.slideNext();
   }
 );
 
@@ -1719,3 +1719,41 @@ if ($(".swiper-slide").length <= 2) {
   $(".landingCare__swiper--pagination").addClass("invisible");
   $(".landingCare__swiper--navigation").addClass("invisible");
 }
+
+//Featured Product Slider - January'23
+var featuredSliderUniqueJan = new Swiper(".feature-product__jan", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__jan .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueJan.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__jan .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueJan.slideNext();
+  }
+);
