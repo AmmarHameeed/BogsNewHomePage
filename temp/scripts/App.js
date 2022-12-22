@@ -1757,3 +1757,41 @@ $(document).on(
     window.featuredSliderUniqueJan.slideNext();
   }
 );
+
+//Featured Product Slider - January'23
+var featuredSliderUniqueJanAlternative = new Swiper(".feature-product__jan-alt", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__jan-alt .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueJanAlternative.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__jan-alt .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueJanAlternative.slideNext();
+  }
+);
