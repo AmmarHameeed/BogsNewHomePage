@@ -400,6 +400,8 @@
 }
 .index-Feb-Work-alt__module #mainContainer .hero__section {
   margin-bottom: 30px;
+}
+.index-Feb-Work-alt__module #mainContainer .hero__section.first-child {
   margin-top: 70px;
 }
 @media screen and (min-width: 992px) {

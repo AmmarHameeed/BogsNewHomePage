@@ -26,7 +26,10 @@
 
     .hero__section {
         margin-bottom: 30px;
-        margin-top: 70px;
+        &.first-child{
+            margin-top: 70px;
+        }
+        
   
         @media screen and (min-width: 992px) {
           margin-top: 126px;
