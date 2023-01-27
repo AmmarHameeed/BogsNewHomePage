@@ -401,7 +401,7 @@
 .index-Feb-Work-alt__module #mainContainer .hero__section {
   margin-bottom: 30px;
 }
-.index-Feb-Work-alt__module #mainContainer .hero__section.first-child {
+.index-Feb-Work-alt__module #mainContainer .hero__section:nth-of-type(1) {
   margin-top: 70px;
 }
 @media screen and (min-width: 992px) {
