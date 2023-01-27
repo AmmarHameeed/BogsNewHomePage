@@ -1795,3 +1795,160 @@ $(document).on(
     window.featuredSliderUniqueJanAlternative.slideNext();
   }
 );
+
+//Featured Product Slider - Februaru'23
+var featuredSliderUniqueFeb = new Swiper(".feature-product__feb", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__feb .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueFeb.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__feb .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueFeb.slideNext();
+  }
+);
+
+//Featured Product Slider - February'23
+var featuredSliderUniqueFebAlternative01 = new Swiper("#feature-product__feb--alt01", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination01",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__feb--alt01 .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueFebAlternative01.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__feb--alt01 .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueFebAlternative01.slideNext();
+  }
+);
+
+//Featured Product Slider - February'23
+var featuredSliderUniqueFebAlternative02 = new Swiper("#feature-product__feb--alt02", {
+  spaceBetween: 15,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination02",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__feb--alt02 .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderUniqueFebAlternative02.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__feb--alt02 .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderUniqueFebAlternative02.slideNext();
+  }
+);
+
+// February Page Swipers
+var DualSlideSwiperFebruary = new Swiper(".landingCare__swiper-container--feb", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".landingCare__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".landingCare__swiper-container--feb .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".landingCare__swiper-container--feb .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    992: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    // delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#support_section-mobile .swiper-slide").length > 4 ? true : false,
+  loop: $("#support_section-mobile .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".swiper-slide").length <= 2) {
+  $(".landingCare__swiper--pagination").addClass("invisible");
+  $(".landingCare__swiper--navigation").addClass("invisible");
+}
+
