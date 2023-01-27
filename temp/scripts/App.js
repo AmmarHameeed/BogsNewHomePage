@@ -1952,3 +1952,46 @@ if ($(".swiper-slide").length <= 2) {
   $(".landingCare__swiper--navigation").addClass("invisible");
 }
 
+
+// February Page Swipers
+var DualSlideSwiperFebruaryWorkPage = new Swiper(".landingCare__swiper-container--feb-Work", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".landingCare__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".landingCare__swiper-container--feb-Work .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".landingCare__swiper-container--feb-Work .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    992: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    // delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $("#secondary__header-mobile .swiper-slide").length > 4 ? true : false,
+  loop: $("#secondary__header-mobile .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".swiper-slide").length <= 2) {
+  $(".landingCare__swiper--pagination").addClass("invisible");
+  $(".landingCare__swiper--navigation").addClass("invisible");
+}
+

@@ -25,21 +25,90 @@
     }
 
     #hero__section {
-      margin-bottom: 37px;
-      margin-top: 70px;
-
-      @media screen and (min-width: 992px) {
-        margin-top: 126px;
+        margin-bottom: 30px;
+        margin-top: 70px;
+  
+        @media screen and (min-width: 992px) {
+          margin-top: 126px;
+        }
+  
+        @media screen and (max-width: 992px) {
+          margin-bottom: 25px;
+        }
+  
+        .newLanding__textWrapper--middle {
+          right: 8.6%;
+          width: auto;
+          top: 45%;
+  
+          @media screen and (max-width: 992px) {
+            right: 10%;
+          }
+  
+          @media screen and (min-width: 3450px) {
+            // right: 5%;
+            // width: 55%;
+          }
+  
+          .newLanding__title {
+            font-size: 130px;
+            line-height: 118px;
+            padding: 0;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+  
+            @media screen and (max-width: 1750px) {
+              font-size: 100px;
+              line-height: 95px;
+            }
+  
+            @media screen and (max-width: 1200px) {
+              font-size: 70px;
+              line-height: 60px;
+            }
+  
+            @media screen and (max-width: 992px) {
+              font-size: 40px;
+              line-height: 36px;
+              margin-bottom: 25px;
+            }
+          }
+  
+          .shop__btn {
+            @include shopButtonBlack;
+            font-size: 30px;
+          }
+        }
+  
+        &.mobile__section-unique {
+          @media screen and (max-width: 992px) {
+            .newLanding__textWrapper--middle {
+              right: unset;
+              left: 0;
+              width: 100%;
+              transform: unset;
+              height: 100%;
+              top: 0;
+              display: flex;
+              flex-flow: column;
+              justify-content: space-between;
+              padding: 35px 35px 45px;
+  
+              .newLanding__title {
+                width: 100%;
+                display: inline-block;
+                flex: unset;
+                margin-top: 10px;
+              }
+  
+              .shop__btn {
+                font-size: 20px;
+                max-width: 85px;
+              }
+            }
+          }
+        }
       }
-
-      @media screen and (max-width: 992px) {
-        margin-bottom: 25px;
-      }
-
-      .page_header--videobg-wrapper {
-        position: relative;
-      }
-    }
 
     #mobile_category {
       background: transparent;
@@ -147,6 +216,165 @@
         }
       }
     }
+
+    #secondary__header {
+        margin-top: 70px;
+        margin-bottom: 75px;
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+  
+        .newLanding__textWrapper--middle {
+            right: 8.6%;
+          width: 44.5%;
+          top: 50%;
+  
+          @media screen and (max-width: 768px) {
+            width: 100%;
+          }
+  
+          @media screen and (max-width: 992px) {
+            width: 100%;
+            height: 100%;
+            padding: 43px 35px 43px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+          }
+  
+          @media screen and (min-width: 3450px) {
+            // right: 5%;
+            // width: 55%;
+          }
+  
+          .newLanding__title {
+            font-size: 130px;
+            line-height: 118px;
+            padding: 0;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+  
+            @media screen and (max-width: 1750px) {
+              font-size: 90px;
+              line-height: 76px;
+            }
+  
+            @media screen and (max-width: 1200px) {
+              font-size: 70px;
+              line-height: 60px;
+            }
+  
+            @media screen and (max-width: 992px) {
+              font-size: 40px;
+              line-height: 36px;
+              margin-bottom: 5px;
+            }
+          }
+  
+          .discount__desc--code {
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-family: "trade-gothic-next", Arial, sans-serif;
+  
+            @media screen and (max-width: 1750px) {
+              font-size: 24px;
+            }
+  
+            @media screen and (max-width: 1200px) {
+              font-size: 20px;
+            }
+  
+            @media screen and (max-width: 992px) {
+              font-size: 16px;
+            }
+  
+            @media screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+  
+          .shop__btn {
+            @include shopButtonBlack;
+            margin-right: 15px;
+  
+            @media screen and (max-width: 768px) {
+              margin-right: 10px;
+              width: unset;
+            }
+          }
+        }
+    }
+
+    #secondary__header-mobile {
+        margin-bottom: 25px;
+  
+        @media screen and (min-width: 992px) {
+          display: none;
+        }
+  
+        .dual__swiper__slide {
+          position: relative;
+          height: auto;
+  
+          .dual__swiper__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+  
+          .dual__swiper--text-wrapper {
+            height: auto;
+            padding-right: 40px;
+            padding: 9% 9% 9% 10%;
+            // text-align: center;
+
+            .newLanding__title{
+                color: #000000;
+                font-size: 48px;
+            }
+            .goals__description--text {
+                color: #000000;
+                font-size: 28px;
+                line-height: 33px;
+                // font-family: 'bogs_headlineregular', Arial, sans-serif;
+              }
+          }
+          &.text__slide{
+              background-color: #707070 !important;
+          }
+          .shop__btn {
+            @include shopButtonBlack;
+            margin-right: 15px;
+  
+            @media screen and (max-width: 768px) {
+              margin-right: 10px;
+              width: unset;
+            }
+          }
+        }
+  
+        .swiper-pagination {
+          @media screen and (max-width: 768px) {
+            width: 100% !important;
+            bottom: 15px !important;
+  
+            .swiper-pagination-bullet {
+              width: 11px;
+              height: 11px;
+              left: 0 !important;
+              background: transparent;
+              opacity: 1;
+              border: 2px solid #000000;
+  
+              &.swiper-pagination-bullet-active {
+                background: #000000;
+              }
+            }
+          }
+        }
+      }
   }
 
   .feature__slider-description {
