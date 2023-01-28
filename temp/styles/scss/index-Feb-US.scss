@@ -274,9 +274,6 @@
                   height: 100%;
                   z-index: 9;
                   opacity: 0;
-                  // background: rgba(0, 0, 0, 33%);
-                  // transition: background ease-in-out 5s,
-                  //   opacity ease-in-out 5s;
                   justify-content: center;
                   align-items: center;
     
@@ -402,11 +399,106 @@
             .reuse_section__one--left {
                 width: 66.5%;
                 margin-right: 20px;
+                overflow: hidden;
         
                 .reuse_sectionOne--image {
                   width: 100%;
                   height: 100%;
                   object-fit: cover;
+                  transition: transform 0.5s;
+                }
+
+                .overlay__wrapper {
+                  // display: none;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 9;
+                  opacity: 0;
+        
+                  justify-content: flex-start;
+                  align-items: end;
+        
+                  &:hover {
+                    display: flex;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    opacity: 1;
+                    background: rgba(0, 0, 0, 33%);
+                    transition: background 250ms ease-out 0s,
+                      opacity 250ms ease-out 0s;
+                  }
+        
+        
+        
+                  .learn__more-btn {
+                    background: #ffffff;
+                    padding: 10px 25px;
+                    border-radius: 30px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    font-family: "front_page_neueregular";
+                    font-weight: 400;
+                    padding: 5px 15px;
+                    color: #171717;
+                    background: #ffffff;
+                    font-size: 28px;
+                    letter-spacing: 1.5px;
+                    border-radius: 30px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    justify-content: center;
+                    z-index: 999;
+        
+                    &:hover {
+                      background: #000000;
+                      color: #ffffff !important;
+                    }
+        
+                    @media screen and (max-width: 768px) {
+                      margin-left: 35px;
+                    }
+                  }
+        
+                  @media screen and (max-width: 768px) {
+                    display: flex;
+                    height: 100px;
+                    top: unset;
+                    bottom: 0;
+                    opacity: 1;
+                    justify-content: flex-start;
+                    background: none;
+                  }
+                }
+
+                .overlay__redirect {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  left: 0;
+                  top: 0;
+        
+                  @media screen and (max-width: 768px) {
+                    display: none;
+                  }
+                }
+                &:hover {
+                  .overlay__wrapper {
+                    display: flex;
+                    opacity: 1;
+                    flex-flow: column;
+                    justify-content: space-between;
+                    align-items: start;
+                    padding: 50px 35px;
+                  }
+      
+                  .reuse_sectionOne--image {
+                    @media screen and (min-width: 768px) {
+                      transform: scale(1.1);
+                    }
+                  }
                 }
               }
         
@@ -429,6 +521,7 @@
                   font-family: 'bogs_headlineregular', Arial, sans-serif;
                 }
               }
+              
         }
   
         
@@ -449,6 +542,21 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+
+          .shop__btn {
+            position: absolute;
+            bottom: 45px;
+            left: 35px;
+            z-index: 9;
+            @include shopButtonWhite;
+            font-size: 30px;
+
+            @media screen and (max-width: 768px) {
+              // display: none;
+              // margin-left: 35px;
+              // @include shopButtonBlack();
+            }
           }
   
           .dual__swiper--text-wrapper {
