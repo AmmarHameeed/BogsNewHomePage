@@ -1090,14 +1090,14 @@
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .index-Feb__module #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--left .newHomePage__slide--left-image:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 .index-Feb__module #mainContainer #featured__reviews .newHomePage__review-container .swiper-container .swiper-slide .newHomePage__slide-wrapper .newHomePage__slide--left .newHomePage__slide--left-description {
   font-size: 24px;
   font-weight: 700;
   display: block;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-left: 8px;
 }
 @media screen and (max-width: 1450px) {
