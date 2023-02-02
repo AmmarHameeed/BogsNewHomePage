@@ -692,7 +692,7 @@
 }
 .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle {
   right: 8.6%;
-  width: 44.5%;
+  width: 46.5%;
   top: 50%;
 }
 @media screen and (max-width: 768px) {
@@ -721,13 +721,13 @@
   font-size: 130px;
   line-height: 118px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
   letter-spacing: 0.5px;
 }
 @media screen and (max-width: 1750px) {
   .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle .newLanding__title {
-    font-size: 90px;
-    line-height: 76px;
+    font-size: 116px;
+    line-height: 105px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -744,14 +744,14 @@
   }
 }
 .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle .discount__desc--code {
-  margin-bottom: 25px;
-  font-size: 30px;
-  text-transform: capitalize;
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 40px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
 @media screen and (max-width: 1750px) {
   .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle .discount__desc--code {
-    font-size: 24px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 1200px) {

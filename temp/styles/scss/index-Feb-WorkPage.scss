@@ -241,7 +241,7 @@
 
       .newLanding__textWrapper--middle {
         right: 8.6%;
-        width: 44.5%;
+        width: 46.5%;
         top: 50%;
 
         @media screen and (max-width: 768px) {
@@ -266,12 +266,12 @@
           font-size: 130px;
           line-height: 118px;
           padding: 0;
-          margin-bottom: 30px;
+          margin-bottom: 35px;
           letter-spacing: 0.5px;
 
           @media screen and (max-width: 1750px) {
-            font-size: 90px;
-            line-height: 76px;
+            font-size: 116px;
+            line-height: 105px;
           }
 
           @media screen and (max-width: 1200px) {
@@ -287,14 +287,15 @@
         }
 
         .discount__desc--code {
-          margin-bottom: 25px;
-          font-size: 30px;
+          margin-bottom: 40px;
+          font-size: 40px;
+          line-height: 40px;
           // font-weight: bold;
-          text-transform: capitalize;
+          // text-transform: capitalze;
           font-family: "trade-gothic-next", Arial, sans-serif;
 
           @media screen and (max-width: 1750px) {
-            font-size: 24px;
+            font-size: 40px;
           }
 
           @media screen and (max-width: 1200px) {
