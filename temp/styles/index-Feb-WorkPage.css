@@ -718,8 +718,8 @@
   }
 }
 .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle .newLanding__title {
-  font-size: 130px;
-  line-height: 118px;
+  font-size: 122px;
+  line-height: 110px;
   padding: 0;
   margin-bottom: 35px;
   letter-spacing: 0.5px;
@@ -746,7 +746,7 @@
 .index-Feb-Work__module #mainContainer #secondary__header .newLanding__textWrapper--middle .discount__desc--code {
   margin-bottom: 40px;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 40px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
 @media screen and (max-width: 1750px) {
