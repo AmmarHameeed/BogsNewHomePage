@@ -1,0 +1,681 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<title>Hotspotter v2.0.4- Documentation</title>
+
+	<meta name="author" content="Basem">
+	<meta name="copyright" content="Basem">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2020-11-28T00:00:00+01:00">
+
+    <link rel="stylesheet" href="css/documenter_style.css" media="all">
+
+
+	<script src="js/jquery.1.6.4.js"></script>
+
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+        <script src="js/shBrushPhp.js"></script>
+	<script src="js/shBrushPlain.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=600,easing='swing';</script>
+	<script src="js/script.js"></script>
+
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+
+		table , th , td{
+			border: 1px solid black;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#requirements">Requirements</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#quick-notes">Quick Notes</a></li>
+			<li><a href="#controlling-spots-with-javascript">Controlling spots with javascript</a></li>
+			<li><a href="#custom-spots">Custom Spots</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright z-B 2012-2020<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a>
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Hotspotter v2.0.4</h1><h2>Cool Hotspot Maker - jQuery Plugin</h2><hr><ul><li>Created: 26/11/2012</li><li>latest Update: 22/08/2020</li><li>By: Basem M</li></ul>
+            <p>Welcome, thanks for purchasing Hotspotter , enjoy!</p>
+            <p>Please If you need support, avoid using comments & email me from my <a href="http://codecanyon.net/user/z-B">Profile Page</a></p>
+        </section>
+
+<section id="requirements">
+	<h3>Requirements</h3><hr class="notop">
+<ul>
+	<li>
+		<h3>
+			<strong>Plugin</strong>:</h3>
+		<ul>
+			<li>
+				<strong>Browser:</strong> ie7+ , firefox 3.6+ , chrome , safari 5+, opera 11+</li>
+			<li>
+				<strong>jQuery: </strong>1.6+</li>
+		</ul>
+	</li>
+</ul>
+<ul>
+	<li>
+		<h3>
+			<strong>Editor:</strong></h3>
+		<ul>
+			<li>
+				Just use a modern browser , <strong>note that you won&#39;t be able to use local image files in IE9 only URLs</strong></li>
+		</ul>
+	</li>
+</ul>
+</section>
+<section id="installation">
+	<h3>Installation</h3><hr class="notop">
+<p>
+	Add jquery , upload plugin files from folder "Plugin/minified" , add the following to head tag "modify paths to where you uploaded the files"</p>
+<pre class="brush: html">
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery-hotspotter.min.css&quot; /&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!--[if lt IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;ie7-8.min.css&quot; /&gt;&lt;![endif]--&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script type=&quot;text/javascript&quot; src=&quot;jquery-hotspotter.min.js&quot;&gt;&lt;/script&gt;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;script type=&quot;text/javascript&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; jQuery(document).ready(function($) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; //Run plugin when DOM is ready
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $('.hs-area').hotspotter();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/script&gt;
+</pre>
+<p>
+	<strong>Done!</strong> , now you can insert code from the editor in your page</p>
+<p class="info">
+	<strong>Note: </strong>the second line is only used to show Glass , Shadow spots in IE 7,8. if you don&#39;t use this spots or don&#39;t plan to support this browsers , remove this line</p>
+</section>
+
+<section id="quick-notes">
+	<h3>Quick Notes</h3><hr class="notop">
+            - You can use arrow keys for more precise positioning of spots.<br>
+<p>
+	&nbsp;</p>
+            <h5>
+            <strong>Using  Images Inside Aiming Spot's Tooltip:</strong></h5>
+        <ul>
+            <li>You must set width for tooltips that's shown on left and right , you can use 'Width'
+                option on the editor or wrap your HTML in a 'div' and set it's width.</li>
+            <li>Also you must set height for tooltips shown on top or bottom by wrapping it's HTML content inside a 'div' & set it's height</li>
+            <li>Choose width or height that account for image dimension & other content in tooltip</li>
+            <li><span style="color:red">Not setting the dimension in either case will break the tooltip & show the image outside it when the image loads</span></li>
+        </ul>
+        <p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+
+
+<h5>
+            <strong>Spot Sharing:</strong></h5>
+        <ul>
+            <li>If you use fixed top menu , you can add a margin between the image & top of browser window to prevent your top menu from overlapping with the image
+            when user navigate to spot URL , to do so pass 'imgTopMargin' option when initializing the plugin , Example:
+            <pre class="brush: js">
+                jQuery('.hs-area').hotspotter({imgTopMargin: 50}); //defaults to 10px
+            </pre>
+            </li>
+            <li>This feature isn't support for IE7.</li>
+        </ul>
+        <p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+
+
+<h5>
+    <strong>Responsive / Fluid Images:</strong></h5>
+        <p>If you checked the responsive option in the Editor , the plugin will detect image dimension, scale & reposition spots when the page load , but if you are going to resize the image
+            with javascript 'like in demos' , or use fluid images you will need to rerun the plugin , the following code will rerun the plugin
+            whenever the window resize so that you can use it with fluid images:
+        </p>
+<pre class="brush: js">
+jQuery(window).bind('resize', function() {
+    setTimeout(function() {
+        jQuery('.hs-area').hotspotter();
+    }, 400);
+});
+</pre>
+
+</section>
+<section id="controlling-spots-with-javascript">
+	<h3>Controlling spots with javascript</h3><hr class="notop">
+<h5>
+	<a name="show_hide_spots"></a>Show / hide all spots on image:</h5>
+<p>
+	Showing:</p>
+<pre class="brush: js">
+jQuery(&#39;#area&#39;).hotspotter('show');</pre>
+<p>
+	Hiding:</p>
+<pre class="brush: js">
+jQuery(&#39;#area&#39;).hotspotter('hide');
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	where &#39;#area&#39; refer to the container or the main div id that you have got from the editor , this div element has a class &#39;hs-area&#39; , you will find it in the first line of the generated code</p>
+
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h5>
+	<a name="trigger_a_spot"></a>Trigger a spot:</h5>
+
+<pre class="brush: js">
+jQuery(&#39;#myspot&#39;).hotspotter(&#39;trigger&#39;);
+
+
+jQuery(&#39;#myspot&#39;).hotspotter(&#39;untrigger&#39;);
+
+</pre>
+
+<hr>
+<p>
+	&nbsp;</p>
+
+<h5>
+	<a name="get_spot_state_active_inactive"></a>Get spot state active/inactive:</h5>
+<p>
+	&nbsp;</p>
+<pre class="brush: js">
+var isActive= jQuery(&#39;#myspot&#39;).hotspotter(&#39;isActive&#39;);
+
+if (isActive) {
+    //active
+}else{
+   //inactive
+}
+</pre>
+<p>
+	where &#39;#spot&#39; refer to spot div , the one with attribute &#39;data-coord&#39;</p>
+</section>
+<section id="custom-spots">
+	<h3>Custom Spots</h3><hr class="notop">
+<h5>
+	<a name="understanding_generated_html"></a>First you need to understand generated HTML:</h5>
+<p>
+	Example HTML:</p>
+<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;img data-imgdim=&quot;940,198&quot; src=&quot;your image URL&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;hs-wrap&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;red-spot&quot; data-name=&quot;test&quot; data-activeon=&quot;hover&quot; data-dim=&quot;76,47,10&quot; data-coord=&quot;406.3,59&quot;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;tt-wrap&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;tip-tooltip black&quot; data-pos=&quot;-20&quot; data-width=&quot;200&quot; data-dir=&quot;top&quot; data-anim=&quot;goin&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Tooltip content
+            &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	As you can see it uses abbreviations for what you see in editor but with some alternations:</p>
+<ul>
+	<li>
+		&#39;data-imgdim&#39; is used to save original image dimensions , so when you use the same HTML above with larger or smaller version of the image the plugin will be able to scale &amp; reposition spots to appear exactly in the same position.</li>
+	<li>
+		Every spot / tooltip combination are grouped in a &#39;div&#39; with class &#39;hs-wrap&#39;</li>
+	<li>
+		If you removed &#39;data-activeon&#39; attribute only the spot will be shown and no tooltips or effects</li>
+	<li>
+		&#39;data-dim&#39; refer to spot dimension &#39;outerWidth, outerHeight, border-radius&#39; in the same order</li>
+	<li>
+		&#39;data-coord&#39; refer to spot coordinates &#39;left, top&#39; in px</li>
+	<li>
+		Default spot types like &#39;red , glass, shadow , ..&#39; are specified as class like above , see div with class &#39;red-spot&#39;</li>
+	<li>
+		same with tooltips you have &#39;tip-tooltip&#39; , &#39;bubble-tooltip&#39; , &#39;aim-tooltip&#39;</li>
+	<li>
+		the default for &#39;data-dir&#39; is top so if you want tooltip direction to be top you can remove this attribute</li>
+	<li>
+		"data-name" refer to hash link name , so you could access your spot with hash links like http://www.yoursitename.com/page.php#SpotName</li>
+	<li>
+		The previous HTML indicate a &#39;general&#39; spot to make it as &#39;aim&#39; change code to<br>
+		<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+    &lt;img data-imgdim=&quot;940,198&quot; src=&quot;your image URL&quot;&gt;
+    &lt;div class=&quot;hs-wrap&quot;&gt;
+        &lt;div class=&quot;red-spot&quot; data-handler=&quot;Aim&quot; data-name=&quot;test&quot; data-activeon=&quot;hover&quot; data-dim=&quot;76,47,10&quot;
+        data-coord=&quot;406.3,59&quot; &gt;&lt;/div&gt;
+        &lt;div class=&quot;tt-wrap&quot;&gt;
+            &lt;div class=&quot;aim-tooltip&quot; data-dir=&quot;top&quot; &gt;
+                &lt;div class=&quot;tt-content&quot;&gt;Tooltip content&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+		<ul>
+			<li>
+				we add &#39;data-handler=Aim&#39; , we don&#39;t do the same with general spots because it&#39;s default</li>
+			<li>
+				tooltip class became &#39;aim-tooltip&#39;</li>
+			<li>
+				we have remove &#39;data-pos&#39; because it&#39;s non relevant with Aim tooltips it&#39;s always positioned relative to image</li>
+			<li>
+				we have removed &#39;data-width&#39; because the direction is top so the width is fixed with the image width , you can set width if you choose directions left or right</li>
+			<li>
+				added additional div with class &#39;tt-content&#39; to wrap tooltip content , this is useful to avoid the undesirable content reflow of tooltip with the animation , try put lot of content in tooltip , remove it &amp; see difference</li>
+			<li>
+				if you want to prevent aiming animation add attribute, data-handleropts= &quot;false&quot; , in spot div</li>
+		</ul>
+	</li>
+	<li>
+		finally if you want to use your spot as a link wrap it in an &#39;a&#39; tag like
+		<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+    &lt;img data-imgdim=&quot;940,198&quot; src=&quot;your image URL&quot;&gt;
+    &lt;div class=&quot;hs-wrap&quot;&gt;
+        &lt;a href=&quot;http://www.example.com&quot;&gt;
+            &lt;div class=&quot;red-spot&quot; data-name=&quot;test&quot; data-activeon=&quot;hover&quot; data-dim=&quot;76,47,10&quot; data-coord=&quot;406.3,59&quot;&gt;&lt;/div&gt;
+        &lt;/a&gt;
+        &lt;div class=&quot;tt-wrap&quot;&gt;
+            &lt;div class=&quot;tip-tooltip black&quot; data-pos=&quot;-20&quot; data-width=&quot;200&quot; data-anim=&quot;goin&quot; data-dir=&quot;top&quot;&gt;Tooltip content&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	</li>
+</ul>
+<p>
+	As you become acquainted with HTML structure you can now easily create custom spots.</p>
+<p class="info">Note that strings in 'data-handler' attribute are case sensitive , so don't write 'aim' instead use 'Aim'</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<hr>
+<h5>
+	<a name="image_spots"></a>Image spots:</h5>
+<p>
+	This type of custom spot could easily be created using the editor , choose image spot from the left panel , click in the image where you want to insert it , a dialog will be opened to choose 2 images the first is the one shown by default , the second will be shown on hover/click. lets look at the markup level:</p>
+<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;img data-imgdim=&quot;940,198&quot; src=&quot;your image URL&quot;&gt;
+&nbsp;&nbsp;&nbsp; &lt;div class=&quot;hs-wrap&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;img-spot&quot; data-activeon=&quot;hover&quot; data-coord=&quot;407.3,43&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;default image URL&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img src=&quot;image on hover/click URL&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;tt-wrap&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;tip-tooltip black&quot; data-dir=&quot;top&quot; data-anim=&quot;goin&quot;&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+&lt;/div&gt;</pre>
+<ul>
+	<li>
+		we have used class &#39;img-spot&#39;</li>
+	<li>
+		added 2 &#39;img&#39; elements in spot , the first is the default , the second shown on hover/click</li>
+</ul>
+<p>
+	&nbsp;</p>
+<hr>
+<h5>
+	<a name="css_spots"></a>CSS spots:</h5>
+<p>
+	Example code:</p>
+<p>
+	css</p>
+<pre class="brush: css">
+.my-spot { /*default spot style*/
+   border: 4px solid #0078a3;
+}
+.my-spot.active { /*style applied when active hover/click*/
+   border: 4px solid #000000;
+}
+.my-tooltip {
+   border: 4px solid #cd0a0a;
+}
+</pre>
+<p>
+	HTML</p>
+<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+    &lt;img src=&quot;your image URL&quot;&gt;
+    &lt;div class=&quot;hs-wrap&quot;&gt;
+        &lt;div class=&quot;my-spot&quot; data-activeon=&quot;hover&quot; data-dim=&quot;49,26,0&quot; data-coord=&quot;451,86&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;tt-wrap&quot;&gt;
+            &lt;div class=&quot;my-tooltip&quot; data-dir=&quot;top&quot; data-anim=&quot;goin&quot; &gt;Tooltip Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+
+</pre>
+<p>
+	As you can see it&#39;s really simply you have made styles , let the plugin do the hard work for you , also your spot will be responsive.</p>
+<hr>
+<h5>
+	<a name="html_css_spots"></a>HTML + CSS spots:</h5>
+<p>
+	Example:</p>
+<p>
+	CSS: only use &#39;my-tooltip&#39; class style from previous section</p>
+<p>
+	HTML:</p>
+<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+    &lt;img src=&quot;your image URL&quot;&gt;
+    &lt;div class=&quot;hs-wrap&quot;&gt;
+        &lt;div class=&quot;markup-spot&quot; data-activeon=&quot;hover&quot; data-dim=&quot;49,26,0&quot; data-coord=&quot;451,86&quot;&gt;
+            &lt;div&gt;
+                Default div
+            &lt;/div&gt;
+            &lt;div&gt;
+                hover/click div
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;tt-wrap&quot;&gt;
+            &lt;div class=&quot;my-tooltip&quot; data-dir=&quot;top&quot; data-anim=&quot;goin&quot; &gt;Tooltip Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</pre>
+<ul>
+	<li>
+		This kind of spot contain 2 &#39;div&#39; elements the first will be shown by default , the second on hover/click</li>
+	<li>
+		note that we used class &#39;markup-spot&#39; , setting this class will allow putting the 2 divs , switching between them</li>
+	<li>
+		As you can see you can do whatever you want with this div , add other element , add class , ...</li>
+	<li>
+		we used the custom tooltip from previous section</li>
+	<li>
+		Using this kind of spots your spot won't be responsive, unless your divs are fluid , you will not be able to use the responsive feature as the plugin only scale &amp; reposition main spot div &#39;the one with data-coord attribute&#39;</li>
+</ul>
+<hr>
+<h5>
+	<a name="html_css_js_spots"></a>HTML + CSS + Javascript spots:</h5>
+<p>
+	Still not satisfied with previous stuff and want to also use javascript , you can use the plugin as a framework that will loop through images &amp; it&#39;s spots + tooltips , gather information , clear & bind events then use you own function! also your spots could still be triggered with &#39;hash&#39; links , have a look at this example:</p>
+<p>
+	css</p>
+<pre class="brush: css">
+.my-spot {
+   border: 4px solid #0078a3; /*default spot style*/
+}
+.my-spot.active {
+   border: 4px solid #000000; /*style applied when active hover/click*/
+}
+.my-tooltip {
+   border: 4px solid #cd0a0a;
+}
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	HTML</p>
+<pre class="brush: html">
+&lt;div class=&quot;hs-area&quot;&gt;
+    &lt;img src=&quot;your image URL&quot;&gt;
+    &lt;div class=&quot;hs-wrap&quot;&gt;
+        &lt;div class=&quot;my-spot&quot; data-handler=&quot;MyHandler&quot; data-handleropts=&quot;op1,op2&quot; data-activeon=&quot;hover&quot; data-dim=&quot;49,26,0&quot; data-coord=&quot;451,86&quot; data-name=&quot;spotname&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;tt-wrap&quot;&gt;
+            &lt;div class=&quot;my-tooltip&quot; data-dir=&quot;top&quot; data-anim=&quot;goin&quot; data-width=&#39;100&#39; data-pos=&quot;-10&quot;&gt;Tooltip Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Javascript</p>
+<pre class="brush: js">
+(function ($) {
+&nbsp;&nbsp;&nbsp;$.fn.hotspotter.MyHandler= {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; init: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //run with each spot with this type , only in initialization
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; enter: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //triggered with &#39;mouseenter&#39; event with hover spots
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; leave: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //triggered with &#39;mouseleave&#39; event with hover spots
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; click: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //triggered with &#39;click&#39; event with hover spots
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //to avoid rewriting same code in enter/leave here, we call them!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (this.b_isActive) {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.enter();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }else{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.leave();
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scale: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //This function is responsible for putting spot in the desired position in the image using data in 'this.coord' array
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //also setting dimension - if needed - using data in 'this.dim' array ,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //if you made image responsive 'ie: save original image dimensions in 'data-imgdim'  attribute'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //you will need to use data in 'this.generalData' to get change in image width & height & adjust spot
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //position & dimensions accordingly , look at table below to get more info about properties that's available to your handler
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _myownfunction: function() {
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //you can add your own functions , it will be available in other object function in 'this._myownfunction'
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //as the plugin will get all object properties / methods not  only what's used directly by the plugin
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; },
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _myownProperty: 5
+&nbsp;&nbsp;};
+})(jQuery);
+</pre>
+<p>
+	try the previous code & have a look at default handlers in plugin source code.</p>
+<p>
+	Data available to use in handler , accessed by 'this.optionName':</p>
+<table>
+	<thead>
+		<tr>
+			<th scope="col">
+				Option Name</th>
+			<th scope="col">
+				Refer to</th>
+			<th scope="col">
+				Value in Example</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				b_$wrap</td>
+			<td>
+				jquery object of the div with hs-wrap class</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				b_$spot</td>
+			<td>
+				jquery object of spot div</td>
+			<td>
+				div with &#39;data-coord&#39; attribute</td>
+		</tr>
+		<tr>
+			<td>
+				b_name</td>
+			<td>
+				spot name</td>
+			<td>
+				test</td>
+		</tr>
+		<tr>
+			<td>
+				b_coord</td>
+			<td>
+				spot coordinate supplied as array [left, top]</td>
+			<td>
+451,86
+			</td>
+		</tr>
+		<tr>
+			<td>
+				b_dim</td>
+			<td>
+				spot dimensions supplied as array [outerWidth, outerHeight, border-radius]</td>
+			<td>
+49,26,0
+			</td>
+		</tr>
+		<tr>
+			<td>
+				b_activeon</td>
+			<td>
+				&#39;data-activeon&#39; attribute</td>
+			<td>
+				hover</td>
+		</tr>
+		<tr>
+			<td>
+				b_hdOpts</td>
+			<td>
+				options supplied to your handler in &#39;data-handleropts&#39;, get it as array</td>
+			<td>
+				opt1, opt2</td>
+		</tr>
+		<tr>
+			<td>
+				b_$tooltip</td>
+			<td>
+				jquery object of div with &#39;tt-wrap&#39; class</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				b_$inTooltip</td>
+			<td>
+				jquery object of tooltip div</td>
+			<td>
+				div with class &#39;my-tooltip&#39;</td>
+		</tr>
+		<tr>
+			<td>
+				b_tooltipW</td>
+			<td>
+				tooltip width , attribute &#39;data-width&#39;</td>
+			<td>
+				100</td>
+		</tr>
+		<tr>
+			<td>
+				b_tooltipDir</td>
+			<td>
+				tooltip direction , attribute &#39;data-dir&#39;</td>
+			<td>
+				top</td>
+		</tr>
+		<tr>
+			<td>
+				b_tooltipPos</td>
+			<td>
+				tooltip position relative to element , attribute &#39;data-pos&#39;</td>
+			<td>
+				-10</td>
+		</tr>
+		<tr>
+			<td>
+				b_tooltipAnim</td>
+			<td>
+				tooltip animation , attribute &#39;data-anim&#39;</td>
+			<td>
+				goin</td>
+		</tr>
+		<tr>
+			<td>
+				b_isActive</td>
+			<td>
+				flag to know if spot is active or not , defaut to false , this flag is important to be able to use hash links , you must ensure that it&#39;s true when spot is active , false otherwise</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				b_generalData</td>
+			<td>
+				<p>
+					you can store general data shared between all image spots in this object.</p>
+                                <p>It contain by default two properties 'dw' , 'dh' this properties is only used if the image is responsive
+                                , it will be populated with change in image width , height so:
+                                </p>
+                                <p>dw = 'new image width' / 'original image width'</p>
+                                <p>dh = 'new image height' / 'original image height'</p>
+                                <p>Original image refer to the image you used in editor , original width & height of image are stored in attribute 'data-imgdim' in img dom element it's stored in the form 'data-imgdim="width, height"'</p>
+                                <p>You can use those properties in your handler 'scale' function to make your spot responsive.</p>
+			</td>
+			<td>
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<ul>
+	<li>
+		Note that handler name is case sensitive so whatever the name you choose for your plugin , you must use it exactly in
+                "data-handler" attribute.
+        </li>
+	<li>
+		Options starting with $ refer to the corresponding jquery object of the HTML element.</li>
+	<li>
+		You will get &#39;b_coord&#39; , &#39;b_dim&#39; as arrays with the same value in the corresponding attribute with &#39;parseFloat&#39; function applied.</li>
+	<li>
+		Get parseFloat of &#39;b_tooltipPos&#39;.</li>
+	<li>
+		If you choose the names &#39;General&#39; or  &#39;Aim&#39; for your handler , your handler will overwrite the default ones</li>
+	<li>
+		You will need to change &#39;isActive&#39; state with &#39;enter&#39; &amp; &#39;leave&#39; to be able to use the &#39;click&#39; function provided above with spots that require click , also to allow triggering spot with hash links.</li>
+</ul>
+</section>
+
+	</div>
+</body>
+</html>

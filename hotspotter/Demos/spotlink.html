@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hotspotter - Cool Hotspot Maker jQuery Plugin - Test Spot Link</title>
+
+    <link rel="stylesheet" href="../plugin/minified/jquery-hotspotter.min.css">
+
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../plugin/minified/ie7-8.css" /><![endif]-->
+</head>
+<body>
+    Hotspotter , Test spot links
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="hs-area" style="font: 12px arial, sans-serif;line-height: 20px;">
+        <img data-imgdim="640,480" src="img/lungern.jpg" style="width: 700px;">
+
+        <div class="hs-wrap">
+            <div data-activeon="hover" data-dim="110,81,8" data-coord="169.75,288"
+                 data-name="mayor-house" class="shadow-spot"></div>
+            <div class="tt-wrap">
+                <div data-pos="35" data-width="75" data-dir="right" data-anim="goin" class="tip-tooltip white">Mayor House</div>
+            </div>
+        </div>
+        <div class="hs-wrap">
+            <a href="http://en.wikipedia.org/wiki/Chalet" target="_blank"><div data-activeon="hover" data-dim="49,39,7" data-coord="410,162" data-name="chalet" class="glass-spot"></div></a>
+            <div class="tt-wrap">
+                <div data-dir="left" data-pos="10" data-anim="goin" class="tip-tooltip">
+                    <div style="height:145px;width:425px;">
+                        <img src="img/chalet.jpg"
+                             style="width:200px;float:left;">
+                        <p style="padding-left:210px;margin:0"><strong>Swiss Chalet: </strong>is a type of building or house, native
+                            to the Alpine region in Europe, made of wood, with a heavy, gently sloping
+                            roof with wide, well-supported eaves set at right angles to the front of
+                            the house. <strong style="color: #007e32">"Click on spot to open wikipedia article"</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <!-- build:js ../plugin/minified/jquery-hotspotter.min.js -->
+    <script type="text/javascript" src="../plugin/development/jquery-hotspotter.js"></script>
+    <!-- /build -->
+
+    <script type="text/javascript">
+        $('.hs-area').hotspotter();
+    </script>
+</body>
+</html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Hotspotter - Cool Hotspot Maker jQuery Plugin</title>
+
+        <link rel="stylesheet" type="text/css" href="css/demos.min.css" />
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/demos-ie7-8.min.css" /><![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="../plugin/minified/jquery-hotspotter.min.css">
+
+        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../plugin/minified/ie7-8.min.css" /><![endif]-->
+
+        <link rel="stylesheet" type="text/css" href="../Editor/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <ul class="nav"  id="top-menu">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Features
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu" id="features-menu">
+                            <li><a href="#default_spots_tooltips">Default Spots & Tooltips</a></li>
+                            <li><a href="#aiming_effect">Aiming Effect</a></li>
+                            <li><a href="#responsive_fluid">Responsive & Fluid</a></li>
+                            <li><a href="#share_your_spots">Share Your Spots!</a></li>
+                            <li><a href="#control_spots_with_javascript">Control Spots with JavaScript</a></li>
+                            <li><a href="#custom_spots">Custom Spots</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hs-area" id="browsers">
+            <img src="img/browsers.png">
+            <div class="hs-wrap">
+                <div data-activeon="hover" data-dim="29,27,0" data-coord="0,0" class="invisible-spot"></div>
+                <div class="tt-wrap">
+                    <div data-pos="11" data-width="50" data-dir="bottom" data-anim="goin"
+                         class="tip-tooltip">Safari 5+</div>
+                </div>
+            </div>
+            <div class="hs-wrap">
+                <div data-activeon="hover" data-dim="32,27,0" data-coord="33.25,0" class="invisible-spot"></div>
+                <div class="tt-wrap">
+                    <div data-pos="11" data-width="70" data-dir="bottom" data-anim="goin"
+                         class="tip-tooltip">Chrome 13+</div>
+                </div>
+            </div>
+            <div class="hs-wrap">
+                <div data-activeon="hover" data-dim="30,27,0" data-coord="70,0" class="invisible-spot"></div>
+                <div class="tt-wrap">
+                    <div data-pos="11" data-width="70" data-dir="bottom" data-anim="goin"
+                         class="tip-tooltip">Firefox 3.6+</div>
+                </div>
+            </div>
+            <div class="hs-wrap">
+                <div data-activeon="hover" data-dim="28,27,0" data-coord="106,0" class="invisible-spot"></div>
+                <div class="tt-wrap">
+                    <div data-pos="11" data-width="60" data-dir="bottom" data-anim="goin"
+                         class="tip-tooltip">Opera 11+</div>
+                </div>
+            </div>
+            <div class="hs-wrap">
+                <div data-activeon="hover" data-dim="31,27,0" data-coord="138.25,0" data-name="ie-support" class="invisible-spot"></div>
+                <div class="tt-wrap">
+                    <div data-pos="11" data-dir="bottom" data-anim="goin" class="tip-tooltip">IE 7+</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="logo">
+            <div class="hs-area">
+                <img src="img/logo.jpg" alt="Hotspotter , Cool Hotspot Maker jQuery Plugin">
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-dim="384,95,0" data-coord="0,0" class="invisible-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-pos="10" data-anim="goin" class="bubble-tooltip">You will like it!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="description">
+            <p>Hotspotter is cool new way to add hot spots to your images, you can build amazing responsive hot spots with just point & click
+                no need to mess with code because there's a powerful Editor that will help you do all kind of spots you see here ,
+                you can also use the plugin to easily create custom spots!</p>
+
+            <p>It's as simple as:</p>
+
+            <pre style='padding: 15px 10px 0;'>$<span style='color:#808030; '>(</span><span style='color:#0000e6; '>'.hs-area'</span><span style='color:#808030; '>)</span><span style='color:#808030; '>.</span>hotspotter<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
+            </pre>
+
+        </div>
+
+        <section id="default_spots_tooltips">
+            <div class="page-header line">
+                <h1>Default Spots & Tooltips</h1>
+            </div>
+
+            <div id="default-spots-container">
+
+                <div class="hs-area">
+                    <img src="img/lungern.jpg">
+
+                    <div class="hs-wrap">
+                        <div data-activeon="always" data-dim="640,24,0" data-coord="0,0" class="invisible-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-dir="top" data-pos="280" data-anim="goin" class="tip-tooltip img-title">Lungern, Switzerland</div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <div data-activeon="always" data-dim="41,22,0" data-coord="3.75,270" class="invisible-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-anim="goin" class="bubble-tooltip">Lungerersee</div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-dim="110,81,8" data-coord="169.75,288"
+                             class="shadow-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-pos="35" data-width="75" data-dir="right" data-anim="fade" class="tip-tooltip white">Mayor House</div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-dim="48,37,4" data-coord="338.75,197"
+                             class="red-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-dir="bottom" data-anim="goin" class="tip-tooltip">
+                                <iframe src="http://www.youtube.com/embed/hWTAMuRXQbI" allowfullscreen=""
+                                        frameborder="0" height="280" width="400"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <a href="http://en.wikipedia.org/wiki/Chalet" target="_blank"><div data-activeon="hover" data-dim="49,39,7" data-coord="410,162" data-name="chalet" class="glass-spot"></div></a>
+                        <div class="tt-wrap">
+                            <div data-dir="left" data-pos="10" data-anim="fade" class="tip-tooltip">
+                                <div style="height:145px;width:425px;">
+                                    <img src="img/chalet.jpg" style="width:200px;float:left;">
+                                    <p style="padding-left:210px;margin:0"><strong>Swiss Chalet: </strong>is a type of building or house, native
+                                        to the Alpine region in Europe, made of wood, with a heavy, gently sloping
+                                        roof with wide, well-supported eaves set at right angles to the front of
+                                        the house. <strong style="color: #007e32">"Click on spot to open wikipedia article"</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-coord="184.75,46" class="sniper-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-width="85" data-pos="-18" data-dir="top" data-anim="goin" class="tip-tooltip">Western Coast</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <p>Default spots & tooltips you can easily create in the editor , hover/click on above spots to show features. Also look at the browser icons image at the top right of this page which also use the plugin.</p>
+            <div class="well">
+                <p><strong>What you can do:</strong></p>
+                <ul>
+                    <li>Choose from 6 different types of spots</li>
+                    <li>Spots could be triggered on hover or click</li>
+                    <li>Add image annotations</li>
+                    <li>Make spot as a link</li>
+                    <li>Invisible spots</li>
+                    <li>Tip & bubble tooltips</li>
+                    <li>Set tooltip position relative to spot</li>
+                    <li>Different tooltip animations.</li>
+                    <li>Use HTML or text content in tooltips</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="aiming_effect">
+            <div class="page-header line">
+                <h1>Aiming Effect</h1>
+            </div>
+
+            <p>A unique & amazing feature of hotspotter is the ability to focus parts of the image with aiming effect that will enable you to provide more detailed information about it in a totally unobtrusive way.</p>
+            <p class="before-area">You can use it with any spot , even with your custom spots , Example:</p>
+
+            <div class="hs-area">
+                <img src="img/yalta_summit_1945.jpg">
+
+                <div class="hs-wrap">
+                    <div data-activeon="always" data-dim="521,12,0" data-coord="0,0" class="invisible-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-pos="198" data-dir="top" data-anim="goin" class="tip-tooltip img-title">Yalta summit 1945</div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-handler="Aim" data-activeon="click" data-dim="51,52,7" data-coord="363,127"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-width="400" data-dir="right" class="aim-tooltip">
+                            <div class="tt-content">
+                                <p style="font-size: 16px;font-weight: bold;text-align: center;margin-bottom: 20px;">Joseph Stalin 1878-1953</p>
+                                <div>
+                                    <img src="img/stalin.jpg" style="float:left">
+                                    <p style="color: #989898;padding-left: 140px;">The de facto leader of the Soviet Union from the mid-1920s until his death in 1953. Among the
+                                        Bolshevik revolutionaries who brought about the Russian Revolution in 1917, Stalin was appointed
+                                        General Secretary of the party's Central Committee in 1922. Through expanding the functions of his role,
+                                        Stalin managed to consolidate power following the 1924 death of Vladimir Lenin, while eliminating any opposition. He held this nominal post
+                                        until abolishing it in 1952, concurrently serving as the Premier of the Soviet Union after establishing the position in 1941.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-handler="Aim" data-activeon="hover" data-dim="51,51,7" data-coord="237.25,140"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-width="400" data-dir="right" class="aim-tooltip">
+                            <div class="tt-content">
+                                <p style="font-size: 16px;font-weight: bold;text-align: center;margin-bottom: 20px;">Franklin D. Roosevelt 1882-1945</p>
+                                <div>
+                                    <img src="img/f_roosevelt.jpg" style="float:left">
+                                    <p style="color: #989898;padding-left: 140px;">
+                                        The 32nd President of the United States (1933–1945) and a central figure in world events during the mid-20th century,
+                                        leading the United States during a time of worldwide economic depression and total war. A dominant leader of the Democratic Party and
+                                        the only American president elected to more than two terms, he built a New Deal Coalition that realigned American politics after 1932,
+                                        as his domestic policies defined American liberalism for the middle third of the 20th century.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-handler="Aim" data-dim="48,51,7" data-coord="123.25,145"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-width="400" data-dir="right" class="aim-tooltip">
+                            <div class="tt-content">
+                                <p style="font-size: 16px;font-weight: bold;text-align: center;margin-bottom: 20px;">Winston Churchill 1874-1965</p>
+                                <div>
+                                    <img src="img/Winston_Churchill_1941.jpg" style="float:left">
+                                    <p style="color: #989898;padding-left: 140px;">
+                                        A British politician, best known for his leadership of the United Kingdom during the Second World War. Widely regarded as one of the greatest wartime leaders of the 20th century,
+                                        he served as Prime Minister twice (1940–45 and 1951–55). A noted statesman and orator, Churchill was also an officer in the British Army, a historian, a writer, and an artist.
+                                        He is the only British prime minister to have received the Nobel Prize in Literature and was the first person to be made an Honorary Citizen of the United States.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-handler="Aim" data-dim="37,48,7" data-coord="51,66"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-dir="bottom" class="aim-tooltip">
+                            <div class="tt-content">Admiral of the Fleet Sir Andrew Cunningham</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-handler="Aim" data-dim="41,51,7" data-coord="109.25,53"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-dir="bottom" class="aim-tooltip">
+                            <div class="tt-content">Marshal of the RAF Sir Charles Portal</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-handleropts="false" data-handler="Aim" data-activeon="hover"
+                         data-dim="38,55,7" data-coord="235.25,50" class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-width="150" data-dir="bottom" class="aim-tooltip">
+                            <div class="tt-content">
+                                Fleet Admiral William D. Leahy
+                                <p style="margin:0;color: #ff3636">Note that there's no aiming effect in this spot, just show the tooltip outside image!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+
+            <div class="hs-area">
+                <img data-imgdim="640,480" style="width:525px;" src="img/lungern.jpg">
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-handler="Aim" data-dim="104,68,5" data-coord="173.75,296"
+                         class="shadow-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-dir="bottom" class="aim-tooltip">
+                            <div class="tt-content">Mayor House</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-activeon="hover" data-handler="Aim" data-dim="51,43,5" data-coord="411,160"
+                         class="glass-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-dir="right" class="aim-tooltip">
+                            <div class="tt-content">
+                                <div style="width:400px;">
+                                    <p style="text-align:center;"><img src="img/chalet.jpg" style="width:200px;"></p>
+                                    <p style="margin:0"><strong>Swiss Chalet: </strong>is a type of building or house, native
+                                        to the Alpine region in Europe, made of wood, with a heavy, gently sloping
+                                        roof with wide, well-supported eaves set at right angles to the front of
+                                        the house.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hs-wrap">
+                    <div data-handler="Aim" data-activeon="hover" data-dim="28,26,4" data-coord="22,132"
+                         class="red-spot"></div>
+                    <div class="tt-wrap">
+                        <div data-dir="top" class="aim-tooltip">
+                            <div class="tt-content">Pump Compartment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="responsive_fluid">
+            <div class="page-header line">
+                <h1>Responsive & Fluid</h1>
+            </div>
+            <p>Try resize image below:</p>
+
+            <div id="responsive-fluid-container">
+
+                <div class="hs-area" id="resize">
+                    <img data-imgdim="640,480" src="img/lungern.jpg" style="width: 100%;">
+
+                    <div class="hs-wrap">
+                        <div data-activeon="always" data-dim="640,24,0" data-coord="0,0" class="invisible-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-dir="top" data-pos="280" data-anim="goin" class="tip-tooltip img-title">Lungern, Switzerland</div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-dim="110,81,8" data-coord="169.75,288"
+                             class="shadow-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-pos="35" data-width="75" data-dir="right" data-anim="goin" class="tip-tooltip white">Mayor House</div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-dim="48,37,4" data-coord="338.75,197"
+                             class="red-spot"></div>
+                        <div class="tt-wrap" style="z-index: 1050;">
+                            <div data-dir="bottom" data-anim="goin" class="tip-tooltip">
+                                <iframe src="http://www.youtube.com/embed/hWTAMuRXQbI" allowfullscreen=""
+                                        frameborder="0" height="280" width="400"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hs-wrap">
+                        <a href="http://en.wikipedia.org/wiki/Chalet" target="_blank"><div data-activeon="hover" data-dim="49,39,7" data-coord="410,162" class="glass-spot"></div></a>
+                        <div class="tt-wrap" style="z-index: 1050;">
+                            <div data-dir="bottom" data-pos="10" data-anim="goin" class="tip-tooltip">
+                                <div style="height:145px;width:425px;">
+                                    <img src="img/chalet.jpg"
+                                         style="width:200px;float:left;">
+                                    <p style="padding-left:210px;margin:0"><strong>Swiss Chalet: </strong>is a type of building or house, native
+                                        to the Alpine region in Europe, made of wood, with a heavy, gently sloping
+                                        roof with wide, well-supported eaves set at right angles to the front of
+                                        the house. <strong style="color: #007e32">"Click on spot to open wikipedia article"</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hs-wrap">
+                        <div data-activeon="hover" data-coord="184.75,46" data-name="western-coast" class="sniper-spot"></div>
+                        <div class="tt-wrap">
+                            <div data-width="85" data-pos="-18" data-dir="top" data-anim="goin" class="tip-tooltip">Western Coast</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>You will only need to edit one image in the editor, then you will be able to use different sizes of the same image in your website as the
+                plugin will automatically detect image dimension , scale and reposition spots on it, you can also use it with fluid images & adjust spots with window resize.</p>
+
+        </section>
+
+        <section id="share_your_spots">
+            <div class="page-header line">
+                <h1>Share Your Spots!</h1>
+            </div>
+
+            <p>You have image with lots of details , want to point visitors to a specific part in it , you can now have a direct link to your spot like:</p>
+            <p>http://www.yoursitename.com/page.html#SpotName</p>
+            <p>by giving your spot a name in the editor. When navigating to this URL the plugin will automatically scroll the page
+                to where the image is located & trigger spot!
+            </p>
+            <p>Note that if the browser is already pointing to one of this links, clicking it again won't reactivate spot. if you want such effect use javascript instead, see next section</p>
+            <div class="well">
+                <p><strong>Try this links (opens in a new window):</strong></p>
+                <p><a href="spotlink.html#chalet" target="_blank">Swiss Chalet</a></p>
+                <p><a href="spotlink.html#mayor-house" target="_blank">Mayor House</a></p><br>
+                <p style="font-weight: bold;">Or use it to trigger a spot in the current page,Try this links (the page won't reload, this feature will not work with IE7):</p>
+                <p><a href="#western-coast">Western Coast</a></p>
+                <p><a href="#chalet">Swiss Chalet</a></p>
+                <p><a href="#ie-support">Plugin Internet Explorer Support</a></p>
+            </div>
+        </section>
+
+        <section id="control_spots_with_javascript">
+            <div class="page-header line">
+                <h1>Control Spots With JavaScript</h1>
+            </div>
+            <p>You can trigger & untrigger spots , check if spot is active or not and show/hide all spots on image, Example:</p>
+
+            <table>
+                <tr >
+                    <td></td>
+                    <td>
+                        <div id="visiblity-btns">
+                            <button class="btn" id="show-btn"><i class="icon-ok-circle"></i> Show</button>
+                            <button class="btn" id="hide-btn"><i class="icon-remove-circle"></i> Hide</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="control-btns">
+                        <p><button class="btn btn-inverse">Mercury</button></p>
+                        <p><button class="btn btn-inverse">Venus</button></p>
+                        <p><button class="btn btn-inverse">Earth</button></p>
+                        <p><button class="btn btn-inverse">Mars</button></p>
+                        <p><button class="btn btn-inverse">Jupiter</button></p>
+                        <p><button class="btn btn-inverse">Saturn</button></p>
+                        <p><button class="btn btn-inverse">Uranus</button></p>
+                        <p><button class="btn btn-inverse">Neptune</button></p>
+                    </td>
+                    <td>
+                        <div class="hs-area" id="controlled-area">
+                            <img src="img/galaxy.jpg">
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="18,18,3" data-coord="95.75,155" class="red-spot" id="Mercury"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="9" data-dir="left" data-anim="goin" class="tip-tooltip">Mercury</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="30,29,0" data-coord="131.75,134"
+                                     class="invisible-spot" id="Venus"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="11" data-dir="top" data-anim="goin" class="tip-tooltip white">Venus</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="26,25,0" data-coord="176.75,112"
+                                     class="invisible-spot" id="Earth"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="-10" data-width="90" data-anim="fade" class="bubble-tooltip">Our Cool Planet!</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="25,24,39" data-coord="205,84" class="onhover-spot" id="Mars"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="10" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Mars</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-handler="Aim" data-activeon="hover" data-dim="60,58,16" data-coord="260,79"
+                                     class="red-spot" id="Jupiter"></div>
+                                <div class="tt-wrap">
+                                    <div  data-dir="right" class="aim-tooltip">
+                                        <div class="tt-content">
+                                            <div style="width:250px;text-align: center;">
+                                                <img src="img/jupiter.jpg">
+                                                <p style="font-size: 18px;padding-top: 15px;">Jupiter</p>
+                                                <table style="text-align: left;margin: 30px 0 0 20px;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="padding-right: 55px;color: #752424"><strong>Volume:</strong>
+                                                            </td>
+                                                            <td>1.4313×1015 km<sup>3</sup>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #752424"><strong>Mass:</strong>
+                                                            </td>
+                                                            <td>1.8986×1027<sup>27</sup> kg</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #752424"><strong>Orbital Period:</strong>
+                                                            </td>
+                                                            <td>11.8618 year</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #752424"><strong>Mean Radius:</strong>
+                                                            </td>
+                                                            <td>69,911 ± 6 km</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td style="color: #752424"><strong>Mean Density:</strong>
+                                                            </td>
+                                                            <td>1.326 g/cm<sup>3</sup>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="59,49,0" data-coord="335,51" class="invisible-spot" id="Saturn"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="25" data-dir="top" data-anim="goin" class="tip-tooltip white">Saturn</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="44,42,15" data-coord="402,22" class="glass-spot" id="Uranus"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="20" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Uranus</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div data-activeon="hover" data-dim="37,36,0" data-coord="454.75,0" class="invisible-spot" id="Neptune"></div>
+                                <div class="tt-wrap">
+                                    <div data-pos="15" data-dir="right" data-anim="goin" class="tip-tooltip white">Neptune</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <div class="well">
+                <pre style='color:#000000;'><span style='color:#3f7f59; '>//Show / hide all spots</span>
+$(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#area</span><span style='color:#2a00ff; '>"</span>).hotspotter(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>show</span><span style='color:#2a00ff; '>"</span>);
+$(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#area</span><span style='color:#2a00ff; '>"</span>).hotspotter(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>hide</span><span style='color:#2a00ff; '>"</span>);
+
+
+<span style='color:#3f7f59; '>//Trigger / untrigger a spot</span>
+$(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#myspot</span><span style='color:#2a00ff; '>"</span>).hotspotter(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>trigger</span><span style='color:#2a00ff; '>"</span>);
+$(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#myspot</span><span style='color:#2a00ff; '>"</span>).hotspotter(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>untrigger</span><span style='color:#2a00ff; '>"</span>);
+
+
+<span style='color:#3f7f59; '>//Detect if spot is active or not</span>
+$(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>#myspot</span><span style='color:#2a00ff; '>"</span>).hotspotter(<span style='color:#2a00ff; '>"</span><span style='color:#2a00ff; '>isActive</span><span style='color:#2a00ff; '>"</span>);
+                </pre>
+            </div>
+        </section>
+
+        <section id="custom_spots">
+            <div class="page-header line">
+                <h1>Custom Spots</h1>
+            </div>
+            <p>From start , the plugin was designed to be flexible & easily extensible even for those with no code experience , here's what you can do with it: </p>
+            <div class="well">
+                <ul>
+                    <li>Make custom image spot, you can do it easily in editor with point & click , no code.</li>
+                    <li>Change spot / tooltip styles.</li>
+                    <li>Add markup.</li>
+                    <li>You can even make plugins for the plugin! , to take full control with javascript code.</li>
+                    <li>You will get comprehensive documentation & examples on how to build whatever kind of custom spot you want.</li>
+                </ul>
+            </div>
+        </section>
+
+        <p style="text-align: center;font-size: 12px;">Author: Basem , <a href="http://codecanyon.net/user/z-B">see CodeCanyon Profile</a></p>
+        <p style="text-align: center;font-size: 12px;">Lungern image provided by Michael Siegenthaler <a href="http://www.msigi.net/" target="_blank">http://www.msigi.net</a></p>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="../plugin/minified/jquery-hotspotter.min.js"></script>
+
+        <script type="text/javascript">
+            $('.hs-area').hotspotter({imgTopMargin: 50});
+
+            $('#resize').resizable({
+                aspectRatio: true,
+                stop: function() {
+                    $(this).hotspotter();
+                }
+            });
+
+            $('#control-btns').bind('mouseover', function(e) {
+                if (e.target.tagName == 'BUTTON') {
+                    $('#' + $(e.target).text()).hotspotter('trigger');
+                }
+            });
+            $('#control-btns').bind('mouseout', function(e) {
+                if (e.target.tagName == 'BUTTON') {
+                    $('#' + $(e.target).text()).hotspotter('untrigger');
+                }
+            });
+
+            $('#show-btn').bind('click', function() {
+                $('#controlled-area').hotspotter("show");
+            });
+            $('#hide-btn').bind('click', function() {
+                $('#controlled-area').hotspotter("hide");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+22-08-2020 plugin v2.0.4, editor v2.0.1
+	- Adding new developer-oriented features related to hotspot handling
+	- Updating documentation
+
+02-07-2014 plugin v1.8.2, editor v1.4.2
+    - Drop support for CMS like wordpress and joomla, although the plugin could easily work in any CMS,
+    it confuse beginners for example: the need to use child themes in wordpress before adding hotspotter.
+    A more experienced user will be easily able to do it.
+
+15-05-2014 plugin v1.8.2, editor v1.4.1
+    - Editor: changing preview background to avoid conflict with aim spot tooltip
+
+14-05-2014 plugin v1.8.2, editor v1.4.0:
+    - Plugin: Aim spot triggered on click would now be
+    deactivated when user click anywhere on the image instead of
+    having to click the same spot again
+
+05-05-2014 plugin v1.8.1, editor v1.4.0:
+    - Editor: performance optimizations
+
+01-05-2014 plugin v1.8.1, editor v1.3.8:
+    - Editor: fix cloning bug
+
+30-04-2014 plugin v1.8.1, editor v1.3.6:
+    - Editor: better handling of large images
+
+01-04-2014 plugin v1.8.1, editor v1.3.5:
+    - added joomla 3 installation instructions
+
+28-03-2014 plugin v1.8.1, editor v1.3.5:
+    - Editor: used protocol relative paths with fallback to local files to be
+    able to run the editor locally, on unsecured servers "http" and secured ones "https"
+
+25-03-2014 plugin v1.8.1, editor v1.3.4:
+    - Editor: fixed bug when cloning Aim type spot and animation is off
+    - Editor: clean up of code
+    - Editor: removed linux added file to avoid user confusion
+
+16-02-2014, plugin v1.8.1, editor v1.3.3:
+	- fixed bug when using quotes in spot name
+	- workaround for firefox reporting incorrect image dimensions
+
+07-11-2013, plugin v1.8.0, editor v1.3.3:
+	- added a workaround for IE10 to be able to show cached image spots
+	- removed small space below image spots
+
+03-09-2013, plugin v1.7.9, editor v1.3.2:
+	- fixed plugin conflict with mootools, that will allow running it smoothly in joomla
+
+26-06-2013, plugin v1.7.8, editor v1.3.2:
+	- fixed old IE support code in documentation for wordpress installation
+	- fixed bug that prevented using image spots with aiming effect
+
+29-04-2013, plugin v1.7.7, editor v1.3.2:
+	- Plugin: only one spot will be active if u used on click spots
+
+09-04-2013, plugin v1.7.6, editor v1.3.2:
+	- Editor: Fixed bug in image spots positioning & inclusion
+
+27-03-2013, plugin v1.7.6, editor v1.3.1:
+	- Plugin: slight change in 'goin' animation to make it more consistent with any spot size
+
+11-03-2013, plugin v1.7.5, editor v1.3.1:
+	- Plugin: image spots become responsive
+	- Plugin: image spot will also hover with aim effect
+
+02-03-2013, plugin v1.7.4, editor v1.3.1::
+	- Editor: bug fix in cloning
+	- Plugin: bug fix in aiming effect
+
+26-02-2013, plugin v1.7.3, editor v1.3.1:
+	- Editor: improvement in image loading
+	- Editor: improvement in image spots markup
+	- Editor: bug fix for getting code
+
+24-02-2013, plugin v1.7.3, editor v1.3.0:
+	- Editor: you can now load previously generated code
+	- Editor: added option to format generated code for use with wordpress
+	- Editor: minor Interface change
+	- added wordpress installation instruction in documentation
+
+03-02-2013, plugin v1.7.3, editor v1.2.2:
+	- Editor: use aiming effect with custom image spots
+	- Plugin: modified glass spot
+
+15-01-2013:
+	- the plugin won't throw errors anymore , so allow user to safely init it in page even if the page don't use the plugin , that also prevent hanging the whole JS engine because of the throwed error
+	- chrome now will get correct tooltip dimension for Aim spots "got when image is loaded, see the related quirk for more details"
+	- Responsive Cached image support in IE, "see related quirk"
+
+
+28-12-2012:
+	- adapt Demo to work with 1024*768 resolution, "changed right menu width, content padding-left"
+	- changed Spot & Tooltips section image in demo to be smaller & responsive to adapt to same resolution
