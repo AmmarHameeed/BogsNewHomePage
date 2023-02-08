@@ -8,7 +8,7 @@
   }
   @media screen and (max-width: 768px) {
     #hotspotter__module {
-      display: none;
+      /* display: none; */
     }
   }
   @media screen and (max-width: 992px) {
@@ -22,6 +22,7 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  
   #hotspotter__module .dual__swiper-container .swiper-wrapper .dual__swiper__slide {
     position: relative;
     /* overflow: hidden; */
@@ -62,4 +63,16 @@
 
   .tt-wrap{
     min-width: 200px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #hotspotter__module .dual__swiper-container .swiper-wrapper {
+      flex-flow: column;
+    }
+    .tetra__image-container{
+        width: 100% !important;
+    }
+    .dual__swiper__overlay{
+        width: 25% !important;
+    }
   }
