@@ -47,34 +47,42 @@
                         <img class="dual__swiper__image" src="img/BlackClassicII_02.jpg">
 
                         <div class="hs-wrap">
-                            <div data-activeon="hover" data-dim="60,58,16" data-coord="400.75,300" class="red-spot"
+                            <div data-activeon="hover" data-dim="0,0,0" data-coord="400.75,300" class=""
                                 id="maxWick"></div>
                             <div class="tt-wrap">
-                                <div data-pos="9" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Maxwick - point to bottom of outsole
+                                <div data-pos="9" data-dir="bottom" data-anim="goin" class="tip-tooltip white"><b>Maxwick </b>- point to bottom of outsole
                                     Keeps you dry on the inside
                                 </div>
                             </div>
                         </div>
                         <div class="hs-wrap">
-                            <div data-activeon="hover" data-dim="60,58,16" data-coord="600.75,645" class="red-spot"
+                            <div data-activeon="hover" data-dim="0,0,0" data-coord="600.75,645" class=""
                                 id="insulated"></div>
                             <div class="tt-wrap">
                                 <div data-pos="11" data-dir="bottom" data-anim="goin" class="tip-tooltip white">
-                                    Insulated - Point to the black material part of the boot with the handles. <br>
+                                    <b>Insulated </b>- Point to the black material part of the boot with the handles. <br>
                                     Keeps you comfortable in the worst conditions
                                 </div>
                             </div>
                         </div>
                         <div class="hs-wrap">
-                            <div data-activeon="hover" data-dim="60,58,16" data-coord="365.75,700" class="red-spot"
+                            <div data-activeon="hover" data-dim="0,0,0" data-coord="365.75,700" class=""
                                 id="comfort"></div>
                             <div class="tt-wrap">
-                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Comfort rated - Box whole boot
+                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white"> <b> Comfort rated </b>- Box whole boot
                                     Keep you warm down to -20 degrees
                                 </div>
                             </div>
                         </div>
                         <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="0,0,0" data-coord="520,500" class=""
+                                id="waterProof"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white"> <b> Waterproof </b> - Box whole boot 100% Waterproof from top to bottom.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="hs-wrap">
                             <div data-handler="Aim" data-activeon="hover" data-dim="60,58,16" data-coord="520,500"
                                 class="red-spot" id="waterProof"></div>
                             <div class="tt-wrap">
@@ -86,7 +94,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -104,6 +112,13 @@
 
     <script type="text/javascript">
         $('.hs-area').hotspotter({ imgTopMargin: 50 });
+
+        // $('.resize').resizable({
+        //         aspectRatio: true,
+        //         stop: function() {
+        //             $(this).hotspotter();
+        //         }
+        //     });
 
 
         $('#control-btns').bind('mouseover', function (e) {

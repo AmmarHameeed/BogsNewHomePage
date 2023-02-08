@@ -9,6 +9,7 @@
   @media screen and (max-width: 768px) {
     #hotspotter__module {
       /* display: none; */
+      padding: 50px 0;
     }
   }
   @media screen and (max-width: 992px) {
@@ -29,6 +30,8 @@
   }
   #hotspotter__module .dual__swiper-container .swiper-wrapper .dual__swiper__slide.tetra__image-container {
     width: 50%;
+    margin-right: 15px;
+    justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -36,8 +39,12 @@
         flex-wrap: wrap;
   }
   #hotspotter__module .dual__swiper-container .swiper-wrapper .dual__swiper__slide.tetra__image-container .dual__swiper__overlay {
-    width: 50%;
+    width: 49%;
     overflow: hidden;
+  }
+  .dual__swiper__overlay:nth-of-type(1),
+  .dual__swiper__overlay:nth-of-type(2){
+    margin-bottom: 15px;
   }
   #hotspotter__module .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
     width: 100%;
@@ -48,6 +55,7 @@
     transition: transform 0.5s;
     transition: transform 0.5s, -webkit-transform 0.5s;
   }
+  
   #hotspotter__module .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper .overlay__redirect {
     position: absolute;
     width: 100%;
@@ -76,3 +84,7 @@
         width: 25% !important;
     }
   }
+  
+  /* #controlled-area{
+    background: url('../img/BlackClassicII_02.jpg') transparent top left no-repeat;
+  } */
