@@ -1,183 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Hotspotter - Cool Hotspot Maker jQuery Plugin</title>
 
-        <link rel="stylesheet" type="text/css" href="css/demos.min.css" />
-        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/demos-ie7-8.min.css" /><![endif]-->
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Hotspotter - Cool Hotspot Maker jQuery Plugin</title>
 
-        <link rel="stylesheet" href="../plugin/minified/jquery-hotspotter.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/demos.min.css" /> -->
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/demos-ie7-8.min.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
 
-        <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../plugin/minified/ie7-8.min.css" /><![endif]-->
+    <link rel="stylesheet" href="../plugin/minified/jquery-hotspotter.min.css">
 
-        <link rel="stylesheet" type="text/css" href="../Editor/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
-    </head>
-    <body>
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../plugin/minified/ie7-8.min.css" /><![endif]-->
 
-        <section id="control_spots_with_javascript">
+    <link rel="stylesheet" type="text/css" href="../Editor/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hotspotter-custom.css" />
+</head>
 
-            <table>
-                
-                <tr>
-                    <td id="control-btns">
-                        <!-- <p><button class="btn btn-inverse">Mercury</button></p>
-                        <p><button class="btn btn-inverse">Venus</button></p>
-                        <p><button class="btn btn-inverse">Earth</button></p> -->
-                        <p><img src="img/marsButton.jpeg" alt="Mars"></p>
-                        <p><img src="img/jupiterButton.jpeg" alt="Jupiter"></p>
-                        <!-- <p><button class="btn btn-inverse">Jupiter</button></p> -->
-                        <!-- <p><button class="btn btn-inverse">Saturn</button></p>
-                        <p><button class="btn btn-inverse">Uranus</button></p>
-                        <p><button class="btn btn-inverse">Neptune</button></p> -->
-                    </td>
-                    <td>
-                        <div class="hs-area" id="controlled-area">
-                            <img src="img/galaxy.jpg">
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="18,18,3" data-coord="95.75,155" class="red-spot" id="Mercury"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="9" data-dir="left" data-anim="goin" class="tip-tooltip">Mercury</div>
+<body>
+
+    <div id="mainContainer">
+        <section id="hotspotter__module">
+
+            <div class="dual__swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="control-btns" class="dual__swiper__slide tetra__image-container" style="display: ;">
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/pink.jpg" alt="maxWick"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+
+                            <a><img class="dual__swiper__image" src="img/green.jpg" alt="insulated"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/blue.jpg" alt="comfort"></a>
+
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/purple.jpg" alt="waterProof"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="hs-area dual__swiper__slide" id="controlled-area">
+                        <img class="dual__swiper__image" src="img/BlackClassicII_02.jpg">
+
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="60,58,16" data-coord="400.75,300" class="red-spot"
+                                id="maxWick"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="9" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Maxwick - point to bottom of outsole
+                                    Keeps you dry on the inside
                                 </div>
                             </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="30,29,0" data-coord="131.75,134"
-                                     class="invisible-spot" id="Venus"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="11" data-dir="top" data-anim="goin" class="tip-tooltip white">Venus</div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="60,58,16" data-coord="600.75,645" class="red-spot"
+                                id="insulated"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="11" data-dir="bottom" data-anim="goin" class="tip-tooltip white">
+                                    Insulated - Point to the black material part of the boot with the handles. <br>
+                                    Keeps you comfortable in the worst conditions
                                 </div>
                             </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="26,25,0" data-coord="176.75,112"
-                                     class="invisible-spot" id="Earth"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="-10" data-width="90" data-anim="fade" class="bubble-tooltip">Our Cool Planet!</div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="60,58,16" data-coord="365.75,700" class="red-spot"
+                                id="comfort"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Comfort rated - Box whole boot
+                                    Keep you warm down to -20 degrees
                                 </div>
                             </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="25,24,39" data-coord="205,84" class="onhover-spot" id="Mars"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="10" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Mars</div>
-                                </div>
-                            </div>
-                            <div class="hs-wrap">
-                                <div data-handler="Aim" data-activeon="hover" data-dim="60,58,16" data-coord="260,79"
-                                     class="red-spot" id="Jupiter"></div>
-                                <div class="tt-wrap">
-                                    <div  data-dir="right" class="aim-tooltip">
-                                        <div class="tt-content">
-                                            <div style="width:250px;text-align: center;">
-                                                <img src="img/jupiter.jpg">
-                                                <p style="font-size: 18px;padding-top: 15px;">Jupiter</p>
-                                                <table style="text-align: left;margin: 30px 0 0 20px;">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td style="padding-right: 55px;color: #752424"><strong>Volume:</strong>
-                                                            </td>
-                                                            <td>1.4313×1015 km<sup>3</sup>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="color: #752424"><strong>Mass:</strong>
-                                                            </td>
-                                                            <td>1.8986×1027<sup>27</sup> kg</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="color: #752424"><strong>Orbital Period:</strong>
-                                                            </td>
-                                                            <td>11.8618 year</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="color: #752424"><strong>Mean Radius:</strong>
-                                                            </td>
-                                                            <td>69,911 ± 6 km</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td style="color: #752424"><strong>Mean Density:</strong>
-                                                            </td>
-                                                            <td>1.326 g/cm<sup>3</sup>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-handler="Aim" data-activeon="hover" data-dim="60,58,16" data-coord="520,500"
+                                class="red-spot" id="waterProof"></div>
+                            <div class="tt-wrap">
+                                <div data-dir="bottom" class="aim-tooltip">
+                                    <div class="tt-content">
+                                        <div style="width:100%;text-align: center;">
+                                            <p style="font-size: 18px;padding-top: 15px;">Waterproof- Box whole boot 100% Waterproof from top to bottom.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="59,49,0" data-coord="335,51" class="invisible-spot" id="Saturn"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="25" data-dir="top" data-anim="goin" class="tip-tooltip white">Saturn</div>
-                                </div>
-                            </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="44,42,15" data-coord="402,22" class="glass-spot" id="Uranus"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="20" data-dir="bottom" data-anim="goin" class="tip-tooltip white">Uranus</div>
-                                </div>
-                            </div>
-                            <div class="hs-wrap">
-                                <div data-activeon="hover" data-dim="37,36,0" data-coord="454.75,0" class="invisible-spot" id="Neptune"></div>
-                                <div class="tt-wrap">
-                                    <div data-pos="15" data-dir="right" data-anim="goin" class="tip-tooltip white">Neptune</div>
-                                </div>
-                            </div>
                         </div>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
+    </div>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../plugin/minified/jquery-hotspotter.min.js"></script>
 
-        <script src="../plugin/minified/jquery-hotspotter.min.js"></script>
 
-        <script type="text/javascript">
-            $('.hs-area').hotspotter({imgTopMargin: 50});
+    <script type="text/javascript">
+        $('.hs-area').hotspotter({ imgTopMargin: 50 });
 
-            $('#resize').resizable({
-                aspectRatio: true,
-                stop: function() {
-                    $(this).hotspotter();
-                }
-            });
 
-            $('#control-btns').bind('mouseover', function(e) {
-                // if (e.target.tagName == 'BUTTON' || e.target.tagName == 'IMG' ) {
-                    if(e.target.tagName == "BUTTON"){
-                        $('#' + $(e.target).text()).hotspotter('trigger');
-                    }
-                    else{
-                        var alt = $(e.target).attr("alt")
-                        $('#' + alt).hotspotter('trigger');
-                    }
-                    
-                // }
-            });
-            $('#control-btns').bind('mouseout', function(e) {
-                // if (e.target.tagName == 'BUTTON') {
-                //     $('#' + $(e.target).text()).hotspotter('untrigger');
-                // }
-                if(e.target.tagName == "BUTTON"){
-                        $('#' + $(e.target).text()).hotspotter('untrigger');
-                    }
-                    else{
-                        var alt = $(e.target).attr("alt")
-                        $('#' + alt).hotspotter('untrigger');
-                    }
-            });
+        $('#control-btns').bind('mouseover', function (e) {
+            if (e.target.tagName == "BUTTON") {
+                $('#' + $(e.target).text()).hotspotter('trigger');
+            }
+            else {
+                var alt = $(e.target).attr("alt")
+                $('#' + alt).hotspotter('trigger');
+            }
+        });
 
-            $('#show-btn').bind('click', function() {
-                $('#controlled-area').hotspotter("show");
-            });
-            $('#hide-btn').bind('click', function() {
-                $('#controlled-area').hotspotter("hide");
-            });
-        </script>
-    </body>
+        $('#control-btns').bind('mouseout', function (e) {
+            if (e.target.tagName == "BUTTON") {
+                $('#' + $(e.target).text()).hotspotter('untrigger');
+            }
+            else {
+                var alt = $(e.target).attr("alt")
+                $('#' + alt).hotspotter('untrigger');
+            }
+        });
+    </script>
+</body>
+
 </html>
