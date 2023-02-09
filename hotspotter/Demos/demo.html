@@ -22,29 +22,28 @@
 
     <div id="mainContainer">
         <section id="hotspotter__module">
-
             <div class="dual__swiper-container">
                 <div class="swiper-wrapper">
                     <div id="control-btns" class="dual__swiper__slide tetra__image-container" style="display: ;">
                         <div class="dual__swiper__overlay">
-                            <a><img class="dual__swiper__image" src="img/pink.jpg" alt="maxWick"></a>
+                            <a><img class="dual__swiper__image" src="img/pink.png" alt="maxWick"></a>
                         </div>
                         <div class="dual__swiper__overlay">
 
-                            <a><img class="dual__swiper__image" src="img/green.jpg" alt="insulated"></a>
+                            <a><img class="dual__swiper__image" src="img/green.png" alt="insulated"></a>
                         </div>
                         <div class="dual__swiper__overlay">
-                            <a><img class="dual__swiper__image" src="img/blue.jpg" alt="comfort"></a>
+                            <a><img class="dual__swiper__image" src="img/blue.png" alt="comfort"></a>
 
                         </div>
                         <div class="dual__swiper__overlay">
-                            <a><img class="dual__swiper__image" src="img/purple.jpg" alt="waterProof"></a>
+                            <a><img class="dual__swiper__image" src="img/purple.png" alt="waterProof"></a>
                         </div>
 
                     </div>
 
                     <div class="hs-area dual__swiper__slide" id="controlled-area">
-                        <img class="dual__swiper__image" src="img/BlackClassicII_02.jpg">
+                        <img class="dual__swiper__image" src="img/BlackClassicII_02.png">
 
                         <div class="hs-wrap">
                             <div data-activeon="hover" data-dim="0,0,0" data-coord="400.75,300" class=""
@@ -101,6 +100,86 @@
             </div>
 
         </section>
+
+        <section id="hotspotter__module--mobile">
+            <div class="dual__swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="control-btns" class="dual__swiper__slide tetra__image-container" style="display: ;">
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/pink.png" alt="maxWick"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+
+                            <a><img class="dual__swiper__image" src="img/green.png" alt="insulated"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/blue.png" alt="comfort"></a>
+
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/purple.png" alt="waterProof"></a>
+                        </div>
+
+                    </div>
+
+                    <div class="hs-area dual__swiper__slide resize" id="controlled-area-mobile">
+                        <img class="dual__swiper__image" src="img/BlackClassicII_02.png">
+
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="10,10,10" data-coord="100.75,100" class="red-spot"
+                                id="maxWick"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="9" data-dir="bottom" data-anim="goin" class="tip-tooltip white"><b>Maxwick </b>- point to bottom of outsole
+                                    Keeps you dry on the inside
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="10,10,10" data-coord="240.275,280" class="red-spot"
+                                id="insulated"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="-11" data-dir="bottom" data-anim="goin" class="tip-tooltip white">
+                                    <b>Insulated </b>- Point to the black material part of the boot with the handles. <br>
+                                    Keeps you comfortable in the worst conditions
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="10,10,10" data-coord="150.75,320" class="red-spot"
+                                id="comfort"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white"> <b> Comfort rated </b>- Box whole boot
+                                    Keep you warm down to -20 degrees
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div data-activeon="hover" data-dim="10,10,10" data-coord="200,180" class="red-spot"
+                                id="waterProof"></div>
+                            <div class="tt-wrap">
+                                <div data-pos="13" data-dir="bottom" data-anim="goin" class="tip-tooltip white"> <b> Waterproof </b> - Box whole boot 100% Waterproof from top to bottom.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="hs-wrap">
+                            <div data-handler="Aim" data-activeon="hover" data-dim="60,58,16" data-coord="520,500"
+                                class="red-spot" id="waterProof"></div>
+                            <div class="tt-wrap">
+                                <div data-dir="bottom" class="aim-tooltip">
+                                    <div class="tt-content">
+                                        <div style="width:100%;text-align: center;">
+                                            <p style="font-size: 18px;padding-top: 15px;">Waterproof- Box whole boot 100% Waterproof from top to bottom.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
     </div>
 
 
@@ -113,12 +192,13 @@
     <script type="text/javascript">
         $('.hs-area').hotspotter({ imgTopMargin: 50 });
 
-        // $('.resize').resizable({
-        //         aspectRatio: true,
-        //         stop: function() {
-        //             $(this).hotspotter();
-        //         }
-        //     });
+        $('.resize').resizable({
+                aspectRatio: true,
+                stop: function() {
+                    $(this).hotspotter();
+                    console.log("resizing")
+                }
+            });
 
 
         $('#control-btns').bind('mouseover', function (e) {
