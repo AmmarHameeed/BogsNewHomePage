@@ -634,6 +634,7 @@
 }
 .index-Feb__module #mainContainer #mobile_category .mobile-category .mobile-category__button .mobile-category__link {
   color: #000000;
+  font-size: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
