@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Hotspotter - Cool Hotspot Maker jQuery Plugin</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/demos.min.css" /> -->
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/demos-ie7-8.min.css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="../plugin/minified/jquery-hotspotter.min.css">
+
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="../plugin/minified/ie7-8.min.css" /><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="../Editor/css/ui-darkness/jquery-ui-1.9.2.custom.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hotspotter-custom.css" />
+</head>
+
+<body>
+
+    <div id="mainContainer">
+        <section id="hotspotter__module" style="display: block;">
+            <div class="dual__swiper-container">
+                <div class="swiper-wrapper" id="responsive-fluid-container">
+                    <div id="control-btns" class="dual__swiper__slide tetra__image-container" style="">
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/pink.png" alt="maxWick"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+
+                            <a><img class="dual__swiper__image" src="img/green.png" alt="insulated"></a>
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/blue.png" alt="comfort"></a>
+
+                        </div>
+                        <div class="dual__swiper__overlay">
+                            <a><img class="dual__swiper__image" src="img/purple.png" alt="waterProof"></a>
+                        </div>
+
+                    </div>
+                    <div class="hs-area dual__swiper__slide" id="controlled-area">
+                        <img class="dual__swiper__image" src="img/BlackClassicII_02.png" data-imgdim="1471,1666">
+                        <div class="hs-wrap">
+                            <div class="invisible-spot" data-coord="513.406,564" data-dim="51,51,0"
+                            data-activeon="hover" data-name="maxWick" id="maxWick"></div>
+                            <div class="tt-wrap">
+                                <div class="tip-tooltip" data-anim="goin" data-dir="bottom" data-width="175">
+                                    <div data-pos="9" data-dir="bottom" data-anim="goin" class="tip-tooltip bottom"> <b>Maxwick </b>- point to bottom of outsole Keeps you dry on the inside</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div class="invisible-spot" data-coord="978.406,1092.5" data-dim="49,50,0"
+                            data-activeon="hover" data-name="insulated" id="insulated"></div>
+                            <div class="tt-wrap">
+                                <div class="tip-tooltip" data-anim="goin" data-dir="bottom" data-width="175"> <b>Insulated </b>- Point to the black material part of the boot with the
+                                    handles.
+                                    <br>Keeps you comfortable in the worst conditions</div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div class="invisible-spot" data-coord="859.406,903.5" data-dim="65,70,0"
+                            data-activeon="hover" data-name="comfort" id="comfort"></div>
+                            <div class="tt-wrap">
+                                <div class="tip-tooltip" data-anim="goin" data-dir="bottom" data-width="175"><b>
+                                                                Comfort rated </b>- Box whole
+                                    boot Keep you warm down to -20 degrees</div>
+                            </div>
+                        </div>
+                        <div class="hs-wrap">
+                            <div class="invisible-spot" data-coord="538.406,1259" data-dim="57,60,0"
+                            data-activeon="hover" data-name="waterProof" id="waterProof"></div>
+                            <div class="tt-wrap">
+                                <div class="tip-tooltip" data-anim="goin" data-dir="bottom" data-width="175"><b>
+                                                                Waterproof </b> - Box whole
+                                    boot 100% Waterproof from top to bottom.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div id="responsive-fluid-container"> -->
+                        <!-- <div class="hs-area dual__swiper__slide" id="controlled-area">
+                            <img class="dual__swiper__image" src="img/BlackClassicII_02.png" data-imgdim="1471,1666">
+                            <div class="hs-wrap">
+                                <div class="onhover-spot" data-coord="1008,1078" data-dim="58,64,0" data-activeon="hover"
+                                data-name="Insulated" id="insulated"></div>
+                                <div class="tt-wrap">
+                                    <div class="tip-tooltip white" data-anim="goin" data-dir="top" data-width="200"><b>Insulated </b>- Point to the black material part of the boot with the
+                                        handles.
+                                        <br>Keeps you comfortable in the worst conditions</div>
+                                </div>
+                            </div>
+                            <div class="hs-wrap">
+                                <div class="onhover-spot" data-coord="542.406,1290" data-dim="56,58,0"
+                                data-activeon="hover" data-name="comfort" id="comfort"></div>
+                                <div class="tt-wrap">
+                                    <div class="tip-tooltip white" data-anim="goin" data-dir="bottom" data-width="200"><b>
+                                                                    Comfort rated </b>- Box whole
+                                        boot Keep you warm down to -20 degrees</div>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../plugin/minified/jquery-hotspotter.min.js"></script>
+
+
+    <script type="text/javascript">
+        
+
+        // $(document).ready(function() {
+            $('.hs-area').hotspotter();
+            console.log("content loaded")
+        // })
+
+
+        $(window).on('resize', function () {
+            console.log("resizing...");
+            $('.hs-area').hotspotter();
+        });
+
+        // $('#controlled-area').resizable({
+        //         aspectRatio: true,
+        //         stop: function() {
+        //             $(this).hotspotter();
+        //             console.log("resizing")
+        //         }
+        //     });
+
+
+        $('#control-btns').bind('mouseover', function (e) {
+            if (e.target.tagName == "BUTTON") {
+                $('#' + $(e.target).text()).hotspotter('trigger');
+            }
+            else {
+                var alt = $(e.target).attr("alt")
+                $('#' + alt).hotspotter('trigger');
+            }
+        });
+
+        $('#control-btns').bind('mouseout', function (e) {
+            if (e.target.tagName == "BUTTON") {
+                $('#' + $(e.target).text()).hotspotter('untrigger');
+            }
+            else {
+                var alt = $(e.target).attr("alt")
+                $('#' + alt).hotspotter('untrigger');
+            }
+        });
+    </script>
+</body>
+
+</html>

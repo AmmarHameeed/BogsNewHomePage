@@ -555,6 +555,11 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.index-Feb__module #mainContainer #mobile_category .mobile-category .mobile-category__button .mobile-category__link:hover {
+  background: #000000;
+  border-radius: 24px;
+  color: #ffffff;
+}
 .index-Feb__module #mainContainer .feature_slider {
   margin-bottom: 35px;
 }

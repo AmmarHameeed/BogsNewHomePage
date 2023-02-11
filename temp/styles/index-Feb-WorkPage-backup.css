@@ -537,6 +537,11 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.index-Feb-Work-alt__module #mainContainer #mobile_category .mobile-category .mobile-category__button .mobile-category__link:hover {
+  background: #000000;
+  border-radius: 24px;
+  color: #ffffff;
+}
 .index-Feb-Work-alt__module #mainContainer .featured__categories {
   margin-bottom: 75px;
 }
