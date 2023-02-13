@@ -77,9 +77,12 @@
     }
   }
 
-  .tt-wrap{
-    min-width: 200px;
+  @media screen and (min-width:768px){
+    .tt-wrap{
+      min-width: 200px;
+    }
   }
+  
 
   @media only screen and (max-width: 768px) {
     #hotspotter__module .dual__swiper-container .swiper-wrapper {
