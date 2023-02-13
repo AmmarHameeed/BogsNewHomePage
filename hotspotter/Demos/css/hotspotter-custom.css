@@ -98,6 +98,9 @@
       font-size: 11px;
       width: 120px !important;
     }
+    .width-unset{
+      width: unset !important;
+    }
 
     /* #insulated + .tt-wrap .tip-tooltip{
       width: 120px !important;
