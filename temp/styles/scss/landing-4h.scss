@@ -722,16 +722,25 @@
           justify-content: center;
           align-items: center;
 
+          @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+            justify-content: flex-start;
+          }
+
           .feature__slider--heading-text {
             line-height: 59px;
             margin-bottom: 0;
             font-size: 55px;
             text-transform: uppercase;
             font-family: 'bogs_headlineregular', Arial, sans-serif;
-          }
 
-          @media screen and (max-width: 768px) {
-            display: none;
+            @media screen and (max-width: 768px) {
+              font-size: 18px;
+              line-height: 18px;
+              text-transform: capitalize;
+    font-weight: 700;
+              font-family: "trade-gothic-next", Arial, sans-serif;
+            }
           }
         }
 

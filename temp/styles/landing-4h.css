@@ -1246,6 +1246,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .landing-4h__module #mainContainer .mainContainer__UpdatedMargins .feature_slider .feature__slider--heading-wrapper {
+    margin-bottom: 10px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .landing-4h__module #mainContainer .mainContainer__UpdatedMargins .feature_slider .feature__slider--heading-wrapper .feature__slider--heading-text {
   line-height: 59px;
   margin-bottom: 0;
@@ -1254,8 +1262,12 @@
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
 @media screen and (max-width: 768px) {
-  .landing-4h__module #mainContainer .mainContainer__UpdatedMargins .feature_slider .feature__slider--heading-wrapper {
-    display: none;
+  .landing-4h__module #mainContainer .mainContainer__UpdatedMargins .feature_slider .feature__slider--heading-wrapper .feature__slider--heading-text {
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: "trade-gothic-next", Arial, sans-serif;
   }
 }
 @media screen and (max-width: 768px) {
