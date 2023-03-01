@@ -89,6 +89,7 @@
           @include shopButtonWhite;
           margin-right: 15px;
           width: unset;
+          letter-spacing: 0;
 
           @media screen and (max-width: 768px) {
             margin-right: 10px;
@@ -296,6 +297,7 @@
             font-size: 30px;
 
             @media screen and (max-width: 768px) {
+              letter-spacing: 0;
               // display: none;
               // margin-left: 35px;
               // @include shopButtonBlack();
@@ -552,6 +554,13 @@
               justify-content: center;
               line-height: 34px;
               z-index: 999;
+
+              @media screen and (max-width: 768px) {
+                width: unset;
+                font-size: 20px;
+                letter-spacing: 0;
+                padding: 0px 15px 0px 19px;
+              }
             }
           }
         }
@@ -738,7 +747,7 @@
               font-size: 18px;
               line-height: 18px;
               text-transform: capitalize;
-    font-weight: 700;
+              font-weight: 700;
               font-family: "trade-gothic-next", Arial, sans-serif;
             }
           }
@@ -827,6 +836,7 @@
                     .fs__review--wrapper-text {
                       margin-left: 15px;
                       font-size: 18px;
+
                       @media screen and (max-width: 768px) {
                         font-size: 16px;
                       }
@@ -836,6 +846,7 @@
                   .feature_slider__slide--product-price {
                     font-size: 20px;
                     font-weight: 700;
+
                     @media screen and (max-width: 768px) {
                       font-size: 16px;
                     }
@@ -873,7 +884,7 @@
 
                 .shop__btn {
                   @include shopButtonWhite;
-                  font-size: 30px;
+                  font-size: 28px;
 
                   @media screen and (max-width: 768px) {
                     display: none;

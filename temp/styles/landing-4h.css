@@ -478,6 +478,7 @@
           justify-content: center;
   margin-right: 15px;
   width: unset;
+  letter-spacing: 0;
 }
 .landing-4h__module #mainContainer #hero__video .newLanding__textWrapper--middle .shop__btn:hover {
   background: #171717;
@@ -772,6 +773,11 @@
     min-width: unset;
   }
 }
+@media screen and (max-width: 768px) {
+  .landing-4h__module #mainContainer .mainContainer__UpdatedMargins #support_section-mobile .dual__swiper__slide .shop__btn {
+    letter-spacing: 0;
+  }
+}
 .landing-4h__module #mainContainer .mainContainer__UpdatedMargins #support_section-mobile .dual__swiper__slide .dual__swiper--text-wrapper {
   height: auto;
   padding-right: 40px;
@@ -1063,6 +1069,14 @@
           justify-content: center;
   line-height: 34px;
   z-index: 999;
+}
+@media screen and (max-width: 768px) {
+  .landing-4h__module #mainContainer .mainContainer__UpdatedMargins #give_back__section-mobile .dual__swiper__slide .dual__swiper--text-wrapper .learn__more-btn {
+    width: unset;
+    font-size: 20px;
+    letter-spacing: 0;
+    padding: 0px 15px 0px 19px;
+  }
 }
 @media screen and (max-width: 768px) {
   .landing-4h__module #mainContainer .mainContainer__UpdatedMargins #give_back__section-mobile .swiper-pagination {
@@ -1425,7 +1439,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 30px;
+  font-size: 28px;
 }
 .landing-4h__module #mainContainer .mainContainer__UpdatedMargins .feature_slider .feature-product__landing-4h .swiper-wrapper .feature_slider__slide .overlay__wrapper .shop__btn:hover {
   background: #171717;
