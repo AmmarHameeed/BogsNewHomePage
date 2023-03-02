@@ -173,7 +173,7 @@
                 cursor: pointer;
                 font-family: "front_page_neueregular";
                 font-weight: 400;
-                padding: 5px 15px;
+                padding: 0px 15px 0 19px;
                 color: #171717;
                 background: #ffffff;
                 font-size: 28px;
@@ -236,10 +236,59 @@
           }
 
           .goals__description--slide {
+            position: relative;
             width: 33.5%;
             padding: 5% 1% 5% 1%;
             background: #92AF84;
             text-align: center;
+
+            .overlay__wrapper {
+              // display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 9;
+              opacity: 0;
+              justify-content: center;
+              align-items: center;
+
+              .overlay__redirect {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+
+              .shop__btn {
+                @include shopButtonWhite;
+                font-size: 28px;
+                z-index: 9;
+
+                @media screen and (max-width: 768px) {
+                  display: none;
+                  // margin-left: 35px;
+                  // @include shopButtonBlack();
+                }
+              }
+
+              @media screen and (max-width: 768px) {
+                display: flex;
+                height: 100%;
+                top: unset;
+                bottom: 40px;
+                opacity: 1;
+                align-items: flex-end;
+                justify-content: flex-start;
+                background: none !important;
+              }
+            }
 
             .support_section--upperImage {
               max-width: 200px;
@@ -262,6 +311,19 @@
               @media screen and (max-width: 768px) {
                 margin-right: 10px;
                 width: unset;
+              }
+            }
+            &:hover {
+              .overlay__wrapper {
+                display: flex;
+                opacity: 1;
+                background: rgba(0, 0, 0, 33%);
+                transition: background 250ms ease-out 0s,
+                  opacity 250ms ease-out 0s;
+
+                @media screen and (max-width: 768px) {
+                  background: none;
+                }
               }
             }
           }
@@ -643,7 +705,7 @@
                 cursor: pointer;
                 font-family: "front_page_neueregular";
                 font-weight: 400;
-                padding: 5px 15px;
+                padding: 0px 15px 0 19px;
                 color: #171717;
                 background: #ffffff;
                 font-size: 28px;
@@ -706,10 +768,84 @@
           }
 
           .goals__description--slide {
+            position: relative;
             width: 33.5%;
+            overflow: hidden;
+
+            .overlay__wrapper {
+              // display: none;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 9;
+              opacity: 0;
+              // background: rgba(0, 0, 0, 33%);
+              // transition: background ease-in-out 5s,
+              //   opacity ease-in-out 5s;
+              justify-content: center;
+              align-items: center;
+
+              .overlay__redirect {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+
+                @media screen and (max-width: 768px) {
+                  display: none;
+                }
+              }
+
+              .shop__btn {
+                @include shopButtonWhite;
+                font-size: 28px;
+                z-index: 9;
+
+                @media screen and (max-width: 768px) {
+                  display: none;
+                  // margin-left: 35px;
+                  // @include shopButtonBlack();
+                }
+              }
+
+              @media screen and (max-width: 768px) {
+                display: flex;
+                height: 100%;
+                top: unset;
+                bottom: 40px;
+                opacity: 1;
+                align-items: flex-end;
+                justify-content: flex-start;
+                background: none !important;
+              }
+            }
 
             .support_section--upperImage {
               height: 100%;
+              transition: transform 250ms ease-out 0s;
+            }
+
+            &:hover {
+              .overlay__wrapper {
+                display: flex;
+                opacity: 1;
+                background: rgba(0, 0, 0, 33%);
+                transition: background 250ms ease-out 0s,
+                  opacity 250ms ease-out 0s;
+
+                @media screen and (max-width: 768px) {
+                  background: none;
+                }
+              }
+
+              img {
+                @media screen and (min-width: 768px) {
+                  transform: scale(1.1);
+                }
+              }
             }
           }
 
