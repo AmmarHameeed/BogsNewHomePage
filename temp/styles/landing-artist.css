@@ -749,8 +749,18 @@
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper:hover .hoveredImage__wrapper .hideOnHover {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper:hover .hoveredImage__wrapper .hideOnHover {
+    display: block;
+  }
+}
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper:hover .hoveredImage__wrapper .showOnHover {
   opacity: 1;
+}
+@media screen and (max-width: 768px) {
+  .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper:hover .hoveredImage__wrapper .showOnHover {
+    display: none;
+  }
 }
 .landing-artist__module #mainContainer .artist__section .artist__artwork-wrapper {
   display: -webkit-box;

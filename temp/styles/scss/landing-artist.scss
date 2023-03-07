@@ -278,11 +278,18 @@
 
                             .hideOnHover {
                                 display: none;
+
+                                @media screen and (max-width: 768px) {
+                                    display: block;
+                                }
                             }
 
                             .showOnHover {
                                 // display: block;
                                 opacity: 1;
+                                @media screen and (max-width: 768px) {
+                                    display: none;
+                                }
                             }
                         }
                     }
