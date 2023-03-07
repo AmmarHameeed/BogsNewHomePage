@@ -1,0 +1,390 @@
+@import "mixins.scss";
+
+.landing-artist__module {
+    .swiper-pagination-bullet {
+        transform: scale(1) !important;
+      }
+
+    .object__position-adjusted {
+        @media screen and (max-width: 768px) {
+            margin-bottom: 5px;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        transform: scale(1) !important;
+    }
+
+    .grey__divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #707070;
+        @media screen  and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    @import "navbar-redesigned.scss";
+
+    #mainContainer {
+        max-width: 1750px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            margin: auto 48px;
+        }
+
+        @media screen and (min-width: 1750px) {
+            margin: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 16px;
+        }
+
+        .newLanding__header--artist {
+            margin-top: 70px;
+            margin-bottom: 60px;
+
+            @media screen and (min-width: 992px) {
+                margin-top: 126px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 15px;
+            }
+
+            .newLanding__textWrapper--middle {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                transform: translateY(-50%);
+                padding-left: 0;
+
+                @media screen and (max-width: 992px) {
+                    // top: 52%;
+                    // right: 10%;
+                    // display: none;
+                }
+
+                .newLanding__title {
+                    font-size: 130px;
+                    line-height: 117px;
+                    padding: 0;
+                    text-align: center;
+                    // margin-top: 45px;
+
+                    @media screen and (max-width: 1750px) {
+                        font-size: 90px;
+                        line-height: 76px;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 70px;
+                        line-height: 60px;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 40px;
+                        line-height: 36px;
+                        margin-top: 7px;
+                    }
+                }
+
+                .shop__btn {
+                    @include shopButtonBlack;
+                }
+            }
+        }
+
+        .artist__section {
+            margin-bottom: 75px;
+            margin-top: 70px;
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 60px;
+                margin-top: 0;
+            }
+
+            .featured_style-wrapper {
+                display: flex;
+                margin-bottom: 20px;
+                justify-content: space-between;
+
+                @media screen and (max-width: 992px) {
+                    flex-flow: column;
+                }
+
+                .featured__styles-image-wrapper {
+                    position: relative;
+                    width: 50%;
+                    overflow: hidden;
+
+                    @media screen and (max-width: 992px) {
+                        width: 100%;
+                    }
+
+                    &:nth-of-type(1) {
+                        // margin-right: 20px;
+
+                        @media screen and (max-width: 992px) {
+                            margin-right: 0;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .hoveredImage__wrapper {
+                        position: relative;
+                        display: contents;
+
+                        .showOnHover {
+                            // display: none;
+                            opacity: 0;
+                            position: absolute;
+                        }
+                    }
+                    
+                    .artist__text-overlay{
+                        position: absolute;
+                        right: 0;
+                        bottom: 78px;
+                        left: 0;
+                        margin: auto;
+                        text-align: center;
+                        z-index: 99;
+
+                        @media screen and (max-width: 992px) {
+                            bottom: 55px;
+                        }
+
+                        .artist__text-heading{
+                            font-size: 40px;
+                            line-height: 45px;
+                            text-transform: uppercase;
+                            color: #ffffff;
+                            font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        }
+                        .artist__text-company{
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            color: #ffffff;
+                        }
+
+                        &.secondary_slide{
+                            width: 70%;
+                            font-size: 24px;
+                            line-height: 30px;
+                            color: #171717;
+
+                            @media screen and (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .overlay__wrapper {
+                        // display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 9;
+                        opacity: 0;
+                        justify-content: center;
+                        align-items: center;
+
+                        .overlay__redirect {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+
+                            @media screen and (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+
+                        .watch__video-btn {
+                            display: inline-block;
+                            width: 210px;
+                            height: 42px;
+                            font-family: "front_page_neueregular";
+                            padding: 0 15px 0 19px;
+                            font-weight: 400;
+                            line-height: 42px;
+                            background: #ffffff;
+                            color: #171717;
+                            letter-spacing: 1.5px;
+                            border-radius: 30px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-size: 28px;
+                            justify-content: center;
+                            z-index: 9;
+
+                            @media screen and (max-width: 768px) {
+                                display: none;
+                            }
+
+                            &:hover {
+                                color: #ffffff;
+                                background: #171717;
+                            }
+                        }
+
+                        .shop__btn {
+                            @include shopButtonWhite;
+                            z-index: 999;
+
+                            @media screen and (max-width: 768px) {
+                                margin-left: 25px;
+                                @include shopButtonBlack;
+                                // display: none;
+                            }
+                        }
+
+                        @media screen and (max-width: 768px) {
+                            display: flex;
+                            height: calc(100% - 31px);
+                            top: unset;
+                            bottom: 31px;
+                            opacity: 1;
+                            align-items: end;
+                            justify-content: flex-start;
+                            background: none !important;
+                        }
+                    }
+
+                    img {
+                        transition: opacity 150ms ease-in 0.05s;
+                    }
+
+                    &:hover {
+                        .overlay__wrapper {
+                            display: flex;
+                            opacity: 1;
+                            background: rgba(0, 0, 0, 33%);
+                            transition: background 250ms ease-out 0s, opacity 250ms ease-out 0s;
+                        }
+
+                        .hoveredImage__wrapper {
+
+                            .hideOnHover {
+                                display: none;
+                            }
+
+                            .showOnHover {
+                                // display: block;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .artist__artwork-wrapper{
+                display: flex;
+                margin-bottom: 40px;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+                .artist__thumbnail-item{
+                    margin-right: 25px;
+                    &:nth-of-type(5){
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .artist__artwork-wrapper--mobile{
+                margin-bottom: 20px;
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+
+                .dual__swiper__image{
+                    width: 100%;
+                }
+
+                .swiper-pagination{
+                    width: 100% !important;
+                    bottom: 20px!important;
+                    .swiper-pagination-bullet {
+                        left: unset !important;
+                    }
+                }
+            }
+
+            .artist__social_links-wrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 768px) {
+                    flex-flow: column;
+                }
+
+                .artist__social-btn{
+                    width: auto;
+                    height: 42px;
+                    padding: 0 25px;
+                    background: #000000;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    text-transform: uppercase;
+                    font-size: 28px;
+                    line-height: 42px;
+                    text-align: center;
+                    font-family: "front_page_neueregular";
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 24px;
+                        width: 100%;
+
+                        &:nth-of-type(1){
+                            margin-right: 0 !important;
+                            margin-bottom: 10px;
+                        }
+                        
+                    }
+
+                    &:nth-of-type(1){
+                        margin-right: 25px;
+                    }
+                }
+            }
+
+            &.inverted{
+                .featured_style-wrapper{
+                    flex-flow: row-reverse;
+                    @media screen and (max-width: 992px) {
+                        flex-flow: column;
+                    }
+                    .featured__styles-image-wrapper{
+                        &:nth-of-type(1) {
+                            // margin-right: 0;
+                            // margin-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feature__slider-description {
+
+        @media screen and (max-width: 768px) {
+            margin-top: 65px;
+        }
+    }
+}
+
+@import "footer-redesigned.scss";

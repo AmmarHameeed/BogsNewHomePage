@@ -2070,3 +2070,5 @@ $(document).on(
     window.featuredSliderLanding4H02.slideNext();
   }
 );
+
+// Thumbnail Swiper For Artist landing page
