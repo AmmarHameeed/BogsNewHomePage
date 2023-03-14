@@ -562,7 +562,7 @@
 }
 @media screen and (max-width: 992px) {
   .landing-sustainability__module #mainContainer #feature_slider .feature_slider__headline-wrapper .feature_slider__headline {
-    width: 60%;
+    width: 75%;
     margin: 0 auto 15px;
     font-size: 34px;
     line-height: 34px;
