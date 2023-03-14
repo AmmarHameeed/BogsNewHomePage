@@ -2072,11 +2072,12 @@ $(document).on(
 );
 
 // Landing Sustainability  Swiper
-var featuredSliderUniqueNov = new Swiper(".feature-product__sustainablity", {
+var featuredSliderSustainability = new Swiper(".feature-product__sustainablity", {
   spaceBetween: 20,
-  slidesPerView: "auto",
   loop: true,
   centeredSlides: true,
+  // loopedSlides: 5, 
+slidesPerView: 3,
   speed: 800,
   pagination: {
     el: ".feature_slider--pagination",
@@ -2086,6 +2087,7 @@ var featuredSliderUniqueNov = new Swiper(".feature-product__sustainablity", {
     768: {
       noSwiping: false,
       speed: 500,
+      slidesPerView: 1,
     },
   },
   pagination: {
@@ -2098,13 +2100,32 @@ $(document).on(
   "click",
   ".feature-product__sustainablity .feature_slider__slide.swiper-slide-prev",
   function () {
-    window.featuredSliderUniqueNov.slidePrev();
+    window.featuredSliderSustainability.slidePrev();
   }
 );
 $(document).on(
   "click",
   ".feature-product__sustainablity .feature_slider__slide.swiper-slide-next",
   function () {
-    window.featuredSliderUniqueNov.slideNext();
+    window.featuredSliderSustainability.slideNext();
   }
 );
+
+
+var textualSwiper = new Swiper("#textual__section", {
+  slidesPerView: 2,
+  slidesPerGroup: 1,
+  noSwiping: true,
+  clickable: false,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+});
