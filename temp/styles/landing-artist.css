@@ -432,6 +432,15 @@
     margin-bottom: 15px;
   }
 }
+@media screen and (min-width: 992px) {
+  .landing-artist__module #mainContainer .newLanding__header--artist picture img {
+    max-height: 312px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+}
 .landing-artist__module #mainContainer .newLanding__header--artist .newLanding__textWrapper--middle {
   position: absolute;
   top: 50%;
