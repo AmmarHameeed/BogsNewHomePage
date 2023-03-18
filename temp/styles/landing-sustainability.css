@@ -572,7 +572,6 @@
   width: 90%;
   margin: auto;
   overflow: visible;
-  padding-bottom: 58px;
   margin-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -602,10 +601,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 58px;
   padding: 0;
   -webkit-transform: none;
           transform: none;
-  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide {
@@ -620,6 +619,42 @@
     padding-top: 0;
   }
 }
+.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover::before {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0.5rem 3.2rem 0 rgba(0, 0, 0, 0.3019607843);
+          box-shadow: 0 0.5rem 3.2rem 0 rgba(0, 0, 0, 0.3019607843);
+  content: "";
+  height: 50%;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  top: 49.5%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: opacity 0.3s cubic-bezier(0.38, 0.41, 0.27, 1);
+  transition: opacity 0.3s cubic-bezier(0.38, 0.41, 0.27, 1);
+  width: 75%;
+  z-index: 0;
+}
+.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover .overlay__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  opacity: 1;
+  background: rgba(243, 243, 243, 0.8);
+}
+@media screen and (max-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover .overlay__wrapper {
+    background: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide a {
   text-align: center;
 }
@@ -632,25 +667,33 @@
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide a .feature_slider__image {
   width: 100%;
 }
+.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .outer__overlay {
+  overflow: hidden;
+}
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper {
   position: absolute;
-  top: 0;
+  top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
   padding: 8% 8%;
   z-index: 9;
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: self-start;
       -ms-flex-align: self-start;
           align-items: self-start;
+  -webkit-transition: top 0.3s cubic-bezier(0.38, 0.41, 0.27, 1);
+  transition: top 0.3s cubic-bezier(0.38, 0.41, 0.27, 1);
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper .overlay__redirect {
   position: absolute;
@@ -658,6 +701,7 @@
   height: 100%;
   left: 0;
   top: 0;
+  z-index: 999;
 }
 @media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper .overlay__redirect {
@@ -751,26 +795,6 @@
   transition: -webkit-transform 250ms ease-out 0s;
   transition: transform 250ms ease-out 0s;
   transition: transform 250ms ease-out 0s, -webkit-transform 250ms ease-out 0s;
-}
-.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover .overlay__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  opacity: 1;
-  background: rgba(243, 243, 243, 0.8);
-  -webkit-transition: background 250ms ease-out 0s, opacity 250ms ease-out 0s;
-  transition: background 250ms ease-out 0s, opacity 250ms ease-out 0s;
-}
-@media screen and (max-width: 768px) {
-  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover .overlay__wrapper {
-    background: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper.swiper-slide-prev:hover {
   -webkit-transform: none;
@@ -874,14 +898,15 @@
 }
 .landing-sustainability__module #mainContainer #warehouse__package__section .overlay__container .wp__overlay__text {
   margin-bottom: 45px;
-  font-size: 40px;
-  line-height: 36px;
+  font-size: 60px;
+  line-height: 60px;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1550px) {
   .landing-sustainability__module #mainContainer #warehouse__package__section .overlay__container .wp__overlay__text {
     font-size: 36px;
+    line-height: 36px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -891,6 +916,13 @@
   }
 }
 @media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #warehouse__package__section .overlay__container .wp__overlay__text {
+    margin-bottom: 15px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #warehouse__package__section .overlay__container .wp__overlay__text {
     margin-bottom: 15px;
     font-size: 26px;
@@ -946,6 +978,9 @@
     margin-right: 0px;
   }
 }
+.landing-sustainability__module #mainContainer #goals__section .video__container img {
+  width: 100%;
+}
 .landing-sustainability__module #mainContainer #goals__section .goals__description--slide {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -964,7 +999,7 @@
 @media screen and (max-width: 992px) {
   .landing-sustainability__module #mainContainer #goals__section .goals__description--slide {
     width: 100%;
-    padding: 12% 10% 35px 35px;
+    padding: 35px 35px;
   }
 }
 .landing-sustainability__module #mainContainer #goals__section .goals__description--slide .goals__description--heading {
@@ -974,7 +1009,26 @@
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
+@media screen and (max-width: 1550px) {
+  .landing-sustainability__module #mainContainer #goals__section .goals__description--slide .goals__description--heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .landing-sustainability__module #mainContainer #goals__section .goals__description--slide .goals__description--heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
 @media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #goals__section .goals__description--slide .goals__description--heading {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #goals__section .goals__description--slide .goals__description--heading {
     font-size: 26px;
     line-height: 26px;

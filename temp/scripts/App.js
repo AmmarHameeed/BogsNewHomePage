@@ -2078,6 +2078,7 @@ var featuredSliderSustainability = new Swiper(".feature-product__sustainablity",
   centeredSlides: true,
   // loopedSlides: 5, 
 slidesPerView: 3,
+clickable: true,
   speed: 800,
   pagination: {
     el: ".feature_slider--pagination",
@@ -2103,14 +2104,23 @@ $(document).on(
     window.featuredSliderSustainability.slidePrev();
   }
 );
+
 $(document).on(
   "click",
   ".feature-product__sustainablity .feature_slider__slide.swiper-slide-next",
   function () {
     window.featuredSliderSustainability.slideNext();
+    console.log("clicked next slide")
   }
 );
-
+// $(".feature-product__sustainablity .feature_slider__slide.swiper-slide-next").each(function (index) {
+//   $(this).next().on("click", function(){
+//     window.featuredSliderSustainability.slideNext();
+//     console.log("clicked next next slide")
+//   })
+  
+// }
+// );
 
 var textualSwiper = new Swiper("#textual__section", {
   slidesPerView: 2,

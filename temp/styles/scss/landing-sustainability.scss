@@ -93,7 +93,7 @@
                 padding: 0;
             }
 
-            .swiper-wrapper{
+            .swiper-wrapper {
                 flex-flow: column;
 
                 @media screen and (max-width: 768px) {
@@ -106,18 +106,20 @@
                     font-family: "trade-gothic-next", Arial, sans-serif;
                     line-height: 50px;
                     padding: 0px 5%;
-    
+
                     @media screen and (max-width: 992px) {
                         font-size: 18px;
                         line-height: 24px;
                     }
+
                     @media screen and (min-width: 768px) {
                         width: 100% !important;
-                        
+
                     }
-    
+
                     &:nth-of-type(1) {
                         margin-bottom: 50px;
+
                         @media screen and (max-width: 768px) {
                             margin-bottom: 0;
                         }
@@ -125,7 +127,7 @@
                 }
             }
 
-            .swiper-pagination{
+            .swiper-pagination {
                 display: none;
 
                 @media screen and (max-width: 768px) {
@@ -133,12 +135,12 @@
                     bottom: 0px !important;
                 }
 
-                .swiper-pagination-bullet{
+                .swiper-pagination-bullet {
                     width: 11px;
                     height: 11px;
                 }
             }
-            
+
         }
 
         #feature_slider {
@@ -174,7 +176,7 @@
                 width: 90%;
                 margin: auto;
                 overflow: visible;
-                padding-bottom: 58px;
+                // padding-bottom: 58px;
                 margin-bottom: 50px;
 
                 @media screen and (max-width: 768px) {
@@ -188,15 +190,17 @@
                     @media screen and (max-width: 768px) {
                         padding-bottom: 60px;
                     }
+
                     .feature_slider__slide {
                         display: flex;
                         flex-flow: column;
                         justify-content: start;
                         align-items: center;
+                        margin-bottom: 58px;
                         // background: #E7E7E7;
                         padding: 0;
                         transform: none;
-                        overflow: hidden;
+                        // overflow: hidden;
 
                         @media screen and (max-width: 768px) {
                             flex: 0 0 100%;
@@ -205,8 +209,45 @@
                             padding-top: 0;
                         }
 
+                        &:hover {
+                            &::before {
+                                background-color: #0000;
+                                box-shadow: 0 0.5rem 3.2rem 0 #0000004d;
+                                content: "";
+                                height: 50%;
+                                left: 50%;
+                                opacity: 1;
+                                position: absolute;
+                                top: 49.5%;
+                                transform: translateX(-50%);
+                                transition: opacity .3s cubic-bezier(.38, .41, .27, 1);
+                                width: 75%;
+                                z-index: 0;
+                            }
+
+
+                            .overlay__wrapper {
+                                display: flex;
+                                top: 0;
+                                opacity: 1;
+                                background: rgba(243, 243, 243, 80%);
+
+
+                                @media screen and (max-width: 768px) {
+                                    background: none;
+                                }
+                            }
+
+                            img {
+                                @media screen and (min-width: 768px) {
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+
                         a {
                             text-align: center;
+
                             @media screen and (max-width: 768px) {
                                 width: 100%;
                                 margin-bottom: 15px;
@@ -217,10 +258,15 @@
                             }
                         }
 
+                        .outer__overlay {
+                            overflow: hidden;
+                        }
+
                         .overlay__wrapper {
                             // display: none;
                             position: absolute;
-                            top: 0;
+                            top: 100%;
+                            // top: 0;
                             left: 0;
                             width: 100%;
                             height: 100%;
@@ -230,9 +276,12 @@
                             // background: rgba(0, 0, 0, 33%);
                             // transition: background ease-in-out 5s,
                             //   opacity ease-in-out 5s;
+                            display: flex;
                             flex-flow: column;
-                            justify-content: start;
+                            justify-content: center;
                             align-items: self-start;
+                            transition: top .3s cubic-bezier(.38, .41, .27, 1);
+                            // transition: height .3s cubic-bezier(.38,.41,.27,1),top .3s cubic-bezier(.38,.41,.27,1);
 
                             .overlay__redirect {
                                 position: absolute;
@@ -240,6 +289,7 @@
                                 height: 100%;
                                 left: 0;
                                 top: 0;
+                                z-index: 999;
 
                                 @media screen and (max-width: 768px) {
                                     display: none;
@@ -265,7 +315,7 @@
                                 font-family: 'bogs_headlineregular', Arial, sans-serif;
                                 text-transform: uppercase;
 
-                                @media screen and (max-width: 1750px) and (min-width: 1451px)  {
+                                @media screen and (max-width: 1750px) and (min-width: 1451px) {
                                     font-size: 34px;
                                     line-height: 30px;
                                 }
@@ -275,7 +325,7 @@
                                     line-height: 24px;
                                 }
 
-                                @media screen and (max-width: 1250px)  {
+                                @media screen and (max-width: 1250px) {
                                     font-size: 22px;
                                     line-height: 18px;
                                 }
@@ -291,22 +341,22 @@
                                 font-size: 28px;
                                 line-height: 50px;
 
-                                @media screen and (max-width: 1750px) and (min-width: 1451px)   {
+                                @media screen and (max-width: 1750px) and (min-width: 1451px) {
                                     font-size: 24px;
                                     line-height: 42px;
                                 }
 
-                                @media screen and (max-width: 1450px) and (min-width: 1251px)   {
+                                @media screen and (max-width: 1450px) and (min-width: 1251px) {
                                     font-size: 20px;
                                     line-height: 36px;
                                 }
 
-                                @media screen and (max-width: 1250px) and (min-width: 1051px){
+                                @media screen and (max-width: 1250px) and (min-width: 1051px) {
                                     font-size: 18px;
                                     line-height: 26px;
                                 }
 
-                                @media screen and (max-width: 1050px){
+                                @media screen and (max-width: 1050px) {
                                     font-size: 16px;
                                     line-height: 22px;
                                 }
@@ -322,26 +372,7 @@
                             transition: transform 250ms ease-out 0s;
                         }
 
-                        &:hover {
-                            .overlay__wrapper {
-                                display: flex;
-                                opacity: 1;
-                                background: rgba(243, 243, 243, 80%);
-                                // background: rgba(0, 0, 0, 33%);
-                                transition: background 250ms ease-out 0s,
-                                    opacity 250ms ease-out 0s;
 
-                                @media screen and (max-width: 768px) {
-                                    background: none;
-                                }
-                            }
-
-                            img {
-                                @media screen and (min-width: 768px) {
-                                    transform: scale(1.1);
-                                }
-                            }
-                        }
                     }
 
                     &.swiper-slide-prev {
@@ -392,12 +423,14 @@
             @media screen and (max-width: 992px) {
                 margin-bottom: 70px;
             }
+
             @media screen and (max-width: 768px) {
                 margin-bottom: 22px;
             }
 
             .warehouse__package__section--heading {
                 text-align: center;
+
                 @media screen and (max-width: 768px) {
                     margin-top: 20px;
                 }
@@ -441,6 +474,7 @@
                     transform: unset;
                     padding: 50px 22px 0 22px;
                 }
+
                 @media screen and (max-width: 768px) {
                     margin-top: 15px;
                     background: #f5f5f5;
@@ -449,13 +483,14 @@
 
                 .wp__overlay__text {
                     margin-bottom: 45px;
-                    font-size: 40px;
-                    line-height: 36px;
+                    font-size: 60px;
+                    line-height: 60px;
                     text-transform: uppercase;
                     font-family: 'bogs_headlineregular', Arial, sans-serif;
 
-                    @media screen and (max-width: 1500px) {
+                    @media screen and (max-width: 1550px) {
                         font-size: 36px;
+                        line-height: 36px;
                     }
 
                     @media screen and (max-width: 1200px) {
@@ -464,6 +499,12 @@
                     }
 
                     @media screen and (max-width: 992px) {
+                        margin-bottom: 15px;
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+
+                    @media screen and (max-width: 768px) {
                         margin-bottom: 15px;
                         font-size: 26px;
                         line-height: 26px;
@@ -511,6 +552,10 @@
                     margin-bottom: 15px;
                     margin-right: 0px;
                 }
+
+                img {
+                    width: 100%;
+                }
             }
 
             .goals__description--slide {
@@ -523,7 +568,7 @@
 
                 @media screen and (max-width: 992px) {
                     width: 100%;
-                    padding: 12% 10% 35px 35px;
+                    padding: 35px 35px;
                 }
 
                 .goals__description--heading {
@@ -533,7 +578,23 @@
                     text-transform: uppercase;
                     font-family: 'bogs_headlineregular', Arial, sans-serif;
 
+                    @media screen and (max-width: 1550px) {
+                        font-size: 36px;
+                        line-height: 36px;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 30px;
+                        line-height: 30px;
+                    }
+
                     @media screen and (max-width: 992px) {
+                        font-size: 32px;
+                        line-height: 32px;
+                        margin-bottom: 20px;
+                    }
+
+                    @media screen and (max-width: 768px) {
                         font-size: 26px;
                         line-height: 26px;
                         margin-bottom: 20px;
