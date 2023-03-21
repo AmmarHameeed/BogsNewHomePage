@@ -617,6 +617,7 @@
             flex-flow: column-reverse;
     max-width: 100%;
     padding-top: 0;
+    margin-bottom: 0;
   }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover::before {
@@ -635,6 +636,12 @@
   transition: opacity 0.3s cubic-bezier(0.38, 0.41, 0.27, 1);
   width: 75%;
   z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover::before {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide:hover .overlay__wrapper {
   display: -webkit-box;
@@ -669,6 +676,27 @@
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .outer__overlay {
   overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .outer__overlay {
+    position: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    top: unset;
+    bottom: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    opacity: 1;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: #f5f5f5 !important;
+    padding-bottom: 0;
+  }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper {
   position: absolute;
@@ -711,18 +739,11 @@
 @media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper {
     position: unset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    top: unset;
-    bottom: 40px;
+    padding: 20px 30px 20px 22px;
     opacity: 1;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: flex-start;
-    background: #f5f5f5 !important;
-    padding-bottom: 0;
+            justify-content: start;
   }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper .overlay__heading-text {
@@ -803,6 +824,32 @@
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper.swiper-slide-next:hover {
   -webkit-transform: none;
           transform: none;
+}
+.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-button-next {
+  top: 0;
+  right: -5.5%;
+  width: 4.75%;
+  height: calc(100% - 60px);
+  margin-top: 0;
+  background: none;
+}
+@media screen and (max-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-button-next {
+    display: none;
+  }
+}
+.landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-button-prev {
+  left: -5.5%;
+  height: calc(100% - 60px);
+  top: 0;
+  margin-top: 0;
+  width: 4%;
+  background: none;
+}
+@media screen and (max-width: 768px) {
+  .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-button-prev {
+    display: none;
+  }
 }
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-pagination {
   bottom: 0px !important;

@@ -2084,6 +2084,10 @@ clickable: true,
     el: ".feature_slider--pagination",
     clickable: true,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   breakpoints: {
     768: {
       noSwiping: false,
@@ -2113,10 +2117,11 @@ $(document).on(
     console.log("clicked next slide")
   }
 );
-// $(".feature-product__sustainablity .feature_slider__slide.swiper-slide-next").each(function (index) {
-//   $(this).next().on("click", function(){
-//     window.featuredSliderSustainability.slideNext();
+// $(".feature-product__sustainablity .feature_slider__slide.swiper-slide-active + .swiper-slide-next + .swiper-slide").each(function (index) {
+//   // $(this).next().on("click", function(){
 //     console.log("clicked next next slide")
+//     window.featuredSliderSustainability.slideNext();
+    
 //   })
   
 // }
