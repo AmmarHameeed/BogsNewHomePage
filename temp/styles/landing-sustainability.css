@@ -780,6 +780,7 @@
 .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper .feature_slider__slide--overlay__desc {
   font-size: 28px;
   line-height: 50px;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 1750px) and (min-width: 1451px) {
   .landing-sustainability__module #mainContainer #feature_slider .feature-product__sustainablity .swiper-wrapper .feature_slider__slide .overlay__wrapper .feature_slider__slide--overlay__desc {
