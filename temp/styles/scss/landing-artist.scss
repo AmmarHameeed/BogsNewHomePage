@@ -159,6 +159,7 @@
                         height: 87px;
                         margin: auto;
                         z-index: 999;
+                        opacity: 1;
                         transform: translateY(-50%);
                         background-repeat: no-repeat;
                         background-size: contain;
@@ -174,7 +175,7 @@
                         }
 
                         &:hover {
-                            opacity: 0.5;
+                            opacity: 1;
                         }
                     }
 
@@ -305,7 +306,7 @@
                     }
 
                     img {
-                        transition: opacity ease-in-out .2s;
+                        transition: opacity ease;
                     }
 
                     &:hover {

@@ -562,6 +562,7 @@
   height: 87px;
   margin: auto;
   z-index: 999;
+  opacity: 1;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   background-repeat: no-repeat;
@@ -580,7 +581,7 @@
   }
 }
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper .video__play-btn:hover {
-  opacity: 0.5;
+  opacity: 1;
 }
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper .hoveredImage__wrapper {
   position: relative;
@@ -773,8 +774,8 @@
   }
 }
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper img {
-  -webkit-transition: opacity ease-in-out 0.2s;
-  transition: opacity ease-in-out 0.2s;
+  -webkit-transition: opacity ease;
+  transition: opacity ease;
 }
 .landing-artist__module #mainContainer .artist__section .featured_style-wrapper .featured__styles-image-wrapper:hover .overlay__wrapper {
   display: -webkit-box;
