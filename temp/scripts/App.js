@@ -2144,3 +2144,43 @@ var textualSwiper = new Swiper("#textual__section", {
     },
   },
 });
+
+// Feature Slider April'23
+
+var featuredSliderApr = new Swiper(".feature-product__Apr", {
+  spaceBetween: 20,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  loop: true,
+  // centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__Apr .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderApr.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__Apr .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderApr.slideNext();
+  }
+);

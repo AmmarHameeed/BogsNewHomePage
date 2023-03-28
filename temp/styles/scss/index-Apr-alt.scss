@@ -1,0 +1,221 @@
+@import "mixins.scss";
+
+.index-Apr-alt__module {
+    .swiper-pagination-bullet {
+        transform: scale(1) !important;
+    }
+
+    @import "navbar-redesigned.scss";
+
+    #mainContainer {
+        max-width: 1750px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            margin: auto 48px;
+        }
+
+        @media screen and (min-width: 1750px) {
+            margin: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 16px;
+        }
+
+        .hero__section {
+            margin-bottom: 45px;
+            margin-top: 70px;
+
+            @media screen and (min-width: 992px) {
+                &:nth-of-type(1) {
+                    margin-top: 126px;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                margin-bottom: 25px;
+
+                &:nth-of-type(2) {
+                    margin-top: unset;
+                }
+
+                &:nth-of-type(3) {
+                    margin-top: unset;
+                }
+            }
+
+            .newLanding__textWrapper--middle {
+                right: 8.6%;
+                width: 40%;
+                top: 50%;
+
+                @media screen and (max-width: 992px) {
+                    right: 10%;
+                }
+
+                @media screen and (min-width: 3450px) {
+                    // right: 5%;
+                    // width: 55%;
+                }
+
+                .newLanding__title {
+                    font-size: 100px;
+                    line-height: 95px;
+                    padding: 0;
+                    margin-bottom: 30px;
+                    letter-spacing: 0.5px;
+
+                    @media screen and (max-width: 1750px) {
+                        font-size: 90px;
+                        line-height: 76px;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        font-size: 70px;
+                        line-height: 60px;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        font-size: 40px;
+                        line-height: 36px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .shop__btn {
+                    @include shopButtonBlack;
+                    font-size: 30px;
+                }
+            }
+
+            &.mobile__section-unique {
+                @media screen and (max-width: 992px) {
+                    .newLanding__textWrapper--middle {
+                        right: unset;
+                        left: 0;
+                        width: 100%;
+                        transform: unset;
+                        height: 100%;
+                        top: 0;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: space-between;
+                        padding: 35px 35px 27px;
+
+                        .newLanding__title {
+                            width: 100%;
+                            display: inline-block;
+                            flex: unset;
+                        }
+
+                        .shop__btn {
+                            font-size: 20px;
+                            max-width: 85px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #mobile_category {
+            background: transparent;
+            margin-bottom: 25px;
+
+            .mobile-category {
+                padding: 0px 9vw;
+
+                .mobile-category__link {
+                    color: #000000;
+                }
+            }
+        }
+
+        .featured__categories {
+            margin-bottom: 75px;
+
+            @media screen and (max-width: 992px) {
+                padding-bottom: 0px;
+                margin-bottom: 20px;
+            }
+
+            .feature_slider__headline-wrapper {
+                @include sectionHeading;
+            }
+
+            .landingCare__swiper-container--dec {
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 30px;
+                }
+
+                .swiper-slide {
+                    width: 50%;
+                    overflow: hidden;
+
+                    .dual__swiper__image {
+                        width: 100%;
+                        transition: transform 0.5s;
+                    }
+
+                    .mobile__copy {
+                        position: absolute;
+                        top: 35px;
+                        left: 36px;
+                        color: #ffffff;
+                        line-height: 22px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        font-family: "trade-gothic-next", Arial, sans-serif;
+
+                        @media screen and (min-width: 768px) {
+                            // display: none;
+                        }
+                    }
+
+                    .shop__btn {
+                        position: absolute;
+                        left: 8.5%;
+                        bottom: 75px;
+                        @include shopButtonWhite;
+
+                        @media screen and (max-width: 768px) {
+                            bottom: 40px;
+                            left: 35px;
+                        }
+                    }
+
+                    &:hover {
+                        .dual__swiper__image {
+                            @media screen and (min-width: 768px) {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+
+                .landingCare__swiper--pagination {
+                    .swiper-pagination-bullet {
+                        opacity: 1 !important;
+                        background: unset;
+                        border: 1px solid #000000;
+
+                        &.swiper-pagination-bullet-active {
+                            background: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feature__slider-description {
+        // margin-top: 125px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+}
+
+@import "footer-redesigned.scss";
