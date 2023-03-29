@@ -1710,8 +1710,8 @@ var DualSlideSwiper = new Swiper(".landingCare__swiper-container--dec", {
   },
 
   //if only 3 slide logic
-  autoplay: $(".featured__categories .swiper-slide").length > 4 ? true : false,
-  loop: $(".featured__categories .swiper-slide").length > 4 ? true : false,
+  autoplay: $(".featured__categories .landingCare__swiper-container--dec .swiper-slide").length > 4 ? true : false,
+  loop: $(".featured__categories .landingCare__swiper-container--dec .swiper-slide").length > 4 ? true : false,
 });
 
 //Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
@@ -2147,40 +2147,79 @@ var textualSwiper = new Swiper("#textual__section", {
 
 // Feature Slider April'23
 
-var featuredSliderApr = new Swiper(".feature-product__Apr", {
-  spaceBetween: 20,
-  slidesPerView: 1,
-  slidesPerGroup: 1,
+// var featuredSliderApr = new Swiper(".feature-product__Apr", {
+//   spaceBetween: 20,
+//   slidesPerView: 1,
+//   slidesPerGroup: 1,
+//   loop: true,
+//   // centeredSlides: true,
+//   speed: 800,
+//   pagination: {
+//     el: ".feature_slider--pagination",
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     768: {
+//       noSwiping: false,
+//       speed: 500,
+//     },
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
+// $(document).on(
+//   "click",
+//   ".feature-product__Apr .feature_slider__slide.swiper-slide-prev",
+//   function () {
+//     window.featuredSliderApr.slidePrev();
+//   }
+// );
+// $(document).on(
+//   "click",
+//   ".feature-product__Apr .feature_slider__slide.swiper-slide-next",
+//   function () {
+//     window.featuredSliderApr.slideNext();
+//   }
+// );
+var featuredSliderApr = new Swiper(".landingCare__swiper-container--apr", {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 0,
+  speed: 600,
   loop: true,
-  // centeredSlides: true,
-  speed: 800,
+  autoplay: false,
+  watchSlidesVisibility: true,
   pagination: {
-    el: ".feature_slider--pagination",
+    el: ".landingCare__swiper--pagination",
     clickable: true,
+    dynamicBullets:
+      $(".landingCare__swiper-container--apr .swiper-slide").length > 2 ? true : false,
+    dynamicMainBullets: $(".landingCare__swiper-container--apr .swiper-slide").length > 5 ? 3 : 1,
   },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
   breakpoints: {
     768: {
+      loop: true,
       noSwiping: false,
-      speed: 500,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
     },
   },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+
+  //if only 3 slide logic
+  // autoplay: $(".featured__categories .landingCare__swiper-container--apr .swiper-slide").length > 2 ? true : false,
+  // loop: $(".featured__categories .landingCare__swiper-container--apr .swiper-slide").length > 2 ? true : false,
 });
 
-$(document).on(
-  "click",
-  ".feature-product__Apr .feature_slider__slide.swiper-slide-prev",
-  function () {
-    window.featuredSliderApr.slidePrev();
-  }
-);
-$(document).on(
-  "click",
-  ".feature-product__Apr .feature_slider__slide.swiper-slide-next",
-  function () {
-    window.featuredSliderApr.slideNext();
-  }
-);
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".swiper-slide").length <= 1) {
+  $(".landingCare__swiper--pagination").addClass("invisible");
+  $(".landingCare__swiper--navigation").addClass("invisible");
+}

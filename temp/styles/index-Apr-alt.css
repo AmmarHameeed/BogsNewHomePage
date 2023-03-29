@@ -560,22 +560,22 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec {
+  .index-Apr-alt__module #mainContainer .featured__categories .swiper-container {
     padding-bottom: 30px;
   }
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide {
   width: 50%;
   overflow: hidden;
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .dual__swiper__image {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .dual__swiper__image {
   width: 100%;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .mobile__copy {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .mobile__copy {
   position: absolute;
   top: 35px;
   left: 36px;
@@ -585,7 +585,7 @@
   font-size: 18px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .shop__btn {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .shop__btn {
   position: absolute;
   left: 8.5%;
   bottom: 75px;
@@ -607,12 +607,12 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .shop__btn:hover {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .shop__btn:hover {
   background: #171717;
   color: #ffffff;
 }
 @media screen and (max-width: 992px) {
-  .index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .shop__btn {
+  .index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .shop__btn {
     font-size: 20px;
     width: 81px;
     height: 34px;
@@ -622,23 +622,23 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide .shop__btn {
+  .index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide .shop__btn {
     bottom: 40px;
     left: 35px;
   }
 }
 @media screen and (min-width: 768px) {
-  .index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .swiper-slide:hover .dual__swiper__image {
+  .index-Apr-alt__module #mainContainer .featured__categories .swiper-container .swiper-slide:hover .dual__swiper__image {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .landingCare__swiper--pagination .swiper-pagination-bullet {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .landingCare__swiper--pagination .swiper-pagination-bullet {
   opacity: 1 !important;
   background: unset;
   border: 1px solid #000000;
 }
-.index-Apr-alt__module #mainContainer .featured__categories .landingCare__swiper-container--dec .landingCare__swiper--pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.index-Apr-alt__module #mainContainer .featured__categories .swiper-container .landingCare__swiper--pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #000000;
 }
 @media screen and (max-width: 768px) {

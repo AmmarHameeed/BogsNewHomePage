@@ -144,7 +144,7 @@
                 @include sectionHeading;
             }
 
-            .landingCare__swiper-container--dec {
+            .swiper-container {
                 @media screen and (max-width: 768px) {
                     padding-bottom: 30px;
                 }
