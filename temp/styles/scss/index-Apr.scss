@@ -476,6 +476,12 @@
 
         .swiper-wrapper {
           .dual__swiper__slide {
+            .artist__img{
+              width: 100%;
+              max-height: 257px;
+              object-fit: cover;
+              object-position: 0px -10px;
+            }
             .artist__text-overlay {
               position: absolute;
               right: 0;

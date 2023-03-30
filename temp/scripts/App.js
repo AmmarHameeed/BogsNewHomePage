@@ -2184,6 +2184,53 @@ var textualSwiper = new Swiper("#textual__section", {
 //     window.featuredSliderApr.slideNext();
 //   }
 // );
+
+
+// Featured Categories Swipers April'23
+var featuredCategoriesSwiper = new Swiper(".featuredCategories__swiper-container--apr", {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 0,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".landingCare__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".featuredCategories__swiper-container--apr .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".featuredCategories__swiper-container--apr .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: true,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    // delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $(".featured__categories .featuredCategories__swiper-container--apr .swiper-slide").length > 4 ? true : false,
+  loop: $(".featured__categories .featuredCategories__swiper-container--apr .swiper-slide").length > 4 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".swiper-slide").length <= 2) {
+  $(".landingCare__swiper--pagination").addClass("invisible");
+  $(".landingCare__swiper--navigation").addClass("invisible");
+}
+
+
+// Meet the Artist Section Slider
 var featuredSliderApr = new Swiper(".landingCare__swiper-container--apr", {
   slidesPerView: 2,
   slidesPerGroup: 2,
