@@ -463,7 +463,7 @@
 .landing-sustainability__module #mainContainer #textual__section {
   position: relative;
   padding: 0px 5%;
-  margin-bottom: 15px;
+  margin-bottom: 115px;
 }
 @media screen and (max-width: 768px) {
   .landing-sustainability__module #mainContainer #textual__section {
@@ -524,6 +524,98 @@
 .landing-sustainability__module #mainContainer #textual__section .swiper-pagination .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
+}
+.landing-sustainability__module #mainContainer #long__banner {
+  position: relative;
+  margin-bottom: 50px;
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper {
+  position: absolute;
+  padding-left: 7.5%;
+  bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper {
+    bottom: unset;
+    top: 11.5%;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay--text {
+  margin-top: 12px;
+  margin-bottom: 35px;
+  font-size: 28px;
+  color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay--text {
+    margin-top: 25px;
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .long__banner__overlay-desc__text--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .long__banner__overlay-desc__text--wrapper .long__banner__overlay-desc--bigText {
+  text-transform: uppercase;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  font-size: 40px;
+  line-height: 36px;
+  color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .long__banner__overlay-desc__text--wrapper .long__banner__overlay-desc--bigText {
+    font-size: 26px;
+  }
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .long__banner__overlay-desc__text--wrapper .long__banner__overlay-desc--smallText {
+  font-family: "trade-gothic-next", Arial, sans-serif;
+  font-size: 28px;
+  color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .long__banner__overlay-desc__text--wrapper .long__banner__overlay-desc--smallText {
+    font-size: 18px;
+  }
+}
+.landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .plus__sign {
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  margin: -30px 30px 0 25px;
+  color: #ffffff;
+  font-size: 70px;
+  font-style: normal;
+}
+@media screen and (max-width: 992px) {
+  .landing-sustainability__module #mainContainer #long__banner .long__banner__overlay--wrapper .long__banner__overlay-desc--wrapper .plus__sign {
+    display: none;
+  }
 }
 .landing-sustainability__module #mainContainer #feature_slider {
   margin-bottom: 15px;
