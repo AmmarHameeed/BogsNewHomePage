@@ -1108,12 +1108,11 @@
   height: 100%;
 }
 .index-May__module #mainContainer #newest__collection__Kids .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1151,6 +1150,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  bottom: 35px;
 }
 .index-May__module #mainContainer #newest__collection__Kids .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper .shop__btn:hover {
   background: #171717;
@@ -1177,9 +1178,6 @@
   display: -ms-flexbox;
   display: flex;
   opacity: 1;
-  background: rgba(0, 0, 0, 0.33);
-  -webkit-transition: background 250ms ease-out 0s, opacity 250ms ease-out 0s;
-  transition: background 250ms ease-out 0s, opacity 250ms ease-out 0s;
 }
 .index-May__module #mainContainer #newest__collection__Kids .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left {
   display: -webkit-box;
