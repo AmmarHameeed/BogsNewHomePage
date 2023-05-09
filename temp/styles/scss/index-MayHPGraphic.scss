@@ -71,7 +71,7 @@
   
           .newLanding__title {
             font-size: 130px;
-            line-height: 118px;
+            line-height: 105px;
             padding: 0;
             margin-bottom: 30px;
             letter-spacing: 0.5px;
@@ -93,60 +93,14 @@
             }
           }
   
-          .discount__desc--code {
-            margin-bottom: 10px;
-            font-size: 30px;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-family: "trade-gothic-next", Arial, sans-serif;
-  
-            @media screen and (max-width: 1750px) {
-              font-size: 24px;
-            }
-  
-            @media screen and (max-width: 1200px) {
-              font-size: 20px;
-            }
-  
-            @media screen and (max-width: 992px) {
-              font-size: 16px;
-            }
-  
-            @media screen and (max-width: 768px) {
-              font-size: 14px;
-            }
-          }
-  
           .shop__btn {
             @include shopButtonBlack;
             margin-right: 15px;
+            width: 130px;
   
             @media screen and (max-width: 768px) {
               margin-right: 10px;
               width: unset;
-            }
-          }
-        }
-        &.hero__video{
-          margin-top: 126px;
-          @media screen and (max-width: 768px) {
-            margin-top: 70px;
-          }
-          .page_header--videobg-wrapper{
-            background: #58a1d4;
-            video{
-              @media screen and (min-width: 768px) {
-                height: 100vh;
-              }
-              @media screen and (max-width: 768px) {
-                min-height: 496px;
-                object-position: 0 75px;
-              }
-              @media screen and (max-width: 400px) {
-                object-position: 0 90px;
-              }
-              max-height: 980px;
-              margin-left: auto;
             }
           }
         }
