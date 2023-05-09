@@ -414,6 +414,11 @@
   margin-top: 126px;
 }
 @media screen and (max-width: 768px) {
+  .index-Nov__module #mainContainer .hero__section:nth-of-type(1) {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
   .index-Nov__module #mainContainer .hero__section {
     margin-bottom: 25px;
   }

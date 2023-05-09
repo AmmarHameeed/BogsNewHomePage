@@ -38,6 +38,9 @@
 
         &:nth-of-type(1) {
           margin-top: 126px;
+          @media screen and (max-width: 768px) {
+             margin-top: 70px;
+          }
       }
         @media screen and (max-width: 768px) {
           margin-bottom: 25px;
