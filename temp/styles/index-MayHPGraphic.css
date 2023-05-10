@@ -474,6 +474,7 @@
     font-size: 40px;
     line-height: 36px;
     margin-bottom: 5px;
+    color: #ffffff !important;
   }
 }
 .index-Nov__module #mainContainer .hero__section .newLanding__textWrapper--middle .shop__btn {
@@ -515,6 +516,8 @@
   .index-Nov__module #mainContainer .hero__section .newLanding__textWrapper--middle .shop__btn {
     margin-right: 10px;
     width: unset;
+    background: #ffffff;
+    color: #171717;
   }
 }
 .index-Nov__module .feature__slider-description {
