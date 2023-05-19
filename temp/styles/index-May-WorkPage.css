@@ -726,6 +726,11 @@
             transform: scale(1.1);
   }
 }
+@media screen and (max-width: 768px) {
+  .index-May-Work__module #mainContainer #feature_slider .feature-product__aug .swiper-wrapper .feature_slider__slide br {
+    display: none;
+  }
+}
 .index-May-Work__module #mainContainer #feature_slider .feature-product__aug .swiper-wrapper.swiper-slide-prev:hover {
   -webkit-transform: none;
           transform: none;
