@@ -865,6 +865,17 @@
             line-height: 34px;
             z-index: 999;
           }
+
+          &.img__placement{
+            justify-content: center;
+            align-items: center;
+
+            .img__over__image{
+              max-width: 75%;
+              transform: translateY(12px);
+            }
+
+          }
         }
       }
 
