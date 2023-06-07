@@ -3,7 +3,6 @@
     min-height: unset;
   
     @media screen and (max-width: 768px) {
-      // padding-left: 0px;
       padding: 0px 0px;
       min-height: unset;
     }
@@ -14,6 +13,25 @@
   
       @media screen and (max-width: 768px) {
         font-size: 1rem;
+      }
+    }
+  }
+
+@mixin sectionHeadingPDP {
+    padding: 10px 0px;
+    min-height: unset;
+  
+    @media screen and (max-width: 768px) {
+      padding: 0px 0px;
+      min-height: unset;
+    }
+  
+    .feature_slider__headline {
+      font-size: 30px;
+      font-weight: 700;
+  
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
       }
     }
   }
