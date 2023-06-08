@@ -403,6 +403,7 @@
 @media screen and (max-width: 992px) {
   .index-pdp__module #mainContainer {
     margin: 0 16px;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 768px) {
