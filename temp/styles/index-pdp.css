@@ -624,6 +624,13 @@
   background: #171717;
   color: #ffffff;
 }
+@media screen and (max-width: 992px) {
+  .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .btn--alternate {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .btn--alternate:hover {
   background: #ffffff;
   color: #171717;

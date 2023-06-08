@@ -267,6 +267,10 @@
                   font-family: "front_page_neueregular";
                   background: #171717;
                   color: #ffffff;
+                  
+                  @media screen and (max-width: 992px) {
+                    justify-content: center !important;
+                  }
 
                   &:hover {
                     background: #ffffff;
