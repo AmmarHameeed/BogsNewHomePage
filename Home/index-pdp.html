@@ -884,7 +884,14 @@
                                             <div class="swiper-pagination color__selection__pagination"></div>
                                         </div>
                                         <!--Select Size Text-->
-                                        <div class="detail-view__select-label">Select Size: </div>
+                                        <div class="size__heading__wrapper">
+                                            <div class="detail-view__select-label">Select Size: </div>
+                                            <div class="detail-view__chart-text">
+                                                <a data-toggle="collapse" href="#size-chart"
+                                                role="button" aria-expandes="false"
+                                                aria-controls="detail-view__more-details">Size Chart</a> 
+                                            </div>
+                                        </div>
 
                                         <!--Size Selector Button-->
                                         <div class="detail-view__sizes">
@@ -902,6 +909,134 @@
                                             <div href="#" class="detail-view__size-block">5</div>
                                             <div href="#" class="detail-view__size-block disabled">6</div>
                                         </div>
+
+                                         <!--Features Dropdown-->
+                                    <div id="size-chart" class="collapse" data-parent="#detail_view">
+                                        <div class="detail-view__section-content">
+                                            <div class=""><a class="btn btn--small btn--alt-font btn--full btn--border"
+                                                    href="#"
+                                                    target="_blank">Kids’ Size Ruler</a></div>
+
+
+
+                                            <!-- ROW FOR SIZE CHART-->
+                                            <div class="">
+                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                    class="sizingTable table table-striped kids-ruler">
+                                                    <tbody>
+                                                        <tr class="table-head table-stripe">
+                                                            <th><span>US Sizes</span> </th>
+                                                            <th><span>INCHES</span> </th>
+                                                            <th><span>CM</span> </th>
+                                                        </tr>
+                                                        <tr class="table-infant">
+                                                            <td colspan="3">Infant</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>3 12/16"</td>
+                                                            <td>9.5</td>
+                                                        </tr>
+                                                        <tr class="table-toddler">
+                                                            <td colspan="3">Toddler</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>5"</td>
+                                                            <td>12.8</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>5</td>
+                                                            <td>5 6/16"</td>
+                                                            <td>13.7</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>5 12/16"</td>
+                                                            <td>14.5</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>7</td>
+                                                            <td>6 1/16"</td>
+                                                            <td>15.4</td>
+                                                        </tr>
+                                                        <tr class="table-little-kid">
+                                                            <td colspan="3">Little Kid</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>6 6/16"</td>
+                                                            <td>16.2</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>9</td>
+                                                            <td>6 12/16"</td>
+                                                            <td>17.1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td>7 1/16"</td>
+                                                            <td>17.9</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>11</td>
+                                                            <td>7 6/16"</td>
+                                                            <td>18.8</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>12</td>
+                                                            <td>7 12/16"</td>
+                                                            <td>19.6</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>13</td>
+                                                            <td>8 1/16"</td>
+                                                            <td>20.4</td>
+                                                        </tr>
+                                                        <tr class="table-big-kid">
+                                                            <td colspan="3">Big Kid</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>8 6/16"</td>
+                                                            <td>21.2</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>2</td>
+                                                            <td>8 11/16"</td>
+                                                            <td>22.0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>9"</td>
+                                                            <td>22.8</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>4</td>
+                                                            <td>9 6/16"</td>
+                                                            <td>23.6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>9 10/16"</td>
+                                                            <td>24.4</td>
+                                                        </tr>
+                                                        <tr class="table-stripe">
+                                                            <td>6</td>
+                                                            <td>9 15/16"</td>
+                                                            <td>25.2</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>10 4/16"</td>
+                                                            <td>26.0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                         <!--Add to Cart Button-->
                                         <a href="#"
@@ -1192,7 +1327,7 @@
                                 style="background-color:#ffffff;">
                                 <a href="#">
                                     <img class="dual__swiper__image"
-                                        src="../assets/images/detail-page/Primary/SS23-BOGS-PDPUpdate-OurImpactSection01-Primary-Mobile.png">
+                                        src="../assets/images/detail-page/Primary/SS23-BOGS-PDPUpdate-OurImpactSection01-Primary-Mobile.jpg">
                                 </a>
                                 <div class="dual__swiper--text-wrapper">
                                     <p class="dual__swiper--text">Tread more lightly.
