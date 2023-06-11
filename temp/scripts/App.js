@@ -2326,20 +2326,55 @@ window.addEventListener('resize', function() {
   swiperMode();
 });
 
-// var swiperColorSelection = new Swiper(".color__selection__swiper", {
-//   loop: true,
-//   autoplay: false,
-//   breakpoints: {
-//     768: {
-//       loop: true,
-//       noSwiping: false,
-//       slidesPerView: 4,
-//       slidesPerGroup: 1,
-//       spaceBetween: 10,
-//       watchSlidesVisibility: true,
-//     },
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-// });
+var featuredSectionSwiperPDP = new Swiper(".feature-product-pdp", {
+  spaceBetween: 15,
+  slidesPerView: "3",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+    dynamicBullets:
+      $("#feature_slider .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $("#feature_slider .swiper-slide").length > 5 ? 3 : 1,
+  },
+  breakpoints: {
+    //change parameter on mobile from 500 to 768 for landscape phone
+    768: {
+      slidesPerView: "auto",
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+
+  //if only 3 slide logic
+  autoplay: $(".feature-product-pdp .swiper-slide").length > 3 ? true : false,
+  loop: $(".feature-product-pdp .swiper-slide").length > 1 ? true : false,
+});
+
+//Swiper: best sellers section slider ---- if only 3 slide logic CONTINUED ----
+if ($(".feature-product-pdp .swiper-slide").length <= 2) {
+  $(".feature-product-pdp .feature_slider--pagination").addClass("invisible");
+  $(".feature-product-pdp .feature_slider--navigation").addClass("invisible");
+}
+
+//Featured Section Slider event listener - next/prev slide clicks to themselves
+$(document).on(
+  "click",
+  ".feature-product-pdp .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSectionSwiperPDP.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product-pdp .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSectionSwiperPDP.slideNext();
+  }
+);
