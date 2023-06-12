@@ -673,39 +673,6 @@
   font-size: 0.5rem;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .core__benefits--wrapper {
-  padding-top: 15px;
-  padding-bottom: 33px;
-}
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .core__benefits--wrapper .core__benefits--heading {
-  font-size: 0.9375rem;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-family: "trade-gothic-next", Arial, sans-serif;
-}
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .core__benefits--wrapper .core__benefits--blocks-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .core__benefits--wrapper .core__benefits--blocks-wrapper .core__benefits--block {
-  width: 48%;
-  height: 42px;
-  margin-bottom: 2%;
-  border-radius: 5px;
-  background: #f0f0f0;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 42px;
-  font-size: 24px;
-  font-family: "bogs_headlineregular", Arial, sans-serif;
-  cursor: default;
-}
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .core__benefits--wrapper .core__benefits--blocks-wrapper .core__benefits--block:nth-child(2n) {
-  margin-left: 2%;
-}
 .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__section-head {
   font-size: 0.9375rem;
   font-weight: 700;
