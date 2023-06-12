@@ -416,6 +416,14 @@
                           font-weight: 700;
                           margin-bottom: 0;
                           line-height: 36px;
+                          @media screen and (max-width: 992px) {
+                            line-height: 16px;
+                          }
+                          @media screen and (max-width: 380px) {
+                            line-height: 16px;
+                            font-size: 11px;
+                            letter-spacing: -0.5px;
+                          }
                         }
                       }
 
