@@ -744,6 +744,11 @@
   line-height: 23px;
   font-weight: 700;
 }
+@media screen and (max-width: 992px) {
+  .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .sidebar__similarproduct--module .sidebar__similarproduct--heading {
+    font-size: 20px;
+  }
+}
 .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .sidebar__similarproduct--module .sidebar__similarproduct--wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,7 +769,7 @@
   left: 21px;
   bottom: 7px;
 }
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .sidebar__similarproduct--module .sidebar__similarproduct--wrapper .sidebar__similarproduct--slide .sidebar__similarproduct--desc .sidebar__similarproduct--heading {
+.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .sidebar__similarproduct--module .sidebar__similarproduct--wrapper .sidebar__similarproduct--slide .sidebar__similarproduct--desc .sidebar__similarproduct--heading-desc {
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 0;

@@ -389,6 +389,9 @@
                     margin: 25px 0;
                     line-height: 23px;
                     font-weight: 700;
+                    @media screen and (max-width: 992px) {
+                      font-size: 20px;
+                    }
                   }
 
                   .sidebar__similarproduct--wrapper {
@@ -408,7 +411,7 @@
                         left: 21px;
                         bottom: 7px;
 
-                        .sidebar__similarproduct--heading {
+                        .sidebar__similarproduct--heading-desc {
                           font-size: 12px;
                           font-weight: 700;
                           margin-bottom: 0;
