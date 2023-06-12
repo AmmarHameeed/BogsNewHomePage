@@ -1212,11 +1212,13 @@
 @media screen and (min-width: 768px) {
   .index-pdp-similarproductside__module #technolgy_slider .feature_slider__headline-wrapper {
     margin: auto 48px;
+    margin-bottom: 21px;
   }
 }
 @media screen and (min-width: 1750px) {
   .index-pdp-similarproductside__module #technolgy_slider .feature_slider__headline-wrapper {
     margin: auto;
+    margin-bottom: 21px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -1251,6 +1253,8 @@
       -ms-flex: 0 0 33%;
           flex: 0 0 33%;
   max-width: 33%;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 @media screen and (max-width: 992px) {
   .index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide {
@@ -1260,21 +1264,24 @@
     max-width: 75%;
   }
 }
-.index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__slide-headline {
+.index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__content {
+  padding: 2em 2em 5em;
+}
+.index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__content .feature_slider__slide-headline {
   font-size: 1.5rem;
   line-height: 1.4rem;
 }
 @media screen and (max-width: 992px) {
-  .index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__slide-headline {
+  .index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__content .feature_slider__slide-headline {
     font-size: 15px;
   }
 }
-.index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__slide-copy {
+.index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__content .feature_slider__slide-copy {
   font-size: 1rem;
   line-height: 1.8em;
 }
 @media screen and (max-width: 992px) {
-  .index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__slide-copy {
+  .index-pdp-similarproductside__module #technolgy_slider .similar-products .swiper-wrapper .feature_slider__slide .feature_slider__content .feature_slider__slide-copy {
     font-size: 16px;
   }
 }
