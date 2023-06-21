@@ -429,12 +429,13 @@
             }
 
             &.three__images {
-              .dual__swiper__slide--left{
+              .dual__swiper__slide--left {
                 width: 32.2%;
               }
+
               .dual__swiper__slide--right {
-                  width: calc(100% - 34.2%);
-                
+                width: calc(100% - 34.2%);
+
                 .colored__bg {
                   position: relative;
                   height: 100%;
@@ -442,12 +443,22 @@
 
                   .overlay__wrapper {
                     display: flex;
-                    padding: 0 51px;
+                    padding: 0 10% 17%;
                     flex-flow: column;
-                    justify-content: center;
+                    justify-content: end;
                     cursor: default;
+
+                    @media screen and (max-width: 1665px) and (min-width: 1201px) {
+                      padding: 0 10% 14%;
+                    }
+
+                    @media screen and (max-width: 992px) and (min-width: 769px) {
+                      padding: 0 5% 8%;
+                    }
+
                     @media screen and (max-width: 768px) {
                       padding: 0 32px;
+                      justify-content: center;
                     }
 
                     .dss__heading__text {
@@ -457,16 +468,59 @@
                       color: #ffffff;
                       text-transform: uppercase;
 
+                      @media screen and (max-width: 1665px) and (min-width: 1451px) {
+                        font-size: 48px;
+                      }
+
+                      @media screen and (max-width: 1450px) and (min-width: 1201px) {
+                        font-size: 40px;
+                      }
+
+                      @media screen and (max-width: 1200px) and (min-width: 993px) {
+                        font-size: 32px;
+                      }
+
+                      @media screen and (max-width: 992px) and (min-width: 769px) {
+                        margin-bottom: 15px;
+                        font-size: 28px;
+                      }
+
                       @media screen and (max-width: 768px) {
                         font-size: 24px;
                         margin-bottom: 10px;
                       }
                     }
-                    .dss__desc{
+
+                    .dss__desc {
+                      margin-bottom: 60px;
                       font-size: 28px;
                       line-height: 35px;
                       text-align: center;
                       color: #ffffff;
+
+                      @media screen and (max-width: 1665px) and (min-width: 1451px) {
+                        font-size: 22px;
+                        line-height: 28px;
+                        margin-bottom: 45px;
+                      }
+
+                      @media screen and (max-width: 1450px) and (min-width: 1201px) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        margin-bottom: 45px;
+                      }
+
+                      @media screen and (max-width: 1200px) and (min-width: 993px) {
+                        font-size: 15px;
+                        line-height: 21px;
+                        margin-bottom: 30px;
+                      }
+
+                      @media screen and (max-width: 992px) and (min-width: 769px) {
+                        margin-bottom: 30px;
+                        font-size: 16px;
+                        line-height: 18px;
+                      }
 
                       @media screen and (max-width: 768px) {
                         font-size: 15px;
@@ -476,10 +530,7 @@
 
                     .shop__btn {
                       @include shopButtonWhite;
-                      position: absolute;
-                      left: 50%;
-                      bottom: 100px;
-                      transform: translateX(-50%);
+
 
                       @media screen and (max-width: 768px) {
                         display: none;
@@ -508,16 +559,20 @@
           }
         }
       }
-      &.inverted{
-        .swiper-wrapper{
+
+      &.inverted {
+        .swiper-wrapper {
           flex-flow: row-reverse;
+
           @media screen and (max-width: 768px) {
             flex-flow: unset;
           }
-          .dual__swiper__slide{
+
+          .dual__swiper__slide {
             flex-flow: row-reverse;
             margin-right: 0 !important;
-            .dual__swiper__slide--left{
+
+            .dual__swiper__slide--left {
               margin-left: 0%;
             }
           }
