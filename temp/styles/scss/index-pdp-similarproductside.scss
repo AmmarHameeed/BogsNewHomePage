@@ -230,6 +230,9 @@
                   margin-bottom: 5px;
                   justify-content: space-between;
                   align-items: center;
+                  @media screen and (max-width: 992px) {
+                    margin-top: 5px;
+                  }
 
                   .detail-view__select-label {
                     font-size: 0.9375rem;
@@ -263,15 +266,22 @@
                     border-radius: 5px;
                     font-size: 18px;
                     font-weight: 700;
+                    @media screen and (max-width: 768px) {
+                      // font-size: 15px;
+                    }
 
                     &:nth-child(3n) {
                       margin-right: 0;
                     }
 
                     &.default__label {
-                      background: #000000;
-                      color: white;
-                      text-transform: capitalize;
+                      background: #f3f3f3;
+                      color: #171717;
+                      text-transform: uppercase;
+                      font-family: "front_page_neueregular";
+                    }
+                    &.disabled{
+                      background: #f3f3f3;
                     }
 
                     &.selected {

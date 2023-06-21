@@ -224,6 +224,9 @@
                   margin-bottom: 5px;
                   justify-content: space-between;
                   align-items: center;
+                  @media screen and (max-width: 992px) {
+                    margin-top: 5px;
+                  }
                   .detail-view__select-label {
                     font-size: .9375rem;
                     font-weight: 700;
@@ -261,9 +264,14 @@
                     }
 
                     &.default__label {
-                      background: #000000;
-                      color: white;
-                      text-transform: capitalize;
+                      background: #f3f3f3;
+                      color: #171717;
+                      text-transform: uppercase;
+                      font-family: "front_page_neueregular";
+                    }
+
+                    &.disabled{
+                      background: #f3f3f3;
                     }
 
                     &.selected {
@@ -461,6 +469,16 @@
               width: 80%;
               bottom: 45px;
 
+              @media screen and (max-width: 1620px) and (min-width: 1451px) {
+                bottom: 30px;
+              }
+              @media screen and (max-width: 1450px) and (min-width: 1201px) {
+                bottom: 20px;
+              }
+              @media screen and (max-width: 1200px) and (min-width: 992px) {
+                bottom: 15px;
+              }
+
               @media screen and (max-width: 768px) {
                 bottom: 60px;
               }
@@ -475,6 +493,17 @@
                 margin-bottom: 0px;
                 z-index: 9;
 
+                @media screen and (max-width: 1620px) and (min-width: 1451px) {
+                  font-size: 24px;
+                }
+                @media screen and (max-width: 1450px) and (min-width: 1201px) {
+                  font-size: 20px;
+                  width: 100%;
+                }
+                @media screen and (max-width: 1200px) and (min-width: 992px) {
+                  font-size: 16px;
+                  width: 100%;
+                }
 
                 @media screen and (max-width: 768px) {
                   width: 90%;
@@ -486,6 +515,17 @@
               .feature_slider__slide--product-desc {
                 margin-bottom: 0px;
                 font-size: 18px;
+                @media screen and (max-width: 1620px) and (min-width: 1451px) {
+                  font-size: 16px;
+                }
+                @media screen and (max-width: 1450px) and (min-width: 1201px) {
+                  font-size: 14px;
+                  width: 100%;
+                }
+                @media screen and (max-width: 1200px) and (min-width: 992px) {
+                  font-size: 13px;
+                  width: 100%;
+                }
               }
 
               .feature_slider__slide--product-rating-price {
@@ -501,6 +541,10 @@
                     font-size: 16px;
                     font-weight: 700;
 
+                    @media screen and (max-width: 1200px) and (min-width: 992px) {
+                      font-size: 14px;
+                      margin-left: 7px;
+                    }
                     @media screen and (max-width: 768px) {
                       font-size: 16px;
                     }
@@ -510,8 +554,12 @@
                 .feature_slider__slide--product-price {
                   font-size: 30px;
                   font-weight: 700;
+                  margin-bottom: 0;
                   font-family: "bogs_headlineregular", Arial, sans-serif;
 
+                  @media screen and (max-width: 1200px) and (min-width: 992px) {
+                    font-size: 18px;
+                  }
                   @media screen and (max-width: 768px) {
                     font-size: 16px;
                   }
