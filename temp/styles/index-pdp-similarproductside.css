@@ -589,11 +589,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 992px) {
-  .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .size__heading__wrapper {
-    margin-top: 5px;
-  }
-}
 .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .size__heading__wrapper .detail-view__select-label {
   font-size: 0.9375rem;
   font-weight: 700;
@@ -632,13 +627,9 @@
   margin-right: 0;
 }
 .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.default__label {
-  background: #f3f3f3;
-  color: #171717;
-  text-transform: uppercase;
-  font-family: "front_page_neueregular";
-}
-.index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.disabled {
-  background: #f3f3f3;
+  background: #000000;
+  color: white;
+  text-transform: capitalize;
 }
 .index-pdp-similarproductside__module .mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.selected {
   background: #ff7600;
