@@ -199,8 +199,8 @@
 
                     .detail-view__colors-box {
                       opacity: 0.5;
-                      width: 71px;
-                      height: 74px;
+                      width: 19%;
+                      // height: 74px;
                       display: flex;
                       justify-content: center;
                       align-items: center;
@@ -222,6 +222,7 @@
 
                   .color__selection__pagination {
                     bottom: -5px !important;
+                    display: none;
                   }
                 }
 
@@ -230,6 +231,10 @@
                   margin-bottom: 5px;
                   justify-content: space-between;
                   align-items: center;
+
+                  @media screen and (max-width: 992px) {
+                    margin-top: 5px;
+                  }
 
                   .detail-view__select-label {
                     font-size: 0.9375rem;
@@ -269,8 +274,14 @@
                     }
 
                     &.default__label {
-                      background: #000000;
-                      color: white;
+                      background: #f3f3f3;
+                      color: #171717;
+                      text-transform: uppercase;
+                      font-family: "front_page_neueregular";
+                    }
+                    &.disabled{
+                      background: #f3f3f3;
+                      color: #171717;
                       text-transform: capitalize;
                     }
 
@@ -338,6 +349,10 @@
                   text-align: center;
                   cursor: default;
 
+                  @media screen and (max-width: 1100px) and (min-width: 992px) {
+                    flex-flow: column;
+                  }
+
                   .detail-view__afterpay-icon {
                     margin-left: 10px;
                     display: inline-block;
@@ -345,6 +360,9 @@
                     height: 24px;
                     background-repeat: no-repeat;
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='126.511' height='24.318' viewBox='139.082 0 126.511 24.318'%3E%3Cg data-name='ap'%3E%3Cpath d='m263.669 4.908-3.81-2.18-3.865-2.214c-2.555-1.465-5.749.374-5.749 3.325v.496a.745.745 0 0 0 .386.66l1.795 1.025a.743.743 0 0 0 1.112-.65V4.192a.759.759 0 0 1 1.134-.66l3.524 2.025 3.512 2.015a.755.755 0 0 1 0 1.31l-3.512 2.016-3.524 2.026a.76.76 0 0 1-1.134-.66v-.584c0-2.951-3.194-4.801-5.748-3.326l-3.865 2.214-3.81 2.18c-2.566 1.476-2.566 5.187 0 6.662l3.81 2.18 3.865 2.214c2.554 1.464 5.748-.375 5.748-3.326v-.495a.745.745 0 0 0-.386-.661l-1.794-1.024a.743.743 0 0 0-1.113.65v1.178a.759.759 0 0 1-1.134.66l-3.524-2.026-3.512-2.015a.755.755 0 0 1 0-1.31l3.512-2.015 3.524-2.026a.76.76 0 0 1 1.134.66v.584c0 2.951 3.194 4.801 5.749 3.325l3.865-2.213 3.81-2.18c2.565-1.487 2.565-5.187 0-6.662Z' fill-rule='evenodd' data-name='Path 1118'/%3E%3Cpath d='m238.672 5.634-8.92 18.423h-3.7l3.337-6.882-5.252-11.54h3.799l3.37 7.73 3.677-7.73h3.689Z' fill-rule='evenodd' data-name='Path 1119'/%3E%3Cpath d='M149.488 12.175c0-2.202-1.597-3.744-3.557-3.744s-3.557 1.575-3.557 3.744c0 2.148 1.597 3.744 3.557 3.744s3.557-1.541 3.557-3.744m.033 6.541v-1.695c-.969 1.178-2.412 1.905-4.13 1.905-3.59 0-6.31-2.875-6.31-6.75 0-3.844 2.83-6.773 6.388-6.773a5.228 5.228 0 0 1 4.052 1.883V5.634h3.215v13.082h-3.215Z' fill-rule='evenodd' data-name='Path 1120'/%3E%3Cpath d='M168.373 15.81c-1.123 0-1.442-.42-1.442-1.52V8.486H169V5.634h-2.07V2.441h-3.293v3.193h-4.25V4.335c0-1.101.418-1.52 1.574-1.52h.727V.283h-1.586c-2.72 0-4.008.892-4.008 3.612v1.75h-1.828v2.841h1.828v10.23h3.293V8.486h4.25v6.41c0 2.664 1.024 3.82 3.689 3.82h1.696V15.81h-.65Z' fill-rule='evenodd' data-name='Path 1121'/%3E%3Cpath d='M180.2 10.997c-.232-1.696-1.619-2.72-3.249-2.72-1.63 0-2.962.991-3.292 2.72h6.54Zm-6.574 2.037c.23 1.938 1.618 3.04 3.38 3.04 1.388 0 2.456-.65 3.084-1.696h3.38c-.782 2.775-3.27 4.548-6.54 4.548-3.954 0-6.729-2.775-6.729-6.729 0-3.953 2.93-6.805 6.805-6.805 3.898 0 6.728 2.874 6.728 6.805.003.281-.023.562-.077.837h-10.031Z' fill-rule='evenodd' data-name='Path 1122'/%3E%3Cpath d='M204.7 12.175c0-2.114-1.596-3.744-3.556-3.744s-3.557 1.575-3.557 3.744c0 2.148 1.597 3.744 3.557 3.744s3.557-1.618 3.557-3.744m-10.362 11.882V5.634h3.215V7.33c.97-1.2 2.412-1.938 4.13-1.938 3.534 0 6.31 2.907 6.31 6.75s-2.83 6.773-6.387 6.773c-1.652 0-3.007-.65-3.954-1.751v6.882h-3.314v.011Z' fill-rule='evenodd' data-name='Path 1123'/%3E%3Cpath d='M219.589 12.175c0-2.202-1.597-3.744-3.557-3.744s-3.557 1.575-3.557 3.744c0 2.148 1.597 3.744 3.557 3.744s3.557-1.541 3.557-3.744m.033 6.541v-1.695c-.97 1.178-2.412 1.905-4.13 1.905-3.59 0-6.31-2.875-6.31-6.75 0-3.844 2.83-6.773 6.387-6.773a5.229 5.229 0 0 1 4.053 1.883V5.634h3.215v13.082h-3.215Z' fill-rule='evenodd' data-name='Path 1124'/%3E%3Cpath d='M188.536 6.912s.815-1.52 2.83-1.52c.486-.009.968.093 1.41.297v3.337s-1.212-.749-2.324-.595c-1.113.155-1.817 1.168-1.817 2.533v7.741h-3.326V5.635h3.216v1.277Z' fill-rule='evenodd' data-name='Path 1125'/%3E%3C/g%3E%3C/svg%3E");
+                    @media screen and (max-width: 1100px) and (min-width: 992px) {
+                      margin-top: 8px;
+                    }
                   }
                 }
 
@@ -375,12 +393,22 @@
                         position: absolute;
                         left: 21px;
                         bottom: 7px;
+                        @media screen and (max-width: 1200px) and (min-width: 992px) {
+                          left: 12px;
+                        }
 
                         .sidebar__similarproduct--heading-desc {
                           font-size: 12px;
                           font-weight: 700;
                           margin-bottom: 0;
                           line-height: 36px;
+                          @media screen and (max-width: 1350px) and (min-width: 1201px) {
+                            font-size: 10px;
+                            line-height: 18px;
+                          }
+                          @media screen and (max-width: 1200px) and (min-width: 992px) {
+                            font-size: 8.5px;
+                          }
                           @media screen and (max-width: 992px) {
                             line-height: 16px;
                           }
@@ -443,6 +471,9 @@
       @media screen and (max-width: 992px) {
         margin-bottom: 25px;
       }
+      @media screen and (max-width: 768px) {
+        display: none !important;
+      }
 
       .feature_slider__headline-wrapper {
         @include sectionHeadingPDP;
@@ -462,6 +493,7 @@
             position: absolute;
             top: 50%;
             left: 8.5%;
+            padding-right: 5%;
             transform: translateY(-50%);
             z-index: 9;
 
@@ -628,7 +660,7 @@
     #give_back__section-mobile {
       margin-bottom: 25px;
 
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 769px) {
         display: none;
       }
 

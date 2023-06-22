@@ -2289,7 +2289,15 @@ function swiperMode() {
           loop: true,
           autoplay: false,
             breakpoints: {
-                767: {
+                991: {
+                  loop: true,
+                  noSwiping: false,
+                  slidesPerView: 6,
+                  slidesPerGroup: 1,
+                  spaceBetween: 10,
+                  watchSlidesVisibility: true,
+                },
+                540:{
                   loop: true,
                   noSwiping: false,
                   slidesPerView: 4,
@@ -2341,7 +2349,7 @@ var featuredSectionSwiperPDP = new Swiper(".feature-product-pdp", {
   },
   breakpoints: {
     //change parameter on mobile from 500 to 768 for landscape phone
-    768: {
+    992: {
       slidesPerView: "auto",
       noSwiping: false,
       speed: 500,
@@ -2376,5 +2384,44 @@ $(document).on(
   ".feature-product-pdp .feature_slider__slide.swiper-slide-next",
   function () {
     window.featuredSectionSwiperPDP.slideNext();
+  }
+);
+
+//PDP Layout Similar product Slider- June'23
+var featuredSliderLanding4H01 = new Swiper("#feature-product__similar-product", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination01",
+    clickable: true,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: "auto",
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__4h-01 .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderLanding4H01.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__4h-01 .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderLanding4H01.slideNext();
   }
 );
