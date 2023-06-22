@@ -430,6 +430,12 @@
   padding-bottom: 0;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__content .detail-view__top-line .detail-view__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: -10px;
   text-align: left;
   font-family: "bogs_headlineregular", Arial, sans-serif;
@@ -510,6 +516,12 @@
   font-size: 15px;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__content .detail-view__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
@@ -635,7 +647,6 @@
   background: #f3f3f3;
   color: #171717;
   text-transform: uppercase;
-  font-family: "front_page_neueregular";
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.disabled {
   background: #f3f3f3;
@@ -643,10 +654,11 @@
   text-transform: capitalize;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.selected {
-  background: #FF7600;
+  background: #171717;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block:hover:not(.default__label) {
-  background: #FF7600;
+  background: #171717;
+  color: #f7f7f7;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .btn--alternate {
   height: 42px;

@@ -50,6 +50,8 @@
                 padding-bottom: 0;
               }
               .detail-view__price {
+                display: flex;
+                align-items: center;
                 margin-top: -10px;
                 text-align: left;
                 font-family: "bogs_headlineregular", Arial, sans-serif;
@@ -143,6 +145,8 @@
                 }
 
                 .detail-view__price {
+                  display: flex;
+                align-items: center;
                   text-align: left;
                   font-family: "bogs_headlineregular", Arial, sans-serif;
 
@@ -268,7 +272,7 @@
                       background: #f3f3f3;
                       color: #171717;
                       text-transform: uppercase;
-                      font-family: "front_page_neueregular";
+                      // font-family: "front_page_neueregular";
                     }
 
                     &.disabled{
@@ -278,11 +282,12 @@
                     }
 
                     &.selected {
-                      background: #FF7600;
+                      background: #171717;
                     }
 
                     &:hover:not(.default__label) {
-                      background: #FF7600;
+                      background: #171717;
+                      color: #f7f7f7;
                     }
                   }
                 }

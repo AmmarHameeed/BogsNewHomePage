@@ -2279,8 +2279,8 @@ var swiperCS = Swiper;
 var init = false;
 
 function swiperMode() {
-  let mobile = window.matchMedia('(min-width: 0px) and (max-width: 992px)');
-  let desktop = window.matchMedia('(min-width: 993px)');
+  let mobile = window.matchMedia('(min-width: 0px) and (max-width: 991px)');
+  let desktop = window.matchMedia('(min-width: 992px)');
 
   if(mobile.matches) {
     if (!init) {
