@@ -645,6 +645,7 @@
   font-size: 30px;
   line-height: 50px;
   text-align: center;
+  margin-bottom: 50px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
 @media screen and (max-width: 1750px) {
@@ -672,8 +673,6 @@
   }
 }
 .index-June__module #mainContainer .reuse_section__two .dual__swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper--text-wrapper .shop__btn {
-  position: absolute;
-  bottom: 97px;
   display: inline-block;
   width: 101px;
   height: 42px;
