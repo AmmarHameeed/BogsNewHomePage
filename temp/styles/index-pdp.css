@@ -637,13 +637,14 @@
   margin-right: 2%;
   margin-bottom: 2%;
   border-radius: 5px;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 700;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block:nth-child(3n) {
   margin-right: 0;
 }
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.default__label {
+  background: #F0F0F0;
   color: #171717;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
@@ -656,7 +657,7 @@
 .index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block.selected {
   background: #171717;
 }
-.index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block:hover {
+.index-pdp__module #mainContainer #detail_view .detail-view .detail-view__wrapper .detail-view__desktop-wrapper .detail-view__make-me-sticky .detail-view__purchase .detail-view__sizes .detail-view__size-block:hover:not(.default__label) {
   background: #171717;
   color: #f7f7f7;
 }

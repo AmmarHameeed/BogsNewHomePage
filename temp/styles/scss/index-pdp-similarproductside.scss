@@ -270,7 +270,7 @@
                     margin-right: 2%;
                     margin-bottom: 2%;
                     border-radius: 5px;
-                    font-size: 21px;
+                    font-size: 22px;
                     font-weight: 700;
 
                     &:nth-child(3n) {
@@ -278,7 +278,7 @@
                     }
 
                     &.default__label {
-                      // background: #f3f3f3;
+                      background: #F0F0F0;
                       color: #171717;
                       text-transform: uppercase;
                       font-family: "bogs_headlineregular", Arial, sans-serif;
@@ -293,7 +293,7 @@
                       background: #171717;
                     }
 
-                    &:hover {
+                    &:hover:not(.default__label) {
                       background: #171717;
                       color: #f7f7f7;
                     }
