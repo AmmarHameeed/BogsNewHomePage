@@ -475,9 +475,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 24px;
   font-family: "bogs_headlineregular", Arial, sans-serif;
   width: unset;
   margin-bottom: 50px;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .ambassador--program__module #mainContainer .ambassador__content--main .apply__btn:hover {
   color: #171717;
@@ -492,6 +497,9 @@
     min-width: unset;
     padding: 0px 15px 0px 19px;
   }
+}
+.ambassador--program__module #mainContainer .ambassador__content--main .apply__btn:hover {
+  border: 2px solid #000000;
 }
 @media screen and (max-width: 992px) {
   .ambassador--program__module #mainContainer .ambassador__content--main .apply__btn {
