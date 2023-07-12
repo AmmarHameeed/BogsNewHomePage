@@ -404,7 +404,7 @@
   }
 }
 .ambassador--program__module #mainContainer .ambassador__content--main .ambassador__content--heading {
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   font-size: 58px;
   line-height: 51px;
   color: black;
@@ -424,13 +424,14 @@
 .ambassador--program__module #mainContainer .ambassador__content--main .regular__desc {
   width: 35%;
   margin: auto;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 32px;
   color: black;
 }
 .ambassador--program__module #mainContainer .ambassador__content--main .regular__desc.ambassador__content--subheading {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 @media screen and (max-width: 768px) {
   .ambassador--program__module #mainContainer .ambassador__content--main .regular__desc.ambassador__content--subheading {
@@ -438,7 +439,6 @@
   }
 }
 .ambassador--program__module #mainContainer .ambassador__content--main .regular__desc.ending__copy {
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
