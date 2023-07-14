@@ -622,6 +622,11 @@
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .index-Aug__module #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider .mobile__copy {
+    font-size: 1rem;
+  }
+}
 .index-Aug__module #mainContainer #featured__categories .featured__categories-wrapper .featured__categories-slider .featured__categories-image {
   width: 100%;
   -webkit-transition: -webkit-transform 0.5s;

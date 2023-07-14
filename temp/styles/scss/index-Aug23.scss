@@ -179,6 +179,7 @@
                   margin-bottom: 25px;
               }
 
+
               .mobile__copy {
                 // position: absolute;
                 // top: 35px;
@@ -192,6 +193,9 @@
 
                 @media screen and (min-width: 768px) {
                     display: none;
+                }
+                @media screen and (max-width: 768px) {
+                  font-size: 1rem;
                 }
             }
 
