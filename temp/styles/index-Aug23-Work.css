@@ -918,10 +918,12 @@
 .index-Aug-Work__module #mainContainer #feature_slider .feature-product__aug .swiper-pagination {
   bottom: 0px !important;
   line-height: 0;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .index-Aug-Work__module #mainContainer #feature_slider .feature-product__aug .swiper-pagination {
     bottom: 13px !important;
+    display: block;
   }
 }
 .index-Aug-Work__module #mainContainer #feature_slider .feature-product__aug .swiper-pagination .swiper-pagination-bullet {

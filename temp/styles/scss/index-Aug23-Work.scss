@@ -402,9 +402,11 @@
           .swiper-pagination {
               bottom: 0px !important;
               line-height: 0;
+              display: none;
 
               @media screen and (max-width:768px) {
                   bottom: 13px !important;
+                  display: block;
               }
 
               .swiper-pagination-bullet {
