@@ -815,11 +815,18 @@
 .index-pdp__module #mainContainer #threeD__image__section #boot-viewer .play .overlay__text {
   position: absolute;
   width: 100%;
-  padding: 25px 35px;
-  font-family: "bogs_headlineregular", Arial, sans-serif;
+  padding: 30px 35px;
 }
 .index-pdp__module #mainContainer #threeD__image__section #boot-viewer .play .overlay__text h4 {
-  font-size: 36px;
+  font-weight: 700;
+  font-size: 19px;
+}
+.index-pdp__module #mainContainer #threeD__image__section #boot-viewer .play .overlay__text h4 .bigger__text {
+  letter-spacing: 1.2px;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  line-height: 30px;
 }
 .index-pdp__module #mainContainer #threeD__image__section #boot-viewer .play .overlay__text .learn__more-btn {
   font-family: "front_page_neueregular";
