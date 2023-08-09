@@ -720,6 +720,9 @@
   text-align: center;
   margin-top: 65px;
 }
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .orange__logo__wrapper img {
+  max-width: 85px;
+}
 .index-Aug__module #mainContainer #featured__categories {
   margin-bottom: 45px;
 }
