@@ -540,6 +540,186 @@
   border-radius: 24px;
   color: #ffffff;
 }
+.index-Aug__module #mainContainer #price__announcement {
+  min-height: 300px;
+  margin-bottom: 40px;
+  background: #000000;
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement {
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index-Aug__module #mainContainer #price__announcement {
+    display: none;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement .text__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement .text__wrapper {
+    padding-top: 60px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement .pa__heading {
+  margin-bottom: 0;
+  font-size: 64px;
+  line-height: 48px;
+  color: #ffffff;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1400px) {
+  .index-Aug__module #mainContainer #price__announcement .pa__heading {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement .pa__heading {
+    font-size: 42px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement .pa__subheading {
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 1400px) {
+  .index-Aug__module #mainContainer #price__announcement .pa__subheading {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement .pa__subheading {
+    font-size: 1rem;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement .learn__more-btn {
+  background: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "front_page_neueregular";
+  font-weight: 400;
+  padding: 5px 15px;
+  color: #171717;
+  background: #ffffff;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+.index-Aug__module #mainContainer #price__announcement .learn__more-btn:hover {
+  border: 2px solid #ffffff;
+  background: none;
+  color: #ffffff !important;
+}
+@media screen and (max-width: 1400px) {
+  .index-Aug__module #mainContainer #price__announcement .learn__more-btn {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement .learn__more-btn {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index-Aug__module #mainContainer #price__announcement .learn__more-btn {
+    margin-left: 35px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement__mobile {
+  margin-bottom: 40px;
+  background: #000000;
+}
+@media screen and (max-width: 1024px) {
+  .index-Aug__module #mainContainer #price__announcement__mobile {
+    min-height: 250px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .index-Aug__module #mainContainer #price__announcement__mobile {
+    display: none;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile {
+  margin: auto;
+  padding: 45px 30px;
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__heading__mobile {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  color: #ffffff;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 599px) {
+  .index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__heading__mobile {
+    font-size: 90px;
+    line-height: 78px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__subheading__mobile {
+  display: block;
+  margin-bottom: 45px;
+  color: #ffffff;
+  font-weight: 500;
+}
+@media screen and (min-width: 599px) {
+  .index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__subheading__mobile {
+    font-size: 24px;
+    line-height: 18px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__text__mobile {
+  color: #ffffff;
+  font-weight: 300;
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__text__mobile.less-margin {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 599px) {
+  .index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .pa__text__mobile {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .signature__image {
+  display: block;
+  max-width: 200px;
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .signature__image img {
+  width: 100%;
+  margin-left: -20px;
+}
+.index-Aug__module #mainContainer #price__announcement__mobile .text__wrapepr__mobile .orange__logo__wrapper {
+  text-align: center;
+  margin-top: 65px;
+}
 .index-Aug__module #mainContainer #featured__categories {
   margin-bottom: 45px;
 }
@@ -572,6 +752,26 @@
   .index-Aug__module #mainContainer #featured__categories .feature_slider__headline-wrapper {
     display: none;
   }
+}
+.index-Aug__module #mainContainer #featured__categories .feature_slider__headline-wrapper.two__titles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .index-Aug__module #mainContainer #featured__categories .feature_slider__headline-wrapper.two__titles {
+    display: none;
+  }
+}
+.index-Aug__module #mainContainer #featured__categories .feature_slider__headline-wrapper.two__titles .feature_slider__headline {
+  width: 50%;
+}
+.index-Aug__module #mainContainer #featured__categories .feature_slider__headline-wrapper.two__titles .feature_slider__headline:nth-of-type(1) {
+  margin-right: 20px;
 }
 .index-Aug__module #mainContainer #featured__categories .featured__categories-wrapper {
   display: -webkit-box;
@@ -1000,6 +1200,45 @@
   .index-Aug__module .feature__slider-description {
     margin-top: 18px;
   }
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal {
+  width: 75%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .pa__heading__modal {
+  font-size: 64px;
+  text-transform: uppercase;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+  color: #ffffff;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .pa__subheading__modal {
+  display: block;
+  margin-bottom: 45px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .pa__text__modal {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .pa__text__modal.less-margin {
+  margin-bottom: 3px;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .signature__image {
+  display: block;
+  max-width: 200px;
+  margin: auto;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .signature__image img {
+  width: 100%;
+}
+.index-Aug__module #announcementModal .text__wrapepr__modal .orange__logo {
+  margin-top: 45px;
 }
 
 .feature__slider-description {
