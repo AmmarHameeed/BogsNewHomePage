@@ -702,7 +702,7 @@
       }
       .signature__image{
         display: block;
-        max-width: 125px;
+        max-width: 150px;
         margin: auto;
 
         img{
@@ -711,7 +711,8 @@
 
       }
       .orange__logo{
-        margin-top: 45px
+        margin-top: 45px;
+        max-width: 60px;
       }
     }
   }

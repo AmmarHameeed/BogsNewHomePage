@@ -1231,7 +1231,7 @@
 }
 .index-Aug__module #announcementModal .text__wrapepr__modal .signature__image {
   display: block;
-  max-width: 125px;
+  max-width: 150px;
   margin: auto;
 }
 .index-Aug__module #announcementModal .text__wrapepr__modal .signature__image img {
@@ -1239,6 +1239,7 @@
 }
 .index-Aug__module #announcementModal .text__wrapepr__modal .orange__logo {
   margin-top: 45px;
+  max-width: 60px;
 }
 
 .feature__slider-description {
