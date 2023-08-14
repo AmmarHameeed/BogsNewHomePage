@@ -684,6 +684,21 @@
   left: 0;
   margin: auto;
 }
+@media screen and (max-width: 1400px) {
+  .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text {
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text {
+    bottom: 35px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text {
+    bottom: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text {
     bottom: 44px;
@@ -700,6 +715,22 @@
   border-radius: 25px;
   font-family: "bogs_headlineregular", Arial, sans-serif;
   font-size: 33px;
+}
+@media screen and (max-width: 1400px) {
+  .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text .year__name {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text .year__name {
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+  }
 }
 @media screen and (max-width: 768px) {
   .design__boot-module #mainContainer #design__custom_boot-section .design__boot__swiper-container .swiper-slide .overlay__text .year__name {
