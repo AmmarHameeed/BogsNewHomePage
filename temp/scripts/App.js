@@ -101,13 +101,13 @@ $(document).ready(function () {
       $("#video").attr(
         "src",
         $videoSrc +
-        "?autoplay=1&amp;loop=1&amp;modestbranding=1&amp;muted=false;showinfo=0"
+        "?rel=0&autoplay=1&loop=1&modestbranding=1&muted=1&showinfo=0"
       );
     } else {
       $("#video").attr(
         "src",
         $videoSrc +
-        "?autoplay=1&amp;modestbranding=1&amp;muted=false;showinfo=0"
+        "?rel=0&autoplay=1&modestbranding=1&muted=1&showinfo=0"
       );
     }
 
@@ -1483,7 +1483,7 @@ $(document).on(
 var DesignBootSlideSwiper = new Swiper(".design__boot__swiper-container", {
   slidesPerView: 3,
   slidesPerGroup: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   noSwiping: true,
   pagination: {
     el: ".design__boot__swiper--pagination",

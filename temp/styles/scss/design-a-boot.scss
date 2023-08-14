@@ -1,0 +1,332 @@
+@import "mixins.scss";
+
+.design__boot-module {
+
+    .swiper-pagination-bullet {
+        transform: scale(1) !important;
+    }
+
+    @import "navbar-redesigned.scss";
+
+    #mainContainer {
+        max-width: 1750px;
+        margin: auto;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            margin: auto 48px;
+        }
+
+        @media screen and (min-width: 1750px) {
+            margin: auto;
+        }
+
+        @media screen and (max-width: 992px) {
+            margin: 0 16px;
+        }
+
+        #hero_slider {
+            margin-top: 70px;
+            margin-bottom: 45px;
+
+            @media screen and (min-width: 992px) {
+                margin-top: 126px;
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 25px;
+            }
+        }
+
+        .download__application--btn-wrapper{
+            position: relative;
+            .download__app-button {
+                // position: absolute;
+                // right: 0;
+                // left: 0;
+                margin: auto;
+                // bottom: 88px;
+                width: 456px;
+                height: 68px;
+                background: #587B81;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 34px;
+                cursor: pointer;
+                font-size: 45px;
+                font-family: 'bogs_headlineregular', Arial, sans-serif;
+                text-transform: uppercase;
+                &:hover{
+                    border: 4px solid #587B81;
+                    background: white;
+                    color: #587B81;
+                }
+                @media screen and (max-width: 768px) {
+                    max-width: 254px;
+                    height: 35px;
+                    bottom: 40px;
+                    font-size: 23px;
+                    line-height: 48px;
+                }
+            }
+        }
+
+        #rules__section {
+            display: flex;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            flex-flow: column;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+            
+            // color: #ffffff;
+
+            .upper__rules-section {
+                display: flex;
+                flex-flow: row;
+                width: 100%;
+                
+                @media screen and (max-width:992px) {
+                    flex-flow: column;
+                }
+
+                .rules__section-left {
+                    width: 50%;
+                    background: #587B81;
+                    color: white;
+                    padding: 5% 4.25% 4.5% 7.5%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                    }
+
+                    .rules__small-text {
+                        display: block;
+                        margin-top: 70px;
+                        margin-bottom: 30px;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 50px;
+
+                        @media screen and (max-width:992px) {
+                            margin-top: 10px;
+                            margin-bottom: 0px;
+                        }
+                        @media screen and (min-width:992px) {
+                            font-size: 30px;
+                        }
+
+                        &:first-child{
+                            margin-top: 20px;
+                        }
+                    }
+
+                    .rules__heading-date {
+                        font-size: 55px;
+                        font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        text-transform: uppercase;
+                        line-height: 50px;
+
+                        @media screen and (max-width:992px) {
+                            margin-bottom: 30px;
+                        }
+
+
+                        @media screen and (min-width:992px) {
+                            font-size: 70px;
+                            line-height: 50px;
+                        }
+
+                        @media screen and (min-width:1100px) {
+                            font-size: 90px;
+                            line-height: 50px;
+                        }
+
+                        @media screen and (min-width:1500px) {
+                            font-size: 120px;
+                            line-height: 50px;
+                        }
+                    }
+                }
+
+                .rules__section-right {
+                    width: 50%;
+                    margin-left: 0.6px;
+                    color: #5f6871;
+                    padding: 3.75% 4.25% 4% 5%;
+                    border: 8px solid #587B81;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        padding: 40px 35px 35px;
+                    }
+
+                    .rules__heading-list {
+                        margin-bottom: 30px;
+                        font-size: 40px;
+                        font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        text-transform: uppercase;
+                        line-height: 50px;
+                        @media screen and (max-width:768px) {
+                            display: none;
+                        }
+                    }
+
+                    .rule__list-item {
+                        font-size: 30px;
+                        line-height: 45px;
+                        @media screen and (max-width:992px) {
+                            font-size: 16px;
+                            line-height: 25px;
+                        }
+                    }
+
+                    .rules__btn {
+                        margin-top: 35px;
+                       padding: 0 40px;
+                        height: 42px;
+                        background: #587B81;
+                        color: white;
+                        display: inline-block;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        font-size: 28px;
+                        font-family: 'bogs_headlineregular', Arial, sans-serif;
+                        text-transform: uppercase;
+                        &:hover{
+                            border: 2px solid #587B81;
+                            background: white;
+                            color: #587B81;
+                        }
+                        @media screen and (max-width: 992px) {
+                            display: block;
+                            max-width: 193px;
+                            height: 35px;
+                            margin: 30px auto 0;
+                            text-align: center;
+                            padding: 0;
+                            font-size: 23px;
+                            line-height: 35px;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+        #design__custom_boot-section {
+            margin-bottom: 45px;
+            @media screen and (max-width: 992px) {
+                margin-bottom: 18px;
+            }
+
+            .dcb_heading__wrapper {
+                text-align: center;
+                @media screen and (max-width: 768px) {
+                    margin-bottom: 30px;
+                }
+
+                .dcb_heading__text {
+                    font-size: 58px;
+                    font-family: 'bogs_headlineregular', Arial, sans-serif;
+                    line-height: 51px;
+                    text-transform: uppercase;
+                    @media screen and (max-width: 1400px) {
+                        font-size: 45px;
+                    }
+                    @media screen and (max-width: 768px) {
+                        font-size: 30px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .dcb_sub__heading {
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: #5f6871;
+                    @media screen and (max-width: 1400px) {
+                        font-size: 21px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        font-size: 18px;
+                        width: 75%;
+                        line-height: 23px;
+                        margin: auto;
+                    }
+                }
+            }
+
+            .design__boot__swiper-container {
+                @media screen and (max-width: 768px) {
+                    padding-bottom: 22px;
+                }
+                .swiper-slide {
+                    position: relative;
+                    text-align: center;
+
+                    @media screen and (max-width: 768px) {
+                        // padding-bottom: 150px;
+                    }
+                    .overlay__text{
+                        position: absolute;
+                        right: 0;
+                        bottom: 60px;
+                        left: 0;
+                        margin: auto;
+                        @media screen and (max-width: 768px) {
+                            bottom: 44px;
+                        }
+
+                        .year__name{
+                            display: block;
+                            margin: auto;
+                            color: #000000;
+                            height: 50px;
+                            width: 152px;
+                            line-height: 50px;
+                            background: #ffffff;
+                            border-radius: 25px;
+                            font-family: 'bogs_headlineregular', Arial, sans-serif;
+                            font-size: 33px;
+                            @media screen and (max-width: 768px) {
+                                width: 104px;
+                                height: 34px;
+                                line-height: 34px;
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+
+                .design__boot__swiper--pagination.landing-listview-pagination {
+                    line-height: 0;
+                    bottom: 0px !important;
+
+                    .swiper-pagination-bullet {
+                        width: 11px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .feature__slider-description {
+        margin-top: 70px;
+
+        @media screen and (max-width: 768px) {
+            margin-top: 16px;
+
+        }
+    }
+}
+
+@import "footer-redesigned.scss";
