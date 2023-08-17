@@ -702,6 +702,90 @@
             transform: scale(1.1);
   }
 }
+.index-Sept__module #mainContainer #design_boot__section {
+  position: relative;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .index-Sept__module #mainContainer #design_boot__section {
+    margin-bottom: 25px;
+  }
+}
+.index-Sept__module #mainContainer #design_boot__section .feature_slider__headline-wrapper {
+  padding: 10px 0px;
+  min-height: unset;
+}
+@media screen and (max-width: 768px) {
+  .index-Sept__module #mainContainer #design_boot__section .feature_slider__headline-wrapper {
+    padding: 0px 0px;
+    min-height: unset;
+  }
+}
+.index-Sept__module #mainContainer #design_boot__section .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .index-Sept__module #mainContainer #design_boot__section .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 1rem;
+  }
+}
+.index-Sept__module #mainContainer #design_boot__section .link-overlay {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
+}
+.index-Sept__module #mainContainer #design_boot__section .newLanding__textWrapper--middle {
+  top: unset;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  z-index: 10;
+}
+@media screen and (max-width: 992px) {
+  .index-Sept__module #mainContainer #design_boot__section .newLanding__textWrapper--middle {
+    right: 10%;
+  }
+}
+.index-Sept__module #mainContainer #design_boot__section .newLanding__textWrapper--middle .shop__btn {
+  display: inline-block;
+  width: 101px;
+  height: 42px;
+  font-family: "front_page_neueregular";
+  padding: 0 15px 0 19px;
+  font-weight: 400;
+  line-height: 42px;
+  background: #171717;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  width: auto !important;
+}
+.index-Sept__module #mainContainer #design_boot__section .newLanding__textWrapper--middle .shop__btn:hover {
+  color: #171717;
+  background: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .index-Sept__module #mainContainer #design_boot__section .newLanding__textWrapper--middle .shop__btn {
+    font-size: 20px;
+    width: 81px;
+    height: 34px;
+    line-height: 34px;
+    min-width: unset;
+    padding: 0px 15px 0px 19px;
+  }
+}
 @media screen and (max-width: 992px) {
   .index-Sept__module #mainContainer #give_back__section {
     margin-bottom: 25px;
