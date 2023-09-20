@@ -1219,12 +1219,6 @@
           align-items: start;
   padding: 50px 35px;
 }
-@media screen and (min-width: 768px) {
-  .index-Oct__module #mainContainer #support_section .support__inner-wrapper .reuse_section__one--left:hover .reuse_sectionOne--image {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
 .index-Oct__module #mainContainer #support_section .support__inner-wrapper .goals__description--slide {
   width: 33.5%;
   padding: 5% 1% 5% 1%;
