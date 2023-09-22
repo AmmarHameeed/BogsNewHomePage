@@ -419,7 +419,6 @@
 @media screen and (max-width: 992px) {
   .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle {
     width: 100%;
-    height: 100%;
     padding: 43px 35px 43px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -428,9 +427,9 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
             flex-flow: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images {
@@ -444,12 +443,74 @@
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
 .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img {
   margin-right: 45px;
+}
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.mf5-img {
+    max-width: 450px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 993px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.mf5-img {
+    max-width: 375px;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.cross-img {
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 993px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.cross-img {
+    max-width: 30px;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 1101px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.bogs-logo-img {
+    max-width: 375px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 993px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.bogs-logo-img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img {
+    margin-right: unset;
+  }
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.mf5-img {
+    width: 60%;
+    max-width: 300px;
+  }
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.cross-img {
+    width: 7%;
+    margin: 16px 0;
+    max-width: 25px;
+  }
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .video__overlay--images img.bogs-logo-img {
+    width: 50%;
+    max-width: 200px;
+  }
 }
 .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper {
   margin-top: 75px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper {
+    font-size: 16px;
+    margin-top: 45px;
+  }
 }
 .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper .shop__btn {
   display: inline-block;
@@ -472,6 +533,7 @@
   margin-right: 15px;
   width: unset;
   letter-spacing: 0;
+  font-size: 30px;
 }
 .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper .shop__btn:hover {
   background: #171717;
@@ -487,9 +549,16 @@
     min-width: unset;
   }
 }
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper .shop__btn {
+    width: unset;
+    font-size: 25px;
+  }
+}
 @media screen and (max-width: 768px) {
   .landing-FiveMarysFarm__module #mainContainer #hero__video .newLanding__textWrapper--middle .watch_video__btn--wrapper .shop__btn {
     margin-right: 10px;
+    font-size: 20px;
     width: unset;
   }
 }
@@ -516,10 +585,27 @@
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module {
   text-align: center;
 }
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module {
+    margin-bottom: 30px;
+    padding: 0 45px;
+  }
+}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module .collaboration__text {
   margin-bottom: 45px;
   font-size: 30px;
   color: #171717;
+}
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module .collaboration__text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module .collaboration__text {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .collaboration_text__module .shop__btn {
   display: inline-block;
@@ -565,9 +651,9 @@
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module:nth-of-type(2) {
   margin-top: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module {
-    margin-bottom: 25px;
+    display: none;
   }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .feature_slider__headline-wrapper {
@@ -584,11 +670,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper {
-    padding-bottom: 26px;
-  }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide {
   display: -webkit-box;
@@ -608,11 +689,6 @@
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
   position: relative;
   margin-left: 15px;
-}
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
-    margin-left: 10px;
-  }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
   position: relative;
@@ -635,17 +711,6 @@
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .inner__slide .overlay__wrapper .overlay__redirect {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .inner__slide:hover .dual__swiper__image {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .inner__slide:hover .overlay__wrapper {
   opacity: 1;
 }
@@ -665,12 +730,8 @@
   height: 50%;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-of-type(1) {
-  margin-bottom: 15px;
-}
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-of-type(1) {
-    margin-bottom: 10px;
-  }
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__image {
   width: 100%;
@@ -712,10 +773,13 @@
   top: 50%;
   left: 0;
   right: 0;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: auto;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 30px;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide.three__images .dual__swiper__slide--left .shop__btn:hover {
   background: #171717;
@@ -738,12 +802,6 @@
   display: none;
   bottom: 0px !important;
 }
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .dual__swiper--pagination {
-    display: block;
-    line-height: 0;
-  }
-}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module .dual__swiper-container--nov .dual__swiper--pagination .swiper-pagination-bullet {
   width: 11px;
   height: 11px;
@@ -753,14 +811,6 @@
   -webkit-box-direction: reverse;
       -ms-flex-flow: row-reverse;
           flex-flow: row-reverse;
-}
-@media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module.inverted .swiper-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: unset;
-            flex-flow: unset;
-  }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module.inverted .swiper-wrapper .dual__swiper__slide {
   -webkit-box-orient: vertical;
@@ -808,6 +858,7 @@
   max-width: 242px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-size: 30px;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .inspiration__module.non-inverted .swiper-container .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .shop__btn:hover {
   background: #171717;
@@ -823,6 +874,70 @@
     min-width: unset;
   }
 }
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile {
+    display: none;
+  }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .feature_slider__headline-wrapper {
+  min-height: unset;
+  padding: 0;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 32px;
+  color: #1d1c1d;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "bogs_headlineregular", Arial, sans-serif;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .dual__swiper__slide {
+  position: relative;
+  height: auto;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .dual__swiper__slide a {
+  width: 100%;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .dual__swiper__slide .video-btn.specific__btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+  margin: auto;
+  padding: 0px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  font-size: 20px;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .dual__swiper__slide .dual__swiper__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .swiper-pagination {
+    width: 100% !important;
+    bottom: 15px !important;
+  }
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .swiper-pagination .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    left: 0 !important;
+    background: transparent;
+    opacity: 1;
+    border: 2px solid #000000;
+  }
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #inspiration__module-mobile .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000000;
+  }
+}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module {
   margin-top: 55px;
 }
@@ -831,6 +946,11 @@
   padding: 0;
   text-align: center;
 }
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper {
+    margin-bottom: 25px;
+  }
+}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .feature_slider__headline {
   margin-bottom: 25px;
   font-size: 55px;
@@ -838,6 +958,18 @@
   text-align: center;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
+}
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .feature_slider__headline {
+    margin-bottom: 15px;
+    font-size: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .learn__more-btn {
   background: #000000;
@@ -849,7 +981,7 @@
   font-weight: 400;
   padding: 5px 15px;
   color: #ffffff;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 1.5px;
   border-radius: 30px;
   text-transform: uppercase;
@@ -864,26 +996,47 @@
   border: 2px solid #000000 !important;
   color: #171717;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .learn__more-btn {
-    margin-left: 35px;
+    font-size: 24px;
   }
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide {
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .feature_slider__headline-wrapper .learn__more-btn {
+    font-size: 19px;
+  }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__heading-text--mobile {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 40px;
+}
+@media screen and (min-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__heading-text--mobile {
+    display: none;
+  }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100% !important;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
   width: 50%;
   margin-right: 20px;
   background: #4A899F;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg {
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right {
+    width: 100%;
+    margin: 0;
+  }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg {
   position: relative;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,54 +1051,55 @@
   cursor: default;
 }
 @media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
   margin-bottom: 60px;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 35px;
   text-align: left;
   color: #ffffff;
 }
 @media screen and (max-width: 1665px) and (min-width: 1451px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
     font-size: 22px;
     line-height: 28px;
     margin-bottom: 45px;
   }
 }
 @media screen and (max-width: 1450px) and (min-width: 1201px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 45px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 993px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
     font-size: 15px;
     line-height: 21px;
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 992px) and (min-width: 769px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
     margin-bottom: 30px;
     font-size: 16px;
     line-height: 18px;
   }
 }
 @media screen and (max-width: 768px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
-    font-size: 15px;
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc {
+    margin-bottom: 30px;
+    font-size: 16px;
     line-height: 24px;
   }
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn {
   display: inline-block;
   width: 101px;
   height: 42px;
@@ -964,12 +1118,12 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn:hover {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn:hover {
   background: #171717;
   color: #ffffff;
 }
 @media screen and (max-width: 992px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn {
     font-size: 20px;
     width: 81px;
     height: 34px;
@@ -978,7 +1132,7 @@
     min-width: unset;
   }
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -989,16 +1143,77 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner {
-  width: 48%;
+@media screen and (max-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left {
+    display: none;
+  }
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-child(1) {
-  margin-right: 20px;
-  margin-bottom: 20px;
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner {
+  width: 49%;
 }
-.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-child(3) {
-  margin-right: 20px;
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-child(1) {
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--left .dual__swiper__slide--left-inner:nth-child(3) {
+  margin-right: 2%;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile {
+  margin: 15px 0;
+}
+@media screen and (min-width: 992px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile {
+    display: none;
+  }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .dual__swiper__slide {
+  position: relative;
+  height: auto;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .dual__swiper__slide a {
+  width: 100%;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .dual__swiper__slide .video-btn.specific__btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30px;
+  margin: auto;
+  padding: 0px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  font-size: 20px;
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .dual__swiper__slide .dual__swiper__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .swiper-pagination {
+    width: 100% !important;
+    bottom: 15px !important;
+  }
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .swiper-pagination .swiper-pagination-bullet {
+    width: 11px;
+    height: 11px;
+    left: 0 !important;
+    background: transparent;
+    opacity: 1;
+    border: 2px solid #000000;
+  }
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins #m5_farms__module-mobile .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000000;
+  }
 }
 .landing-FiveMarysFarm__module .feature__slider-description {
   margin-top: 70px;

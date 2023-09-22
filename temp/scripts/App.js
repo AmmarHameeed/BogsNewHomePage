@@ -2468,3 +2468,38 @@ if ($(".swiper-slide").length <= 2) {
   $(".landingCare__swiper--pagination").addClass("invisible");
   $(".landingCare__swiper--navigation").addClass("invisible");
 }
+
+// Five Marys Farm Landing Page Text Slide
+
+//Swiper: Practical Cuteness section slider (Updated homepage)
+var DualSlideSwiperNovember = new Swiper(".m5__text__slider", {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+  speed: 600,
+  watchSlidesVisibility: true,
+  pagination: {
+    el: ".dual__swiper--pagination",
+    clickable: true,
+    dynamicBullets:
+      $(".dual__swiper-container .swiper-slide").length > 5 ? true : false,
+    dynamicMainBullets: $(".dual__swiper-container .swiper-slide").length > 5 ? 3 : 1,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev"
+  // },
+  breakpoints: {
+    768: {
+      loop: false,
+      noSwiping: false,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+  },
+  autoplay: {
+    delay: 6000,
+    disableOnInteraction: false,
+  },
+});
