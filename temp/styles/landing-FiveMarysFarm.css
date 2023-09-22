@@ -897,19 +897,8 @@
           justify-content: end;
   cursor: default;
 }
-@media screen and (max-width: 1665px) and (min-width: 1201px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
-    padding: 0 10% 14%;
-  }
-}
-@media screen and (max-width: 992px) and (min-width: 769px) {
-  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
-    padding: 0 5% 8%;
-  }
-}
 @media screen and (max-width: 768px) {
   .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .dual__swiper-container--nov .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
-    padding: 0 32px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
