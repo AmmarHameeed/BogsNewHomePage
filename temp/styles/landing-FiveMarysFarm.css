@@ -1033,25 +1033,36 @@
     margin: 0;
   }
 }
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .dual__swiper__slide--right-inner {
+  height: 100%;
+}
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg {
   position: relative;
+  height: 100%;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10.5% 6.75% 9%;
+  height: 100%;
+  padding: 0% 6.75% 0%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: default;
+}
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
+    padding: 10.5% 6.75% 9%;
+  }
 }
 @media screen and (max-width: 768px) {
   .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper {
+    padding: 10.5% 6.75% 9%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1098,6 +1109,9 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
+.landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .dss__desc:nth-child(3) {
+  margin-bottom: 0;
 }
 .landing-FiveMarysFarm__module #mainContainer .mainContainer__UpdatedMargins .m5_farms__module .m5__text__slider .swiper-wrapper .dual__swiper__slide .dual__swiper__slide--right .colored__bg .overlay__wrapper .shop__btn {
   display: inline-block;
