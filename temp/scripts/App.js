@@ -2316,7 +2316,7 @@ function swiperMode() {
 
 // Disable (for desktop)
 else if(desktop.matches) {
-  swiperCS.destroy();
+  // swiperCS.destroy();
     init = false;
 }
 
