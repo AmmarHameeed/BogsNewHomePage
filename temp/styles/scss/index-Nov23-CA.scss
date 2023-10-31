@@ -166,7 +166,7 @@
         }
   
         .feature_slider__headline-wrapper {
-          @include sectionHeadingPDP;
+          @include sectionHeading;
         }
   
         .feature-product__nov {
@@ -345,7 +345,7 @@
         }
   
         .feature_slider__headline-wrapper {
-          @include sectionHeadingPDP;
+          @include sectionHeading;
           font-weight: 700;
   
           @media screen and (max-width: 992px) {
@@ -453,7 +453,7 @@
       }
 
       .feature_slider__headline-wrapper {
-        @include sectionHeadingPDP;
+        @include sectionHeading;
       }
 
       .give_back--wrapper {
