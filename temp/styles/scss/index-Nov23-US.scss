@@ -62,7 +62,7 @@
             font-size: 130px;
             line-height: 118px;
             padding: 0;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             letter-spacing: 0.5px;
             color: #171717;
   
@@ -85,9 +85,9 @@
   
           .discount__desc--code {
             margin-bottom: 10px;
-            font-size: 30px;
+            font-size: 1.2rem;
             font-weight: bold;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-family: "trade-gothic-next", Arial, sans-serif;
   
             @media screen and (max-width: 1750px) {
