@@ -24,12 +24,80 @@
       margin: 0 16px;
     }
 
+    #sale__banner{
+      margin-top: 126px;
+      padding: 35px 0;
+      background: #000000;
+      text-align: center;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 70px;
+      }
+
+      .sb__heading{
+        margin-bottom: 0;
+        font-size: 80px;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-family: "bogs_headlineregular", Arial, sans-serif;
+        @media screen and (max-width: 1200px) {
+          font-size: 64px;
+        }
+
+        @media screen and (max-width: 992px) {
+          font-size: 42px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 32px;
+        }
+      }
+
+      .sb__discountCode {
+        font-size: 30px;
+        color: #F07622;
+        text-transform: uppercase;
+        @media screen and (max-width: 1200px) {
+          font-size: 25px;
+        }
+
+        @media screen and (max-width: 992px) {
+          font-size: 21px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+    }
+
+      .shop__btn {
+        @include shopButtonWhite;
+        font-size: 30px;
+        @media screen and (max-width: 1200px) {
+          font-size: 25px;
+        }
+
+        @media screen and (max-width: 992px) {
+          font-size: 21px;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+
+        &:hover{
+          border: 2px solid white;
+          color: white;
+        }
+      }
+    }
+
     .hero__section {
         // margin-top: 70px;
         margin-bottom: 50px;
 
         &:nth-of-type(1) {
-          margin-top: 70px;
+          // margin-top: 70px;
       }
         @media screen and (max-width: 768px) {
           margin-bottom: 25px;
@@ -118,9 +186,9 @@
           }
         }
         &.hero__video{
-          margin-top: 126px;
-          @media screen and (max-width: 768px) {
-            margin-top: 70px;
+          margin-top: 57px;
+          @media screen and (max-width: 992px) {
+            margin-top: 25px;
           }
           .page_header--videobg-wrapper{
             video{
