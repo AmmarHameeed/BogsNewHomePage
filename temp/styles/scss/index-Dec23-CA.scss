@@ -1,6 +1,6 @@
 @import "mixins.scss";
 
-.index-Nov23__module {
+.index-Dec23__module {
   .swiper-pagination-bullet {
     transform: scale(1) !important;
   }
@@ -22,80 +22,6 @@
 
     @media screen and (max-width: 992px) {
       margin: 0 16px;
-    }
-
-    #sale__banner{
-      margin-top: 126px;
-      padding: 15px 0;
-      background: #000000;
-      text-align: center;
-
-      @media screen and (max-width: 992px) {
-        margin-top: 70px;
-      }
-
-      .sb__heading{
-        margin-bottom: 0;
-        font-size: 60px;
-        line-height: 56px;
-        color: #ffffff;
-        text-transform: uppercase;
-        font-family: "bogs_headlineregular", Arial, sans-serif;
-        @media screen and (max-width: 1200px) {
-          font-size: 48px;
-        }
-
-        @media screen and (max-width: 992px) {
-          font-size: 32px;
-          line-height: 30px;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 28px;
-        }
-      }
-
-      .sb__discountCode {
-        font-size: 20px;
-        color: #F07622;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        @media screen and (max-width: 1200px) {
-          font-size: 18px;
-        }
-
-        @media screen and (max-width: 992px) {
-          font-size: 16px;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-        }
-    }
-
-      .shop__btn {
-        @include shopButtonWhite;
-        width: 90px;
-        font-size: 25px;
-        height: 34px;
-        line-height: 35px;
-        @media screen and (max-width: 1200px) {
-          font-size: 25px;
-        }
-
-        @media screen and (max-width: 992px) {
-          font-size: 21px;
-        }
-
-        @media screen and (max-width: 768px) {
-          font-size: 18px;
-        }
-
-        &:hover{
-          border: 2px solid white;
-          color: white;
-        }
-      }
     }
 
     .hero__section {

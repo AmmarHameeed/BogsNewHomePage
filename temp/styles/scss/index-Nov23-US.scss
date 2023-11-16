@@ -26,7 +26,7 @@
 
     #sale__banner{
       margin-top: 126px;
-      padding: 35px 0;
+      padding: 15px 0;
       background: #000000;
       text-align: center;
 
@@ -51,7 +51,7 @@
         }
 
         @media screen and (max-width: 768px) {
-          font-size: 32px;
+          font-size: 28px;
         }
       }
 
@@ -69,7 +69,7 @@
         }
 
         @media screen and (max-width: 768px) {
-          font-size: 15px;
+          font-size: 14px;
         }
     }
 
@@ -192,9 +192,9 @@
           }
         }
         &.hero__video{
-          margin-top: 57px;
+          margin-top: 15px;
           @media screen and (max-width: 992px) {
-            margin-top: 25px;
+            margin-top: 15px;
           }
           .page_header--videobg-wrapper{
             video{
@@ -204,7 +204,7 @@
                 width: 100%;
               }
               @media screen and (max-width: 768px) {
-                min-height: 496px;
+                // min-height: 496px;
                 width: 100%;
                 max-height: unset;
                 // object-position: 0 75px;

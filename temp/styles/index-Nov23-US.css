@@ -400,7 +400,7 @@
 }
 .index-Nov23__module #mainContainer #sale__banner {
   margin-top: 126px;
-  padding: 35px 0;
+  padding: 15px 0;
   background: #000000;
   text-align: center;
 }
@@ -430,7 +430,7 @@
 }
 @media screen and (max-width: 768px) {
   .index-Nov23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 .index-Nov23__module #mainContainer #sale__banner .sb__discountCode {
@@ -451,7 +451,7 @@
 }
 @media screen and (max-width: 768px) {
   .index-Nov23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .index-Nov23__module #mainContainer #sale__banner .shop__btn {
@@ -640,11 +640,11 @@
   }
 }
 .index-Nov23__module #mainContainer .hero__section.hero__video {
-  margin-top: 57px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 992px) {
   .index-Nov23__module #mainContainer .hero__section.hero__video {
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }
 .index-Nov23__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
@@ -657,7 +657,6 @@
 }
 @media screen and (max-width: 768px) {
   .index-Nov23__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
-    min-height: 496px;
     width: 100%;
     max-height: unset;
   }
