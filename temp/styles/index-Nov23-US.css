@@ -409,17 +409,22 @@
     margin-top: 70px;
   }
 }
+@media screen and (max-width: 480px) {
+  .index-Nov23__module #mainContainer #sale__banner {
+    padding: 10px 0;
+  }
+}
 .index-Nov23__module #mainContainer #sale__banner .sb__heading {
   margin-bottom: 0;
-  font-size: 60px;
-  line-height: 56px;
+  font-size: 50px;
+  line-height: 40px;
   color: #ffffff;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
 @media screen and (max-width: 1200px) {
   .index-Nov23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 48px;
+    font-size: 42px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -434,14 +439,14 @@
   }
 }
 .index-Nov23__module #mainContainer #sale__banner .sb__discountCode {
-  font-size: 20px;
+  font-size: 18px;
   color: #F07622;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 @media screen and (max-width: 1200px) {
   .index-Nov23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 992px) {

@@ -33,16 +33,19 @@
       @media screen and (max-width: 992px) {
         margin-top: 70px;
       }
+      @media screen and (max-width: 480px) {
+        padding: 10px 0;
+      }
 
       .sb__heading{
         margin-bottom: 0;
-        font-size: 60px;
-        line-height: 56px;
+        font-size: 50px;
+        line-height: 40px;
         color: #ffffff;
         text-transform: uppercase;
         font-family: "bogs_headlineregular", Arial, sans-serif;
         @media screen and (max-width: 1200px) {
-          font-size: 48px;
+          font-size: 42px;
         }
 
         @media screen and (max-width: 992px) {
@@ -56,12 +59,12 @@
       }
 
       .sb__discountCode {
-        font-size: 20px;
+        font-size: 18px;
         color: #F07622;
         text-transform: uppercase;
         margin-bottom: 5px;
         @media screen and (max-width: 1200px) {
-          font-size: 18px;
+          font-size: 16px;
         }
 
         @media screen and (max-width: 992px) {
