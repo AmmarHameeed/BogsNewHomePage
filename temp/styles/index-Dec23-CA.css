@@ -1003,12 +1003,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.index-Dec23__module #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper {
-  height: 50%;
-}
-.index-Dec23__module #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper:nth-of-type(1) {
-  margin-bottom: 20px;
-}
 .index-Dec23__module #mainContainer #give_back__section .give_back--wrapper .gb__right .gb__img__wrapper .overlay__text {
   top: 12%;
 }

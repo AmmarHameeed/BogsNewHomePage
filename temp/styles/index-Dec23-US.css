@@ -405,8 +405,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 126px;
   padding: 0;
   background: #eaeaea;
@@ -426,21 +427,12 @@
   }
 }
 .index-Dec23__module #mainContainer #sale__banner video {
-  max-height: 144px;
-}
-@media screen and (max-width: 1200px) {
-  .index-Dec23__module #mainContainer #sale__banner video {
-    max-height: 120px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .index-Dec23__module #mainContainer #sale__banner video {
-    max-height: 95px;
-  }
+  margin-right: 45px;
+  max-height: 75px;
 }
 @media screen and (max-width: 768px) {
   .index-Dec23__module #mainContainer #sale__banner video {
-    max-height: 70px;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 480px) {
@@ -476,34 +468,16 @@
 }
 .index-Dec23__module #mainContainer #sale__banner .sb__heading {
   margin-bottom: 0;
-  font-size: 95px;
-  margin-right: 45px;
-  line-height: 56px;
+  font-size: 35px;
+  margin-right: 25px;
+  line-height: 40px;
   color: #171717;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 480px) {
   .index-Dec23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 62px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 48px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 36px;
-    line-height: 30px;
-    margin-right: 25px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__heading {
-    font-size: 30px;
-    margin-right: 0;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 374px) {
@@ -512,30 +486,15 @@
   }
 }
 .index-Dec23__module #mainContainer #sale__banner .sb__discountCode {
-  font-size: 35px;
+  font-size: 16px;
   font-weight: 700;
   color: #F07622;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 480px) {
   .index-Dec23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 992px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 19px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .index-Dec23__module #mainContainer #sale__banner .sb__discountCode {
-    font-size: 19px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 374px) {
@@ -646,11 +605,11 @@
   }
 }
 .index-Dec23__module #mainContainer .hero__section.hero__video {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 992px) {
   .index-Dec23__module #mainContainer .hero__section.hero__video {
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }
 .index-Dec23__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
