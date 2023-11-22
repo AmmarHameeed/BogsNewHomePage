@@ -645,6 +645,13 @@
   margin-bottom: 25px;
   z-index: 9;
 }
+@media screen and (max-width: 1300px) {
+  .index-Dec23__module #mainContainer #feature_slider .feature-product__dec23 .swiper-wrapper .feature_slider__slide .feature_slider__slide--product-name {
+    top: 20px;
+    left: 30px;
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 768px) {
   .index-Dec23__module #mainContainer #feature_slider .feature-product__dec23 .swiper-wrapper .feature_slider__slide .feature_slider__slide--product-name {
     position: absolute;
