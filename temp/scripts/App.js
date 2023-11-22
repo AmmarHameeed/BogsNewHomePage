@@ -2503,3 +2503,41 @@ var DualSlideSwiperNovember = new Swiper(".m5__text__slider", {
     disableOnInteraction: false,
   },
 });
+
+// December'23 Update Swiper
+var featuredSliderDec23 = new Swiper(".feature-product__dec23", {
+  spaceBetween: 20,
+  slidesPerView: "auto",
+  loop: true,
+  centeredSlides: true,
+  speed: 800,
+  pagination: {
+    el: ".feature_slider--pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    992: {
+      noSwiping: false,
+      speed: 500,
+    },
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+$(document).on(
+  "click",
+  ".feature-product__dec23 .feature_slider__slide.swiper-slide-prev",
+  function () {
+    window.featuredSliderDec23.slidePrev();
+  }
+);
+$(document).on(
+  "click",
+  ".feature-product__dec23 .feature_slider__slide.swiper-slide-next",
+  function () {
+    window.featuredSliderDec23.slideNext();
+  }
+);
