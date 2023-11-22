@@ -120,7 +120,10 @@
         &.hero__video{
           margin-top: 126px;
           @media screen and (max-width: 992px) {
-            margin-top: 25px;
+            margin-top: 94px;
+          }
+          @media screen and (max-width: 768px) {
+            margin-top: 70px;
           }
           .page_header--videobg-wrapper{
             video{
@@ -130,7 +133,7 @@
                 width: 100%;
               }
               @media screen and (max-width: 768px) {
-                min-height: 496px;
+                // min-height: 496px;
                 width: 100%;
                 max-height: unset;
                 // object-position: 0 75px;

@@ -532,7 +532,12 @@
 }
 @media screen and (max-width: 992px) {
   .index-Dec23__module #mainContainer .hero__section.hero__video {
-    margin-top: 25px;
+    margin-top: 94px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .index-Dec23__module #mainContainer .hero__section.hero__video {
+    margin-top: 70px;
   }
 }
 .index-Dec23__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
@@ -545,7 +550,6 @@
 }
 @media screen and (max-width: 768px) {
   .index-Dec23__module #mainContainer .hero__section.hero__video .page_header--videobg-wrapper video {
-    min-height: 496px;
     width: 100%;
     max-height: unset;
   }
