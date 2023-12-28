@@ -224,10 +224,24 @@
       margin-bottom: 25px;
 
       .mobile-category {
-        padding: 0px 9vw;
+        padding: 0px 0;
 
-        .mobile-category__link {
-          color: #000000;
+        .mobile-category__button {
+          margin-bottom: 10px;
+          border: 1px solid #000000;
+          border-radius: 24px;
+
+          .mobile-category__link {
+            color: #000000;
+            font-size: 1.5rem;
+            justify-content: center;
+
+            &:hover {
+              background: #000000;
+              border-radius: 24px;
+              color: #ffffff;
+            }
+          }
         }
       }
     }

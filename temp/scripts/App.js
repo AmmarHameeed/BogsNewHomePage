@@ -1374,7 +1374,7 @@ var DualSlideSwiper = new Swiper(".reuse__swiper-container", {
   //   prevEl: ".swiper-button-prev"
   // },
   breakpoints: {
-    768: {
+    992: {
       loop: true,
       noSwiping: false,
       slidesPerView: 1,
