@@ -625,6 +625,13 @@
   color: black;
   border: 2px solid #000000;
 }
+@media screen and (max-width: 992px) {
+  .reuse_boot__module #mainContainer #shipping__label .shipping__label-btn {
+    font-size: 24px;
+    height: 34px;
+    max-width: 250px;
+  }
+}
 .reuse_boot__module #mainContainer #goals__section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,7 +654,7 @@
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide {
     width: 100%;
-    padding: 12% 10% 35px 35px;
+    padding: 8% 5% 25px 0px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
@@ -672,6 +679,11 @@
 @media screen and (max-width: 1100px) and (min-width: 993px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
+    font-size: 20px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
@@ -711,7 +723,7 @@
 }
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -745,6 +757,11 @@
 .reuse_boot__module #mainContainer #goals__section .goals_three__images .three__images--upper {
   margin-bottom: 20px;
 }
+@media screen and (max-width: 992px) {
+  .reuse_boot__module #mainContainer #goals__section .goals_three__images .three__images--upper {
+    margin-bottom: 10px;
+  }
+}
 .reuse_boot__module #mainContainer #goals__section .goals_three__images .three__images--lower {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,6 +769,11 @@
 }
 .reuse_boot__module #mainContainer #goals__section .goals_three__images .three__images--lower .lower__left {
   margin-right: 20px;
+}
+@media screen and (max-width: 992px) {
+  .reuse_boot__module #mainContainer #goals__section .goals_three__images .three__images--lower .lower__left {
+    margin-right: 10px;
+  }
 }
 .reuse_boot__module #mainContainer #reuse__working-section {
   margin-bottom: 60px;
@@ -802,6 +824,11 @@
 @media screen and (max-width: 1149px) and (min-width: 992px) {
   .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .reuse__swiper__image {
     max-height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .reuse__swiper__image {
+    max-height: 134px;
   }
 }
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text {
