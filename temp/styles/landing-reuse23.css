@@ -508,7 +508,7 @@
   }
 }
 .reuse_boot__module #mainContainer .reuse_boot__header {
-  margin-top: 25px;
+  margin-top: 15px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 992px) {
