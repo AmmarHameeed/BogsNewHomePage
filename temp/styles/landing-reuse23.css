@@ -575,6 +575,7 @@
     font-size: 40px;
     line-height: 36px;
     margin-top: 17px;
+    text-shadow: 0px 0px 2px #000000;
   }
 }
 .reuse_boot__module #mainContainer .reuse_boot__header .reuseBoot__textWrapper--middle .shipping__label--text {
@@ -642,14 +643,24 @@
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: column-reverse;
-            flex-flow: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
     margin-bottom: 25px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide {
   width: 35.75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide {
