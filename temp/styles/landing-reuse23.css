@@ -814,9 +814,17 @@
     font-size: 1rem;
   }
 }
+.reuse_boot__module #mainContainer #reuse__working-section .feature_slider__headline-wrapper .feature_slider__headline {
+  font-size: 30px;
+}
+@media screen and (max-width: 992px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .feature_slider__headline-wrapper .feature_slider__headline {
+    font-size: 20px;
+  }
+}
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide {
   position: relative;
-  min-height: 400px;
+  min-height: 465px;
   padding-bottom: 100px;
   text-align: center;
   padding-top: 85px;
@@ -842,6 +850,10 @@
     max-height: 134px;
   }
 }
+.reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .reuse__swiper__image.img__adjustment {
+  -o-object-position: -8px;
+     object-position: -8px;
+}
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text {
   width: 85%;
   margin: auto;
@@ -860,29 +872,39 @@
   }
 }
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 28px;
   text-transform: capitalize;
 }
-@media screen and (max-width: 1550px) and (min-width: 1400px) {
+@media screen and (max-width: 1750px) and (min-width: 1515px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 1514px) and (min-width: 1400px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1399px) and (min-width: 1251px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 1250px) and (min-width: 1101px) {
+  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 1100px) and (min-width: 993px) {
   .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1399px) and (min-width: 1300px) {
+@media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 1299px) and (min-width: 1150px) {
-  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
-    font-size: 14px;
-  }
-}
-@media screen and (max-width: 1149px) and (min-width: 992px) {
-  .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text .step__desc {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .reuse__swiper--pagination.landing-listview-pagination {
