@@ -896,6 +896,16 @@
             flex-flow: column;
   }
 }
+.landing-artist__module #mainContainer .artist__section.custom__bottom__updates .featured_style-wrapper .featured__styles-image-wrapper .artist__text-overlay {
+  bottom: 146px;
+}
+.landing-artist__module #mainContainer .artist__section.custom__bottom__updates .featured_style-wrapper .featured__styles-image-wrapper .updated__bottom__image {
+  -o-object-position: 0 -50px;
+     object-position: 0 -50px;
+}
+.landing-artist__module #mainContainer .artist__section.custom__bottom__updates .featured_style-wrapper .featured__styles-image-wrapper.updated__bottom__image--wrapper {
+  background-color: #caad80;
+}
 @media screen and (max-width: 768px) {
   .landing-artist__module .feature__slider-description {
     margin-top: 65px;

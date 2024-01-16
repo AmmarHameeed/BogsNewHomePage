@@ -433,6 +433,23 @@
                     }
                 }
             }
+
+            &.custom__bottom__updates{
+                .featured_style-wrapper{
+                    .featured__styles-image-wrapper {
+                        .artist__text-overlay{
+                            bottom: 146px;
+                        }
+                        .updated__bottom__image{
+                            object-position: 0 -50px;
+                        }
+                        &.updated__bottom__image--wrapper{
+                            background-color: #caad80;
+                        }
+                    }
+                    
+                }
+            }
         }
     }
 
