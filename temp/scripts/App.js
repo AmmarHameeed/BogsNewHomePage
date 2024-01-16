@@ -101,13 +101,13 @@ $(document).ready(function () {
       $("#video").attr(
         "src",
         $videoSrc +
-        "?rel=0&autoplay=1&loop=1&modestbranding=1&muted=1&showinfo=0"
+        "?rel=0&autoplay=1&loop=1&modestbranding=1&muted=0&showinfo=0"
       );
     } else {
       $("#video").attr(
         "src",
         $videoSrc +
-        "?rel=0&autoplay=1&modestbranding=1&muted=1&showinfo=0"
+        "?rel=0&autoplay=1&modestbranding=1&muted=0&showinfo=0"
       );
     }
 
