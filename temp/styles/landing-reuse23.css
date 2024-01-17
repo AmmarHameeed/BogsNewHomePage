@@ -851,8 +851,7 @@
   }
 }
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .reuse__swiper__image.img__adjustment {
-  -o-object-position: -8px;
-     object-position: -8px;
+  margin-left: -42.5px;
 }
 .reuse_boot__module #mainContainer #reuse__working-section .reuse__swiper-container .swiper-slide .overlay__text {
   width: 85%;
