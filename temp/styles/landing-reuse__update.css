@@ -548,19 +548,19 @@
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
   margin-bottom: 10px;
-  font-size: 46px;
+  font-size: 43px;
   line-height: 46px;
   text-transform: uppercase;
   font-family: "bogs_headlineregular", Arial, sans-serif;
 }
 @media screen and (max-width: 1514px) and (min-width: 1400px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 @media screen and (max-width: 1399px) and (min-width: 1251px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
-    font-size: 30px;
+    font-size: 28px;
     line-height: 30px;
   }
 }
@@ -578,35 +578,35 @@
 }
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
-    font-size: 40px;
+    font-size: 36px;
   }
 }
 @media screen and (max-width: 768px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__heading {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 40px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
 @media screen and (max-width: 1750px) and (min-width: 1515px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 23px;
+    font-size: 22px;
     line-height: 32px;
   }
 }
 @media screen and (max-width: 1514px) and (min-width: 1400px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 24px;
+    font-size: 21px;
     line-height: 28px;
   }
 }
 @media screen and (max-width: 1399px) and (min-width: 1251px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 21px;
+    font-size: 19px;
     line-height: 24px;
   }
 }
@@ -618,13 +618,13 @@
 }
 @media screen and (max-width: 1100px) and (min-width: 993px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
   }
 }
 @media screen and (max-width: 992px) {
   .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
 }
@@ -694,6 +694,7 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    font-size: 18px;
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals_three__images {

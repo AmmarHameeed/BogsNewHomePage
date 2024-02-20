@@ -138,17 +138,17 @@
 
                 .goals__heading {
                     margin-bottom: 10px;
-                    font-size: 46px;
+                    font-size: 43px;
                     line-height: 46px;
                     text-transform: uppercase;
                     font-family: 'bogs_headlineregular', Arial, sans-serif;
 
                     @media screen and (max-width: 1514px) and (min-width: 1400px) {
-                        font-size: 36px;
+                        font-size: 34px;
                     }
 
                     @media screen and (max-width: 1399px) and (min-width: 1251px) {
-                        font-size: 30px;
+                        font-size: 28px;
                         line-height: 30px;
                     }
 
@@ -163,31 +163,31 @@
                     }
 
                     @media screen and (max-width: 992px) {
-                        font-size: 40px;
+                        font-size: 36px;
                     }
                     @media screen and (max-width: 768px) {
-                        font-size: 40px;
+                        font-size: 36px;
                         line-height: 40px;
                     }
                 }
 
                 .goals__description--text {
-                    font-size: 26px;
+                    font-size: 22px;
                     line-height: 40px;
                     font-family: "trade-gothic-next", Arial, sans-serif;
 
                     @media screen and (max-width: 1750px) and (min-width: 1515px) {
-                        font-size: 23px;
+                        font-size: 22px;
                         line-height: 32px;
                     }
 
                     @media screen and (max-width: 1514px) and (min-width: 1400px) {
-                        font-size: 24px;
+                        font-size: 21px;
                         line-height: 28px;
                     }
 
                     @media screen and (max-width: 1399px) and (min-width: 1251px) {
-                        font-size: 21px;
+                        font-size: 19px;
                         line-height: 24px;
                     }
 
@@ -197,12 +197,12 @@
                     }
 
                     @media screen and (max-width: 1100px) and (min-width: 993px) {
-                        font-size: 16px;
+                        font-size: 15px;
                         line-height: 19px;
                     }
 
                     @media screen and (max-width: 992px) {
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 30px;
                     }
                     
@@ -230,6 +230,7 @@
                     }
                     @media screen and (max-width: 992px){
                         width: max-content;
+                        font-size: 18px;
                     }
                   }
             }
