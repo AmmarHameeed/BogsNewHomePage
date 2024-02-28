@@ -588,6 +588,7 @@
   }
 }
 .reuse_boot__module #mainContainer #goals__section .goals__description--slide .goals__description--text {
+  margin: 15px 0 25px;
   font-size: 22px;
   line-height: 40px;
   font-family: "trade-gothic-next", Arial, sans-serif;
