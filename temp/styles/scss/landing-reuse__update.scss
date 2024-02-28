@@ -137,9 +137,9 @@
                 }
 
                 .goals__heading {
-                    margin-bottom: 10px;
+                    margin-bottom: 14px;
                     font-size: 43px;
-                    line-height: 46px;
+                    line-height: 42px;
                     text-transform: uppercase;
                     font-family: 'bogs_headlineregular', Arial, sans-serif;
 
@@ -172,7 +172,7 @@
                 }
 
                 .goals__description--text {
-                    margin: 15px 0 25px;
+                    margin: 0px 0 15px;
                     font-size: 22px;
                     line-height: 40px;
                     font-family: "trade-gothic-next", Arial, sans-serif;
@@ -212,6 +212,7 @@
                     @include shopButtonBlack;
                     font-size: 25px;
                     width: max-content;
+                    margin-top: 13px;
                     @media screen and (max-width: 1514px) and (min-width: 1400px) {
                         font-size: 22px;
                     }
