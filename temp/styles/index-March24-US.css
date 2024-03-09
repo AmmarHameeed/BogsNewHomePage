@@ -719,10 +719,15 @@
     font-size: 20px;
   }
 }
+@media screen and (max-width: 992px) {
+  .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .text__wrapper--biggerViewport {
+    display: none;
+  }
+}
 .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text {
   margin: 0px 0 15px;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 32px;
   font-family: "trade-gothic-next", Arial, sans-serif;
 }
 @media screen and (max-width: 1750px) and (min-width: 1515px) {
@@ -745,13 +750,13 @@
 }
 @media screen and (max-width: 1250px) and (min-width: 1101px) {
   .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 23px;
   }
 }
 @media screen and (max-width: 1100px) and (min-width: 993px) {
   .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 19px;
   }
 }
@@ -764,6 +769,19 @@
 @media screen and (max-width: 540px) {
   .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text.mobile {
+    display: none;
+  }
+}
+.index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text:nth-of-type(1) {
+  margin: 0px 0 5px;
+}
+@media screen and (max-width: 992px) {
+  .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .goals__description--text:nth-of-type(2) {
+    margin-left: 4px;
   }
 }
 .index-March__module #mainContainer #candid__section .goals__saection--wrapper .goals__description--slide .shop__btn {
