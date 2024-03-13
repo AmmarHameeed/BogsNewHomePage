@@ -136,6 +136,48 @@ $(document).ready(function () {
     $(".embed-responsive").removeClass("embed-responsive-1by1");
     $(".embed-responsive").removeClass("embed-responsive-16by9");
   });
+  // when the modal is opened autoplay it
+  $("#videoModalNarrow").on("shown.bs.modal", function (e) {
+    // set the video src to autoplay and not to show related video.
+    if ($videoEnd) {
+      $("#videoNarrow").attr(
+        "src",
+        $videoSrc +
+        "?rel=0&autoplay=1&loop=1&modestbranding=1&muted=0&showinfo=0"
+      );
+    } else {
+      $("#videoNarrow").attr(
+        "src",
+        $videoSrc +
+        "?rel=0&autoplay=1&modestbranding=1&muted=0&showinfo=0"
+      );
+    }
+
+    // Add a 'video is square' hook
+    if ($videoFormat) {
+      if ($videoFormat == "square-video") {
+        $("#videoModalNarrow").addClass("square-video");
+        $(".embed-responsive").addClass("embed-responsive-1by1");
+      } else {
+        $("#videoModalNarrow").addClass("square-video");
+        $(".embed-responsive").addClass("embed-responsive-detail");
+      }
+    } else {
+      $(".embed-responsive").addClass("embed-responsive-16by9");
+    }
+  });
+
+  // stop playing the youtube video when I close the modal
+  $("#videoModalNarrow").on("hide.bs.modal", function (e) {
+    // a poor man's stop video
+    $("#videoNarrow").attr("src", $videoSrc);
+
+    // remove a 'video is square' hook
+    $("#videoModalNarrow").removeClass("square-video");
+    $("#videoModalNarrow").removeClass("detail-video");
+    $(".embed-responsive").removeClass("embed-responsive-1by1");
+    $(".embed-responsive").removeClass("embed-responsive-16by9");
+  });
 
   // Auto Play Video Modal Based on URL Parameters
 
@@ -177,6 +219,10 @@ $(document).ready(function () {
     dataIds.push($(this).data("id"));
     // console.log("search for video modals");
   });
+  $('.video-btn[data-target="#videoModalNarrow"]').each(function () {
+    dataIds.push($(this).data("id"));
+    // console.log("search for video modals");
+  });
 
   // compare the param to the dataIds to see if there is a match
   var exist = jQuery.inArray(param, dataIds);
@@ -189,6 +235,7 @@ $(document).ready(function () {
     // console.log("create videoSrc");
     // Show modal
     $("#videoModal").modal("show");
+    $("#videoModalNarrow").modal("show");
 
     // Can we also have the swiper switch to the slide (on detail view)
     if ($(".swiper-container").hasClass("detail-view__slides")) {

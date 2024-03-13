@@ -1748,6 +1748,14 @@
     margin-top: 18px;
   }
 }
+.index-Apr__module #videoModalNarrow .modal-content {
+  background-color: transparent;
+}
+.index-Apr__module #videoModalNarrow button.close {
+  right: unset;
+  left: 67%;
+  top: -10px;
+}
 
 .feature__slider-description {
   height: 60px;

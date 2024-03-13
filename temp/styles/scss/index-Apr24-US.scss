@@ -977,6 +977,15 @@
       }
     }
   }
+
+  #videoModalNarrow .modal-content{
+    background-color: transparent
+  }
+  #videoModalNarrow button.close{
+    right: unset;
+    left: calc(50% + 17%);
+    top: -10px;
+  }
 }
 
 @import "footer-redesigned.scss";
